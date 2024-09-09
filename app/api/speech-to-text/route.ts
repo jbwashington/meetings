@@ -1,34 +1,36 @@
-import { NextResponse } from "next/server";
-import fs from "fs";
-import { openai } from "@/lib/vendors/openai";
+// import { NextResponse } from "next/server";
+// import fs from "fs";
+// import { openai } from "@/lib/vendors/openai";
+const FormData = require('form-data');
+import { withFileUpload } from 'next-multiparty';
+import { createReadStream } from 'fs';
+import { createTranscription } from '@/lib/actions/whisper';
 
-export async function POST(request: Request) {
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
 
-    const body = await request.json();
-    const b64Audio = body.audio;
-    const audio = Buffer.from(b64Audio, "base64");
-    console.log(audio)
-    const filePath = `/tmp/${Date.now()}.wav`;
-    try {
-        fs.writeFileSync(filePath, audio);
 
-        const readStream = fs.createReadStream(filePath);
-        console.log(readStream)
 
-        const data = await openai.audio.transcriptions.create({
-            file: readStream,
-            model: "whisper-1",
-        });
 
-        console.log(data)
-        fs.unlinkSync(filePath);
+export default withFileUpload(async (req, res) => {
+  const file = req.file;
+  if (!file) {
+    res.status(400).send('No file uploaded');
+    return;
+  }
 
-        return NextResponse.json(data);
-    } catch (error) {
-        console.error("Error writing audio file:", error);
-        return NextResponse.json(
-            { error: "Failed to write audio file" },
-            { status: 500 }
-        );
-    }
-}
+  // Create form data
+  const formData = new FormData();
+  formData.append('file', createReadStream(file.filepath), 'audio.wav');
+  const transcription = await createTranscription(formData);
+
+  if (transcription) {
+    res.status(200).json({ text: transcription });
+  } else {
+    console.log('GROQ API ERROR:');
+    res.status(400).send(new Error());
+  }
+});

@@ -1,7 +1,7 @@
 import {
-  ComputedFields,
-  defineDocumentType,
-  makeSource,
+    ComputedFields,
+    defineDocumentType,
+    makeSource,
 } from "contentlayer2/source-files";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
@@ -10,139 +10,159 @@ import remarkGfm from "remark-gfm";
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const defaultComputedFields: ComputedFields = {
-  slug: {
-    type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
-  },
-  slugAsParams: {
-    type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
+    slug: {
+        type: "string",
+        resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+    slugAsParams: {
+        type: "string",
+        resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    },
 };
 
 export const Doc = defineDocumentType(() => ({
-  name: "Doc",
-  filePathPattern: `docs/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
+    name: "Doc",
+    filePathPattern: `docs/**/*.mdx`,
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The title of the doc",
+            required: true,
+        },
+        description: {
+            description: "The description of the doc",
+            type: "string",
+        },
+        published: {
+            type: "boolean",
+            description: "Whether the doc is published or not",
+            default: true,
+        },
     },
-    description: {
-      type: "string",
-    },
-    published: {
-      type: "boolean",
-      default: true,
-    },
-  },
-  computedFields: defaultComputedFields,
+    computedFields: defaultComputedFields,
 }));
 
 export const Guide = defineDocumentType(() => ({
-  name: "Guide",
-  filePathPattern: `guides/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
+    name: "Guide",
+    filePathPattern: `guides/**/*.mdx`,
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The title of the guide",
+            required: true,
+        },
+        description: {
+            type: "string",
+            description: "The description of the guide",
+        },
+        date: {
+            type: "date",
+            description: "The date of the guide",
+            required: true,
+        },
+        published: {
+            type: "boolean",
+            description: "Whether the guide is published or not",
+            default: true,
+        },
+        featured: {
+            type: "boolean",
+            description: "Whether the guide is featured or not",
+            default: false,
+        },
     },
-    description: {
-      type: "string",
-    },
-    date: {
-      type: "date",
-      required: true,
-    },
-    published: {
-      type: "boolean",
-      default: true,
-    },
-    featured: {
-      type: "boolean",
-      default: false,
-    },
-  },
-  computedFields: defaultComputedFields,
+    computedFields: defaultComputedFields,
 }));
 
 export const Post = defineDocumentType(() => ({
-  name: "Post",
-  filePathPattern: `blog/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
+    name: "Post",
+    filePathPattern: `blog/**/*.mdx`,
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The title of the post",
+            required: true,
+        },
+        description: {
+            description: "The description of the post",
+            type: "string",
+        },
+        date: {
+            type: "date",
+            description: "The date of the post",
+            required: true,
+        },
+        published: {
+            type: "boolean",
+            description: "Whether the post is published or not",
+            default: true,
+        },
+        image: {
+            type: "string",
+            description: "The image filepath of the post",
+            required: true,
+        },
+        authors: {
+            // Reference types are not embedded.
+            // Until this is fixed, we can use a simple list.
+            // type: "reference",
+            // of: Author,
+            type: "list",
+            description: "The author or authors of the post",
+            of: { type: "string" },
+            required: true,
+        },
     },
-    description: {
-      type: "string",
-    },
-    date: {
-      type: "date",
-      required: true,
-    },
-    published: {
-      type: "boolean",
-      default: true,
-    },
-    image: {
-      type: "string",
-      required: true,
-    },
-    authors: {
-      // Reference types are not embedded.
-      // Until this is fixed, we can use a simple list.
-      // type: "reference",
-      // of: Author,
-      type: "list",
-      of: { type: "string" },
-      required: true,
-    },
-  },
-  computedFields: defaultComputedFields,
+    computedFields: defaultComputedFields,
 }));
 
 export const Author = defineDocumentType(() => ({
-  name: "Author",
-  filePathPattern: `authors/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
+    name: "Author",
+    filePathPattern: `authors/**/*.mdx`,
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The name of the author",
+            required: true,
+        },
+        description: {
+            type: "string",
+            description: "The description of the author",
+        },
+        avatar: {
+            type: "string",
+            description: "The file path of the author avatar",
+            required: true,
+        },
+        twitter: {
+            type: "string",
+            description: "The twitter handle of the author without the @",
+            required: true,
+        },
     },
-    description: {
-      type: "string",
-    },
-    avatar: {
-      type: "string",
-      required: true,
-    },
-    twitter: {
-      type: "string",
-      required: true,
-    },
-  },
-  computedFields: defaultComputedFields,
+    computedFields: defaultComputedFields,
 }));
 
 export const Page = defineDocumentType(() => ({
-  name: "Page",
-  filePathPattern: `pages/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
+    name: "Page",
+    filePathPattern: `pages/**/*.mdx`,
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The title of page",
+            required: true,
+        },
+        description: {
+            type: "string",
+            description: "The description of the page",
+        },
     },
-    description: {
-      type: "string",
-    },
-  },
-  computedFields: defaultComputedFields,
+    computedFields: defaultComputedFields,
 }));
 
 export default makeSource({

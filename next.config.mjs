@@ -9,8 +9,12 @@ import withMDX from "@next/mdx";
 const config = {
     reactStrictMode: true,
     swcMinify: true,
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
     experimental: {
         mdxRs: true,
+        serverComponentsExternalPackages: ["@prisma/client"],
     },
     pageExtensions: ["ts", "tsx", "mdx"],
 };

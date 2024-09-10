@@ -43,6 +43,9 @@ import {
     CloudCog,
     DatabaseBackup,
     Router,
+    Sun,
+    Languages,
+    Instagram,
   } from "lucide-react"
   
   export type Icon = LucideIcon
@@ -107,4 +110,6 @@ import {
     boxes: Boxes,
     ganttChart: GanttChart,
     hourglass: Hourglass,
+    languages: Languages,
+    instagram: Instagram,
   }

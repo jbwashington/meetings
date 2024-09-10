@@ -12,6 +12,7 @@ import {
 } from "@react-email/components";
 
 import { Icons } from "../ui/icons";
+import React from "react";
 
 interface MagicLinkEmailProps {
   actionUrl: string;
@@ -20,7 +21,7 @@ interface MagicLinkEmailProps {
   siteName: string;
 }
 
-export const MagicLinkEmail = ({
+export const MagicLinkEmail: React.FC<Readonly<MagicLinkEmailProps>> = ({
   firstName = "",
   actionUrl,
   mailType,
@@ -59,7 +60,7 @@ export const MagicLinkEmail = ({
             </Text>
           ) : null}
           <Hr className="my-4 border-t-2 border-gray-300" />
-          <Text className="text-sm text-gray-600">saasfly.io</Text>
+          <Text className="text-sm text-gray-600">TNS Parent Teacher Association</Text>
         </Container>
       </Body>
     </Tailwind>

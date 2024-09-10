@@ -1,36 +1,23 @@
-import type {
-    GetServerSidePropsContext,
-    NextApiRequest,
-    NextApiResponse,
-} from "next";
-import { getServerSession, type NextAuthOptions, type User } from "next-auth";
-import EmailProvider from "next-auth/providers/email";
-import MagicLinkEmail from "@/components/emails/magic-link-email";
-import { resend } from "./vendors/resend";
-import { siteConfig } from "@/config/site";
-
 import { db } from "./db";
 import { env } from "@/env.mjs";
 
 type UserId = string;
 type IsAdmin = boolean;
 
-declare module "next-auth" {
-    interface Session {
-        user: User & {
-            id: UserId;
-            isAdmin: IsAdmin;
-        };
-    }
-}
-
-declare module "next-auth" {
-    interface JWT {
-        isAdmin: IsAdmin;
-    }
-}
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import { NextAuthOptions } from "next-auth";
+import EmailProvider from "next-auth/providers/email";
+import { siteConfig } from "@/config/site";
+import { AdapterUser } from "next-auth/adapters";
+import { resend } from "./vendors/resend";
+import MagicLinkEmail from "@/components/emails/magic-link-email";
 
 export const authOptions: NextAuthOptions = {
+    // huh any! I know.
+    // This is a temporary fix for prisma client.
+    // @see https://github.com/prisma/prisma/issues/16117
+    // TODO: fix db type as any
+    adapter: PrismaAdapter(db as any),
     session: {
         strategy: "jwt",
     },
@@ -39,98 +26,67 @@ export const authOptions: NextAuthOptions = {
     },
     providers: [
         EmailProvider({
-            sendVerificationRequest: async ({ identifier, url }) => {
-                const user = await db
-                    .selectFrom("User")
-                    .select(["name", "emailVerified"])
-                    .where("email", "=", identifier)
-                    .executeTakeFirst();
-                const userVerified = !!user?.emailVerified;
-                const authSubject = userVerified
-                    ? `Sign-in link for ${
-                          (siteConfig as { name: string }).name
-                      }`
-                    : "Activate your account";
+            from: env.RESEND_FROM,
+            sendVerificationRequest: async ({ identifier, url, provider }) => {
+                const user = await db.user.findUnique({
+                    where: {
+                        email: identifier,
+                    },
+                    select: {
+                        emailVerified: true,
+                    },
+                });
 
-                try {
-                    await resend.emails.send({
-                        from: env.RESEND_FROM as string,
-                        to: identifier,
-                        subject: authSubject,
-                        react: MagicLinkEmail({
-                            firstName: user?.name ?? "",
-                            actionUrl: url,
-                            mailType: userVerified ? "login" : "register",
-                            siteName: (siteConfig as { name: string }).name,
-                        }),
-                        // Set this to prevent Gmail from threading emails.
-                        // More info: https://resend.com/changelog/custom-email-headers
-                        headers: {
-                            "X-Entity-Ref-ID": new Date().getTime() + "",
-                        },
-                    });
-                } catch (error) {
-                    console.log(error);
+                const { data, error } = await resend.emails.send({
+                    from: provider.from as string,
+                    to: identifier,
+                    subject: "Sign in to your account",
+                    react: MagicLinkEmail({
+                        actionUrl: url,
+                        siteName: siteConfig.name,
+                        firstName: identifier.split("@")[0],
+                        mailType: user?.emailVerified ? "login" : "register",
+                    }),
+                });
+                if (error) {
+                    throw new Error(error.message);
                 }
             },
         }),
     ],
     callbacks: {
-        session({ token, session }) {
+        async session({ token, session }) {
             if (token) {
-                if (session.user) {
-                    session.user.id = token.id as string;
-                    session.user.name = token.name;
-                    session.user.email = token.email;
-                    session.user.image = token.picture;
-                    session.user.isAdmin = token.isAdmin as boolean;
-                }
+                session.user = {
+                    id: token.id,
+                    name: token.name,
+                    email: token.email,
+                    image: token.picture,
+                } as AdapterUser;
             }
+
             return session;
         },
         async jwt({ token, user }) {
-            const email = token?.email ?? "";
-            const dbUser = await db
-                .selectFrom("User")
-                .where("email", "=", email)
-                .selectAll()
-                .executeTakeFirst();
+            const dbUser = await db.user.findFirst({
+                where: {
+                    email: token.email,
+                },
+            });
+
             if (!dbUser) {
                 if (user) {
                     token.id = user?.id;
                 }
                 return token;
             }
-            let isAdmin = false;
-            if (env.RESEND_FROM) {
-                const adminEmails = env.RESEND_FROM.split(",");
-                if (email) {
-                    isAdmin = adminEmails.includes(email);
-                }
-            }
+
             return {
                 id: dbUser.id,
                 name: dbUser.name,
                 email: dbUser.email,
                 picture: dbUser.image,
-                isAdmin: isAdmin,
             };
         },
     },
-    debug: env.IS_DEBUG === "true",
 };
-
-// Use it in server contexts
-export function auth(
-    ...args:
-        | [GetServerSidePropsContext["req"], GetServerSidePropsContext["res"]]
-        | [NextApiRequest, NextApiResponse]
-        | []
-) {
-    return getServerSession(...args, authOptions);
-}
-
-export async function getCurrentUser() {
-    const session = await getServerSession(authOptions);
-    return session?.user;
-}

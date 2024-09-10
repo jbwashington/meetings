@@ -1,31 +1,16 @@
-// import { NextResponse } from "next/server";
-// import fs from "fs";
-// import { openai } from "@/lib/vendors/openai";
-const FormData = require('form-data');
-import { withFileUpload } from 'next-multiparty';
-import { createReadStream } from 'fs';
 import { createTranscription } from '@/lib/actions/whisper';
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+export default async function POST (req: NextApiRequest, res: NextApiResponse) {
+  const data = await req.body()
+  const file = data.get('file');
 
-
-
-
-export default withFileUpload(async (req, res) => {
-  const file = req.file;
   if (!file) {
     res.status(400).send('No file uploaded');
     return;
   }
 
-  // Create form data
-  const formData = new FormData();
-  formData.append('file', createReadStream(file.filepath), 'audio.wav');
-  const transcription = await createTranscription(formData);
+  const transcription = await createTranscription(file);
 
   if (transcription) {
     res.status(200).json({ text: transcription });
@@ -33,4 +18,5 @@ export default withFileUpload(async (req, res) => {
     console.log('GROQ API ERROR:');
     res.status(400).send(new Error());
   }
-});
+}
+

@@ -22,6 +22,7 @@ import {
     FormMessage,
 } from "../ui/form";
 import { useForm } from "react-hook-form";
+import { createTranscription } from "@/lib/actions/whisper";
 
 const formSchema = z.object({
     file: z.instanceof(FileList).optional(),
@@ -131,16 +132,12 @@ if (data.file && data.file.length > 0) {
     formData.append("file", data.file[0], "audio.wav");
 }
 try {
-    const response = await fetch("/api/whisper", {
-        method: "POST",
-        body: formData,
-    });
-    const { text, error } = await response.json();
-    if (response.ok) {
-        updateMessagesArray(text);
+    const response = await createTranscription({formData});
+    if (response) {
+        updateMessagesArray(response);
     } else {
         setLoading(false);
-        setError(error.message);
+        setError('something went wrong.');
     }
 } catch (error) {
     console.log({ error });

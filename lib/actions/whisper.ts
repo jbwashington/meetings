@@ -1,11 +1,12 @@
 import { z } from "zod";
 import { groq } from "../vendors/groq";
 
-const formSchema = z.object({
-    file: z.instanceof(FileList).optional(),
-});
+// const formSchema = z.object({
+//     file: z.instanceof(FileList).optional(),
+// });
 
-export const createTranscription = async ({ file }: { file: File }) => {
+export const createTranscription = async ({ formData }: { formData: FormData }) => {
+    const file = formData.get("file") as File;
     if (!file) {
         throw new Error("No audio file provided");
     }

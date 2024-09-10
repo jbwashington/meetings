@@ -140,7 +140,7 @@ var Page = defineDocumentType(() => ({
 var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
   documentTypes: [Page, Doc, Guide, Post, Author],
-  disableImportAliasWarning: true,
+  // disableImportAliasWarning: true,
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -187,4 +187,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-22LIC64U.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-H2MTRCTS.mjs.map

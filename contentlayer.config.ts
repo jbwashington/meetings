@@ -148,7 +148,7 @@ export const Page = defineDocumentType(() => ({
 export default makeSource({
     contentDirPath: "./content",
     documentTypes: [Page, Doc, Guide, Post, Author],
-    disableImportAliasWarning: true,
+    // disableImportAliasWarning: true,
     mdx: {
         remarkPlugins: [remarkGfm],
         rehypePlugins: [

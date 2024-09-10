@@ -102,8 +102,8 @@ export const authOptions: NextAuthOptions = {
                 return token;
             }
             let isAdmin = false;
-            if (env.ADMIN_EMAIL) {
-                const adminEmails = env.ADMIN_EMAIL.split(",");
+            if (env.RESEND_FROM) {
+                const adminEmails = env.RESEND_FROM.split(",");
                 if (email) {
                     isAdmin = adminEmails.includes(email);
                 }

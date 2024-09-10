@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { MdxCard } from "./mdx-card";
 import { Button } from "./ui/button";
 import { CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Callout } from "./callout";
 
 interface MdxProps {
   code: string;
@@ -21,6 +22,7 @@ const components = {
   CardDescription,
   CardHeader,
   CardTitle,
+  Callout,
   h1: ({ className, ...props }: MdxElementProps) => (
     <h1
       className={cn(

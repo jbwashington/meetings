@@ -5,11 +5,12 @@ import { groq } from "../vendors/groq";
 //     file: z.instanceof(FileList).optional(),
 // });
 
-export const createTranscription = async ({ formData }: { formData: FormData }) => {
-    const file = formData.get("file") as File;
+export const createTranscription = async ({ file }: { file: File }) => {
+
     if (!file) {
         throw new Error("No audio file provided");
     }
+
     const transcription = await groq.audio.transcriptions.create({
         file: file, // Required path to audio file
         model: "distil-whisper-large-v3-en", // Required model to use for transcription

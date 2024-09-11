@@ -11,28 +11,41 @@ interface MarketingLayoutProps {
 }
 
 export default async function MarketingLayout({
-  children,
+    children,
 }: MarketingLayoutProps) {
-  return (
-    <div className="flex min-h-screen flex-col">
-      <header className="container z-40 bg-background">
-        <div className="flex h-20 items-center justify-between py-6">
-          <MainNav items={marketingConfig.mainNav} />
-          <nav>
-            <Link
-              href="/login"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4"
-              )}
-            >
-              Login
-            </Link>
-          </nav>
+    return (
+        <div className="flex min-h-screen flex-col">
+            <header className="container z-40 bg-background">
+                <div className="flex h-20 items-center justify-between py-6">
+                    <MainNav items={marketingConfig.mainNav} />
+                    <nav>
+                        <Link
+                            href="/donate"
+                            className={buttonVariants({
+                                variant: "default",
+                                size: "sm",
+                                className: "px-4 mr-2",
+                            })}
+                        >
+                            Donate
+                        </Link>
+                        <Link
+                            href="/login"
+                            className={cn(
+                                buttonVariants({
+                                    variant: "secondary",
+                                    size: "sm",
+                                }),
+                                "px-4"
+                            )}
+                        >
+                            Login
+                        </Link>
+                    </nav>
+                </div>
+            </header>
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
         </div>
-      </header>
-      <main className="flex-1">{children}</main>
-      <SiteFooter />
-    </div>
-  )
+    );
 }

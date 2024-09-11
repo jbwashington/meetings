@@ -6,5 +6,6 @@ import docs__documentation__codeBlocksMdx from './docs__documentation__code-bloc
 import docs__documentation__componentsMdx from './docs__documentation__components.mdx.json' with { type: 'json' }
 import docs__documentation__indexMdx from './docs__documentation__index.mdx.json' with { type: 'json' }
 import docs__documentation__styleGuideMdx from './docs__documentation__style-guide.mdx.json' with { type: 'json' }
+import docs__about__indexMdx from './docs__about__index.mdx.json' with { type: 'json' }
 
-export const allDocs = [docs__inProgressMdx, docs__indexMdx, docs__documentation__codeBlocksMdx, docs__documentation__componentsMdx, docs__documentation__indexMdx, docs__documentation__styleGuideMdx]
+export const allDocs = [docs__inProgressMdx, docs__indexMdx, docs__documentation__codeBlocksMdx, docs__documentation__componentsMdx, docs__documentation__indexMdx, docs__documentation__styleGuideMdx, docs__about__indexMdx]

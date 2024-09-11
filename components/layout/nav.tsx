@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { MainNavItem, NavItem } from "@/types";
-import { siteConfig } from "@/config/site";
+// import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Icons } from "../ui/icons";
 import { MobileNav } from "./mobile-nav";
@@ -21,10 +21,7 @@ export function MainNav({ items, children }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Icons.cloudCog className="w-6 h-fit" />
-        <span className="hidden font-bold sm:inline-block">
-          {siteConfig.name}
-        </span>
+        <Icons.tnsLogo className="w-fit h-8" />
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">
@@ -49,7 +46,7 @@ export function MainNav({ items, children }: MainNavProps) {
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.cloudCog className="w-6 h-fit" />}
+        {showMobileMenu ? <Icons.close /> : <Icons.tnsLogo className="w-fit h-6" />}
         <span className="font-bold">Menu</span>
       </button>
       {showMobileMenu && items && (

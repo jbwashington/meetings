@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 
 import { cal } from "@/lib/calendar";
 import { env } from "@/env.mjs";
-import { calendar_v3 } from "@googleapis/calendar";
 import { Icons } from "@/components/ui/icons";
 import { badgeVariants } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";

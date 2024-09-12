@@ -22,38 +22,104 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Documentation",
+      title: "About",
       items: [
         {
           title: "Introduction",
-          href: "/docs/documentation",
+          href: "/docs/about",
         },
         {
-          title: "Contentlayer",
+          title: "Executive Board",
+          href: "/docs/about/executive-board",
+        },
+        {
+          title: "Committees",
+          href: "/docs/about/committees",
+        },
+        {
+          title: "Elections",
+          href: "/docs/about/elections",
+        },
+        {
+          title: "Mission",
+          href: "/docs/about/mission",
+        },
+        {
+          title: "Parent Engagement",
+          href: "/docs/about/parent-engagement",
+        },
+        {
+          title: "FAQs",
+          href: "/docs/about/faqs",
+          disabled: true,
+        },
+      ],
+    },
+    {
+      title: "Fundraising",
+      items: [
+        {
+          title: "Introduction",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Components",
-          href: "/docs/documentation/components",
+          title: "Templates",
+          href: "/docs/in-progress",
+          disabled: true,
         },
         {
-          title: "Code Blocks",
-          href: "/docs/documentation/code-blocks",
+          title: "Donor Engagement",
+          href: "/docs/in-progress",
+          disabled: true,
+        },
+      ],
+    },
+    {
+      title: "PTA Meeting Minutes",
+      items: [
+        {
+          title: "2024-2025",
+          href: "/docs/about/meetings/minutes/2024-25",
+        },
+        {
+          title: "2023-2024",
+          href: "/docs/about/meetings/minutes/2023-24",
+        },
+        {
+          title: "2022-2023",
+          href: "/docs/about/meetings/minutes/2022-23",
+        },
+      ],
+    },
+    {
+      title: "Documentation",
+      items: [
+        {
+          title: "Introduction",
+          href: "/docs/in-progress",
+        },
+        {
+          title: "Bylaws",
+          href: "/docs/documentation/bylaws",
+        },
+        {
+          title: "External Resources",
+          href: "/docs/documentation/external-resources",
         },
         {
           title: "Style Guide",
           href: "/docs/documentation/style-guide",
         },
         {
-          title: "Search",
-          href: "/docs/in-progress",
+          title: "Operational Manual",
+          href: "/docs/documentation/tns-pta-operational-manual",
           disabled: true,
         },
       ],
     },
     {
-      title: "Blog",
+      title: "Events",
       items: [
         {
           title: "Introduction",
@@ -61,72 +127,27 @@ export const docsConfig: DocsConfig = {
           disabled: true,
         },
         {
-          title: "Build your own",
+          title: "Bake Sale",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Writing Posts",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: "Dashboard",
-      items: [
-        {
-          title: "Introduction",
+          title: "Earth Day",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Layouts",
+          title: "Halloween",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Server Components",
+          title: "Holiday Fair",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Authentication",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Database with Prisma",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "API Routes",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: "Marketing Site",
-      items: [
-        {
-          title: "Introduction",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "File Structure",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Tailwind CSS",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Typography",
+          title: "Pi Day",
           href: "/docs/in-progress",
           disabled: true,
         },

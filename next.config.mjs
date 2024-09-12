@@ -10,7 +10,19 @@ const config = {
     reactStrictMode: true,
     swcMinify: true,
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        port: "",
+      },
+      {
+         protocol: "https",
+         hostname: "*.googleusercontent.com",
+         port: "",
+         pathname: "*",
+      },
+    ],
   },
     experimental: {
         mdxRs: true,

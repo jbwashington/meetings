@@ -1,5 +1,3 @@
-import { cal } from "@/lib/calendar";
-import { env } from "@/env.mjs";
 import { Marquee } from "./marquee";
 import { calendar_v3 } from "@googleapis/calendar";
 
@@ -24,23 +22,10 @@ const EventCard = ({ event }: { event: calendar_v3.Schema$Event }) => {
     );
 };
 
-const getEvents = async () => {
-    const params: EventParams = {
-        calendarId: env.GOOGLE_CALENDAR_ID,
-        timeMin: new Date().toISOString(),
-        maxResults: 10,
-        singleEvents: true,
-        orderBy: "startTime",
-    };
-    const events = await cal.events.list(params);
-    return events.data.items;
-};
-
-export const UpcomingEvents = async () => {
-    const events = await getEvents();
+export const UpcomingEvents = async ({events}:{events: calendar_v3.Schema$Event[]}) => {
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1">
             <Marquee
                 className="gap-[3rem] [--duration:25s] motion-reduce:overflow-auto py-12"
                 innerClassName="gap-[3rem] [--gap:3rem] motion-reduce:animate-none motion-reduce:first:hidden"

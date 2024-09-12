@@ -7,6 +7,7 @@ import { env } from "@/env.mjs";
 import { Icons } from "@/components/ui/icons";
 import { badgeVariants } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
+import { UpcomingEvents } from "@/components/layout/marketing/upcoming-events";
 
 interface EventParams {
     calendarId: string;
@@ -15,20 +16,19 @@ interface EventParams {
     singleEvents: boolean;
     orderBy: string;
 }
-
-const getEvents = async () => {
-    const params: EventParams = {
-        calendarId: env.GOOGLE_CALENDAR_ID,
-        timeMin: new Date().toISOString(),
-        maxResults: 10,
-        singleEvents: true,
-        orderBy: "startTime",
-    };
-    const events = await cal.events.list(params);
-    return events.data.items;
-};
-
 export default async function IndexPage() {
+    const getEvents = async () => {
+        const params: EventParams = {
+            calendarId: env.GOOGLE_CALENDAR_ID,
+            timeMin: new Date().toISOString(),
+            maxResults: 10,
+            singleEvents: true,
+            orderBy: "startTime",
+        };
+        const events = await cal.events.list(params);
+        return events.data.items;
+    };
+
     const events = await getEvents();
 
     return (
@@ -44,26 +44,10 @@ export default async function IndexPage() {
                         @neighborhoodgram
                     </Link>
                     <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-                        It&apos;s all good in{" "}
-                        <span className="text-pink-500">The Neighborhood</span>
+                        All <span>the neighborhood news</span>
+                        <span className="text-pink-500"> in one place</span>.
                     </h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 pt-4">
-                        {events &&
-                            events.map((event) => (
-                                <div key={event.id} className="rounded-lg">
-                                    <p className="text-md font-semibold mb-2">
-                                        {event.summary}
-                                    </p>
-                                    <p className="text-muted-foreground text-sm">
-                                        {event.start?.dateTime
-                                            ? new Date(
-                                                  event.start.dateTime
-                                              ).toLocaleString()
-                                            : ""}
-                                    </p>
-                                </div>
-                            ))}
-                    </div>
+                        {events && <UpcomingEvents events={events} />}
                 </div>
             </section>
             <section className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">

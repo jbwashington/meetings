@@ -22,6 +22,12 @@
   }
 }
 
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

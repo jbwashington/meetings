@@ -26,11 +26,19 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             </div>
             <nav className="flex space-x-4">
               <Link
+                href={siteConfig.links.twitter}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icons.twitter className="h-4 w-4" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link
                 href={siteConfig.links.instagram}
                 target="_blank"
                 rel="noreferrer"
               >
-                <Icons.instagram className="h-7 w-7" />
+                <Icons.instagram className="h-4 w-4" />
                 <span className="sr-only">Instagram</span>
               </Link>
             </nav>

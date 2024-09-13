@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     description: "Login to your account",
 };
 
-// TODO: wrap auth form component with suspense
 export default function LoginPage() {
     return (
         <div className="container flex h-screen w-screen flex-col items-center justify-center">

@@ -55,19 +55,6 @@ export default async function IndexPage() {
                     <div className="relative overflow-hidden rounded-lg border bg-background p-2">
                         <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                             <div className="space-y-2">
-                                <h3 className="font-bold">
-                                    Prospective Parent
-                                </h3>
-                                <p className="text-sm text-muted-foreground">
-                                    I am a parent looking to enroll my child in
-                                    TNS.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-                        <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                            <div className="space-y-2">
                                 <h3 className="font-bold">Current Parent</h3>
                                 <p className="text-sm">
                                     I am a parent of a current student at TNS.

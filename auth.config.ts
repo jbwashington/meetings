@@ -2,6 +2,7 @@ import Google from "next-auth/providers/google";
 import type { NextAuthConfig } from "next-auth";
 import Resend from "next-auth/providers/resend";
 import { env } from "./env.mjs";
+
 export default {
     providers: [
         Google,

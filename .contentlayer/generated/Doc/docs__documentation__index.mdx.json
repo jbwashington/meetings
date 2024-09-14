@@ -1,0 +1,20 @@
+{
+  "title": "Documentation",
+  "description": "Bylaws, visual style guide, and other resources.",
+  "published": true,
+  "body": {
+    "raw": "\n<div className=\"grid gap-4 mt-6\">\n\n<Card href=\"/docs/documentation/external-resources\">\n\n### External Links\n\nHelpful resources from the NYC DOE and other organizations.\n\n</Card>\n<Card href=\"/docs/documentation/bylaws\">\n\n### PTA Bylaws\n\nHow the PTA is governed.\n\n</Card>\n\n<Card href=\"/docs/documentation/style-guide\">\n\n### Style Guide\n\nHow things should look at TNS.\n\n</Card>\n\n<Card disabled href=\"/docs/documentation/external-resources\">\n\n### Operational Manual\n\nEstablished procedures for getting things done by the book (coming soon).\n\n</Card>\n\n\n</div>",
+    "code": "var Component=(()=>{var u=Object.create;var t=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var i in e)t(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of p(e))!g.call(n,o)&&o!==i&&t(n,o,{get:()=>e[o],enumerable:!(r=m(e,o))||r.enumerable});return n};var k=(n,e,i)=>(i=n!=null?u(f(n)):{},s(e||!n||!n.__esModule?t(i,\"default\",{value:n,enumerable:!0}):i,n)),y=n=>s(t({},\"__esModule\",{value:!0}),n);var l=b((L,c)=>{c.exports=_jsx_runtime});var _={};x(_,{default:()=>h,frontmatter:()=>N});var a=k(l()),N={title:\"Documentation\",description:\"Bylaws, visual style guide, and other resources.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Card:i}=e;return i||w(\"Card\",!0),(0,a.jsxs)(\"div\",{className:\"grid gap-4 mt-6\",children:[(0,a.jsxs)(i,{href:\"/docs/documentation/external-resources\",children:[(0,a.jsxs)(e.h3,{id:\"external-links\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#external-links\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"External Links\"]}),(0,a.jsx)(e.p,{children:\"Helpful resources from the NYC DOE and other organizations.\"})]}),(0,a.jsxs)(i,{href:\"/docs/documentation/bylaws\",children:[(0,a.jsxs)(e.h3,{id:\"pta-bylaws\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pta-bylaws\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"PTA Bylaws\"]}),(0,a.jsx)(e.p,{children:\"How the PTA is governed.\"})]}),(0,a.jsxs)(i,{href:\"/docs/documentation/style-guide\",children:[(0,a.jsxs)(e.h3,{id:\"style-guide\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#style-guide\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Style Guide\"]}),(0,a.jsx)(e.p,{children:\"How things should look at TNS.\"})]}),(0,a.jsxs)(i,{disabled:!0,href:\"/docs/documentation/external-resources\",children:[(0,a.jsxs)(e.h3,{id:\"operational-manual\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#operational-manual\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Operational Manual\"]}),(0,a.jsx)(e.p,{children:\"Established procedures for getting things done by the book (coming soon).\"})]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}function w(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(_);})();\n;return Component;"
+  },
+  "_id": "docs/documentation/index.mdx",
+  "_raw": {
+    "sourceFilePath": "docs/documentation/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "docs/documentation",
+    "contentType": "mdx",
+    "flattenedPath": "docs/documentation"
+  },
+  "type": "Doc",
+  "slug": "/docs/documentation",
+  "slugAsParams": "documentation"
+}

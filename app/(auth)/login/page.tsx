@@ -32,11 +32,9 @@ export default function LoginPage() {
                 <div className="flex flex-col space-y-2 text-center">
                     <Icons.tnsLogo className="mx-auto h-6 w-fit" />
                     <h1 className="text-2xl font-semibold tracking-tight">
-                        Welcome back
+                        Sign in to your account
                     </h1>
-                    <p className="text-sm text-muted-foreground">
-                        Enter your email to sign in to your account
-                    </p>
+                    <p className="text-sm text-muted-foreground"></p>
                 </div>
                 <Suspense fallback={<UserAuthFormSkeleton />}>
                     <UserAuthForm />

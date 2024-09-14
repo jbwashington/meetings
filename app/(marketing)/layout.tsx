@@ -1,13 +1,14 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { marketingConfig } from "@/config/marketing"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { MainNav } from "@/components/layout/nav"
-import { SiteFooter } from "@/components/layout/site-footer"
+import { marketingConfig } from "@/config/marketing";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { MainNav } from "@/components/layout/nav";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { siteConfig } from "@/config/site";
 
 interface MarketingLayoutProps {
-  children: React.ReactNode
+    children: React.ReactNode;
 }
 
 export default async function MarketingLayout({
@@ -20,7 +21,7 @@ export default async function MarketingLayout({
                     <MainNav items={marketingConfig.mainNav} />
                     <nav>
                         <Link
-                            href="/donate"
+                            href={siteConfig.links.donate}
                             className={buttonVariants({
                                 variant: "default",
                                 size: "sm",

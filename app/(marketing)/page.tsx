@@ -33,7 +33,7 @@ export default async function IndexPage() {
 
     return (
         <>
-            <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+            <section className="pt-6 md:pb-12 md:pt-10 lg:py-32">
                 <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
                     <Link
                         href={siteConfig.links.instagram}
@@ -47,27 +47,17 @@ export default async function IndexPage() {
                         All <span>the neighborhood news</span>
                         <span className="text-pink-500"> in one place</span>.
                     </h1>
-                        {events && <UpcomingEvents events={events} />}
+                    {events && <UpcomingEvents events={events} />}
                 </div>
             </section>
-            <section className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
-                <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+            <section className="container dark:bg-transparent">
+                <div className="mx-auto grid justify-center gap-4 grid-cols-2 max-w-screen-lg">
                     <div className="relative overflow-hidden rounded-lg border bg-background p-2">
                         <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                             <div className="space-y-2">
-                                <h3 className="font-bold">Current Parent</h3>
+                                <h3 className="font-bold">Parents</h3>
                                 <p className="text-sm">
                                     I am a parent of a current student at TNS.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative overflow-hidden rounded-lg border bg-background p-2">
-                        <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                            <div className="space-y-2">
-                                <h3 className="font-bold">PTA Member</h3>
-                                <p className="text-sm text-muted-foreground">
-                                    I am a member of the TNS PTA.
                                 </p>
                             </div>
                         </div>
@@ -88,7 +78,8 @@ export default async function IndexPage() {
                         Want to help fund the 2024-2025 school year?
                     </p>
                     <Link
-                        href="#"
+                        href={siteConfig.links.donate}
+                        target="_blank"
                         className={buttonVariants({
                             variant: "default",
                             size: "lg",

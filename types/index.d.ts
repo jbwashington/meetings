@@ -33,6 +33,7 @@ export type SiteConfig = {
   links: {
     twitter: string
     instagram: string
+    donate: string
   }
 }
 

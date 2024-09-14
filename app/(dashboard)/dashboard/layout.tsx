@@ -36,7 +36,6 @@ export default async function DashboardLayout({
             }}
             dict={{
               dashboard: "Dashboard",
-              billing: "Billing",
               settings: "Settings",
               sign_out: "Sign Out",
             }}

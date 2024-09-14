@@ -6,6 +6,7 @@ import { Icons } from "@/components/ui/icons";
 import { UserAuthForm } from "@/components/forms/user-auth-form";
 import { Suspense } from "react";
 import { UserAuthFormSkeleton } from "@/components/user-auth-skeleton";
+import Image from "next/image";
 
 export const metadata = {
     title: "Create an account",
@@ -24,38 +25,25 @@ export default function RegisterPage() {
             >
                 Login
             </Link>
-            <div className="hidden h-full bg-muted lg:block" />
+            <div className="hidden h-full lg:block relative">
+                <Image
+                    src="/images/login.jpg"
+                    alt="TNS Student Art"
+                    fill
+                    className="object-cover"
+                />
+            </div>
             <div className="lg:p-8">
                 <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
-                    <div className="flex flex-col space-y-2 text-center">
-                        <Icons.logo className="mx-auto h-6 w-6" />
+                    <div className="flex flex-col space-y-4 text-center">
+                        <Icons.tnsLogo className="mx-auto h-fit w-full" />
                         <h1 className="text-2xl font-semibold tracking-tight">
                             Create an account
                         </h1>
-                        <p className="text-sm text-muted-foreground">
-                            Enter your email below to create your account
-                        </p>
                     </div>
                     <Suspense fallback={<UserAuthFormSkeleton />}>
                         <UserAuthForm />
                     </Suspense>
-                    <p className="px-8 text-center text-sm text-muted-foreground">
-                        By clicking continue, you agree to our{" "}
-                        <Link
-                            href="/terms"
-                            className="hover:text-brand underline underline-offset-4"
-                        >
-                            Terms of Service
-                        </Link>{" "}
-                        and{" "}
-                        <Link
-                            href="/privacy"
-                            className="hover:text-brand underline underline-offset-4"
-                        >
-                            Privacy Policy
-                        </Link>
-                        .
-                    </p>
                 </div>
             </div>
         </div>

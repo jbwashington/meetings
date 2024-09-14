@@ -1,0 +1,20 @@
+{
+  "title": "2024-2025 PTA Meeting Minutes",
+  "description": "PTA Meeting minutes for 2024-2025",
+  "published": true,
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var f=Object.create;var i=Object.defineProperty;var M=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var p=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var n in e)i(t,n,{get:e[n],enumerable:!0})},a=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of _(e))!g.call(t,o)&&o!==n&&i(t,o,{get:()=>e[o],enumerable:!(s=M(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?f(d(t)):{},a(e||!t||!t.__esModule?i(n,\"default\",{value:t,enumerable:!0}):n,t)),A=t=>a(i({},\"__esModule\",{value:!0}),t);var c=p((P,u)=>{u.exports=_jsx_runtime});var D={};j(D,{default:()=>x,frontmatter:()=>C});var r=l(c()),C={title:\"2024-2025 PTA Meeting Minutes\",description:\"PTA Meeting minutes for 2024-2025\"};function m(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return A(D);})();\n;return Component;"
+  },
+  "_id": "docs/about/meetings/minutes/2024-25.mdx",
+  "_raw": {
+    "sourceFilePath": "docs/about/meetings/minutes/2024-25.mdx",
+    "sourceFileName": "2024-25.mdx",
+    "sourceFileDir": "docs/about/meetings/minutes",
+    "contentType": "mdx",
+    "flattenedPath": "docs/about/meetings/minutes/2024-25"
+  },
+  "type": "Doc",
+  "slug": "/docs/about/meetings/minutes/2024-25",
+  "slugAsParams": "about/meetings/minutes/2024-25"
+}

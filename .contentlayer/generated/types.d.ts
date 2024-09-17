@@ -101,6 +101,33 @@ export type Post = {
   body: MDX
   slug: string
   slugAsParams: string
+}
+
+export type Product = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Product'
+  /** The title of the product */
+  title: string
+  /** The description of the product */
+  description?: string | undefined
+  /** The price of the product */
+  price: number
+  /** The image URLs of the product */
+  images?: string[] | undefined
+  /** The size of the product */
+  size?: 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'OS' | undefined
+  /** The color of the product */
+  color?: string | undefined
+  /** The product ID for usage with Stripe */
+  productId?: string | undefined
+  /** Whether the product is featured or not */
+  featured: boolean
+  /** MDX file body */
+  body: MDX
+  slug: string
+  slugAsParams: string
 }  
 
 /** Nested types */
@@ -111,8 +138,8 @@ export type Post = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Author | Doc | Guide | Page | Post
-export type DocumentTypeNames = 'Author' | 'Doc' | 'Guide' | 'Page' | 'Post'
+export type DocumentTypes = Author | Doc | Guide | Page | Post | Product
+export type DocumentTypeNames = 'Author' | 'Doc' | 'Guide' | 'Page' | 'Post' | 'Product'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -124,6 +151,7 @@ export type DataExports = {
   allGuides: Guide[]
   allPosts: Post[]
   allAuthors: Author[]
+  allProducts: Product[]
 }
 
 
@@ -148,6 +176,7 @@ export type DocumentTypeMap = {
   Guide: Guide
   Page: Page
   Post: Post
+  Product: Product
 }
 
 export type NestedTypeMap = {

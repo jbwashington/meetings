@@ -14,17 +14,17 @@ import docs__documentation__externalResourcesMdx from './docs__documentation__ex
 import docs__documentation__indexMdx from './docs__documentation__index.mdx.json' with { type: 'json' }
 import docs__documentation__styleGuideMdx from './docs__documentation__style-guide.mdx.json' with { type: 'json' }
 import docs__documentation__tnsPtaOperationalManualMdx from './docs__documentation__tns-pta-operational-manual.mdx.json' with { type: 'json' }
+import docs__fundraising__indexMdx from './docs__fundraising__index.mdx.json' with { type: 'json' }
 import docs__events__bakeSaleMdx from './docs__events__bake-sale.mdx.json' with { type: 'json' }
 import docs__events__earthDayMdx from './docs__events__earth-day.mdx.json' with { type: 'json' }
 import docs__events__halloweenMdx from './docs__events__halloween.mdx.json' with { type: 'json' }
 import docs__events__holidayFairMdx from './docs__events__holiday-fair.mdx.json' with { type: 'json' }
 import docs__events__indexMdx from './docs__events__index.mdx.json' with { type: 'json' }
 import docs__events__piDayMdx from './docs__events__pi-day.mdx.json' with { type: 'json' }
-import docs__fundraising__indexMdx from './docs__fundraising__index.mdx.json' with { type: 'json' }
 import docs__about__meetings__indexMdx from './docs__about__meetings__index.mdx.json' with { type: 'json' }
 import docs__about__meetings__minutes__2022_23Mdx from './docs__about__meetings__minutes__2022-23.mdx.json' with { type: 'json' }
 import docs__about__meetings__minutes__2023_24Mdx from './docs__about__meetings__minutes__2023-24.mdx.json' with { type: 'json' }
 import docs__about__meetings__minutes__2024_25Mdx from './docs__about__meetings__minutes__2024-25.mdx.json' with { type: 'json' }
 import docs__about__meetings__minutes__indexMdx from './docs__about__meetings__minutes__index.mdx.json' with { type: 'json' }
 
-export const allDocs = [docs__inProgressMdx, docs__indexMdx, docs__about__committeesMdx, docs__about__electionsMdx, docs__about__executiveBoardMdx, docs__about__faqsMdx, docs__about__indexMdx, docs__about__missionMdx, docs__about__parentEngagementMdx, docs__documentation__bylawsMdx, docs__documentation__externalResourcesMdx, docs__documentation__indexMdx, docs__documentation__styleGuideMdx, docs__documentation__tnsPtaOperationalManualMdx, docs__events__bakeSaleMdx, docs__events__earthDayMdx, docs__events__halloweenMdx, docs__events__holidayFairMdx, docs__events__indexMdx, docs__events__piDayMdx, docs__fundraising__indexMdx, docs__about__meetings__indexMdx, docs__about__meetings__minutes__2022_23Mdx, docs__about__meetings__minutes__2023_24Mdx, docs__about__meetings__minutes__2024_25Mdx, docs__about__meetings__minutes__indexMdx]
+export const allDocs = [docs__inProgressMdx, docs__indexMdx, docs__about__committeesMdx, docs__about__electionsMdx, docs__about__executiveBoardMdx, docs__about__faqsMdx, docs__about__indexMdx, docs__about__missionMdx, docs__about__parentEngagementMdx, docs__documentation__bylawsMdx, docs__documentation__externalResourcesMdx, docs__documentation__indexMdx, docs__documentation__styleGuideMdx, docs__documentation__tnsPtaOperationalManualMdx, docs__fundraising__indexMdx, docs__events__bakeSaleMdx, docs__events__earthDayMdx, docs__events__halloweenMdx, docs__events__holidayFairMdx, docs__events__indexMdx, docs__events__piDayMdx, docs__about__meetings__indexMdx, docs__about__meetings__minutes__2022_23Mdx, docs__about__meetings__minutes__2023_24Mdx, docs__about__meetings__minutes__2024_25Mdx, docs__about__meetings__minutes__indexMdx]

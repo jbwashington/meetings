@@ -51,7 +51,6 @@ export const docsConfig: DocsConfig = {
                 {
                     title: "FAQs",
                     href: "/docs/about/faqs",
-                    disabled: true,
                 },
             ],
         },
@@ -60,18 +59,15 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Introduction",
-                    href: "/docs/in-progress",
-                    disabled: true,
-                },
+                    href: "/docs/fundraising",
+                          },
                 {
                     title: "Templates",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/fundraising/templates",
                 },
                 {
                     title: "Donor Engagement",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/fundraising/donor-engagement",
                 },
             ],
         },
@@ -81,17 +77,14 @@ export const docsConfig: DocsConfig = {
                 {
                     title: "2024-2025",
                     href: "/docs/about/meetings/minutes/2024-25",
-                    disabled: true,
                 },
                 {
                     title: "2023-2024",
                     href: "/docs/about/meetings/minutes/2023-24",
-                    disabled: true,
                 },
                 {
                     title: "2022-2023",
                     href: "/docs/about/meetings/minutes/2022-23",
-                    disabled: true,
                 },
             ],
         },
@@ -100,7 +93,7 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Introduction",
-                    href: "/docs/in-progress",
+                    href: "/docs/documentation",
                 },
                 {
                     title: "Bylaws",
@@ -117,7 +110,6 @@ export const docsConfig: DocsConfig = {
                 {
                     title: "Operational Manual",
                     href: "/docs/documentation/tns-pta-operational-manual",
-                    disabled: true,
                 },
             ],
         },
@@ -126,33 +118,27 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Introduction",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events",
                 },
                 {
                     title: "Bake Sale",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events/bake-sale",
                 },
                 {
                     title: "Earth Day",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events/earth-day",
                 },
                 {
                     title: "Halloween",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events/halloween",
                 },
                 {
                     title: "Holiday Fair",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events/holiday-fair",
                 },
                 {
                     title: "Pi Day",
-                    href: "/docs/in-progress",
-                    disabled: true,
+                    href: "/docs/events/pi-day",
                 },
             ],
         },

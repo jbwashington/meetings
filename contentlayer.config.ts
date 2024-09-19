@@ -20,6 +20,58 @@ const defaultComputedFields: ComputedFields = {
     },
 };
 
+export const Product = defineDocumentType(() => ({
+    name: "Product",
+    filePathPattern: "products/**/*.mdx",
+    contentType: "mdx",
+    fields: {
+        title: {
+            type: "string",
+            description: "The title of the product",
+            required: true,
+        },
+        description: {
+            type: "string",
+            description: "The description of the product",
+        },
+        price: {
+            type: "number",
+            description: "The price of the product",
+            required: true,
+        },
+        images: {
+            type: "list",
+            of: { type: "string" },
+            description: "The image URLs of the product",
+        },
+        size: {
+            type: "enum",
+            options: ["XS", "S", "M", "L", "XL", "XXL", "OS"],
+            description: "The size of the product",
+        },
+        color: {
+            type: "string",
+            description: "The color of the product",
+        },
+        productId: {
+            type: "string",
+            description: "The product ID for usage with Stripe",
+        },
+        featured: {
+            type: "boolean",
+            description: "Whether the product is featured or not",
+            default: false,
+        },
+    },
+    computedFields: {
+        ...defaultComputedFields,
+        slug: {
+            type: "string",
+            resolve: (doc) => `/products/${doc._raw.flattenedPath}`,
+        },
+    },
+}));
+
 export const Doc = defineDocumentType(() => ({
     name: "Doc",
     filePathPattern: `docs/**/*.mdx`,
@@ -167,7 +219,7 @@ export const Page = defineDocumentType(() => ({
 
 export default makeSource({
     contentDirPath: "./content",
-    documentTypes: [Page, Doc, Guide, Post, Author],
+    documentTypes: [Page, Doc, Guide, Post, Author, Product],
     // disableImportAliasWarning: true,
     mdx: {
         remarkPlugins: [remarkGfm],

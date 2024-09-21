@@ -18,9 +18,11 @@ import { useTheme } from "next-themes";
 import { allDocs } from "@/.contentlayer/generated/index.mjs";
 import { useState } from "react";
 import { CircleIcon } from "lucide-react";
+import { CommandLoading } from "cmdk";
 
 export function DocsSearch({ ...props }: DialogProps) {
     const [searchValue, setSearchValue] = useState("");
+    const [loading , setLoading] = useState(false);
 
     const filteredDocs = allDocs
         .map((doc) => ({
@@ -36,12 +38,11 @@ export function DocsSearch({ ...props }: DialogProps) {
                 .includes(searchValue.toLowerCase());
         });
 
-    console.log(filteredDocs);
+    // console.log(filteredDocs);
 
     const router = useRouter();
 
     const [open, setOpen] = useState(false);
-    const { setTheme } = useTheme();
 
     React.useEffect(() => {
         const down = (e: KeyboardEvent) => {
@@ -70,6 +71,12 @@ export function DocsSearch({ ...props }: DialogProps) {
         command();
     }, []);
 
+    const handleSearchValueChange = (value: string) => {
+        setLoading(true);
+        setSearchValue(value);
+        setLoading(false);
+    };
+
     return (
         <>
             <Button
@@ -92,12 +99,15 @@ export function DocsSearch({ ...props }: DialogProps) {
                 <CommandInput
                     value={searchValue}
                     placeholder="Search the docs..."
-                    onValueChange={setSearchValue}
+                    onValueChange={handleSearchValueChange}
                 />
                 <CommandList>
                     {filteredDocs.length === 0 ? (
                         <CommandEmpty>No results found.</CommandEmpty>
-                    ) : (
+                    ) : loading ? (
+                        <CommandLoading>Loading...</CommandLoading>
+                    ) 
+                     : (
                         filteredDocs.map((doc) => (
                             <CommandItem
                                 key={doc.href}

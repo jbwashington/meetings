@@ -24,11 +24,31 @@ import {
     MoonIcon,
     SunIcon,
 } from "lucide-react";
+import { allDocs } from "@/.contentlayer/generated/index.mjs";
+import { useState } from "react";
 
 export function DocsSearch({ ...props }: DialogProps) {
+    const [searchValue, setSearchValue] = useState("");
+
+    const filteredDocs = allDocs
+        .map((doc) => ({
+            title: doc.title,
+            description: doc.description,
+            href: doc.slug,
+            body: doc.body.raw,
+        }))
+        .filter((doc) => {
+            const searchContent = doc.title + doc.description + doc.body;
+            return searchContent
+                .toLowerCase()
+                .includes(searchValue.toLowerCase());
+        });
+
+    console.log(filteredDocs);
+
     const router = useRouter();
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const { setTheme } = useTheme();
 
     React.useEffect(() => {
@@ -58,16 +78,7 @@ export function DocsSearch({ ...props }: DialogProps) {
         command();
     }, []);
 
-    //   function onSubmit(event: React.SyntheticEvent) {
-    //     event.preventDefault()
-
-    //     return toast({
-    //       title: "Not implemented",
-    //       description: "We're still working on the search.",
-    //     })
-    //   }
-
-    const tableOfContents = docsConfig.mainNav.concat(docsConfig.sidebarNav);
+    // const tableOfContents = docsConfig.mainNav.concat(docsConfig.sidebarNav);
 
     return (
         <>
@@ -88,55 +99,32 @@ export function DocsSearch({ ...props }: DialogProps) {
                 </kbd>
             </Button>
             <CommandDialog open={open} onOpenChange={setOpen}>
-                <CommandInput placeholder="Type a command or search..." />
+                <CommandInput
+                    value={searchValue}
+                    placeholder="Search the docs..."
+                    onValueChange={setSearchValue}
+                />
                 <CommandList>
-                    <CommandEmpty>No results found.</CommandEmpty>
-                    {tableOfContents.map((group) => (
-                        <CommandGroup key={group.title} heading={group.title}>
-                            {group.items &&
-                                group.items.map((navItem) => (
-                                    <CommandItem
-                                        key={navItem.href}
-                                        value={navItem.title}
-                                        onSelect={() => {
-                                            runCommand(() =>
-                                                router.push(
-                                                    navItem.href as string
-                                                )
-                                            );
-                                        }}
-                                    >
-                                        <div className="mr-2 flex h-4 w-4 items-center justify-center">
-                                            <CircleIcon className="h-3 w-3" />
-                                        </div>
-                                        {navItem.title}
-                                    </CommandItem>
-                                ))}
-                        </CommandGroup>
-                    ))}
-                    <CommandSeparator />
-                    <CommandGroup heading="Theme">
-                        <CommandItem
-                            onSelect={() => runCommand(() => setTheme("light"))}
-                        >
-                            <SunIcon className="mr-2 h-4 w-4" />
-                            Light
-                        </CommandItem>
-                        <CommandItem
-                            onSelect={() => runCommand(() => setTheme("dark"))}
-                        >
-                            <MoonIcon className="mr-2 h-4 w-4" />
-                            Dark
-                        </CommandItem>
-                        <CommandItem
-                            onSelect={() =>
-                                runCommand(() => setTheme("system"))
-                            }
-                        >
-                            <LaptopIcon className="mr-2 h-4 w-4" />
-                            System
-                        </CommandItem>
-                    </CommandGroup>
+                    {filteredDocs.length === 0 ? (
+                        <CommandEmpty>No results found.</CommandEmpty>
+                    ) : (
+                        filteredDocs.map((doc) => (
+                            <CommandItem
+                                key={doc.href}
+                                value={doc.title}
+                                onSelect={() => {
+                                    runCommand(() =>
+                                        router.push(doc.href as string)
+                                    );
+                                }}
+                            >
+                                <div className="mr-2 flex h-4 w-4 items-center justify-center">
+                                    <CircleIcon className="h-3 w-3" />
+                                </div>
+                                {doc.title}
+                            </CommandItem>
+                        ))
+                    )}
                 </CommandList>
             </CommandDialog>
         </>

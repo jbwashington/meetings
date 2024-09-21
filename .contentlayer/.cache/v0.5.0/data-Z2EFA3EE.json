@@ -55,6 +55,54 @@
       "hasWarnings": false,
       "documentTypeName": "Post"
     },
+    "pages/privacy.mdx": {
+      "document": {
+        "title": "Privacy",
+        "description": "The Privacy Policy for TNS Knowledge Base.",
+        "body": {
+          "raw": "\nBlandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\n\n## Consent\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Information we collect\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\n\n## How we use your Information\n\nUt sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.",
+          "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,q=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var a in e)s(i,a,{get:e[a],enumerable:!0})},o=(i,e,a,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of h(e))!q.call(i,t)&&t!==a&&s(i,t,{get:()=>e[t],enumerable:!(r=p(e,t))||r.enumerable});return i};var b=(i,e,a)=>(a=i!=null?d(g(i)):{},o(e||!i||!i.__esModule?s(a,\"default\",{value:i,enumerable:!0}):a,i)),w=i=>o(s({},\"__esModule\",{value:!0}),i);var u=f((y,c)=>{c.exports=_jsx_runtime});var N={};v(N,{default:()=>m,frontmatter:()=>x});var n=b(u()),x={title:\"Privacy\",description:\"The Privacy Policy for TNS Knowledge Base.\"};function l(i){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Blandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"consent\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#consent\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Consent\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"information-we-collect\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#information-we-collect\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Information we collect\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"how-we-use-your-information\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#how-we-use-your-information\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"How we use your Information\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.\"})]})}function m(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(l,{...i})}):l(i)}return w(N);})();\n;return Component;"
+        },
+        "_id": "pages/privacy.mdx",
+        "_raw": {
+          "sourceFilePath": "pages/privacy.mdx",
+          "sourceFileName": "privacy.mdx",
+          "sourceFileDir": "pages",
+          "contentType": "mdx",
+          "flattenedPath": "pages/privacy"
+        },
+        "type": "Page",
+        "slug": "/pages/privacy",
+        "slugAsParams": "privacy"
+      },
+      "documentHash": "1725988259389",
+      "hasWarnings": false,
+      "documentTypeName": "Page"
+    },
+    "pages/terms.mdx": {
+      "document": {
+        "title": "Terms & Conditions",
+        "description": "Read our terms and conditions.",
+        "body": {
+          "raw": "\nLorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\n## Legal Notices\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Warranty Disclaimer\n\nTellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\n\nNisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\n\n## General\n\nMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\nSed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\n\n## Disclaimer\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.",
+          "code": "var Component=(()=>{var d=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),q=(a,e)=>{for(var s in e)t(a,s,{get:e[s],enumerable:!0})},r=(a,e,s,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of h(e))!v.call(a,n)&&n!==s&&t(a,n,{get:()=>e[n],enumerable:!(u=p(e,n))||u.enumerable});return a};var f=(a,e,s)=>(s=a!=null?d(g(a)):{},r(e||!a||!a.__esModule?t(s,\"default\",{value:a,enumerable:!0}):s,a)),N=a=>r(t({},\"__esModule\",{value:!0}),a);var c=b((j,l)=>{l.exports=_jsx_runtime});var k={};q(k,{default:()=>o,frontmatter:()=>x});var i=f(c()),x={title:\"Terms & Conditions\",description:\"Read our terms and conditions.\"};function m(a){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...a.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.p,{children:\"Lorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"legal-notices\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#legal-notices\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Legal Notices\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"warranty-disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#warranty-disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Warranty Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Tellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"general\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#general\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"General\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Magna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Sed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.\"})]})}function o(a={}){let{wrapper:e}=a.components||{};return e?(0,i.jsx)(e,{...a,children:(0,i.jsx)(m,{...a})}):m(a)}return N(k);})();\n;return Component;"
+        },
+        "_id": "pages/terms.mdx",
+        "_raw": {
+          "sourceFilePath": "pages/terms.mdx",
+          "sourceFileName": "terms.mdx",
+          "sourceFileDir": "pages",
+          "contentType": "mdx",
+          "flattenedPath": "pages/terms"
+        },
+        "type": "Page",
+        "slug": "/pages/terms",
+        "slugAsParams": "terms"
+      },
+      "documentHash": "1725988259389",
+      "hasWarnings": false,
+      "documentTypeName": "Page"
+    },
     "guides/school-streets-for-tns.mdx": {
       "document": {
         "title": "School Streets for TNS",
@@ -108,104 +156,6 @@
       "documentHash": "1726117000244",
       "hasWarnings": false,
       "documentTypeName": "Guide"
-    },
-    "docs/in-progress.mdx": {
-      "document": {
-        "title": "Not Implemented",
-        "description": "This page is in progress.",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page, it means I'm still working on it.\n\n</Callout>",
-          "code": "var Component=(()=>{var u=Object.create;var i=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var h=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),_=(t,e)=>{for(var o in e)i(t,o,{get:e[o],enumerable:!0})},c=(t,e,o,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of f(e))!g.call(t,n)&&n!==o&&i(t,n,{get:()=>e[n],enumerable:!(s=d(e,n))||s.enumerable});return t};var w=(t,e,o)=>(o=t!=null?u(x(t)):{},c(e||!t||!t.__esModule?i(o,\"default\",{value:t,enumerable:!0}):o,t)),y=t=>c(i({},\"__esModule\",{value:!0}),t);var m=h((I,p)=>{p.exports=_jsx_runtime});var M={};_(M,{default:()=>l,frontmatter:()=>j});var r=w(m()),j={title:\"Not Implemented\",description:\"This page is in progress.\"};function a(t){let e={p:\"p\",...t.components},{Callout:o}=e;return o||C(\"Callout\",!0),(0,r.jsx)(o,{children:(0,r.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page, it means I'm still working on it.\"})})}function l(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(a,{...t})}):a(t)}function C(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(M);})();\n;return Component;"
-        },
-        "_id": "docs/in-progress.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/in-progress.mdx",
-          "sourceFileName": "in-progress.mdx",
-          "sourceFileDir": "docs",
-          "contentType": "mdx",
-          "flattenedPath": "docs/in-progress"
-        },
-        "type": "Doc",
-        "slug": "/docs/in-progress",
-        "slugAsParams": "in-progress"
-      },
-      "documentHash": "1725988259388",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/index.mdx": {
-      "document": {
-        "title": "Introduction",
-        "description": "Welcome to The Neighborhood School Knowledge Base",
-        "published": true,
-        "body": {
-          "raw": "\nThe goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\n\nWe hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.\n\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n## Getting Started\n\nSelect a topic below to learn more.\n\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n\n<Card href=\"/docs/about\">\n\n### About Us\n\nBoard Members, Schedule, 2024-2025 Agenda, minutes, and more.\n\n</Card>\n\n\n<Card href=\"/docs/events\">\n\n### Events\n\nEverything you need to know about our events and how to get involved.\n\n</Card>\n\n<Card href=\"/docs/fundraising\">\n\n### Fundraising\n\nGrants, merch, donations, and where the money goes.\n\n</Card>\n\n<Card href=\"/docs/documentation\">\n\n### Documents, forms, external links, and miscellaneous resources. \n\nAll the paperwork goes here.\n\n</Card>\n\n<Card href=\"/blog\">\n\n### Our Beliefs\n\nOnce we write them down on the internet, they become true.\n\n</Card>\n\n</div>",
-          "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var k=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var i in e)s(o,i,{get:e[i],enumerable:!0})},t=(o,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of p(e))!b.call(o,a)&&a!==i&&s(o,a,{get:()=>e[a],enumerable:!(r=f(e,a))||r.enumerable});return o};var v=(o,e,i)=>(i=o!=null?m(g(o)):{},t(e||!o||!o.__esModule?s(i,\"default\",{value:o,enumerable:!0}):i,o)),x=o=>t(s({},\"__esModule\",{value:!0}),o);var l=k((L,c)=>{c.exports=_jsx_runtime});var y={};w(y,{default:()=>u,frontmatter:()=>N});var n=v(l()),N={title:\"Introduction\",description:\"Welcome to The Neighborhood School Knowledge Base\"};function d(o){let e={a:\"a\",h2:\"h2\",h3:\"h3\",p:\"p\",span:\"span\",...o.components},{Callout:i,Card:r}=e;return i||h(\"Callout\",!0),r||h(\"Card\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"The goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\"}),`\n`,(0,n.jsx)(e.p,{children:\"We hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.\"}),`\n`,(0,n.jsx)(i,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"getting-started\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#getting-started\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Getting Started\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Select a topic below to learn more.\"}),`\n`,(0,n.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,n.jsxs)(r,{href:\"/docs/about\",children:[(0,n.jsxs)(e.h3,{id:\"about-us\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#about-us\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"About Us\"]}),(0,n.jsx)(e.p,{children:\"Board Members, Schedule, 2024-2025 Agenda, minutes, and more.\"})]}),(0,n.jsxs)(r,{href:\"/docs/events\",children:[(0,n.jsxs)(e.h3,{id:\"events\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#events\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Events\"]}),(0,n.jsx)(e.p,{children:\"Everything you need to know about our events and how to get involved.\"})]}),(0,n.jsxs)(r,{href:\"/docs/fundraising\",children:[(0,n.jsxs)(e.h3,{id:\"fundraising\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#fundraising\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Fundraising\"]}),(0,n.jsx)(e.p,{children:\"Grants, merch, donations, and where the money goes.\"})]}),(0,n.jsxs)(r,{href:\"/docs/documentation\",children:[(0,n.jsxs)(e.h3,{id:\"documents-forms-external-links-and-miscellaneous-resources\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#documents-forms-external-links-and-miscellaneous-resources\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Documents, forms, external links, and miscellaneous resources.\"]}),(0,n.jsx)(e.p,{children:\"All the paperwork goes here.\"})]}),(0,n.jsxs)(r,{href:\"/blog\",children:[(0,n.jsxs)(e.h3,{id:\"our-beliefs\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#our-beliefs\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Our Beliefs\"]}),(0,n.jsx)(e.p,{children:\"Once we write them down on the internet, they become true.\"})]})]})]})}function u(o={}){let{wrapper:e}=o.components||{};return e?(0,n.jsx)(e,{...o,children:(0,n.jsx)(d,{...o})}):d(o)}function h(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(y);})();\n;return Component;"
-        },
-        "_id": "docs/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs",
-          "contentType": "mdx",
-          "flattenedPath": "docs"
-        },
-        "type": "Doc",
-        "slug": "/docs",
-        "slugAsParams": ""
-      },
-      "documentHash": "1726708126121",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "pages/privacy.mdx": {
-      "document": {
-        "title": "Privacy",
-        "description": "The Privacy Policy for TNS Knowledge Base.",
-        "body": {
-          "raw": "\nBlandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\n\n## Consent\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Information we collect\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\n\n## How we use your Information\n\nUt sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.",
-          "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,q=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var a in e)s(i,a,{get:e[a],enumerable:!0})},o=(i,e,a,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of h(e))!q.call(i,t)&&t!==a&&s(i,t,{get:()=>e[t],enumerable:!(r=p(e,t))||r.enumerable});return i};var b=(i,e,a)=>(a=i!=null?d(g(i)):{},o(e||!i||!i.__esModule?s(a,\"default\",{value:i,enumerable:!0}):a,i)),w=i=>o(s({},\"__esModule\",{value:!0}),i);var u=f((y,c)=>{c.exports=_jsx_runtime});var N={};v(N,{default:()=>m,frontmatter:()=>x});var n=b(u()),x={title:\"Privacy\",description:\"The Privacy Policy for TNS Knowledge Base.\"};function l(i){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Blandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"consent\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#consent\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Consent\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"information-we-collect\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#information-we-collect\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Information we collect\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"how-we-use-your-information\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#how-we-use-your-information\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"How we use your Information\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.\"})]})}function m(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(l,{...i})}):l(i)}return w(N);})();\n;return Component;"
-        },
-        "_id": "pages/privacy.mdx",
-        "_raw": {
-          "sourceFilePath": "pages/privacy.mdx",
-          "sourceFileName": "privacy.mdx",
-          "sourceFileDir": "pages",
-          "contentType": "mdx",
-          "flattenedPath": "pages/privacy"
-        },
-        "type": "Page",
-        "slug": "/pages/privacy",
-        "slugAsParams": "privacy"
-      },
-      "documentHash": "1725988259389",
-      "hasWarnings": false,
-      "documentTypeName": "Page"
-    },
-    "pages/terms.mdx": {
-      "document": {
-        "title": "Terms & Conditions",
-        "description": "Read our terms and conditions.",
-        "body": {
-          "raw": "\nLorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\n## Legal Notices\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Warranty Disclaimer\n\nTellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\n\nNisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\n\n## General\n\nMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\nSed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\n\n## Disclaimer\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.",
-          "code": "var Component=(()=>{var d=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),q=(a,e)=>{for(var s in e)t(a,s,{get:e[s],enumerable:!0})},r=(a,e,s,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of h(e))!v.call(a,n)&&n!==s&&t(a,n,{get:()=>e[n],enumerable:!(u=p(e,n))||u.enumerable});return a};var f=(a,e,s)=>(s=a!=null?d(g(a)):{},r(e||!a||!a.__esModule?t(s,\"default\",{value:a,enumerable:!0}):s,a)),N=a=>r(t({},\"__esModule\",{value:!0}),a);var c=b((j,l)=>{l.exports=_jsx_runtime});var k={};q(k,{default:()=>o,frontmatter:()=>x});var i=f(c()),x={title:\"Terms & Conditions\",description:\"Read our terms and conditions.\"};function m(a){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...a.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.p,{children:\"Lorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"legal-notices\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#legal-notices\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Legal Notices\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"warranty-disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#warranty-disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Warranty Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Tellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"general\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#general\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"General\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Magna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Sed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.\"})]})}function o(a={}){let{wrapper:e}=a.components||{};return e?(0,i.jsx)(e,{...a,children:(0,i.jsx)(m,{...a})}):m(a)}return N(k);})();\n;return Component;"
-        },
-        "_id": "pages/terms.mdx",
-        "_raw": {
-          "sourceFilePath": "pages/terms.mdx",
-          "sourceFileName": "terms.mdx",
-          "sourceFileDir": "pages",
-          "contentType": "mdx",
-          "flattenedPath": "pages/terms"
-        },
-        "type": "Page",
-        "slug": "/pages/terms",
-        "slugAsParams": "terms"
-      },
-      "documentHash": "1725988259389",
-      "hasWarnings": false,
-      "documentTypeName": "Page"
     },
     "docs/about/committees.mdx": {
       "document": {
@@ -307,31 +257,6 @@
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
-    "docs/about/index.mdx": {
-      "document": {
-        "title": "About the TNS PTA",
-        "description": "Mission, values, and vision.",
-        "published": true,
-        "body": {
-          "raw": "\nClick on a section below to learn about the TNS PTA.\n\n<div className=\"grid gap-4 mt-6\">\n\n<Card href=\"/docs/about/meetings\">\n\n### PTA Meetings\n\nMeeting schedule, documentation, minutes, and more.\n\n</Card>\n\n<Card href=\"/docs/about/executive-board\">\n\n### Executive Board\n\nContact information and roles for PTA Executive Board Members.\n\n</Card>\n\n<Card href=\"/docs/about/mission\">\n\n### Mission and Values\n\nWhat TNS PTA stands for.\n\n</Card>\n\n<Card href=\"/docs/about/committees\">\n\n### PTA Committees\n\nAll the committees and their roles.\n\n</Card>\n\n<Card href=\"/docs/about/faqs\">\n\n### Frequently Asked Questions\n\nUpdated with answers to common questions.\n\n</Card>\n\n</div>",
-          "code": "var Component=(()=>{var m=Object.create;var t=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var g=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),x=(i,e)=>{for(var a in e)t(i,a,{get:e[a],enumerable:!0})},c=(i,e,a,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of p(e))!b.call(i,s)&&s!==a&&t(i,s,{get:()=>e[s],enumerable:!(o=u(e,s))||o.enumerable});return i};var k=(i,e,a)=>(a=i!=null?m(f(i)):{},c(e||!i||!i.__esModule?t(a,\"default\",{value:i,enumerable:!0}):a,i)),N=i=>c(t({},\"__esModule\",{value:!0}),i);var d=g((_,r)=>{r.exports=_jsx_runtime});var M={};x(M,{default:()=>h,frontmatter:()=>v});var n=k(d()),v={title:\"About the TNS PTA\",description:\"Mission, values, and vision.\"};function l(i){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...i.components},{Card:a}=e;return a||A(\"Card\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Click on a section below to learn about the TNS PTA.\"}),`\n`,(0,n.jsxs)(\"div\",{className:\"grid gap-4 mt-6\",children:[(0,n.jsxs)(a,{href:\"/docs/about/meetings\",children:[(0,n.jsxs)(e.h3,{id:\"pta-meetings\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pta-meetings\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"PTA Meetings\"]}),(0,n.jsx)(e.p,{children:\"Meeting schedule, documentation, minutes, and more.\"})]}),(0,n.jsxs)(a,{href:\"/docs/about/executive-board\",children:[(0,n.jsxs)(e.h3,{id:\"executive-board\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#executive-board\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Executive Board\"]}),(0,n.jsx)(e.p,{children:\"Contact information and roles for PTA Executive Board Members.\"})]}),(0,n.jsxs)(a,{href:\"/docs/about/mission\",children:[(0,n.jsxs)(e.h3,{id:\"mission-and-values\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#mission-and-values\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Mission and Values\"]}),(0,n.jsx)(e.p,{children:\"What TNS PTA stands for.\"})]}),(0,n.jsxs)(a,{href:\"/docs/about/committees\",children:[(0,n.jsxs)(e.h3,{id:\"pta-committees\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pta-committees\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"PTA Committees\"]}),(0,n.jsx)(e.p,{children:\"All the committees and their roles.\"})]}),(0,n.jsxs)(a,{href:\"/docs/about/faqs\",children:[(0,n.jsxs)(e.h3,{id:\"frequently-asked-questions\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#frequently-asked-questions\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Frequently Asked Questions\"]}),(0,n.jsx)(e.p,{children:\"Updated with answers to common questions.\"})]})]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(l,{...i})}):l(i)}function A(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return N(M);})();\n;return Component;"
-        },
-        "_id": "docs/about/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about"
-        },
-        "type": "Doc",
-        "slug": "/docs/about",
-        "slugAsParams": "about"
-      },
-      "documentHash": "1726707487182",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
     "docs/about/mission.mdx": {
       "document": {
         "title": "TNS Mission",
@@ -429,31 +354,6 @@
         "slugAsParams": "documentation/external-resources"
       },
       "documentHash": "1726117000242",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/documentation/index.mdx": {
-      "document": {
-        "title": "Documentation",
-        "description": "Bylaws, visual style guide, and other resources.",
-        "published": true,
-        "body": {
-          "raw": "\n<div className=\"grid gap-4 mt-6\">\n\n<Card href=\"/docs/documentation/external-resources\">\n\n### External Links\n\nHelpful resources from the NYC DOE and other organizations.\n\n</Card>\n<Card href=\"/docs/documentation/bylaws\">\n\n### PTA Bylaws\n\nHow the PTA is governed.\n\n</Card>\n\n<Card href=\"/docs/documentation/style-guide\">\n\n### Style Guide\n\nHow things should look at TNS.\n\n</Card>\n\n<Card href=\"/docs/documentation/tns-pta-operational-manual\">\n\n### Operational Manual (2020)\n\nEstablished processes and procedures.\n\n</Card>\n\n\n</div>",
-          "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),b=(n,e)=>{for(var i in e)s(n,i,{get:e[i],enumerable:!0})},r=(n,e,i,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of m(e))!g.call(n,o)&&o!==i&&s(n,o,{get:()=>e[o],enumerable:!(t=p(e,o))||t.enumerable});return n};var k=(n,e,i)=>(i=n!=null?u(f(n)):{},r(e||!n||!n.__esModule?s(i,\"default\",{value:n,enumerable:!0}):i,n)),y=n=>r(s({},\"__esModule\",{value:!0}),n);var c=x((L,l)=>{l.exports=_jsx_runtime});var _={};b(_,{default:()=>h,frontmatter:()=>N});var a=k(c()),N={title:\"Documentation\",description:\"Bylaws, visual style guide, and other resources.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Card:i}=e;return i||w(\"Card\",!0),(0,a.jsxs)(\"div\",{className:\"grid gap-4 mt-6\",children:[(0,a.jsxs)(i,{href:\"/docs/documentation/external-resources\",children:[(0,a.jsxs)(e.h3,{id:\"external-links\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#external-links\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"External Links\"]}),(0,a.jsx)(e.p,{children:\"Helpful resources from the NYC DOE and other organizations.\"})]}),(0,a.jsxs)(i,{href:\"/docs/documentation/bylaws\",children:[(0,a.jsxs)(e.h3,{id:\"pta-bylaws\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pta-bylaws\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"PTA Bylaws\"]}),(0,a.jsx)(e.p,{children:\"How the PTA is governed.\"})]}),(0,a.jsxs)(i,{href:\"/docs/documentation/style-guide\",children:[(0,a.jsxs)(e.h3,{id:\"style-guide\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#style-guide\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Style Guide\"]}),(0,a.jsx)(e.p,{children:\"How things should look at TNS.\"})]}),(0,a.jsxs)(i,{href:\"/docs/documentation/tns-pta-operational-manual\",children:[(0,a.jsxs)(e.h3,{id:\"operational-manual-2020\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#operational-manual-2020\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Operational Manual (2020)\"]}),(0,a.jsx)(e.p,{children:\"Established processes and procedures.\"})]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}function w(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(_);})();\n;return Component;"
-        },
-        "_id": "docs/documentation/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/documentation/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/documentation",
-          "contentType": "mdx",
-          "flattenedPath": "docs/documentation"
-        },
-        "type": "Doc",
-        "slug": "/docs/documentation",
-        "slugAsParams": "documentation"
-      },
-      "documentHash": "1726709034977",
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
@@ -607,31 +507,6 @@
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
-    "docs/events/index.mdx": {
-      "document": {
-        "title": "PTA Events",
-        "description": "Event details, contacts, and registration information for the PTA.",
-        "published": true,
-        "body": {
-          "raw": "\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n\n<Card href=\"/docs/events/bake-sale\">\n\n### Bake Sale\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/earth-day\">\n\n### Earth Day\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/halloween\">\n\n### Halloween\n\nOctober 31\n\n</Card>\n\n<Card href=\"/docs/events/holiday-fair\">\n\n### Holiday Fair \n\nDecember ???\n\n</Card>\n\n<Card href=\"docs/events/pi-day\">\n\n### Pi Day\n\nMarch 14 \n\n</Card>\n\n</div>",
-          "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var b=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var u=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var i in e)c(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!k.call(n,r)&&r!==i&&c(n,r,{get:()=>e[r],enumerable:!(o=f(e,r))||o.enumerable});return n};var g=(n,e,i)=>(i=n!=null?p(b(n)):{},s(e||!n||!n.__esModule?c(i,\"default\",{value:n,enumerable:!0}):i,n)),x=n=>s(c({},\"__esModule\",{value:!0}),n);var t=u((j,l)=>{l.exports=_jsx_runtime});var w={};y(w,{default:()=>h,frontmatter:()=>N});var a=g(t()),N={title:\"PTA Events\",description:\"Event details, contacts, and registration information for the PTA.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Card:i}=e;return i||v(\"Card\",!0),(0,a.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,a.jsxs)(i,{href:\"/docs/events/bake-sale\",children:[(0,a.jsxs)(e.h3,{id:\"bake-sale\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#bake-sale\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Bake Sale\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/earth-day\",children:[(0,a.jsxs)(e.h3,{id:\"earth-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#earth-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Earth Day\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/halloween\",children:[(0,a.jsxs)(e.h3,{id:\"halloween\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#halloween\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Halloween\"]}),(0,a.jsx)(e.p,{children:\"October 31\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/holiday-fair\",children:[(0,a.jsxs)(e.h3,{id:\"holiday-fair\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#holiday-fair\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Holiday Fair\"]}),(0,a.jsx)(e.p,{children:\"December ???\"})]}),(0,a.jsxs)(i,{href:\"docs/events/pi-day\",children:[(0,a.jsxs)(e.h3,{id:\"pi-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pi-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Pi Day\"]}),(0,a.jsx)(e.p,{children:\"March 14\"})]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}function v(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(w);})();\n;return Component;"
-        },
-        "_id": "docs/events/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events"
-        },
-        "type": "Doc",
-        "slug": "/docs/events",
-        "slugAsParams": "events"
-      },
-      "documentHash": "1726708371590",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
     "docs/events/pi-day.mdx": {
       "document": {
         "title": "Pi Day",
@@ -682,31 +557,6 @@
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
-    "docs/fundraising/index.mdx": {
-      "document": {
-        "title": "Fundraising",
-        "description": "all about Fundraising",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n\n",
-          "code": "var Component=(()=>{var p=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var w=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),_=(t,e)=>{for(var n in e)i(t,n,{get:e[n],enumerable:!0})},c=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&i(t,o,{get:()=>e[o],enumerable:!(s=m(e,o))||s.enumerable});return t};var h=(t,e,n)=>(n=t!=null?p(x(t)):{},c(e||!t||!t.__esModule?i(n,\"default\",{value:t,enumerable:!0}):n,t)),k=t=>c(i({},\"__esModule\",{value:!0}),t);var u=w((M,a)=>{a.exports=_jsx_runtime});var j={};_(j,{default:()=>d,frontmatter:()=>y});var r=h(u()),y={title:\"Fundraising\",description:\"all about Fundraising\"};function l(t){let e={p:\"p\",...t.components},{Callout:n}=e;return n||b(\"Callout\",!0),(0,r.jsx)(n,{children:(0,r.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(l,{...t})}):l(t)}function b(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(j);})();\n;return Component;"
-        },
-        "_id": "docs/fundraising/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/fundraising/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/fundraising",
-          "contentType": "mdx",
-          "flattenedPath": "docs/fundraising"
-        },
-        "type": "Doc",
-        "slug": "/docs/fundraising",
-        "slugAsParams": "fundraising"
-      },
-      "documentHash": "1726117000244",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
     "docs/fundraising/templates.mdx": {
       "document": {
         "title": "Templates",
@@ -729,31 +579,6 @@
         "slugAsParams": "fundraising/templates"
       },
       "documentHash": "1726710021199",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/meetings/index.mdx": {
-      "document": {
-        "title": "PTA Meetings",
-        "description": "All about meetings",
-        "published": true,
-        "body": {
-          "raw": "\n",
-          "code": "var Component=(()=>{var f=Object.create;var a=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var p=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),M=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of _(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(i=l(e,o))||i.enumerable});return t};var j=(t,e,n)=>(n=t!=null?f(d(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),A=t=>s(a({},\"__esModule\",{value:!0}),t);var m=p((X,c)=>{c.exports=_jsx_runtime});var D={};M(D,{default:()=>x,frontmatter:()=>C});var r=j(m()),C={title:\"PTA Meetings\",description:\"All about meetings\"};function u(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(u,{...t})}):u(t)}return A(D);})();\n;return Component;"
-        },
-        "_id": "docs/about/meetings/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/meetings/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/about/meetings",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/meetings"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/meetings",
-        "slugAsParams": "about/meetings"
-      },
-      "documentHash": "1726117000241",
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
@@ -829,31 +654,6 @@
         "slugAsParams": "about/meetings/minutes/2024-25"
       },
       "documentHash": "1726710391095",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/meetings/minutes/index.mdx": {
-      "document": {
-        "title": "PTA Meeting Minutes",
-        "description": "Archived PTA Meeting minutes",
-        "published": true,
-        "body": {
-          "raw": "\n<div className=\"grid gap-4 mt-6\">\n<Card href=\"/docs/about/meetings/minutes/2024-2025\">\n\n### 2024-2025\n\n</Card>\n\n<Card href=\"/docs/about/meetings/minutes/2023-2024\">\n\n### 2023-2024\n\n</Card>\n\n<Card href=\"/docs/about/meetings/minutes/2022-2023\">\n\n### 2022-2023\n\n</Card>\n\n<Card href=\"/docs/about/meetings/minutes/2021-2022\">\n\n### 2021-2022\n\n</Card>\n\n</div>",
-          "code": "var Component=(()=>{var m=Object.create;var t=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var g=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var a in e)t(n,a,{get:e[a],enumerable:!0})},c=(n,e,a,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of f(e))!b.call(n,s)&&s!==a&&t(n,s,{get:()=>e[s],enumerable:!(o=u(e,s))||o.enumerable});return n};var k=(n,e,a)=>(a=n!=null?m(p(n)):{},c(e||!n||!n.__esModule?t(a,\"default\",{value:n,enumerable:!0}):a,n)),N=n=>c(t({},\"__esModule\",{value:!0}),n);var d=g((C,r)=>{r.exports=_jsx_runtime});var j={};x(j,{default:()=>h,frontmatter:()=>M});var i=k(d()),M={title:\"PTA Meeting Minutes\",description:\"Archived PTA Meeting minutes\"};function l(n){let e={a:\"a\",h3:\"h3\",span:\"span\",...n.components},{Card:a}=e;return a||_(\"Card\",!0),(0,i.jsxs)(\"div\",{className:\"grid gap-4 mt-6\",children:[(0,i.jsx)(a,{href:\"/docs/about/meetings/minutes/2024-2025\",children:(0,i.jsxs)(e.h3,{id:\"2024-2025\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2024-2025\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"2024-2025\"]})}),(0,i.jsx)(a,{href:\"/docs/about/meetings/minutes/2023-2024\",children:(0,i.jsxs)(e.h3,{id:\"2023-2024\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2023-2024\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"2023-2024\"]})}),(0,i.jsx)(a,{href:\"/docs/about/meetings/minutes/2022-2023\",children:(0,i.jsxs)(e.h3,{id:\"2022-2023\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2022-2023\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"2022-2023\"]})}),(0,i.jsx)(a,{href:\"/docs/about/meetings/minutes/2021-2022\",children:(0,i.jsxs)(e.h3,{id:\"2021-2022\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2021-2022\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"2021-2022\"]})})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(l,{...n})}):l(n)}function _(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return N(j);})();\n;return Component;"
-        },
-        "_id": "docs/about/meetings/minutes/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/meetings/minutes/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/about/meetings/minutes",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/meetings/minutes"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/meetings/minutes",
-        "slugAsParams": "about/meetings/minutes"
-      },
-      "documentHash": "1726117000242",
       "hasWarnings": false,
       "documentTypeName": "Doc"
     }

@@ -67,7 +67,7 @@ export function DocsSearch({ ...props }: DialogProps) {
     //     })
     //   }
 
-    const tableOfContents = docsConfig.mainNav.concat(docsConfig.sidebarNav)
+    const tableOfContents = docsConfig.mainNav.concat(docsConfig.sidebarNav);
 
     return (
         <>

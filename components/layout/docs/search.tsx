@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-// import { toast } from "@/components/ui/use-toast"
 import { DialogProps } from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,18 +13,11 @@ import {
     CommandList,
     CommandSeparator,
 } from "@/components/ui/command";
-import { docsConfig } from "@/config/docs";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import {
-    CircleIcon,
-    FileIcon,
-    LaptopIcon,
-    MoonIcon,
-    SunIcon,
-} from "lucide-react";
 import { allDocs } from "@/.contentlayer/generated/index.mjs";
 import { useState } from "react";
+import { CircleIcon } from "lucide-react";
 
 export function DocsSearch({ ...props }: DialogProps) {
     const [searchValue, setSearchValue] = useState("");
@@ -77,8 +69,6 @@ export function DocsSearch({ ...props }: DialogProps) {
         setOpen(false);
         command();
     }, []);
-
-    // const tableOfContents = docsConfig.mainNav.concat(docsConfig.sidebarNav);
 
     return (
         <>

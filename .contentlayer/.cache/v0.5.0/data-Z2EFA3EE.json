@@ -25,6 +25,36 @@
       "hasWarnings": false,
       "documentTypeName": "Author"
     },
+    "blog/examining-standardized-testing-and-how-to-opt-out.mdx": {
+      "document": {
+        "title": "Examining Standardized Testing",
+        "description": "Shining a spotlight on standardized testing.",
+        "date": "2024-09-10T00:00:00.000Z",
+        "published": true,
+        "image": "/images/blog/standardized-testing.png",
+        "authors": [
+          "jbwashington"
+        ],
+        "body": {
+          "raw": "\n<Callout>\n  Coming soon!\n</Callout>\n",
+          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var h=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},a=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of u(n))!x.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var j=(t,n,e)=>(e=t!=null?p(f(t)):{},a(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>a(r({},\"__esModule\",{value:!0}),t);var c=h((z,d)=>{d.exports=_jsx_runtime});var M={};_(M,{default:()=>m,frontmatter:()=>b});var i=j(c()),b={title:\"Examining Standardized Testing\",description:\"Shining a spotlight on standardized testing.\",image:\"/images/blog/standardized-testing.png\",date:\"2024-09-10\",authors:[\"jbwashington\"]};function g(t){let n={p:\"p\",...t.components},{Callout:e}=n;return e||w(\"Callout\",!0),(0,i.jsx)(e,{children:(0,i.jsx)(n.p,{children:\"Coming soon!\"})})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,i.jsx)(n,{...t,children:(0,i.jsx)(g,{...t})}):g(t)}function w(t,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return C(M);})();\n;return Component;"
+        },
+        "_id": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
+        "_raw": {
+          "sourceFilePath": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
+          "sourceFileName": "examining-standardized-testing-and-how-to-opt-out.mdx",
+          "sourceFileDir": "blog",
+          "contentType": "mdx",
+          "flattenedPath": "blog/examining-standardized-testing-and-how-to-opt-out"
+        },
+        "type": "Post",
+        "slug": "/blog/examining-standardized-testing-and-how-to-opt-out",
+        "slugAsParams": "examining-standardized-testing-and-how-to-opt-out"
+      },
+      "documentHash": "1726283326720",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
     "docs/in-progress.mdx": {
       "document": {
         "title": "Not Implemented",
@@ -74,6 +104,54 @@
       "documentHash": "1726708126121",
       "hasWarnings": false,
       "documentTypeName": "Doc"
+    },
+    "pages/privacy.mdx": {
+      "document": {
+        "title": "Privacy",
+        "description": "The Privacy Policy for TNS Knowledge Base.",
+        "body": {
+          "raw": "\nBlandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\n\n## Consent\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Information we collect\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\n\n## How we use your Information\n\nUt sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.",
+          "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,q=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var a in e)s(i,a,{get:e[a],enumerable:!0})},o=(i,e,a,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of h(e))!q.call(i,t)&&t!==a&&s(i,t,{get:()=>e[t],enumerable:!(r=p(e,t))||r.enumerable});return i};var b=(i,e,a)=>(a=i!=null?d(g(i)):{},o(e||!i||!i.__esModule?s(a,\"default\",{value:i,enumerable:!0}):a,i)),w=i=>o(s({},\"__esModule\",{value:!0}),i);var u=f((y,c)=>{c.exports=_jsx_runtime});var N={};v(N,{default:()=>m,frontmatter:()=>x});var n=b(u()),x={title:\"Privacy\",description:\"The Privacy Policy for TNS Knowledge Base.\"};function l(i){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Blandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"consent\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#consent\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Consent\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"information-we-collect\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#information-we-collect\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Information we collect\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"how-we-use-your-information\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#how-we-use-your-information\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"How we use your Information\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.\"})]})}function m(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(l,{...i})}):l(i)}return w(N);})();\n;return Component;"
+        },
+        "_id": "pages/privacy.mdx",
+        "_raw": {
+          "sourceFilePath": "pages/privacy.mdx",
+          "sourceFileName": "privacy.mdx",
+          "sourceFileDir": "pages",
+          "contentType": "mdx",
+          "flattenedPath": "pages/privacy"
+        },
+        "type": "Page",
+        "slug": "/pages/privacy",
+        "slugAsParams": "privacy"
+      },
+      "documentHash": "1725988259389",
+      "hasWarnings": false,
+      "documentTypeName": "Page"
+    },
+    "pages/terms.mdx": {
+      "document": {
+        "title": "Terms & Conditions",
+        "description": "Read our terms and conditions.",
+        "body": {
+          "raw": "\nLorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\n## Legal Notices\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Warranty Disclaimer\n\nTellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\n\nNisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\n\n## General\n\nMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\nSed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\n\n## Disclaimer\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.",
+          "code": "var Component=(()=>{var d=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),q=(a,e)=>{for(var s in e)t(a,s,{get:e[s],enumerable:!0})},r=(a,e,s,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of h(e))!v.call(a,n)&&n!==s&&t(a,n,{get:()=>e[n],enumerable:!(u=p(e,n))||u.enumerable});return a};var f=(a,e,s)=>(s=a!=null?d(g(a)):{},r(e||!a||!a.__esModule?t(s,\"default\",{value:a,enumerable:!0}):s,a)),N=a=>r(t({},\"__esModule\",{value:!0}),a);var c=b((j,l)=>{l.exports=_jsx_runtime});var k={};q(k,{default:()=>o,frontmatter:()=>x});var i=f(c()),x={title:\"Terms & Conditions\",description:\"Read our terms and conditions.\"};function m(a){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...a.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.p,{children:\"Lorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"legal-notices\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#legal-notices\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Legal Notices\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"warranty-disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#warranty-disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Warranty Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Tellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"general\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#general\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"General\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Magna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Sed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.\"})]})}function o(a={}){let{wrapper:e}=a.components||{};return e?(0,i.jsx)(e,{...a,children:(0,i.jsx)(m,{...a})}):m(a)}return N(k);})();\n;return Component;"
+        },
+        "_id": "pages/terms.mdx",
+        "_raw": {
+          "sourceFilePath": "pages/terms.mdx",
+          "sourceFileName": "terms.mdx",
+          "sourceFileDir": "pages",
+          "contentType": "mdx",
+          "flattenedPath": "pages/terms"
+        },
+        "type": "Page",
+        "slug": "/pages/terms",
+        "slugAsParams": "terms"
+      },
+      "documentHash": "1725988259389",
+      "hasWarnings": false,
+      "documentTypeName": "Page"
     },
     "guides/school-streets-for-tns.mdx": {
       "document": {
@@ -128,234 +206,6 @@
       "documentHash": "1726117000244",
       "hasWarnings": false,
       "documentTypeName": "Guide"
-    },
-    "pages/privacy.mdx": {
-      "document": {
-        "title": "Privacy",
-        "description": "The Privacy Policy for TNS Knowledge Base.",
-        "body": {
-          "raw": "\nBlandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\n\n## Consent\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Information we collect\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\n\n## How we use your Information\n\nUt sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.",
-          "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,q=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var a in e)s(i,a,{get:e[a],enumerable:!0})},o=(i,e,a,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of h(e))!q.call(i,t)&&t!==a&&s(i,t,{get:()=>e[t],enumerable:!(r=p(e,t))||r.enumerable});return i};var b=(i,e,a)=>(a=i!=null?d(g(i)):{},o(e||!i||!i.__esModule?s(a,\"default\",{value:i,enumerable:!0}):a,i)),w=i=>o(s({},\"__esModule\",{value:!0}),i);var u=f((y,c)=>{c.exports=_jsx_runtime});var N={};v(N,{default:()=>m,frontmatter:()=>x});var n=b(u()),x={title:\"Privacy\",description:\"The Privacy Policy for TNS Knowledge Base.\"};function l(i){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"Blandit libero volutpat sed cras ornare arcu. Cursus sit amet dictum sit amet. Nunc vel risus commodo viverra maecenas accumsan. Libero id faucibus nisl tincidunt eget nullam non nisi est. Varius quam quisque id diam vel quam. Id donec ultrices tincidunt arcu non.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"consent\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#consent\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Consent\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,n.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"information-we-collect\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#information-we-collect\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Information we collect\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"how-we-use-your-information\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#how-we-use-your-information\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"How we use your Information\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit pellentesque habitant. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.\"})]})}function m(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(l,{...i})}):l(i)}return w(N);})();\n;return Component;"
-        },
-        "_id": "pages/privacy.mdx",
-        "_raw": {
-          "sourceFilePath": "pages/privacy.mdx",
-          "sourceFileName": "privacy.mdx",
-          "sourceFileDir": "pages",
-          "contentType": "mdx",
-          "flattenedPath": "pages/privacy"
-        },
-        "type": "Page",
-        "slug": "/pages/privacy",
-        "slugAsParams": "privacy"
-      },
-      "documentHash": "1725988259389",
-      "hasWarnings": false,
-      "documentTypeName": "Page"
-    },
-    "pages/terms.mdx": {
-      "document": {
-        "title": "Terms & Conditions",
-        "description": "Read our terms and conditions.",
-        "body": {
-          "raw": "\nLorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\n## Legal Notices\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\n\nFelis donec et odio pellentesque diam volutpat commodo sed.\n\nTortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\n\n## Warranty Disclaimer\n\nTellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\n\nNisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\n\n## General\n\nMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\n\nSed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\n\n## Disclaimer\n\nAmet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.",
-          "code": "var Component=(()=>{var d=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),q=(a,e)=>{for(var s in e)t(a,s,{get:e[s],enumerable:!0})},r=(a,e,s,u)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of h(e))!v.call(a,n)&&n!==s&&t(a,n,{get:()=>e[n],enumerable:!(u=p(e,n))||u.enumerable});return a};var f=(a,e,s)=>(s=a!=null?d(g(a)):{},r(e||!a||!a.__esModule?t(s,\"default\",{value:a,enumerable:!0}):s,a)),N=a=>r(t({},\"__esModule\",{value:!0}),a);var c=b((j,l)=>{l.exports=_jsx_runtime});var k={};q(k,{default:()=>o,frontmatter:()=>x});var i=f(c()),x={title:\"Terms & Conditions\",description:\"Read our terms and conditions.\"};function m(a){let e={a:\"a\",h2:\"h2\",p:\"p\",span:\"span\",...a.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.p,{children:\"Lorem ipsumMagna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"legal-notices\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#legal-notices\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Legal Notices\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Nibh ipsum consequat nisl vel pretium lectus quam id leo. A arcu cursus vitae congue. Amet justo donec enim diam. Vel pharetra vel turpis nunc eget lorem. Gravida quis blandit turpis cursus in. Semper auctor neque vitae tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Imperdiet nulla malesuada pellentesque elit eget.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Felis donec et odio pellentesque diam volutpat commodo sed.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Tortor consequat id porta nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Scelerisque fermentum dui faucibus in. Tortor posuere ac ut consequat semper viverra.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"warranty-disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#warranty-disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Warranty Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Tellus in hac habitasse platea dictumst vestibulum. Faucibus in ornare quam viverra. Viverra aliquet eget sit amet tellus cras adipiscing. Erat nam at lectus urna duis convallis convallis tellus. Bibendum est ultricies integer quis auctor elit sed vulputate.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Nisl condimentum id venenatis a condimentum vitae. Ac auctor augue mauris augue neque gravida in fermentum. Arcu felis bibendum ut tristique. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"general\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#general\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"General\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Magna fermentum iaculis eu non diam. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. In nibh mauris cursus mattis molestie a iaculis at. Enim sit amet venenatis urna. Eget sit amet tellus cras adipiscing.\"}),`\n`,(0,i.jsx)(e.p,{children:\"Sed lectus vestibulum mattis ullamcorper velit. Id diam vel quam elementum pulvinar. In iaculis nunc sed augue lacus viverra. In hendrerit gravida rutrum quisque non tellus. Nisl purus in mollis nunc.\"}),`\n`,(0,i.jsxs)(e.h2,{id:\"disclaimer\",children:[(0,i.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#disclaimer\",children:(0,i.jsx)(e.span,{className:\"icon icon-link\"})}),\"Disclaimer\"]}),`\n`,(0,i.jsx)(e.p,{children:\"Amet justo donec enim diam. In hendrerit gravida rutrum quisque non. Hac habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Nulla porttitor massa id neque aliquam vestibulum. Ante in nibh mauris cursus mattis molestie a. Mi tempus imperdiet nulla malesuada.\"})]})}function o(a={}){let{wrapper:e}=a.components||{};return e?(0,i.jsx)(e,{...a,children:(0,i.jsx)(m,{...a})}):m(a)}return N(k);})();\n;return Component;"
-        },
-        "_id": "pages/terms.mdx",
-        "_raw": {
-          "sourceFilePath": "pages/terms.mdx",
-          "sourceFileName": "terms.mdx",
-          "sourceFileDir": "pages",
-          "contentType": "mdx",
-          "flattenedPath": "pages/terms"
-        },
-        "type": "Page",
-        "slug": "/pages/terms",
-        "slugAsParams": "terms"
-      },
-      "documentHash": "1725988259389",
-      "hasWarnings": false,
-      "documentTypeName": "Page"
-    },
-    "blog/examining-standardized-testing-and-how-to-opt-out.mdx": {
-      "document": {
-        "title": "Examining Standardized Testing",
-        "description": "Shining a spotlight on standardized testing.",
-        "date": "2024-09-10T00:00:00.000Z",
-        "published": true,
-        "image": "/images/blog/standardized-testing.png",
-        "authors": [
-          "jbwashington"
-        ],
-        "body": {
-          "raw": "\n<Callout>\n  Coming soon!\n</Callout>\n",
-          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var h=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},a=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of u(n))!x.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var j=(t,n,e)=>(e=t!=null?p(f(t)):{},a(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>a(r({},\"__esModule\",{value:!0}),t);var c=h((z,d)=>{d.exports=_jsx_runtime});var M={};_(M,{default:()=>m,frontmatter:()=>b});var i=j(c()),b={title:\"Examining Standardized Testing\",description:\"Shining a spotlight on standardized testing.\",image:\"/images/blog/standardized-testing.png\",date:\"2024-09-10\",authors:[\"jbwashington\"]};function g(t){let n={p:\"p\",...t.components},{Callout:e}=n;return e||w(\"Callout\",!0),(0,i.jsx)(e,{children:(0,i.jsx)(n.p,{children:\"Coming soon!\"})})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,i.jsx)(n,{...t,children:(0,i.jsx)(g,{...t})}):g(t)}function w(t,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return C(M);})();\n;return Component;"
-        },
-        "_id": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
-        "_raw": {
-          "sourceFilePath": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
-          "sourceFileName": "examining-standardized-testing-and-how-to-opt-out.mdx",
-          "sourceFileDir": "blog",
-          "contentType": "mdx",
-          "flattenedPath": "blog/examining-standardized-testing-and-how-to-opt-out"
-        },
-        "type": "Post",
-        "slug": "/blog/examining-standardized-testing-and-how-to-opt-out",
-        "slugAsParams": "examining-standardized-testing-and-how-to-opt-out"
-      },
-      "documentHash": "1726283326720",
-      "hasWarnings": false,
-      "documentTypeName": "Post"
-    },
-    "docs/events/bake-sale.mdx": {
-      "document": {
-        "title": "Bake Sale",
-        "description": "All about our bake sales at TNS.",
-        "published": true,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),M=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of _(e))!p.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=f(e,o))||s.enumerable});return t};var b=(t,e,n)=>(n=t!=null?x(d(t)):{},u(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>u(a({},\"__esModule\",{value:!0}),t);var i=j((F,c)=>{c.exports=_jsx_runtime});var C={};M(C,{default:()=>m,frontmatter:()=>k});var r=b(i()),k={title:\"Bake Sale\",description:\"All about our bake sales at TNS.\"};function l(t){return(0,r.jsx)(r.Fragment,{})}function m(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(l,{...t})}):l(t)}return g(C);})();\n;return Component;"
-        },
-        "_id": "docs/events/bake-sale.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/bake-sale.mdx",
-          "sourceFileName": "bake-sale.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events/bake-sale"
-        },
-        "type": "Doc",
-        "slug": "/docs/events/bake-sale",
-        "slugAsParams": "events/bake-sale"
-      },
-      "documentHash": "1726117000243",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/events/earth-day.mdx": {
-      "document": {
-        "title": "Earth Day",
-        "description": "All about Earth Day at TNS.",
-        "published": true,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var f=Object.create;var o=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var D=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),h=(t,n)=>{for(var e in n)o(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,c)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let a of _(n))!p.call(t,a)&&a!==e&&o(t,a,{get:()=>n[a],enumerable:!(c=l(n,a))||c.enumerable});return t};var j=(t,n,e)=>(e=t!=null?f(d(t)):{},i(n||!t||!t.__esModule?o(e,\"default\",{value:t,enumerable:!0}):e,t)),y=t=>i(o({},\"__esModule\",{value:!0}),t);var u=D((E,s)=>{s.exports=_jsx_runtime});var g={};h(g,{default:()=>x,frontmatter:()=>M});var r=j(u()),M={title:\"Earth Day\",description:\"All about Earth Day at TNS.\"};function m(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return y(g);})();\n;return Component;"
-        },
-        "_id": "docs/events/earth-day.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/earth-day.mdx",
-          "sourceFileName": "earth-day.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events/earth-day"
-        },
-        "type": "Doc",
-        "slug": "/docs/events/earth-day",
-        "slugAsParams": "events/earth-day"
-      },
-      "documentHash": "1726117000243",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/events/halloween.mdx": {
-      "document": {
-        "title": "Halloween",
-        "description": "All about Halloween at TNS.",
-        "published": true,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},c=(t,e,n,l)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of _(e))!p.call(t,r)&&r!==n&&a(t,r,{get:()=>e[r],enumerable:!(l=f(e,r))||l.enumerable});return t};var M=(t,e,n)=>(n=t!=null?x(d(t)):{},c(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>c(a({},\"__esModule\",{value:!0}),t);var s=j((H,i)=>{i.exports=_jsx_runtime});var D={};w(D,{default:()=>m,frontmatter:()=>C});var o=M(s()),C={title:\"Halloween\",description:\"All about Halloween at TNS.\"};function u(t){return(0,o.jsx)(o.Fragment,{})}function m(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,{...t,children:(0,o.jsx)(u,{...t})}):u(t)}return g(D);})();\n;return Component;"
-        },
-        "_id": "docs/events/halloween.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/halloween.mdx",
-          "sourceFileName": "halloween.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events/halloween"
-        },
-        "type": "Doc",
-        "slug": "/docs/events/halloween",
-        "slugAsParams": "events/halloween"
-      },
-      "documentHash": "1726117000243",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/events/holiday-fair.mdx": {
-      "document": {
-        "title": "Holiday Fair",
-        "description": "All about the annual Holiday Fair at TNS.",
-        "published": true,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var x=Object.create;var o=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var F=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)o(t,e,{get:n[e],enumerable:!0})},u=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let a of f(n))!p.call(t,a)&&a!==e&&o(t,a,{get:()=>n[a],enumerable:!(i=d(n,a))||i.enumerable});return t};var y=(t,n,e)=>(e=t!=null?x(_(t)):{},u(n||!t||!t.__esModule?o(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>u(o({},\"__esModule\",{value:!0}),t);var l=F((D,c)=>{c.exports=_jsx_runtime});var h={};j(h,{default:()=>m,frontmatter:()=>g});var r=y(l()),g={title:\"Holiday Fair\",description:\"All about the annual Holiday Fair at TNS.\"};function s(t){return(0,r.jsx)(r.Fragment,{})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(s,{...t})}):s(t)}return M(h);})();\n;return Component;"
-        },
-        "_id": "docs/events/holiday-fair.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/holiday-fair.mdx",
-          "sourceFileName": "holiday-fair.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events/holiday-fair"
-        },
-        "type": "Doc",
-        "slug": "/docs/events/holiday-fair",
-        "slugAsParams": "events/holiday-fair"
-      },
-      "documentHash": "1726117000243",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/events/index.mdx": {
-      "document": {
-        "title": "PTA Events",
-        "description": "Event details, contacts, and registration information for the PTA.",
-        "published": true,
-        "body": {
-          "raw": "\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n\n<Card href=\"/docs/events/bake-sale\">\n\n### Bake Sale\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/earth-day\">\n\n### Earth Day\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/halloween\">\n\n### Halloween\n\nOctober 31\n\n</Card>\n\n<Card href=\"/docs/events/holiday-fair\">\n\n### Holiday Fair \n\nDecember ???\n\n</Card>\n\n<Card href=\"docs/events/pi-day\">\n\n### Pi Day\n\nMarch 14 \n\n</Card>\n\n</div>",
-          "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var b=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var u=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var i in e)c(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!k.call(n,r)&&r!==i&&c(n,r,{get:()=>e[r],enumerable:!(o=f(e,r))||o.enumerable});return n};var g=(n,e,i)=>(i=n!=null?p(b(n)):{},s(e||!n||!n.__esModule?c(i,\"default\",{value:n,enumerable:!0}):i,n)),x=n=>s(c({},\"__esModule\",{value:!0}),n);var t=u((j,l)=>{l.exports=_jsx_runtime});var w={};y(w,{default:()=>h,frontmatter:()=>N});var a=g(t()),N={title:\"PTA Events\",description:\"Event details, contacts, and registration information for the PTA.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Card:i}=e;return i||v(\"Card\",!0),(0,a.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,a.jsxs)(i,{href:\"/docs/events/bake-sale\",children:[(0,a.jsxs)(e.h3,{id:\"bake-sale\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#bake-sale\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Bake Sale\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/earth-day\",children:[(0,a.jsxs)(e.h3,{id:\"earth-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#earth-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Earth Day\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/halloween\",children:[(0,a.jsxs)(e.h3,{id:\"halloween\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#halloween\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Halloween\"]}),(0,a.jsx)(e.p,{children:\"October 31\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/holiday-fair\",children:[(0,a.jsxs)(e.h3,{id:\"holiday-fair\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#holiday-fair\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Holiday Fair\"]}),(0,a.jsx)(e.p,{children:\"December ???\"})]}),(0,a.jsxs)(i,{href:\"docs/events/pi-day\",children:[(0,a.jsxs)(e.h3,{id:\"pi-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pi-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Pi Day\"]}),(0,a.jsx)(e.p,{children:\"March 14\"})]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}function v(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(w);})();\n;return Component;"
-        },
-        "_id": "docs/events/index.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events"
-        },
-        "type": "Doc",
-        "slug": "/docs/events",
-        "slugAsParams": "events"
-      },
-      "documentHash": "1726708371590",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/events/pi-day.mdx": {
-      "document": {
-        "title": "Pi Day",
-        "description": "All about Pi day and 3.14 at TNS.",
-        "published": true,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var d=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),y=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of l(n))!p.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=f(n,o))||i.enumerable});return t};var D=(t,n,e)=>(e=t!=null?d(_(t)):{},c(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>c(a({},\"__esModule\",{value:!0}),t);var u=j((P,s)=>{s.exports=_jsx_runtime});var C={};y(C,{default:()=>x,frontmatter:()=>g});var r=D(u()),g={title:\"Pi Day\",description:\"All about Pi day and 3.14 at TNS.\"};function m(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return M(C);})();\n;return Component;"
-        },
-        "_id": "docs/events/pi-day.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/events/pi-day.mdx",
-          "sourceFileName": "pi-day.mdx",
-          "sourceFileDir": "docs/events",
-          "contentType": "mdx",
-          "flattenedPath": "docs/events/pi-day"
-        },
-        "type": "Doc",
-        "slug": "/docs/events/pi-day",
-        "slugAsParams": "events/pi-day"
-      },
-      "documentHash": "1726117000244",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
     },
     "docs/documentation/bylaws.mdx": {
       "document": {
@@ -657,6 +507,31 @@
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },
+    "docs/fundraising/donor-engagement.mdx": {
+      "document": {
+        "title": "Donor Engagement",
+        "description": "Tips for reaching out for donors and keeping them involved.",
+        "published": true,
+        "body": {
+          "raw": "\n## Engaging Donors and Creating Successful Fundraising Campaigns\n\nAttracting and retaining donors is crucial for the success of the TNS PTA's fundraising efforts. Here are some tips and strategies to help us engage donors and create effective campaigns:\n\n### Building Relationships with Donors\n\n1. **Personalize Our Approach**: Tailor our communication to each donor's interests, values, and giving history. Personalized outreach shows that we value their support and understand their motivations.\n\n2. **Show Impact**: Share stories and data that demonstrate the tangible impact of their donations. Donors want to know how their contributions make a difference.\n\n3. **Express Gratitude**: Consistently thank donors for their support, whether through handwritten notes, phone calls, or special recognition events. Showing appreciation fosters long-term relationships.\n\n4. **Provide Updates**: Keep donors informed about the TNS PTA's activities, achievements, and upcoming initiatives. Regular communication helps maintain engagement and transparency.\n\n### Creating Successful Fundraising Campaigns\n\n1. **Set Clear Goals**: Define specific, measurable goals for our campaign, such as the amount we want to raise or the number of donors we want to engage.\n\n2. **Develop a Compelling Narrative**: Craft a compelling story that resonates with our target audience and highlights the importance of our cause.\n\n3. **Utilize Multiple Channels**: Leverage various communication channels, including email, social media, direct mail, and in-person events, to reach a wider audience.\n\n4. **Offer Diverse Giving Options**: Provide donors with multiple ways to contribute, such as online donations, text-to-give, or in-person events.\n\n5. **Leverage Matching Gifts**: Encourage donors to explore matching gift opportunities through their employers, which can potentially double or triple their contributions.\n\n6. **Recognize and Celebrate Success**: Celebrate milestones and achievements throughout the campaign, and publicly recognize top donors and volunteers.\n\n### Attracting Wealthy Donors\n\nWhile engaging donors of all levels is important, attracting wealthy donors can significantly boost our fundraising efforts. Here are some strategies to consider:\n\n1. **Identify Potential Major Donors**: Research individuals or organizations with a history of supporting causes similar to ours, and tailor our outreach accordingly.\n\n2. **Offer Exclusive Opportunities**: Provide major donors with exclusive opportunities, such as private events, naming rights, or special recognition.\n\n3. **Cultivate Personal Relationships**: Assign dedicated staff or volunteers to build personal relationships with major donors, understanding their interests and motivations.\n\n4. **Highlight Tax Benefits**: Educate potential major donors about the tax benefits of charitable giving, which can incentivize larger contributions.\n\n5. **Propose Matching Challenges**: Encourage major donors to issue matching challenges, where their contribution is matched by other donors up to a certain amount.\n\nRemember, successful donor engagement and fundraising campaigns require consistent effort, transparency, and a genuine commitment to our cause. By building strong relationships and creating compelling narratives, we can attract and retain donors who share our passion for supporting the TNS PTA's mission.\n",
+          "code": "var Component=(()=>{var g=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var v=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),w=(i,n)=>{for(var r in n)o(i,r,{get:n[r],enumerable:!0})},s=(i,n,r,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let t of p(n))!f.call(i,t)&&t!==r&&o(i,t,{get:()=>n[t],enumerable:!(a=u(n,t))||a.enumerable});return i};var b=(i,n,r)=>(r=i!=null?g(m(i)):{},s(n||!i||!i.__esModule?o(r,\"default\",{value:i,enumerable:!0}):r,i)),y=i=>s(o({},\"__esModule\",{value:!0}),i);var l=v((N,c)=>{c.exports=_jsx_runtime});var C={};w(C,{default:()=>d,frontmatter:()=>x});var e=b(l()),x={title:\"Donor Engagement\",description:\"Tips for reaching out for donors and keeping them involved.\"};function h(i){let n={a:\"a\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",span:\"span\",strong:\"strong\",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h2,{id:\"engaging-donors-and-creating-successful-fundraising-campaigns\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#engaging-donors-and-creating-successful-fundraising-campaigns\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Engaging Donors and Creating Successful Fundraising Campaigns\"]}),`\n`,(0,e.jsx)(n.p,{children:\"Attracting and retaining donors is crucial for the success of the TNS PTA's fundraising efforts. Here are some tips and strategies to help us engage donors and create effective campaigns:\"}),`\n`,(0,e.jsxs)(n.h3,{id:\"building-relationships-with-donors\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#building-relationships-with-donors\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Building Relationships with Donors\"]}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Personalize Our Approach\"}),\": Tailor our communication to each donor's interests, values, and giving history. Personalized outreach shows that we value their support and understand their motivations.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Show Impact\"}),\": Share stories and data that demonstrate the tangible impact of their donations. Donors want to know how their contributions make a difference.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Express Gratitude\"}),\": Consistently thank donors for their support, whether through handwritten notes, phone calls, or special recognition events. Showing appreciation fosters long-term relationships.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Provide Updates\"}),\": Keep donors informed about the TNS PTA's activities, achievements, and upcoming initiatives. Regular communication helps maintain engagement and transparency.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsxs)(n.h3,{id:\"creating-successful-fundraising-campaigns\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#creating-successful-fundraising-campaigns\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Creating Successful Fundraising Campaigns\"]}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Set Clear Goals\"}),\": Define specific, measurable goals for our campaign, such as the amount we want to raise or the number of donors we want to engage.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Develop a Compelling Narrative\"}),\": Craft a compelling story that resonates with our target audience and highlights the importance of our cause.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Utilize Multiple Channels\"}),\": Leverage various communication channels, including email, social media, direct mail, and in-person events, to reach a wider audience.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Offer Diverse Giving Options\"}),\": Provide donors with multiple ways to contribute, such as online donations, text-to-give, or in-person events.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Leverage Matching Gifts\"}),\": Encourage donors to explore matching gift opportunities through their employers, which can potentially double or triple their contributions.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Recognize and Celebrate Success\"}),\": Celebrate milestones and achievements throughout the campaign, and publicly recognize top donors and volunteers.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsxs)(n.h3,{id:\"attracting-wealthy-donors\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#attracting-wealthy-donors\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Attracting Wealthy Donors\"]}),`\n`,(0,e.jsx)(n.p,{children:\"While engaging donors of all levels is important, attracting wealthy donors can significantly boost our fundraising efforts. Here are some strategies to consider:\"}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Identify Potential Major Donors\"}),\": Research individuals or organizations with a history of supporting causes similar to ours, and tailor our outreach accordingly.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Offer Exclusive Opportunities\"}),\": Provide major donors with exclusive opportunities, such as private events, naming rights, or special recognition.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Cultivate Personal Relationships\"}),\": Assign dedicated staff or volunteers to build personal relationships with major donors, understanding their interests and motivations.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Highlight Tax Benefits\"}),\": Educate potential major donors about the tax benefits of charitable giving, which can incentivize larger contributions.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Propose Matching Challenges\"}),\": Encourage major donors to issue matching challenges, where their contribution is matched by other donors up to a certain amount.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsx)(n.p,{children:\"Remember, successful donor engagement and fundraising campaigns require consistent effort, transparency, and a genuine commitment to our cause. By building strong relationships and creating compelling narratives, we can attract and retain donors who share our passion for supporting the TNS PTA's mission.\"})]})}function d(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(h,{...i})}):h(i)}return y(C);})();\n;return Component;"
+        },
+        "_id": "docs/fundraising/donor-engagement.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/fundraising/donor-engagement.mdx",
+          "sourceFileName": "donor-engagement.mdx",
+          "sourceFileDir": "docs/fundraising",
+          "contentType": "mdx",
+          "flattenedPath": "docs/fundraising/donor-engagement"
+        },
+        "type": "Doc",
+        "slug": "/docs/fundraising/donor-engagement",
+        "slugAsParams": "fundraising/donor-engagement"
+      },
+      "documentHash": "1726709396220",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
     "docs/fundraising/index.mdx": {
       "document": {
         "title": "Fundraising",
@@ -677,6 +552,181 @@
         "type": "Doc",
         "slug": "/docs/fundraising",
         "slugAsParams": "fundraising"
+      },
+      "documentHash": "1726117000244",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/fundraising/templates.mdx": {
+      "document": {
+        "title": "Templates",
+        "description": "Templates for reaching out to donors and nonprofit organizations",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n\n## Reaching Out to Donors and Nonprofits\n\nWhen reaching out to potential donors or nonprofit organizations, it's important to tailor your approach based on their size and industry. Here are some general guidelines:\n\n### Small Local Businesses and Individuals\n\nFor small local businesses and individual donors, a personalized and friendly approach is often most effective. Consider the following:\n\n- Introduce yourself and the PTA, explaining your mission and the impact you aim to make in the community.\n- Highlight any personal connections or shared values with the potential donor.\n- Clearly explain how their donation or support will be used and the specific benefits it will provide.\n- Offer various ways for them to get involved, such as donating goods, services, or volunteering their time.\n- Express gratitude for their consideration and provide contact information for follow-up.\n\n\n#### Example Email Template for Small Local Businesses and Individuals\n\n``` markdown\nSubject: Support The Neighborhood School PTA - Make a Difference in Our Community\n\nDear [Name],\n\nI hope this email finds you well. My name is [Your Name], and I am reaching out on behalf of The Neighborhood School Parent Teacher Association (TNS PTA). As a valued member of our community, I wanted to share with you an opportunity to make a meaningful impact in the lives of our students and families.\n\nAt TNS PTA, our mission is to foster a strong partnership between parents, teachers, and the community to enhance the educational experience for all our children. We believe that by working together, we can create a nurturing and inclusive environment that supports the growth and success of every student.\n\nAs a [small business owner/individual] with deep roots in our community, your support would be invaluable to our efforts. There are several ways you can get involved:\n\n1. Make a financial contribution: Your donation, no matter the size, will directly fund educational programs, resources, and events that enrich our students' learning experiences.\n\n2. Donate goods or services: If you have a product or service that could benefit our school community, we would be grateful for your in-kind donation.\n\n3. Volunteer your time: We are always looking for passionate individuals to help with our events, committees, and initiatives. Your skills and expertise can make a real difference.\n\nIn return for your generosity, we would be thrilled to recognize your support through our various communication channels, reaching hundreds of local families and potential customers.\n\nIf you have any questions or would like to discuss further how you can get involved, please don't hesitate to reach out. I would be happy to provide more information or arrange a meeting at your convenience.\n\nThank you for considering supporting The Neighborhood School PTA. Together, we can create a brighter future for our children and our community.\n\nBest regards,\n\n[Your Name]\n[Your Title], The Neighborhood School PTA\n[Contact Information]\n```\n\n### Large Corporations and National Nonprofits\n\nWhen reaching out to larger corporations or national nonprofit organizations, a more formal and structured approach may be necessary:\n\n- Research the organization's giving priorities, focus areas, and application processes.\n- Craft a compelling proposal that aligns with their mission and demonstrates the potential impact of their support.\n- Highlight any relevant statistics, success stories, or endorsements from respected sources.\n- Outline specific sponsorship opportunities, such as event sponsorships or program funding.\n- Emphasize the visibility and recognition they will receive for their support.\n- Follow up persistently but respectfully, as larger organizations often have lengthy review processes.\n\nRegardless of the size or industry, it's essential to be genuine, transparent, and focused on building long-term relationships. Personalize your outreach whenever possible, and be prepared to provide detailed information about your PTA's goals, initiatives, and impact.\n",
+          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),E=(i,e)=>{for(var a in e)r(i,a,{get:e[a],enumerable:!0})},s=(i,e,a,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of m(e))!f.call(i,o)&&o!==a&&r(i,o,{get:()=>e[o],enumerable:!(t=u(e,o))||t.enumerable});return i};var v=(i,e,a)=>(a=i!=null?p(g(i)):{},s(e||!i||!i.__esModule?r(a,\"default\",{value:i,enumerable:!0}):a,i)),b=i=>s(r({},\"__esModule\",{value:!0}),i);var d=y((N,l)=>{l.exports=_jsx_runtime});var x={};E(x,{default:()=>h,frontmatter:()=>w});var n=v(d()),w={title:\"Templates\",description:\"Templates for reaching out to donors and nonprofit organizations\"};function c(i){let e={a:\"a\",code:\"code\",figure:\"figure\",h2:\"h2\",h3:\"h3\",h4:\"h4\",li:\"li\",p:\"p\",pre:\"pre\",span:\"span\",ul:\"ul\",...i.components},{Callout:a}=e;return a||k(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(a,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"reaching-out-to-donors-and-nonprofits\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#reaching-out-to-donors-and-nonprofits\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Reaching Out to Donors and Nonprofits\"]}),`\n`,(0,n.jsx)(e.p,{children:\"When reaching out to potential donors or nonprofit organizations, it's important to tailor your approach based on their size and industry. Here are some general guidelines:\"}),`\n`,(0,n.jsxs)(e.h3,{id:\"small-local-businesses-and-individuals\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#small-local-businesses-and-individuals\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Small Local Businesses and Individuals\"]}),`\n`,(0,n.jsx)(e.p,{children:\"For small local businesses and individual donors, a personalized and friendly approach is often most effective. Consider the following:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Introduce yourself and the PTA, explaining your mission and the impact you aim to make in the community.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Highlight any personal connections or shared values with the potential donor.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Clearly explain how their donation or support will be used and the specific benefits it will provide.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Offer various ways for them to get involved, such as donating goods, services, or volunteering their time.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Express gratitude for their consideration and provide contact information for follow-up.\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h4,{id:\"example-email-template-for-small-local-businesses-and-individuals\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#example-email-template-for-small-local-businesses-and-individuals\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Example Email Template for Small Local Businesses and Individuals\"]}),`\n`,(0,n.jsx)(e.figure,{\"data-rehype-pretty-code-figure\":\"\",children:(0,n.jsx)(e.pre,{style:{backgroundColor:\"#24292e\",color:\"#e1e4e8\"},tabIndex:\"0\",\"data-language\":\"markdown\",\"data-theme\":\"github-dark\",children:(0,n.jsxs)(e.code,{\"data-language\":\"markdown\",\"data-theme\":\"github-dark\",style:{display:\"grid\"},children:[(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Subject: Support The Neighborhood School PTA - Make a Difference in Our Community\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Dear [\"}),(0,n.jsx)(e.span,{style:{color:\"#DBEDFF\",textDecoration:\"underline\"},children:\"Name\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"],\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"I hope this email finds you well. My name is [Your Name], and I am reaching out on behalf of The Neighborhood School Parent Teacher Association (TNS PTA). As a valued member of our community, I wanted to share with you an opportunity to make a meaningful impact in the lives of our students and families.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"At TNS PTA, our mission is to foster a strong partnership between parents, teachers, and the community to enhance the educational experience for all our children. We believe that by working together, we can create a nurturing and inclusive environment that supports the growth and success of every student.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"As a [small business owner/individual] with deep roots in our community, your support would be invaluable to our efforts. There are several ways you can get involved:\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"1.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Make a financial contribution: Your donation, no matter the size, will directly fund educational programs, resources, and events that enrich our students' learning experiences.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"2.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Donate goods or services: If you have a product or service that could benefit our school community, we would be grateful for your in-kind donation.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"3.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Volunteer your time: We are always looking for passionate individuals to help with our events, committees, and initiatives. Your skills and expertise can make a real difference.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"In return for your generosity, we would be thrilled to recognize your support through our various communication channels, reaching hundreds of local families and potential customers.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"If you have any questions or would like to discuss further how you can get involved, please don't hesitate to reach out. I would be happy to provide more information or arrange a meeting at your convenience.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Thank you for considering supporting The Neighborhood School PTA. Together, we can create a brighter future for our children and our community.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Best regards,\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Your Name]\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Your Title], The Neighborhood School PTA\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Contact Information]\"})})]})})}),`\n`,(0,n.jsxs)(e.h3,{id:\"large-corporations-and-national-nonprofits\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#large-corporations-and-national-nonprofits\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Large Corporations and National Nonprofits\"]}),`\n`,(0,n.jsx)(e.p,{children:\"When reaching out to larger corporations or national nonprofit organizations, a more formal and structured approach may be necessary:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Research the organization's giving priorities, focus areas, and application processes.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Craft a compelling proposal that aligns with their mission and demonstrates the potential impact of their support.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Highlight any relevant statistics, success stories, or endorsements from respected sources.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Outline specific sponsorship opportunities, such as event sponsorships or program funding.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Emphasize the visibility and recognition they will receive for their support.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Follow up persistently but respectfully, as larger organizations often have lengthy review processes.\"}),`\n`]}),`\n`,(0,n.jsx)(e.p,{children:\"Regardless of the size or industry, it's essential to be genuine, transparent, and focused on building long-term relationships. Personalize your outreach whenever possible, and be prepared to provide detailed information about your PTA's goals, initiatives, and impact.\"})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(c,{...i})}):c(i)}function k(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(x);})();\n;return Component;"
+        },
+        "_id": "docs/fundraising/templates.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/fundraising/templates.mdx",
+          "sourceFileName": "templates.mdx",
+          "sourceFileDir": "docs/fundraising",
+          "contentType": "mdx",
+          "flattenedPath": "docs/fundraising/templates"
+        },
+        "type": "Doc",
+        "slug": "/docs/fundraising/templates",
+        "slugAsParams": "fundraising/templates"
+      },
+      "documentHash": "1726710021199",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/bake-sale.mdx": {
+      "document": {
+        "title": "Bake Sale",
+        "description": "All about our bake sales at TNS.",
+        "published": true,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),M=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of _(e))!p.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=f(e,o))||s.enumerable});return t};var b=(t,e,n)=>(n=t!=null?x(d(t)):{},u(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>u(a({},\"__esModule\",{value:!0}),t);var i=j((F,c)=>{c.exports=_jsx_runtime});var C={};M(C,{default:()=>m,frontmatter:()=>k});var r=b(i()),k={title:\"Bake Sale\",description:\"All about our bake sales at TNS.\"};function l(t){return(0,r.jsx)(r.Fragment,{})}function m(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(l,{...t})}):l(t)}return g(C);})();\n;return Component;"
+        },
+        "_id": "docs/events/bake-sale.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/bake-sale.mdx",
+          "sourceFileName": "bake-sale.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events/bake-sale"
+        },
+        "type": "Doc",
+        "slug": "/docs/events/bake-sale",
+        "slugAsParams": "events/bake-sale"
+      },
+      "documentHash": "1726117000243",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/earth-day.mdx": {
+      "document": {
+        "title": "Earth Day",
+        "description": "All about Earth Day at TNS.",
+        "published": true,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var f=Object.create;var o=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var D=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),h=(t,n)=>{for(var e in n)o(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,c)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let a of _(n))!p.call(t,a)&&a!==e&&o(t,a,{get:()=>n[a],enumerable:!(c=l(n,a))||c.enumerable});return t};var j=(t,n,e)=>(e=t!=null?f(d(t)):{},i(n||!t||!t.__esModule?o(e,\"default\",{value:t,enumerable:!0}):e,t)),y=t=>i(o({},\"__esModule\",{value:!0}),t);var u=D((E,s)=>{s.exports=_jsx_runtime});var g={};h(g,{default:()=>x,frontmatter:()=>M});var r=j(u()),M={title:\"Earth Day\",description:\"All about Earth Day at TNS.\"};function m(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return y(g);})();\n;return Component;"
+        },
+        "_id": "docs/events/earth-day.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/earth-day.mdx",
+          "sourceFileName": "earth-day.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events/earth-day"
+        },
+        "type": "Doc",
+        "slug": "/docs/events/earth-day",
+        "slugAsParams": "events/earth-day"
+      },
+      "documentHash": "1726117000243",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/halloween.mdx": {
+      "document": {
+        "title": "Halloween",
+        "description": "All about Halloween at TNS.",
+        "published": true,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},c=(t,e,n,l)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of _(e))!p.call(t,r)&&r!==n&&a(t,r,{get:()=>e[r],enumerable:!(l=f(e,r))||l.enumerable});return t};var M=(t,e,n)=>(n=t!=null?x(d(t)):{},c(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>c(a({},\"__esModule\",{value:!0}),t);var s=j((H,i)=>{i.exports=_jsx_runtime});var D={};w(D,{default:()=>m,frontmatter:()=>C});var o=M(s()),C={title:\"Halloween\",description:\"All about Halloween at TNS.\"};function u(t){return(0,o.jsx)(o.Fragment,{})}function m(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,{...t,children:(0,o.jsx)(u,{...t})}):u(t)}return g(D);})();\n;return Component;"
+        },
+        "_id": "docs/events/halloween.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/halloween.mdx",
+          "sourceFileName": "halloween.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events/halloween"
+        },
+        "type": "Doc",
+        "slug": "/docs/events/halloween",
+        "slugAsParams": "events/halloween"
+      },
+      "documentHash": "1726117000243",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/holiday-fair.mdx": {
+      "document": {
+        "title": "Holiday Fair",
+        "description": "All about the annual Holiday Fair at TNS.",
+        "published": true,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var x=Object.create;var o=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var F=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)o(t,e,{get:n[e],enumerable:!0})},u=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let a of f(n))!p.call(t,a)&&a!==e&&o(t,a,{get:()=>n[a],enumerable:!(i=d(n,a))||i.enumerable});return t};var y=(t,n,e)=>(e=t!=null?x(_(t)):{},u(n||!t||!t.__esModule?o(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>u(o({},\"__esModule\",{value:!0}),t);var l=F((D,c)=>{c.exports=_jsx_runtime});var h={};j(h,{default:()=>m,frontmatter:()=>g});var r=y(l()),g={title:\"Holiday Fair\",description:\"All about the annual Holiday Fair at TNS.\"};function s(t){return(0,r.jsx)(r.Fragment,{})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(s,{...t})}):s(t)}return M(h);})();\n;return Component;"
+        },
+        "_id": "docs/events/holiday-fair.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/holiday-fair.mdx",
+          "sourceFileName": "holiday-fair.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events/holiday-fair"
+        },
+        "type": "Doc",
+        "slug": "/docs/events/holiday-fair",
+        "slugAsParams": "events/holiday-fair"
+      },
+      "documentHash": "1726117000243",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/index.mdx": {
+      "document": {
+        "title": "PTA Events",
+        "description": "Event details, contacts, and registration information for the PTA.",
+        "published": true,
+        "body": {
+          "raw": "\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n\n<Card href=\"/docs/events/bake-sale\">\n\n### Bake Sale\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/earth-day\">\n\n### Earth Day\n\nTBA\n\n</Card>\n\n<Card href=\"/docs/events/halloween\">\n\n### Halloween\n\nOctober 31\n\n</Card>\n\n<Card href=\"/docs/events/holiday-fair\">\n\n### Holiday Fair \n\nDecember ???\n\n</Card>\n\n<Card href=\"docs/events/pi-day\">\n\n### Pi Day\n\nMarch 14 \n\n</Card>\n\n</div>",
+          "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var b=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var u=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var i in e)c(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!k.call(n,r)&&r!==i&&c(n,r,{get:()=>e[r],enumerable:!(o=f(e,r))||o.enumerable});return n};var g=(n,e,i)=>(i=n!=null?p(b(n)):{},s(e||!n||!n.__esModule?c(i,\"default\",{value:n,enumerable:!0}):i,n)),x=n=>s(c({},\"__esModule\",{value:!0}),n);var t=u((j,l)=>{l.exports=_jsx_runtime});var w={};y(w,{default:()=>h,frontmatter:()=>N});var a=g(t()),N={title:\"PTA Events\",description:\"Event details, contacts, and registration information for the PTA.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Card:i}=e;return i||v(\"Card\",!0),(0,a.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,a.jsxs)(i,{href:\"/docs/events/bake-sale\",children:[(0,a.jsxs)(e.h3,{id:\"bake-sale\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#bake-sale\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Bake Sale\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/earth-day\",children:[(0,a.jsxs)(e.h3,{id:\"earth-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#earth-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Earth Day\"]}),(0,a.jsx)(e.p,{children:\"TBA\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/halloween\",children:[(0,a.jsxs)(e.h3,{id:\"halloween\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#halloween\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Halloween\"]}),(0,a.jsx)(e.p,{children:\"October 31\"})]}),(0,a.jsxs)(i,{href:\"/docs/events/holiday-fair\",children:[(0,a.jsxs)(e.h3,{id:\"holiday-fair\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#holiday-fair\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Holiday Fair\"]}),(0,a.jsx)(e.p,{children:\"December ???\"})]}),(0,a.jsxs)(i,{href:\"docs/events/pi-day\",children:[(0,a.jsxs)(e.h3,{id:\"pi-day\",children:[(0,a.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#pi-day\",children:(0,a.jsx)(e.span,{className:\"icon icon-link\"})}),\"Pi Day\"]}),(0,a.jsx)(e.p,{children:\"March 14\"})]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}function v(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(w);})();\n;return Component;"
+        },
+        "_id": "docs/events/index.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events"
+        },
+        "type": "Doc",
+        "slug": "/docs/events",
+        "slugAsParams": "events"
+      },
+      "documentHash": "1726708371590",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/events/pi-day.mdx": {
+      "document": {
+        "title": "Pi Day",
+        "description": "All about Pi day and 3.14 at TNS.",
+        "published": true,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var d=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var j=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),y=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of l(n))!p.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=f(n,o))||i.enumerable});return t};var D=(t,n,e)=>(e=t!=null?d(_(t)):{},c(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>c(a({},\"__esModule\",{value:!0}),t);var u=j((P,s)=>{s.exports=_jsx_runtime});var C={};y(C,{default:()=>x,frontmatter:()=>g});var r=D(u()),g={title:\"Pi Day\",description:\"All about Pi day and 3.14 at TNS.\"};function m(t){return(0,r.jsx)(r.Fragment,{})}function x(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return M(C);})();\n;return Component;"
+        },
+        "_id": "docs/events/pi-day.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/events/pi-day.mdx",
+          "sourceFileName": "pi-day.mdx",
+          "sourceFileDir": "docs/events",
+          "contentType": "mdx",
+          "flattenedPath": "docs/events/pi-day"
+        },
+        "type": "Doc",
+        "slug": "/docs/events/pi-day",
+        "slugAsParams": "events/pi-day"
       },
       "documentHash": "1726117000244",
       "hasWarnings": false,
@@ -804,56 +854,6 @@
         "slugAsParams": "about/meetings/minutes"
       },
       "documentHash": "1726117000242",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/fundraising/templates.mdx": {
-      "document": {
-        "title": "Templates",
-        "description": "Templates for reaching out to donors and nonprofit organizations",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n\n## Reaching Out to Donors and Nonprofits\n\nWhen reaching out to potential donors or nonprofit organizations, it's important to tailor your approach based on their size and industry. Here are some general guidelines:\n\n### Small Local Businesses and Individuals\n\nFor small local businesses and individual donors, a personalized and friendly approach is often most effective. Consider the following:\n\n- Introduce yourself and the PTA, explaining your mission and the impact you aim to make in the community.\n- Highlight any personal connections or shared values with the potential donor.\n- Clearly explain how their donation or support will be used and the specific benefits it will provide.\n- Offer various ways for them to get involved, such as donating goods, services, or volunteering their time.\n- Express gratitude for their consideration and provide contact information for follow-up.\n\n\n#### Example Email Template for Small Local Businesses and Individuals\n\n``` markdown\nSubject: Support The Neighborhood School PTA - Make a Difference in Our Community\n\nDear [Name],\n\nI hope this email finds you well. My name is [Your Name], and I am reaching out on behalf of The Neighborhood School Parent Teacher Association (TNS PTA). As a valued member of our community, I wanted to share with you an opportunity to make a meaningful impact in the lives of our students and families.\n\nAt TNS PTA, our mission is to foster a strong partnership between parents, teachers, and the community to enhance the educational experience for all our children. We believe that by working together, we can create a nurturing and inclusive environment that supports the growth and success of every student.\n\nAs a [small business owner/individual] with deep roots in our community, your support would be invaluable to our efforts. There are several ways you can get involved:\n\n1. Make a financial contribution: Your donation, no matter the size, will directly fund educational programs, resources, and events that enrich our students' learning experiences.\n\n2. Donate goods or services: If you have a product or service that could benefit our school community, we would be grateful for your in-kind donation.\n\n3. Volunteer your time: We are always looking for passionate individuals to help with our events, committees, and initiatives. Your skills and expertise can make a real difference.\n\nIn return for your generosity, we would be thrilled to recognize your support through our various communication channels, reaching hundreds of local families and potential customers.\n\nIf you have any questions or would like to discuss further how you can get involved, please don't hesitate to reach out. I would be happy to provide more information or arrange a meeting at your convenience.\n\nThank you for considering supporting The Neighborhood School PTA. Together, we can create a brighter future for our children and our community.\n\nBest regards,\n\n[Your Name]\n[Your Title], The Neighborhood School PTA\n[Contact Information]\n```\n\n### Large Corporations and National Nonprofits\n\nWhen reaching out to larger corporations or national nonprofit organizations, a more formal and structured approach may be necessary:\n\n- Research the organization's giving priorities, focus areas, and application processes.\n- Craft a compelling proposal that aligns with their mission and demonstrates the potential impact of their support.\n- Highlight any relevant statistics, success stories, or endorsements from respected sources.\n- Outline specific sponsorship opportunities, such as event sponsorships or program funding.\n- Emphasize the visibility and recognition they will receive for their support.\n- Follow up persistently but respectfully, as larger organizations often have lengthy review processes.\n\nRegardless of the size or industry, it's essential to be genuine, transparent, and focused on building long-term relationships. Personalize your outreach whenever possible, and be prepared to provide detailed information about your PTA's goals, initiatives, and impact.\n",
-          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),E=(i,e)=>{for(var a in e)r(i,a,{get:e[a],enumerable:!0})},s=(i,e,a,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of m(e))!f.call(i,o)&&o!==a&&r(i,o,{get:()=>e[o],enumerable:!(t=u(e,o))||t.enumerable});return i};var v=(i,e,a)=>(a=i!=null?p(g(i)):{},s(e||!i||!i.__esModule?r(a,\"default\",{value:i,enumerable:!0}):a,i)),b=i=>s(r({},\"__esModule\",{value:!0}),i);var d=y((N,l)=>{l.exports=_jsx_runtime});var x={};E(x,{default:()=>h,frontmatter:()=>w});var n=v(d()),w={title:\"Templates\",description:\"Templates for reaching out to donors and nonprofit organizations\"};function c(i){let e={a:\"a\",code:\"code\",figure:\"figure\",h2:\"h2\",h3:\"h3\",h4:\"h4\",li:\"li\",p:\"p\",pre:\"pre\",span:\"span\",ul:\"ul\",...i.components},{Callout:a}=e;return a||k(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(a,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"reaching-out-to-donors-and-nonprofits\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#reaching-out-to-donors-and-nonprofits\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Reaching Out to Donors and Nonprofits\"]}),`\n`,(0,n.jsx)(e.p,{children:\"When reaching out to potential donors or nonprofit organizations, it's important to tailor your approach based on their size and industry. Here are some general guidelines:\"}),`\n`,(0,n.jsxs)(e.h3,{id:\"small-local-businesses-and-individuals\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#small-local-businesses-and-individuals\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Small Local Businesses and Individuals\"]}),`\n`,(0,n.jsx)(e.p,{children:\"For small local businesses and individual donors, a personalized and friendly approach is often most effective. Consider the following:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Introduce yourself and the PTA, explaining your mission and the impact you aim to make in the community.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Highlight any personal connections or shared values with the potential donor.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Clearly explain how their donation or support will be used and the specific benefits it will provide.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Offer various ways for them to get involved, such as donating goods, services, or volunteering their time.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Express gratitude for their consideration and provide contact information for follow-up.\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h4,{id:\"example-email-template-for-small-local-businesses-and-individuals\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#example-email-template-for-small-local-businesses-and-individuals\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Example Email Template for Small Local Businesses and Individuals\"]}),`\n`,(0,n.jsx)(e.figure,{\"data-rehype-pretty-code-figure\":\"\",children:(0,n.jsx)(e.pre,{style:{backgroundColor:\"#24292e\",color:\"#e1e4e8\"},tabIndex:\"0\",\"data-language\":\"markdown\",\"data-theme\":\"github-dark\",children:(0,n.jsxs)(e.code,{\"data-language\":\"markdown\",\"data-theme\":\"github-dark\",style:{display:\"grid\"},children:[(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Subject: Support The Neighborhood School PTA - Make a Difference in Our Community\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Dear [\"}),(0,n.jsx)(e.span,{style:{color:\"#DBEDFF\",textDecoration:\"underline\"},children:\"Name\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"],\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"I hope this email finds you well. My name is [Your Name], and I am reaching out on behalf of The Neighborhood School Parent Teacher Association (TNS PTA). As a valued member of our community, I wanted to share with you an opportunity to make a meaningful impact in the lives of our students and families.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"At TNS PTA, our mission is to foster a strong partnership between parents, teachers, and the community to enhance the educational experience for all our children. We believe that by working together, we can create a nurturing and inclusive environment that supports the growth and success of every student.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"As a [small business owner/individual] with deep roots in our community, your support would be invaluable to our efforts. There are several ways you can get involved:\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"1.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Make a financial contribution: Your donation, no matter the size, will directly fund educational programs, resources, and events that enrich our students' learning experiences.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"2.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Donate goods or services: If you have a product or service that could benefit our school community, we would be grateful for your in-kind donation.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsxs)(e.span,{\"data-line\":\"\",children:[(0,n.jsx)(e.span,{style:{color:\"#FFAB70\"},children:\"3.\"}),(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\" Volunteer your time: We are always looking for passionate individuals to help with our events, committees, and initiatives. Your skills and expertise can make a real difference.\"})]}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"In return for your generosity, we would be thrilled to recognize your support through our various communication channels, reaching hundreds of local families and potential customers.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"If you have any questions or would like to discuss further how you can get involved, please don't hesitate to reach out. I would be happy to provide more information or arrange a meeting at your convenience.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Thank you for considering supporting The Neighborhood School PTA. Together, we can create a brighter future for our children and our community.\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"Best regards,\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:\" \"}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Your Name]\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Your Title], The Neighborhood School PTA\"})}),`\n`,(0,n.jsx)(e.span,{\"data-line\":\"\",children:(0,n.jsx)(e.span,{style:{color:\"#E1E4E8\"},children:\"[Contact Information]\"})})]})})}),`\n`,(0,n.jsxs)(e.h3,{id:\"large-corporations-and-national-nonprofits\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#large-corporations-and-national-nonprofits\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Large Corporations and National Nonprofits\"]}),`\n`,(0,n.jsx)(e.p,{children:\"When reaching out to larger corporations or national nonprofit organizations, a more formal and structured approach may be necessary:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Research the organization's giving priorities, focus areas, and application processes.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Craft a compelling proposal that aligns with their mission and demonstrates the potential impact of their support.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Highlight any relevant statistics, success stories, or endorsements from respected sources.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Outline specific sponsorship opportunities, such as event sponsorships or program funding.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Emphasize the visibility and recognition they will receive for their support.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Follow up persistently but respectfully, as larger organizations often have lengthy review processes.\"}),`\n`]}),`\n`,(0,n.jsx)(e.p,{children:\"Regardless of the size or industry, it's essential to be genuine, transparent, and focused on building long-term relationships. Personalize your outreach whenever possible, and be prepared to provide detailed information about your PTA's goals, initiatives, and impact.\"})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(c,{...i})}):c(i)}function k(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(x);})();\n;return Component;"
-        },
-        "_id": "docs/fundraising/templates.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/fundraising/templates.mdx",
-          "sourceFileName": "templates.mdx",
-          "sourceFileDir": "docs/fundraising",
-          "contentType": "mdx",
-          "flattenedPath": "docs/fundraising/templates"
-        },
-        "type": "Doc",
-        "slug": "/docs/fundraising/templates",
-        "slugAsParams": "fundraising/templates"
-      },
-      "documentHash": "1726710021199",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/fundraising/donor-engagement.mdx": {
-      "document": {
-        "title": "Donor Engagement",
-        "description": "Tips for reaching out for donors and keeping them involved.",
-        "published": true,
-        "body": {
-          "raw": "\n## Engaging Donors and Creating Successful Fundraising Campaigns\n\nAttracting and retaining donors is crucial for the success of the TNS PTA's fundraising efforts. Here are some tips and strategies to help us engage donors and create effective campaigns:\n\n### Building Relationships with Donors\n\n1. **Personalize Our Approach**: Tailor our communication to each donor's interests, values, and giving history. Personalized outreach shows that we value their support and understand their motivations.\n\n2. **Show Impact**: Share stories and data that demonstrate the tangible impact of their donations. Donors want to know how their contributions make a difference.\n\n3. **Express Gratitude**: Consistently thank donors for their support, whether through handwritten notes, phone calls, or special recognition events. Showing appreciation fosters long-term relationships.\n\n4. **Provide Updates**: Keep donors informed about the TNS PTA's activities, achievements, and upcoming initiatives. Regular communication helps maintain engagement and transparency.\n\n### Creating Successful Fundraising Campaigns\n\n1. **Set Clear Goals**: Define specific, measurable goals for our campaign, such as the amount we want to raise or the number of donors we want to engage.\n\n2. **Develop a Compelling Narrative**: Craft a compelling story that resonates with our target audience and highlights the importance of our cause.\n\n3. **Utilize Multiple Channels**: Leverage various communication channels, including email, social media, direct mail, and in-person events, to reach a wider audience.\n\n4. **Offer Diverse Giving Options**: Provide donors with multiple ways to contribute, such as online donations, text-to-give, or in-person events.\n\n5. **Leverage Matching Gifts**: Encourage donors to explore matching gift opportunities through their employers, which can potentially double or triple their contributions.\n\n6. **Recognize and Celebrate Success**: Celebrate milestones and achievements throughout the campaign, and publicly recognize top donors and volunteers.\n\n### Attracting Wealthy Donors\n\nWhile engaging donors of all levels is important, attracting wealthy donors can significantly boost our fundraising efforts. Here are some strategies to consider:\n\n1. **Identify Potential Major Donors**: Research individuals or organizations with a history of supporting causes similar to ours, and tailor our outreach accordingly.\n\n2. **Offer Exclusive Opportunities**: Provide major donors with exclusive opportunities, such as private events, naming rights, or special recognition.\n\n3. **Cultivate Personal Relationships**: Assign dedicated staff or volunteers to build personal relationships with major donors, understanding their interests and motivations.\n\n4. **Highlight Tax Benefits**: Educate potential major donors about the tax benefits of charitable giving, which can incentivize larger contributions.\n\n5. **Propose Matching Challenges**: Encourage major donors to issue matching challenges, where their contribution is matched by other donors up to a certain amount.\n\nRemember, successful donor engagement and fundraising campaigns require consistent effort, transparency, and a genuine commitment to our cause. By building strong relationships and creating compelling narratives, we can attract and retain donors who share our passion for supporting the TNS PTA's mission.\n",
-          "code": "var Component=(()=>{var g=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var v=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),w=(i,n)=>{for(var r in n)o(i,r,{get:n[r],enumerable:!0})},s=(i,n,r,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let t of p(n))!f.call(i,t)&&t!==r&&o(i,t,{get:()=>n[t],enumerable:!(a=u(n,t))||a.enumerable});return i};var b=(i,n,r)=>(r=i!=null?g(m(i)):{},s(n||!i||!i.__esModule?o(r,\"default\",{value:i,enumerable:!0}):r,i)),y=i=>s(o({},\"__esModule\",{value:!0}),i);var l=v((N,c)=>{c.exports=_jsx_runtime});var C={};w(C,{default:()=>d,frontmatter:()=>x});var e=b(l()),x={title:\"Donor Engagement\",description:\"Tips for reaching out for donors and keeping them involved.\"};function h(i){let n={a:\"a\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",span:\"span\",strong:\"strong\",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h2,{id:\"engaging-donors-and-creating-successful-fundraising-campaigns\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#engaging-donors-and-creating-successful-fundraising-campaigns\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Engaging Donors and Creating Successful Fundraising Campaigns\"]}),`\n`,(0,e.jsx)(n.p,{children:\"Attracting and retaining donors is crucial for the success of the TNS PTA's fundraising efforts. Here are some tips and strategies to help us engage donors and create effective campaigns:\"}),`\n`,(0,e.jsxs)(n.h3,{id:\"building-relationships-with-donors\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#building-relationships-with-donors\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Building Relationships with Donors\"]}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Personalize Our Approach\"}),\": Tailor our communication to each donor's interests, values, and giving history. Personalized outreach shows that we value their support and understand their motivations.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Show Impact\"}),\": Share stories and data that demonstrate the tangible impact of their donations. Donors want to know how their contributions make a difference.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Express Gratitude\"}),\": Consistently thank donors for their support, whether through handwritten notes, phone calls, or special recognition events. Showing appreciation fosters long-term relationships.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Provide Updates\"}),\": Keep donors informed about the TNS PTA's activities, achievements, and upcoming initiatives. Regular communication helps maintain engagement and transparency.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsxs)(n.h3,{id:\"creating-successful-fundraising-campaigns\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#creating-successful-fundraising-campaigns\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Creating Successful Fundraising Campaigns\"]}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Set Clear Goals\"}),\": Define specific, measurable goals for our campaign, such as the amount we want to raise or the number of donors we want to engage.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Develop a Compelling Narrative\"}),\": Craft a compelling story that resonates with our target audience and highlights the importance of our cause.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Utilize Multiple Channels\"}),\": Leverage various communication channels, including email, social media, direct mail, and in-person events, to reach a wider audience.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Offer Diverse Giving Options\"}),\": Provide donors with multiple ways to contribute, such as online donations, text-to-give, or in-person events.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Leverage Matching Gifts\"}),\": Encourage donors to explore matching gift opportunities through their employers, which can potentially double or triple their contributions.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Recognize and Celebrate Success\"}),\": Celebrate milestones and achievements throughout the campaign, and publicly recognize top donors and volunteers.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsxs)(n.h3,{id:\"attracting-wealthy-donors\",children:[(0,e.jsx)(n.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#attracting-wealthy-donors\",children:(0,e.jsx)(n.span,{className:\"icon icon-link\"})}),\"Attracting Wealthy Donors\"]}),`\n`,(0,e.jsx)(n.p,{children:\"While engaging donors of all levels is important, attracting wealthy donors can significantly boost our fundraising efforts. Here are some strategies to consider:\"}),`\n`,(0,e.jsxs)(n.ol,{children:[`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Identify Potential Major Donors\"}),\": Research individuals or organizations with a history of supporting causes similar to ours, and tailor our outreach accordingly.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Offer Exclusive Opportunities\"}),\": Provide major donors with exclusive opportunities, such as private events, naming rights, or special recognition.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Cultivate Personal Relationships\"}),\": Assign dedicated staff or volunteers to build personal relationships with major donors, understanding their interests and motivations.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Highlight Tax Benefits\"}),\": Educate potential major donors about the tax benefits of charitable giving, which can incentivize larger contributions.\"]}),`\n`]}),`\n`,(0,e.jsxs)(n.li,{children:[`\n`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:\"Propose Matching Challenges\"}),\": Encourage major donors to issue matching challenges, where their contribution is matched by other donors up to a certain amount.\"]}),`\n`]}),`\n`]}),`\n`,(0,e.jsx)(n.p,{children:\"Remember, successful donor engagement and fundraising campaigns require consistent effort, transparency, and a genuine commitment to our cause. By building strong relationships and creating compelling narratives, we can attract and retain donors who share our passion for supporting the TNS PTA's mission.\"})]})}function d(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(h,{...i})}):h(i)}return y(C);})();\n;return Component;"
-        },
-        "_id": "docs/fundraising/donor-engagement.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/fundraising/donor-engagement.mdx",
-          "sourceFileName": "donor-engagement.mdx",
-          "sourceFileDir": "docs/fundraising",
-          "contentType": "mdx",
-          "flattenedPath": "docs/fundraising/donor-engagement"
-        },
-        "type": "Doc",
-        "slug": "/docs/fundraising/donor-engagement",
-        "slugAsParams": "fundraising/donor-engagement"
-      },
-      "documentHash": "1726709396220",
       "hasWarnings": false,
       "documentTypeName": "Doc"
     }

@@ -3,12 +3,17 @@ import { DocsConfig } from "@/types";
 export const docsConfig: DocsConfig = {
     mainNav: [
         {
-            title: "Documentation",
-            href: "/docs",
-        },
-        {
-            title: "Guides",
-            href: "/guides",
+            title: "Links",
+            items: [
+                {
+                    title: "Documentation",
+                    href: "/docs",
+                },
+                {
+                    title: "Guides",
+                    href: "/guides",
+                },
+            ],
         },
     ],
     sidebarNav: [
@@ -24,10 +29,6 @@ export const docsConfig: DocsConfig = {
         {
             title: "About",
             items: [
-                {
-                    title: "Introduction",
-                    href: "/docs/about",
-                },
                 {
                     title: "Executive Board",
                     href: "/docs/about/executive-board",
@@ -57,10 +58,6 @@ export const docsConfig: DocsConfig = {
         {
             title: "Fundraising",
             items: [
-                {
-                    title: "Introduction",
-                    href: "/docs/fundraising",
-                          },
                 {
                     title: "Templates",
                     href: "/docs/fundraising/templates",
@@ -92,10 +89,6 @@ export const docsConfig: DocsConfig = {
             title: "Documentation",
             items: [
                 {
-                    title: "Introduction",
-                    href: "/docs/documentation",
-                },
-                {
                     title: "Bylaws",
                     href: "/docs/documentation/bylaws",
                 },
@@ -116,10 +109,6 @@ export const docsConfig: DocsConfig = {
         {
             title: "Events",
             items: [
-                {
-                    title: "Introduction",
-                    href: "/docs/events",
-                },
                 {
                     title: "Bake Sale",
                     href: "/docs/events/bake-sale",

@@ -14,7 +14,6 @@ import {
     CommandSeparator,
 } from "@/components/ui/command";
 import { useRouter } from "next/navigation";
-import { useTheme } from "next-themes";
 import { allDocs } from "@/.contentlayer/generated/index.mjs";
 import { useState } from "react";
 import { CircleIcon } from "lucide-react";
@@ -25,20 +24,12 @@ export function DocsSearch({ ...props }: DialogProps) {
     const [loading , setLoading] = useState(false);
 
     const filteredDocs = allDocs
-        .map((doc) => ({
-            title: doc.title,
-            description: doc.description,
-            href: doc.slug,
-            body: doc.body.raw,
-        }))
         .filter((doc) => {
             const searchContent = doc.title + doc.description + doc.body;
             return searchContent
                 .toLowerCase()
                 .includes(searchValue.toLowerCase());
         });
-
-    // console.log(filteredDocs);
 
     const router = useRouter();
 
@@ -110,11 +101,11 @@ export function DocsSearch({ ...props }: DialogProps) {
                      : (
                         filteredDocs.map((doc) => (
                             <CommandItem
-                                key={doc.href}
+                                key={doc.slug}
                                 value={doc.title}
                                 onSelect={() => {
                                     runCommand(() =>
-                                        router.push(doc.href as string)
+                                        router.push(doc.slug as string)
                                     );
                                 }}
                             >

@@ -9,6 +9,6 @@ export const siteConfig: SiteConfig = {
     links: {
         twitter: "https://twitter.com/SchoolTns",
         instagram: "https://instagram.com/neighborhoodgram",
-        donate: "https://www.konstella.com/open/donations/651d960b47fc8495df11ac7a",
+        donate: "/donate",
     },
 };

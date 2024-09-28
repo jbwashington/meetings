@@ -12,6 +12,8 @@ export const env = createEnv({
         GOOGLE_CALENDAR_ID: z.string().min(1),
         AUTH_RESEND_KEY: z.string().min(1),
         RESEND_FROM: z.string().min(1),
+        STRIPE_API_KEY: z.string().min(1),
+        STRIPE_API_SECRET: z.string().min(1),
         IS_DEBUG: z.string().min(1),
     },
     client: {
@@ -28,6 +30,8 @@ export const env = createEnv({
         GOOGLE_CALENDAR_ID: process.env.GOOGLE_CALENDAR_ID,
         AUTH_RESEND_KEY: process.env.AUTH_RESEND_KEY,
         RESEND_FROM: process.env.RESEND_FROM,
+        STRIPE_API_KEY: process.env.STRIPE_API_KEY,
+        STRIPE_API_SECRET: process.env.STRIPE_API_SECRET,
         IS_DEBUG: process.env.IS_DEBUG,
     },
 });

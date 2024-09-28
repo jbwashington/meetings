@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "concurrently \"contentlayer2 dev\" \"next dev --turbo\"",
+        "dev": "concurrently \"contentlayer2 dev\" \"next dev\"",
         "build": "contentlayer2 build && next build",
         "turbo": "next dev --turbo",
         "start": "next start",

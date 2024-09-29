@@ -25,36 +25,6 @@
       "hasWarnings": false,
       "documentTypeName": "Author"
     },
-    "blog/examining-standardized-testing-and-how-to-opt-out.mdx": {
-      "document": {
-        "title": "Examining Standardized Testing",
-        "description": "Shining a spotlight on standardized testing.",
-        "date": "2024-09-10T00:00:00.000Z",
-        "published": true,
-        "image": "/images/blog/standardized-testing.png",
-        "authors": [
-          "jbwashington"
-        ],
-        "body": {
-          "raw": "\n<Callout>\n  Coming soon!\n</Callout>\n",
-          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var h=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},a=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of u(n))!x.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var j=(t,n,e)=>(e=t!=null?p(f(t)):{},a(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>a(r({},\"__esModule\",{value:!0}),t);var c=h((z,d)=>{d.exports=_jsx_runtime});var M={};_(M,{default:()=>m,frontmatter:()=>b});var i=j(c()),b={title:\"Examining Standardized Testing\",description:\"Shining a spotlight on standardized testing.\",image:\"/images/blog/standardized-testing.png\",date:\"2024-09-10\",authors:[\"jbwashington\"]};function g(t){let n={p:\"p\",...t.components},{Callout:e}=n;return e||w(\"Callout\",!0),(0,i.jsx)(e,{children:(0,i.jsx)(n.p,{children:\"Coming soon!\"})})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,i.jsx)(n,{...t,children:(0,i.jsx)(g,{...t})}):g(t)}function w(t,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return C(M);})();\n;return Component;"
-        },
-        "_id": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
-        "_raw": {
-          "sourceFilePath": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
-          "sourceFileName": "examining-standardized-testing-and-how-to-opt-out.mdx",
-          "sourceFileDir": "blog",
-          "contentType": "mdx",
-          "flattenedPath": "blog/examining-standardized-testing-and-how-to-opt-out"
-        },
-        "type": "Post",
-        "slug": "/blog/examining-standardized-testing-and-how-to-opt-out",
-        "slugAsParams": "examining-standardized-testing-and-how-to-opt-out"
-      },
-      "documentHash": "1726283326720",
-      "hasWarnings": false,
-      "documentTypeName": "Post"
-    },
     "guides/school-streets-for-tns.mdx": {
       "document": {
         "title": "School Streets for TNS",
@@ -109,6 +79,31 @@
       "hasWarnings": false,
       "documentTypeName": "Guide"
     },
+    "docs/index.mdx": {
+      "document": {
+        "title": "Introduction",
+        "description": "Welcome to The Neighborhood School Knowledge Base",
+        "published": true,
+        "body": {
+          "raw": "The goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\nWe hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.\n<Callout>\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n</Callout>\n## Getting Started\nSelect a topic below to learn more.\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n<Card href=\"/docs/about\">\n### About Us\nBoard Members, Schedule, 2024-2025 Agenda, minutes, and more.\n</Card>\n<Card href=\"/docs/events\">\n### Events\nEverything you need to know about our events and how to get involved.\n</Card>\n<Card href=\"/docs/fundraising\">\n### Fundraising\nGrants, merch, donations, and where the money goes.\n</Card>\n<Card href=\"/docs/documentation\">\n### Documents, forms, external links, and miscellaneous resources. \nAll the paperwork goes here.\n</Card>\n<Card href=\"/blog\">\n### Our Beliefs\nOnce we write them down on the internet, they become true.\n</Card>\n</div>",
+          "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var k=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var i in e)s(o,i,{get:e[i],enumerable:!0})},t=(o,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of p(e))!b.call(o,r)&&r!==i&&s(o,r,{get:()=>e[r],enumerable:!(a=f(e,r))||a.enumerable});return o};var v=(o,e,i)=>(i=o!=null?m(g(o)):{},t(e||!o||!o.__esModule?s(i,\"default\",{value:o,enumerable:!0}):i,o)),x=o=>t(s({},\"__esModule\",{value:!0}),o);var l=k((L,c)=>{c.exports=_jsx_runtime});var y={};w(y,{default:()=>u,frontmatter:()=>N});var n=v(l()),N={title:\"Introduction\",description:\"Welcome to The Neighborhood School Knowledge Base\"};function d(o){let e={a:\"a\",h2:\"h2\",h3:\"h3\",p:\"p\",span:\"span\",...o.components},{Callout:i,Card:a}=e;return i||h(\"Callout\",!0),a||h(\"Card\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:`The goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\nWe hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.`}),`\n`,(0,n.jsx)(i,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"getting-started\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#getting-started\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Getting Started\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Select a topic below to learn more.\"}),`\n`,(0,n.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,n.jsxs)(a,{href:\"/docs/about\",children:[(0,n.jsxs)(e.h3,{id:\"about-us\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#about-us\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"About Us\"]}),(0,n.jsx)(e.p,{children:\"Board Members, Schedule, 2024-2025 Agenda, minutes, and more.\"})]}),(0,n.jsxs)(a,{href:\"/docs/events\",children:[(0,n.jsxs)(e.h3,{id:\"events\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#events\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Events\"]}),(0,n.jsx)(e.p,{children:\"Everything you need to know about our events and how to get involved.\"})]}),(0,n.jsxs)(a,{href:\"/docs/fundraising\",children:[(0,n.jsxs)(e.h3,{id:\"fundraising\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#fundraising\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Fundraising\"]}),(0,n.jsx)(e.p,{children:\"Grants, merch, donations, and where the money goes.\"})]}),(0,n.jsxs)(a,{href:\"/docs/documentation\",children:[(0,n.jsxs)(e.h3,{id:\"documents-forms-external-links-and-miscellaneous-resources\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#documents-forms-external-links-and-miscellaneous-resources\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Documents, forms, external links, and miscellaneous resources.\"]}),(0,n.jsx)(e.p,{children:\"All the paperwork goes here.\"})]}),(0,n.jsxs)(a,{href:\"/blog\",children:[(0,n.jsxs)(e.h3,{id:\"our-beliefs\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#our-beliefs\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Our Beliefs\"]}),(0,n.jsx)(e.p,{children:\"Once we write them down on the internet, they become true.\"})]})]})]})}function u(o={}){let{wrapper:e}=o.components||{};return e?(0,n.jsx)(e,{...o,children:(0,n.jsx)(d,{...o})}):d(o)}function h(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(y);})();\n;return Component;"
+        },
+        "_id": "docs/index.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "docs",
+          "contentType": "mdx",
+          "flattenedPath": "docs"
+        },
+        "type": "Doc",
+        "slug": "/docs",
+        "slugAsParams": ""
+      },
+      "documentHash": "1727555099293",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
     "pages/privacy.mdx": {
       "document": {
         "title": "Privacy",
@@ -157,180 +152,35 @@
       "hasWarnings": false,
       "documentTypeName": "Page"
     },
-    "docs/index.mdx": {
+    "blog/examining-standardized-testing-and-how-to-opt-out.mdx": {
       "document": {
-        "title": "Introduction",
-        "description": "Welcome to The Neighborhood School Knowledge Base",
+        "title": "Examining Standardized Testing",
+        "description": "Shining a spotlight on standardized testing.",
+        "date": "2024-09-10T00:00:00.000Z",
         "published": true,
+        "image": "/images/blog/standardized-testing.png",
+        "authors": [
+          "jbwashington"
+        ],
         "body": {
-          "raw": "The goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\nWe hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.\n<Callout>\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n</Callout>\n## Getting Started\nSelect a topic below to learn more.\n<div className=\"grid sm:grid-cols-2 gap-4 mt-6\">\n<Card href=\"/docs/about\">\n### About Us\nBoard Members, Schedule, 2024-2025 Agenda, minutes, and more.\n</Card>\n<Card href=\"/docs/events\">\n### Events\nEverything you need to know about our events and how to get involved.\n</Card>\n<Card href=\"/docs/fundraising\">\n### Fundraising\nGrants, merch, donations, and where the money goes.\n</Card>\n<Card href=\"/docs/documentation\">\n### Documents, forms, external links, and miscellaneous resources. \nAll the paperwork goes here.\n</Card>\n<Card href=\"/blog\">\n### Our Beliefs\nOnce we write them down on the internet, they become true.\n</Card>\n</div>",
-          "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var k=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var i in e)s(o,i,{get:e[i],enumerable:!0})},t=(o,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of p(e))!b.call(o,r)&&r!==i&&s(o,r,{get:()=>e[r],enumerable:!(a=f(e,r))||a.enumerable});return o};var v=(o,e,i)=>(i=o!=null?m(g(o)):{},t(e||!o||!o.__esModule?s(i,\"default\",{value:o,enumerable:!0}):i,o)),x=o=>t(s({},\"__esModule\",{value:!0}),o);var l=k((L,c)=>{c.exports=_jsx_runtime});var y={};w(y,{default:()=>u,frontmatter:()=>N});var n=v(l()),N={title:\"Introduction\",description:\"Welcome to The Neighborhood School Knowledge Base\"};function d(o){let e={a:\"a\",h2:\"h2\",h3:\"h3\",p:\"p\",span:\"span\",...o.components},{Callout:i,Card:a}=e;return i||h(\"Callout\",!0),a||h(\"Card\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:`The goal of this site is to provide a centralized location for all information related to the PTA. This includes information about our mission, values, and vision, as well as resources for parents, teachers, and students.\nWe hope that this site will be a valuable resource for all members of our community, and we welcome your feedback and suggestions for how we can improve it.`}),`\n`,(0,n.jsx)(i,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"getting-started\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#getting-started\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Getting Started\"]}),`\n`,(0,n.jsx)(e.p,{children:\"Select a topic below to learn more.\"}),`\n`,(0,n.jsxs)(\"div\",{className:\"grid sm:grid-cols-2 gap-4 mt-6\",children:[(0,n.jsxs)(a,{href:\"/docs/about\",children:[(0,n.jsxs)(e.h3,{id:\"about-us\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#about-us\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"About Us\"]}),(0,n.jsx)(e.p,{children:\"Board Members, Schedule, 2024-2025 Agenda, minutes, and more.\"})]}),(0,n.jsxs)(a,{href:\"/docs/events\",children:[(0,n.jsxs)(e.h3,{id:\"events\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#events\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Events\"]}),(0,n.jsx)(e.p,{children:\"Everything you need to know about our events and how to get involved.\"})]}),(0,n.jsxs)(a,{href:\"/docs/fundraising\",children:[(0,n.jsxs)(e.h3,{id:\"fundraising\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#fundraising\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Fundraising\"]}),(0,n.jsx)(e.p,{children:\"Grants, merch, donations, and where the money goes.\"})]}),(0,n.jsxs)(a,{href:\"/docs/documentation\",children:[(0,n.jsxs)(e.h3,{id:\"documents-forms-external-links-and-miscellaneous-resources\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#documents-forms-external-links-and-miscellaneous-resources\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Documents, forms, external links, and miscellaneous resources.\"]}),(0,n.jsx)(e.p,{children:\"All the paperwork goes here.\"})]}),(0,n.jsxs)(a,{href:\"/blog\",children:[(0,n.jsxs)(e.h3,{id:\"our-beliefs\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#our-beliefs\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Our Beliefs\"]}),(0,n.jsx)(e.p,{children:\"Once we write them down on the internet, they become true.\"})]})]})]})}function u(o={}){let{wrapper:e}=o.components||{};return e?(0,n.jsx)(e,{...o,children:(0,n.jsx)(d,{...o})}):d(o)}function h(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(y);})();\n;return Component;"
+          "raw": "\n<Callout>\n  Coming soon!\n</Callout>\n",
+          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var h=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},a=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of u(n))!x.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var j=(t,n,e)=>(e=t!=null?p(f(t)):{},a(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>a(r({},\"__esModule\",{value:!0}),t);var c=h((z,d)=>{d.exports=_jsx_runtime});var M={};_(M,{default:()=>m,frontmatter:()=>b});var i=j(c()),b={title:\"Examining Standardized Testing\",description:\"Shining a spotlight on standardized testing.\",image:\"/images/blog/standardized-testing.png\",date:\"2024-09-10\",authors:[\"jbwashington\"]};function g(t){let n={p:\"p\",...t.components},{Callout:e}=n;return e||w(\"Callout\",!0),(0,i.jsx)(e,{children:(0,i.jsx)(n.p,{children:\"Coming soon!\"})})}function m(t={}){let{wrapper:n}=t.components||{};return n?(0,i.jsx)(n,{...t,children:(0,i.jsx)(g,{...t})}):g(t)}function w(t,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return C(M);})();\n;return Component;"
         },
-        "_id": "docs/index.mdx",
+        "_id": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
         "_raw": {
-          "sourceFilePath": "docs/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "docs",
+          "sourceFilePath": "blog/examining-standardized-testing-and-how-to-opt-out.mdx",
+          "sourceFileName": "examining-standardized-testing-and-how-to-opt-out.mdx",
+          "sourceFileDir": "blog",
           "contentType": "mdx",
-          "flattenedPath": "docs"
+          "flattenedPath": "blog/examining-standardized-testing-and-how-to-opt-out"
         },
-        "type": "Doc",
-        "slug": "/docs",
-        "slugAsParams": ""
+        "type": "Post",
+        "slug": "/blog/examining-standardized-testing-and-how-to-opt-out",
+        "slugAsParams": "examining-standardized-testing-and-how-to-opt-out"
       },
-      "documentHash": "1727555099293",
+      "documentHash": "1726283326720",
       "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/committees.mdx": {
-      "document": {
-        "title": "PTA Committees",
-        "description": "Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n# Committees\n\n| Committee | Description | Leaders required | Committee members |\n| :---- | :---- | :---- | :---- |\n| Elections | Coordinates timing and communication for PTA and SLT elections | 1 | 0 |\n| Advocacy | Coordinates |  |  |",
-          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var p=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports),u=(n,t)=>{for(var i in t)r(n,i,{get:t[i],enumerable:!0})},s=(n,t,i,o)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let l of x(t))!y.call(n,l)&&l!==i&&r(n,l,{get:()=>t[l],enumerable:!(o=f(t,l))||o.enumerable});return n};var A=(n,t,i)=>(i=n!=null?m(g(n)):{},s(t||!n||!n.__esModule?r(i,\"default\",{value:n,enumerable:!0}):i,n)),b=n=>s(r({},\"__esModule\",{value:!0}),n);var c=p((w,d)=>{d.exports=_jsx_runtime});var k={};u(k,{default:()=>h,frontmatter:()=>C});var e=A(c()),C={title:\"PTA Committees\",description:\"Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members\"};function a(n){let t={a:\"a\",h1:\"h1\",p:\"p\",span:\"span\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",...n.components},{Callout:i}=t;return i||_(\"Callout\",!0),(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(i,{children:(0,e.jsx)(t.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,e.jsxs)(t.h1,{id:\"committees\",children:[(0,e.jsx)(t.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#committees\",children:(0,e.jsx)(t.span,{className:\"icon icon-link\"})}),\"Committees\"]}),`\n`,(0,e.jsxs)(t.table,{children:[(0,e.jsx)(t.thead,{children:(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Committee\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Description\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Leaders required\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Committee members\"})]})}),(0,e.jsxs)(t.tbody,{children:[(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Elections\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Coordinates timing and communication for PTA and SLT elections\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"1\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"0\"})]}),(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Advocacy\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Coordinates\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"}}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"}})]})]})]})]})}function h(n={}){let{wrapper:t}=n.components||{};return t?(0,e.jsx)(t,{...n,children:(0,e.jsx)(a,{...n})}):a(n)}function _(n,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(k);})();\n;return Component;"
-        },
-        "_id": "docs/about/committees.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/committees.mdx",
-          "sourceFileName": "committees.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/committees"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/committees",
-        "slugAsParams": "about/committees"
-      },
-      "documentHash": "1726117000240",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/elections.mdx": {
-      "document": {
-        "title": "PTA Elections",
-        "description": "The PTA election process and proposed schedule",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n| Event | Date |\n| --- | --- |\n| Nomination/Interest Form Revised | (existing), May 1 |\n| Nomination/Interest Form/Election Announcement Sent Out | May 15 |\n| Nomination/Interest Form Reminder | June 9 |\n| Nominations DUE | June 11 |\n| Candidates/Positions sent out | June 14 |\n| Election | June 15 |\n| Results | June 15 or later |",
-          "code": "var Component=(()=>{var m=Object.create;var d=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),b=(n,e)=>{for(var r in e)d(n,r,{get:e[r],enumerable:!0})},c=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of p(e))!f.call(n,i)&&i!==r&&d(n,i,{get:()=>e[i],enumerable:!(o=u(e,i))||o.enumerable});return n};var g=(n,e,r)=>(r=n!=null?m(x(n)):{},c(e||!n||!n.__esModule?d(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>c(d({},\"__esModule\",{value:!0}),n);var s=y((k,l)=>{l.exports=_jsx_runtime});var w={};b(w,{default:()=>a,frontmatter:()=>E});var t=g(s()),E={title:\"PTA Elections\",description:\"The PTA election process and proposed schedule\"};function h(n){let e={p:\"p\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",...n.components},{Callout:r}=e;return r||j(\"Callout\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(r,{children:(0,t.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,t.jsxs)(e.table,{children:[(0,t.jsx)(e.thead,{children:(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.th,{children:\"Event\"}),(0,t.jsx)(e.th,{children:\"Date\"})]})}),(0,t.jsxs)(e.tbody,{children:[(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form Revised\"}),(0,t.jsx)(e.td,{children:\"(existing), May 1\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form/Election Announcement Sent Out\"}),(0,t.jsx)(e.td,{children:\"May 15\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form Reminder\"}),(0,t.jsx)(e.td,{children:\"June 9\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nominations DUE\"}),(0,t.jsx)(e.td,{children:\"June 11\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Candidates/Positions sent out\"}),(0,t.jsx)(e.td,{children:\"June 14\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Election\"}),(0,t.jsx)(e.td,{children:\"June 15\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Results\"}),(0,t.jsx)(e.td,{children:\"June 15 or later\"})]})]})]})]})}function a(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(h,{...n})}):h(n)}function j(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return _(w);})();\n;return Component;"
-        },
-        "_id": "docs/about/elections.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/elections.mdx",
-          "sourceFileName": "elections.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/elections"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/elections",
-        "slugAsParams": "about/elections"
-      },
-      "documentHash": "1726117000240",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/executive-board.mdx": {
-      "document": {
-        "title": "PTA Executive Board",
-        "description": "Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n## 2024-2025 PTA Executive Board Members\n\n| Name | Position | Email Address |\n| --- | --- | --- |\n| Jane Smith | President | ptapresident@tnsny.org |\n| Bob Johnson | Recording Secretary | ptasecretary@tnsny.org |\n| Emily Davis | Treasurer | ptatreasurer@tnsny.org |\n| Michael Lee | Events | ptaevents@tnsny.org |\n| Sarah Wilson | Parent Engagement | ptaparentengagement@tnsny.org |\n\n## Executive Board Descriptions and Responsibilities\n\nIt is recommended that **two people serve in each executive position** in order to support one another and get work done. Executive Board members manage committees of people who are willing to help out in that area.\n\n## President\n\n* Presides over meetings  \n* plays a role with appointing committee leadership and delegating responsibilities  \n* is a member of the School Leadership Team  \n* is a signatory for PTA checks  \n* represents TNS on CEC D1 Presidents’ Council  \n* Works on opt-out testing campaign  \n* Works with Fundraising to solicit donations from families; with Principal on grants as needed  \n* Provides guidance and support to other Exec Board members\n\n## Vice-President of Events (Events Committee)\n\n* Oversees planning of events and fundraising activities  \n* Works with Fundraising on fundraising goals, but takes lead on planning, execution and coordination of committee members on events, usually:  \n  * Halloween  \n  * Holiday Fair  \n  * Earth Day  \n  * Bake sale  \n  * Pi Day\n\n## Vice-President of Fundraising (Fundraising Committee)\n\n* Researches and Writes Grants  \n* Coordinates with Events on fundraising goals for events\n\n## Secretary (Communications Committee)\n\n* Maintains and shares the official record (minutes) of the proceedings and actions of all TNS PTA meetings  \n* Works with school and PTA to manage the school calendar which includes adding all school holidays and official dates to the calendar; setting up links and adding events to calendar for smaller group meetings or special events as needed\n\n## Treasurer:\n\n* Responsible for all day-to-day financial affairs and funds of the TNSPTA including income (donations, grants, etc.) and expenses (invoices, reimbursements, etc.)  \n* Monthly reporting of income and expenses for PTA General Meeting  \n* Giving status reports at PTA meeting on budget and fundraising goals \n\n## Parent Engagement Liaison:\n\n* With support from Class Parent Committee, acts as liaison between TNSPTA and class parents; ensures regular communications with class parent network.\n\n## SLT:\n\n* There are two parent representative positions available.  Parent representatives must attend all monthly SLT meetings, and participate in the drafting and consensus-based approval of the school’s Comprehensive Education Plan.",
-          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var b=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var t in e)a(i,t,{get:e[t],enumerable:!0})},o=(i,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of u(e))!f.call(i,r)&&r!==t&&a(i,r,{get:()=>e[r],enumerable:!(s=p(e,r))||s.enumerable});return i};var y=(i,e,t)=>(t=i!=null?m(g(i)):{},o(e||!i||!i.__esModule?a(t,\"default\",{value:i,enumerable:!0}):t,i)),k=i=>o(a({},\"__esModule\",{value:!0}),i);var c=b((T,l)=>{l.exports=_jsx_runtime});var N={};v(N,{default:()=>h,frontmatter:()=>x});var n=y(c()),x={title:\"PTA Executive Board\",description:\"Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members\"};function d(i){let e={a:\"a\",h2:\"h2\",li:\"li\",p:\"p\",span:\"span\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...i.components},{Callout:t}=e;return t||P(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"2024-2025-pta-executive-board-members\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2024-2025-pta-executive-board-members\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"2024-2025 PTA Executive Board Members\"]}),`\n`,(0,n.jsxs)(e.table,{children:[(0,n.jsx)(e.thead,{children:(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.th,{children:\"Name\"}),(0,n.jsx)(e.th,{children:\"Position\"}),(0,n.jsx)(e.th,{children:\"Email Address\"})]})}),(0,n.jsxs)(e.tbody,{children:[(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Jane Smith\"}),(0,n.jsx)(e.td,{children:\"President\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptapresident@tnsny.org\",children:\"ptapresident@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Bob Johnson\"}),(0,n.jsx)(e.td,{children:\"Recording Secretary\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptasecretary@tnsny.org\",children:\"ptasecretary@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Emily Davis\"}),(0,n.jsx)(e.td,{children:\"Treasurer\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptatreasurer@tnsny.org\",children:\"ptatreasurer@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Michael Lee\"}),(0,n.jsx)(e.td,{children:\"Events\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptaevents@tnsny.org\",children:\"ptaevents@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Sarah Wilson\"}),(0,n.jsx)(e.td,{children:\"Parent Engagement\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptaparentengagement@tnsny.org\",children:\"ptaparentengagement@tnsny.org\"})})]})]})]}),`\n`,(0,n.jsxs)(e.h2,{id:\"executive-board-descriptions-and-responsibilities\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#executive-board-descriptions-and-responsibilities\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Executive Board Descriptions and Responsibilities\"]}),`\n`,(0,n.jsxs)(e.p,{children:[\"It is recommended that \",(0,n.jsx)(e.strong,{children:\"two people serve in each executive position\"}),\" in order to support one another and get work done. Executive Board members manage committees of people who are willing to help out in that area.\"]}),`\n`,(0,n.jsxs)(e.h2,{id:\"president\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#president\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"President\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Presides over meetings\"}),`\n`,(0,n.jsx)(e.li,{children:\"plays a role with appointing committee leadership and delegating responsibilities\"}),`\n`,(0,n.jsx)(e.li,{children:\"is a member of the School Leadership Team\"}),`\n`,(0,n.jsx)(e.li,{children:\"is a signatory for PTA checks\"}),`\n`,(0,n.jsx)(e.li,{children:\"represents TNS on CEC D1 Presidents\\u2019 Council\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works on opt-out testing campaign\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works with Fundraising to solicit donations from families; with Principal on grants as needed\"}),`\n`,(0,n.jsx)(e.li,{children:\"Provides guidance and support to other Exec Board members\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"vice-president-of-events-events-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#vice-president-of-events-events-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Vice-President of Events (Events Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Oversees planning of events and fundraising activities\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"Works with Fundraising on fundraising goals, but takes lead on planning, execution and coordination of committee members on events, usually:\",`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Halloween\"}),`\n`,(0,n.jsx)(e.li,{children:\"Holiday Fair\"}),`\n`,(0,n.jsx)(e.li,{children:\"Earth Day\"}),`\n`,(0,n.jsx)(e.li,{children:\"Bake sale\"}),`\n`,(0,n.jsx)(e.li,{children:\"Pi Day\"}),`\n`]}),`\n`]}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"vice-president-of-fundraising-fundraising-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#vice-president-of-fundraising-fundraising-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Vice-President of Fundraising (Fundraising Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Researches and Writes Grants\"}),`\n`,(0,n.jsx)(e.li,{children:\"Coordinates with Events on fundraising goals for events\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"secretary-communications-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#secretary-communications-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Secretary (Communications Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Maintains and shares the official record (minutes) of the proceedings and actions of all TNS PTA meetings\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works with school and PTA to manage the school calendar which includes adding all school holidays and official dates to the calendar; setting up links and adding events to calendar for smaller group meetings or special events as needed\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"treasurer\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#treasurer\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Treasurer:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Responsible for all day-to-day financial affairs and funds of the TNSPTA including income (donations, grants, etc.) and expenses (invoices, reimbursements, etc.)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Monthly reporting of income and expenses for PTA General Meeting\"}),`\n`,(0,n.jsx)(e.li,{children:\"Giving status reports at PTA meeting on budget and fundraising goals\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"parent-engagement-liaison\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#parent-engagement-liaison\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Parent Engagement Liaison:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"With support from Class Parent Committee, acts as liaison between TNSPTA and class parents; ensures regular communications with class parent network.\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"slt\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#slt\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"SLT:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"There are two parent representative positions available.  Parent representatives must attend all monthly SLT meetings, and participate in the drafting and consensus-based approval of the school\\u2019s Comprehensive Education Plan.\"}),`\n`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}function P(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(N);})();\n;return Component;"
-        },
-        "_id": "docs/about/executive-board.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/executive-board.mdx",
-          "sourceFileName": "executive-board.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/executive-board"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/executive-board",
-        "slugAsParams": "about/executive-board"
-      },
-      "documentHash": "1726706556364",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/faqs.mdx": {
-      "document": {
-        "title": "FAQs",
-        "description": "Frequently asked Questions",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n",
-          "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var o in t)i(e,o,{get:t[o],enumerable:!0})},c=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of f(t))!k.call(e,n)&&n!==o&&i(e,n,{get:()=>t[n],enumerable:!(s=m(t,n))||s.enumerable});return e};var _=(e,t,o)=>(o=e!=null?d(x(e)):{},c(t||!e||!e.__esModule?i(o,\"default\",{value:e,enumerable:!0}):o,e)),g=e=>c(i({},\"__esModule\",{value:!0}),e);var l=w((b,u)=>{u.exports=_jsx_runtime});var C={};y(C,{default:()=>p,frontmatter:()=>h});var r=_(l()),h={title:\"FAQs\",description:\"Frequently asked Questions\"};function a(e){let t={p:\"p\",...e.components},{Callout:o}=t;return o||j(\"Callout\",!0),(0,r.jsx)(o,{children:(0,r.jsx)(t.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})})}function p(e={}){let{wrapper:t}=e.components||{};return t?(0,r.jsx)(t,{...e,children:(0,r.jsx)(a,{...e})}):a(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return g(C);})();\n;return Component;"
-        },
-        "_id": "docs/about/faqs.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/faqs.mdx",
-          "sourceFileName": "faqs.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/faqs"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/faqs",
-        "slugAsParams": "about/faqs"
-      },
-      "documentHash": "1726117000240",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/mission.mdx": {
-      "document": {
-        "title": "TNS Mission",
-        "description": "We are a group of parents, teachers, and community members who are committed to supporting the academic, social, and emotional well-being of our students.",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n### Our Mission\n\nThe Neighborhood School’s mission is based on our deep belief that children thrive when we build on their strengths and provide a safe and nurturing environment.  Our practices and policies are rooted in anti-bias and anti-racist work, which involves the entire school community.  Our integrated, inquiry-based curriculum encompasses children’s interests and is responsive to the needs of each child.  We collaborate with families to foster a community that is supportive of the whole child.\n\n",
-          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),w=(n,e)=>{for(var i in e)r(n,i,{get:e[i],enumerable:!0})},a=(n,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of p(e))!g.call(n,t)&&t!==i&&r(n,t,{get:()=>e[t],enumerable:!(s=u(e,t))||s.enumerable});return n};var x=(n,e,i)=>(i=n!=null?m(f(n)):{},a(e||!n||!n.__esModule?r(i,\"default\",{value:n,enumerable:!0}):i,n)),y=n=>a(r({},\"__esModule\",{value:!0}),n);var l=b((M,c)=>{c.exports=_jsx_runtime});var _={};w(_,{default:()=>h,frontmatter:()=>k});var o=x(l()),k={title:\"TNS Mission\",description:\"We are a group of parents, teachers, and community members who are committed to supporting the academic, social, and emotional well-being of our students.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Callout:i}=e;return i||v(\"Callout\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(i,{children:(0,o.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,o.jsxs)(e.h3,{id:\"our-mission\",children:[(0,o.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#our-mission\",children:(0,o.jsx)(e.span,{className:\"icon icon-link\"})}),\"Our Mission\"]}),`\n`,(0,o.jsx)(e.p,{children:\"The Neighborhood School\\u2019s mission is based on our deep belief that children thrive when we build on their strengths and provide a safe and nurturing environment.  Our practices and policies are rooted in anti-bias and anti-racist work, which involves the entire school community.  Our integrated, inquiry-based curriculum encompasses children\\u2019s interests and is responsive to the needs of each child.  We collaborate with families to foster a community that is supportive of the whole child.\"})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,o.jsx)(e,{...n,children:(0,o.jsx)(d,{...n})}):d(n)}function v(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(_);})();\n;return Component;"
-        },
-        "_id": "docs/about/mission.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/mission.mdx",
-          "sourceFileName": "mission.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/mission"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/mission",
-        "slugAsParams": "about/mission"
-      },
-      "documentHash": "1726117000242",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
-    },
-    "docs/about/parent-engagement.mdx": {
-      "document": {
-        "title": "Parent engagement",
-        "description": "Platforms and tools for parent engagement",
-        "published": true,
-        "body": {
-          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n## Communications\n\n* Email Newsletter Editor (with Principal and Parent Coordinator)\n* Konstella/GDrive/IT Administrator\n* Web Content\n* Digital Design (social media)\n* Events Calendar\n* Photography\n\n## Email Newsletter Guidelines\n\n### Deadlines\n\n* Everything should be held for the Monday school newsletter unless it is an emergency or the deadline is within 1 day.",
-          "code": "var Component=(()=>{var m=Object.create;var l=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),x=(i,e)=>{for(var t in e)l(i,t,{get:e[t],enumerable:!0})},r=(i,e,t,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of p(e))!f.call(i,a)&&a!==t&&l(i,a,{get:()=>e[a],enumerable:!(o=u(e,a))||o.enumerable});return i};var b=(i,e,t)=>(t=i!=null?m(g(i)):{},r(e||!i||!i.__esModule?l(t,\"default\",{value:i,enumerable:!0}):t,i)),k=i=>r(l({},\"__esModule\",{value:!0}),i);var c=w((E,s)=>{s.exports=_jsx_runtime});var N={};x(N,{default:()=>h,frontmatter:()=>y});var n=b(c()),y={title:\"Parent engagement\",description:\"Platforms and tools for parent engagement\"};function d(i){let e={a:\"a\",h2:\"h2\",h3:\"h3\",li:\"li\",p:\"p\",span:\"span\",ul:\"ul\",...i.components},{Callout:t}=e;return t||C(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"communications\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#communications\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Communications\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Email Newsletter Editor (with Principal and Parent Coordinator)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Konstella/GDrive/IT Administrator\"}),`\n`,(0,n.jsx)(e.li,{children:\"Web Content\"}),`\n`,(0,n.jsx)(e.li,{children:\"Digital Design (social media)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Events Calendar\"}),`\n`,(0,n.jsx)(e.li,{children:\"Photography\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"email-newsletter-guidelines\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#email-newsletter-guidelines\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Email Newsletter Guidelines\"]}),`\n`,(0,n.jsxs)(e.h3,{id:\"deadlines\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#deadlines\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Deadlines\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Everything should be held for the Monday school newsletter unless it is an emergency or the deadline is within 1 day.\"}),`\n`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}function C(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(N);})();\n;return Component;"
-        },
-        "_id": "docs/about/parent-engagement.mdx",
-        "_raw": {
-          "sourceFilePath": "docs/about/parent-engagement.mdx",
-          "sourceFileName": "parent-engagement.mdx",
-          "sourceFileDir": "docs/about",
-          "contentType": "mdx",
-          "flattenedPath": "docs/about/parent-engagement"
-        },
-        "type": "Doc",
-        "slug": "/docs/about/parent-engagement",
-        "slugAsParams": "about/parent-engagement"
-      },
-      "documentHash": "1726117000242",
-      "hasWarnings": false,
-      "documentTypeName": "Doc"
+      "documentTypeName": "Post"
     },
     "docs/documentation/bylaws.mdx": {
       "document": {
@@ -604,6 +454,156 @@
         "slugAsParams": "fundraising/templates"
       },
       "documentHash": "1727555099293",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/committees.mdx": {
+      "document": {
+        "title": "PTA Committees",
+        "description": "Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n# Committees\n\n| Committee | Description | Leaders required | Committee members |\n| :---- | :---- | :---- | :---- |\n| Elections | Coordinates timing and communication for PTA and SLT elections | 1 | 0 |\n| Advocacy | Coordinates |  |  |",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var p=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports),u=(n,t)=>{for(var i in t)r(n,i,{get:t[i],enumerable:!0})},s=(n,t,i,o)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let l of x(t))!y.call(n,l)&&l!==i&&r(n,l,{get:()=>t[l],enumerable:!(o=f(t,l))||o.enumerable});return n};var A=(n,t,i)=>(i=n!=null?m(g(n)):{},s(t||!n||!n.__esModule?r(i,\"default\",{value:n,enumerable:!0}):i,n)),b=n=>s(r({},\"__esModule\",{value:!0}),n);var c=p((w,d)=>{d.exports=_jsx_runtime});var k={};u(k,{default:()=>h,frontmatter:()=>C});var e=A(c()),C={title:\"PTA Committees\",description:\"Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members\"};function a(n){let t={a:\"a\",h1:\"h1\",p:\"p\",span:\"span\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",...n.components},{Callout:i}=t;return i||_(\"Callout\",!0),(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(i,{children:(0,e.jsx)(t.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,e.jsxs)(t.h1,{id:\"committees\",children:[(0,e.jsx)(t.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#committees\",children:(0,e.jsx)(t.span,{className:\"icon icon-link\"})}),\"Committees\"]}),`\n`,(0,e.jsxs)(t.table,{children:[(0,e.jsx)(t.thead,{children:(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Committee\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Description\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Leaders required\"}),(0,e.jsx)(t.th,{style:{textAlign:\"left\"},children:\"Committee members\"})]})}),(0,e.jsxs)(t.tbody,{children:[(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Elections\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Coordinates timing and communication for PTA and SLT elections\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"1\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"0\"})]}),(0,e.jsxs)(t.tr,{children:[(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Advocacy\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"},children:\"Coordinates\"}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"}}),(0,e.jsx)(t.td,{style:{textAlign:\"left\"}})]})]})]})]})}function h(n={}){let{wrapper:t}=n.components||{};return t?(0,e.jsx)(t,{...n,children:(0,e.jsx)(a,{...n})}):a(n)}function _(n,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(k);})();\n;return Component;"
+        },
+        "_id": "docs/about/committees.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/committees.mdx",
+          "sourceFileName": "committees.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/committees"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/committees",
+        "slugAsParams": "about/committees"
+      },
+      "documentHash": "1726117000240",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/elections.mdx": {
+      "document": {
+        "title": "PTA Elections",
+        "description": "The PTA election process and proposed schedule",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n| Event | Date |\n| --- | --- |\n| Nomination/Interest Form Revised | (existing), May 1 |\n| Nomination/Interest Form/Election Announcement Sent Out | May 15 |\n| Nomination/Interest Form Reminder | June 9 |\n| Nominations DUE | June 11 |\n| Candidates/Positions sent out | June 14 |\n| Election | June 15 |\n| Results | June 15 or later |",
+          "code": "var Component=(()=>{var m=Object.create;var d=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),b=(n,e)=>{for(var r in e)d(n,r,{get:e[r],enumerable:!0})},c=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of p(e))!f.call(n,i)&&i!==r&&d(n,i,{get:()=>e[i],enumerable:!(o=u(e,i))||o.enumerable});return n};var g=(n,e,r)=>(r=n!=null?m(x(n)):{},c(e||!n||!n.__esModule?d(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>c(d({},\"__esModule\",{value:!0}),n);var s=y((k,l)=>{l.exports=_jsx_runtime});var w={};b(w,{default:()=>a,frontmatter:()=>E});var t=g(s()),E={title:\"PTA Elections\",description:\"The PTA election process and proposed schedule\"};function h(n){let e={p:\"p\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",...n.components},{Callout:r}=e;return r||j(\"Callout\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(r,{children:(0,t.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,t.jsxs)(e.table,{children:[(0,t.jsx)(e.thead,{children:(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.th,{children:\"Event\"}),(0,t.jsx)(e.th,{children:\"Date\"})]})}),(0,t.jsxs)(e.tbody,{children:[(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form Revised\"}),(0,t.jsx)(e.td,{children:\"(existing), May 1\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form/Election Announcement Sent Out\"}),(0,t.jsx)(e.td,{children:\"May 15\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nomination/Interest Form Reminder\"}),(0,t.jsx)(e.td,{children:\"June 9\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Nominations DUE\"}),(0,t.jsx)(e.td,{children:\"June 11\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Candidates/Positions sent out\"}),(0,t.jsx)(e.td,{children:\"June 14\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Election\"}),(0,t.jsx)(e.td,{children:\"June 15\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{children:\"Results\"}),(0,t.jsx)(e.td,{children:\"June 15 or later\"})]})]})]})]})}function a(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(h,{...n})}):h(n)}function j(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return _(w);})();\n;return Component;"
+        },
+        "_id": "docs/about/elections.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/elections.mdx",
+          "sourceFileName": "elections.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/elections"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/elections",
+        "slugAsParams": "about/elections"
+      },
+      "documentHash": "1726117000240",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/executive-board.mdx": {
+      "document": {
+        "title": "PTA Executive Board",
+        "description": "Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n## 2024-2025 PTA Executive Board Members\n\n| Name | Position | Email Address |\n| --- | --- | --- |\n| Jane Smith | President | ptapresident@tnsny.org |\n| Bob Johnson | Recording Secretary | ptasecretary@tnsny.org |\n| Emily Davis | Treasurer | ptatreasurer@tnsny.org |\n| Michael Lee | Events | ptaevents@tnsny.org |\n| Sarah Wilson | Parent Engagement | ptaparentengagement@tnsny.org |\n\n## Executive Board Descriptions and Responsibilities\n\nIt is recommended that **two people serve in each executive position** in order to support one another and get work done. Executive Board members manage committees of people who are willing to help out in that area.\n\n## President\n\n* Presides over meetings  \n* plays a role with appointing committee leadership and delegating responsibilities  \n* is a member of the School Leadership Team  \n* is a signatory for PTA checks  \n* represents TNS on CEC D1 Presidents’ Council  \n* Works on opt-out testing campaign  \n* Works with Fundraising to solicit donations from families; with Principal on grants as needed  \n* Provides guidance and support to other Exec Board members\n\n## Vice-President of Events (Events Committee)\n\n* Oversees planning of events and fundraising activities  \n* Works with Fundraising on fundraising goals, but takes lead on planning, execution and coordination of committee members on events, usually:  \n  * Halloween  \n  * Holiday Fair  \n  * Earth Day  \n  * Bake sale  \n  * Pi Day\n\n## Vice-President of Fundraising (Fundraising Committee)\n\n* Researches and Writes Grants  \n* Coordinates with Events on fundraising goals for events\n\n## Secretary (Communications Committee)\n\n* Maintains and shares the official record (minutes) of the proceedings and actions of all TNS PTA meetings  \n* Works with school and PTA to manage the school calendar which includes adding all school holidays and official dates to the calendar; setting up links and adding events to calendar for smaller group meetings or special events as needed\n\n## Treasurer:\n\n* Responsible for all day-to-day financial affairs and funds of the TNSPTA including income (donations, grants, etc.) and expenses (invoices, reimbursements, etc.)  \n* Monthly reporting of income and expenses for PTA General Meeting  \n* Giving status reports at PTA meeting on budget and fundraising goals \n\n## Parent Engagement Liaison:\n\n* With support from Class Parent Committee, acts as liaison between TNSPTA and class parents; ensures regular communications with class parent network.\n\n## SLT:\n\n* There are two parent representative positions available.  Parent representatives must attend all monthly SLT meetings, and participate in the drafting and consensus-based approval of the school’s Comprehensive Education Plan.",
+          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var b=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var t in e)a(i,t,{get:e[t],enumerable:!0})},o=(i,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of u(e))!f.call(i,r)&&r!==t&&a(i,r,{get:()=>e[r],enumerable:!(s=p(e,r))||s.enumerable});return i};var y=(i,e,t)=>(t=i!=null?m(g(i)):{},o(e||!i||!i.__esModule?a(t,\"default\",{value:i,enumerable:!0}):t,i)),k=i=>o(a({},\"__esModule\",{value:!0}),i);var c=b((T,l)=>{l.exports=_jsx_runtime});var N={};v(N,{default:()=>h,frontmatter:()=>x});var n=y(c()),x={title:\"PTA Executive Board\",description:\"Descriptions, responsibilities, and 2024-2025 PTA Executive Board Members\"};function d(i){let e={a:\"a\",h2:\"h2\",li:\"li\",p:\"p\",span:\"span\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...i.components},{Callout:t}=e;return t||P(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"2024-2025-pta-executive-board-members\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#2024-2025-pta-executive-board-members\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"2024-2025 PTA Executive Board Members\"]}),`\n`,(0,n.jsxs)(e.table,{children:[(0,n.jsx)(e.thead,{children:(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.th,{children:\"Name\"}),(0,n.jsx)(e.th,{children:\"Position\"}),(0,n.jsx)(e.th,{children:\"Email Address\"})]})}),(0,n.jsxs)(e.tbody,{children:[(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Jane Smith\"}),(0,n.jsx)(e.td,{children:\"President\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptapresident@tnsny.org\",children:\"ptapresident@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Bob Johnson\"}),(0,n.jsx)(e.td,{children:\"Recording Secretary\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptasecretary@tnsny.org\",children:\"ptasecretary@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Emily Davis\"}),(0,n.jsx)(e.td,{children:\"Treasurer\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptatreasurer@tnsny.org\",children:\"ptatreasurer@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Michael Lee\"}),(0,n.jsx)(e.td,{children:\"Events\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptaevents@tnsny.org\",children:\"ptaevents@tnsny.org\"})})]}),(0,n.jsxs)(e.tr,{children:[(0,n.jsx)(e.td,{children:\"Sarah Wilson\"}),(0,n.jsx)(e.td,{children:\"Parent Engagement\"}),(0,n.jsx)(e.td,{children:(0,n.jsx)(e.a,{href:\"mailto:ptaparentengagement@tnsny.org\",children:\"ptaparentengagement@tnsny.org\"})})]})]})]}),`\n`,(0,n.jsxs)(e.h2,{id:\"executive-board-descriptions-and-responsibilities\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#executive-board-descriptions-and-responsibilities\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Executive Board Descriptions and Responsibilities\"]}),`\n`,(0,n.jsxs)(e.p,{children:[\"It is recommended that \",(0,n.jsx)(e.strong,{children:\"two people serve in each executive position\"}),\" in order to support one another and get work done. Executive Board members manage committees of people who are willing to help out in that area.\"]}),`\n`,(0,n.jsxs)(e.h2,{id:\"president\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#president\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"President\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Presides over meetings\"}),`\n`,(0,n.jsx)(e.li,{children:\"plays a role with appointing committee leadership and delegating responsibilities\"}),`\n`,(0,n.jsx)(e.li,{children:\"is a member of the School Leadership Team\"}),`\n`,(0,n.jsx)(e.li,{children:\"is a signatory for PTA checks\"}),`\n`,(0,n.jsx)(e.li,{children:\"represents TNS on CEC D1 Presidents\\u2019 Council\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works on opt-out testing campaign\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works with Fundraising to solicit donations from families; with Principal on grants as needed\"}),`\n`,(0,n.jsx)(e.li,{children:\"Provides guidance and support to other Exec Board members\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"vice-president-of-events-events-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#vice-president-of-events-events-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Vice-President of Events (Events Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Oversees planning of events and fundraising activities\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"Works with Fundraising on fundraising goals, but takes lead on planning, execution and coordination of committee members on events, usually:\",`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Halloween\"}),`\n`,(0,n.jsx)(e.li,{children:\"Holiday Fair\"}),`\n`,(0,n.jsx)(e.li,{children:\"Earth Day\"}),`\n`,(0,n.jsx)(e.li,{children:\"Bake sale\"}),`\n`,(0,n.jsx)(e.li,{children:\"Pi Day\"}),`\n`]}),`\n`]}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"vice-president-of-fundraising-fundraising-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#vice-president-of-fundraising-fundraising-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Vice-President of Fundraising (Fundraising Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Researches and Writes Grants\"}),`\n`,(0,n.jsx)(e.li,{children:\"Coordinates with Events on fundraising goals for events\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"secretary-communications-committee\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#secretary-communications-committee\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Secretary (Communications Committee)\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Maintains and shares the official record (minutes) of the proceedings and actions of all TNS PTA meetings\"}),`\n`,(0,n.jsx)(e.li,{children:\"Works with school and PTA to manage the school calendar which includes adding all school holidays and official dates to the calendar; setting up links and adding events to calendar for smaller group meetings or special events as needed\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"treasurer\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#treasurer\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Treasurer:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Responsible for all day-to-day financial affairs and funds of the TNSPTA including income (donations, grants, etc.) and expenses (invoices, reimbursements, etc.)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Monthly reporting of income and expenses for PTA General Meeting\"}),`\n`,(0,n.jsx)(e.li,{children:\"Giving status reports at PTA meeting on budget and fundraising goals\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"parent-engagement-liaison\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#parent-engagement-liaison\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Parent Engagement Liaison:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"With support from Class Parent Committee, acts as liaison between TNSPTA and class parents; ensures regular communications with class parent network.\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"slt\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#slt\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"SLT:\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"There are two parent representative positions available.  Parent representatives must attend all monthly SLT meetings, and participate in the drafting and consensus-based approval of the school\\u2019s Comprehensive Education Plan.\"}),`\n`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}function P(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(N);})();\n;return Component;"
+        },
+        "_id": "docs/about/executive-board.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/executive-board.mdx",
+          "sourceFileName": "executive-board.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/executive-board"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/executive-board",
+        "slugAsParams": "about/executive-board"
+      },
+      "documentHash": "1726706556364",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/faqs.mdx": {
+      "document": {
+        "title": "FAQs",
+        "description": "Frequently asked Questions",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n",
+          "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var o in t)i(e,o,{get:t[o],enumerable:!0})},c=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of f(t))!k.call(e,n)&&n!==o&&i(e,n,{get:()=>t[n],enumerable:!(s=m(t,n))||s.enumerable});return e};var _=(e,t,o)=>(o=e!=null?d(x(e)):{},c(t||!e||!e.__esModule?i(o,\"default\",{value:e,enumerable:!0}):o,e)),g=e=>c(i({},\"__esModule\",{value:!0}),e);var l=w((b,u)=>{u.exports=_jsx_runtime});var C={};y(C,{default:()=>p,frontmatter:()=>h});var r=_(l()),h={title:\"FAQs\",description:\"Frequently asked Questions\"};function a(e){let t={p:\"p\",...e.components},{Callout:o}=t;return o||j(\"Callout\",!0),(0,r.jsx)(o,{children:(0,r.jsx)(t.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})})}function p(e={}){let{wrapper:t}=e.components||{};return t?(0,r.jsx)(t,{...e,children:(0,r.jsx)(a,{...e})}):a(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return g(C);})();\n;return Component;"
+        },
+        "_id": "docs/about/faqs.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/faqs.mdx",
+          "sourceFileName": "faqs.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/faqs"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/faqs",
+        "slugAsParams": "about/faqs"
+      },
+      "documentHash": "1726117000240",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/mission.mdx": {
+      "document": {
+        "title": "TNS Mission",
+        "description": "We are a group of parents, teachers, and community members who are committed to supporting the academic, social, and emotional well-being of our students.",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n### Our Mission\n\nThe Neighborhood School’s mission is based on our deep belief that children thrive when we build on their strengths and provide a safe and nurturing environment.  Our practices and policies are rooted in anti-bias and anti-racist work, which involves the entire school community.  Our integrated, inquiry-based curriculum encompasses children’s interests and is responsive to the needs of each child.  We collaborate with families to foster a community that is supportive of the whole child.\n\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),w=(n,e)=>{for(var i in e)r(n,i,{get:e[i],enumerable:!0})},a=(n,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of p(e))!g.call(n,t)&&t!==i&&r(n,t,{get:()=>e[t],enumerable:!(s=u(e,t))||s.enumerable});return n};var x=(n,e,i)=>(i=n!=null?m(f(n)):{},a(e||!n||!n.__esModule?r(i,\"default\",{value:n,enumerable:!0}):i,n)),y=n=>a(r({},\"__esModule\",{value:!0}),n);var l=b((M,c)=>{c.exports=_jsx_runtime});var _={};w(_,{default:()=>h,frontmatter:()=>k});var o=x(l()),k={title:\"TNS Mission\",description:\"We are a group of parents, teachers, and community members who are committed to supporting the academic, social, and emotional well-being of our students.\"};function d(n){let e={a:\"a\",h3:\"h3\",p:\"p\",span:\"span\",...n.components},{Callout:i}=e;return i||v(\"Callout\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(i,{children:(0,o.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,o.jsxs)(e.h3,{id:\"our-mission\",children:[(0,o.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#our-mission\",children:(0,o.jsx)(e.span,{className:\"icon icon-link\"})}),\"Our Mission\"]}),`\n`,(0,o.jsx)(e.p,{children:\"The Neighborhood School\\u2019s mission is based on our deep belief that children thrive when we build on their strengths and provide a safe and nurturing environment.  Our practices and policies are rooted in anti-bias and anti-racist work, which involves the entire school community.  Our integrated, inquiry-based curriculum encompasses children\\u2019s interests and is responsive to the needs of each child.  We collaborate with families to foster a community that is supportive of the whole child.\"})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,o.jsx)(e,{...n,children:(0,o.jsx)(d,{...n})}):d(n)}function v(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(_);})();\n;return Component;"
+        },
+        "_id": "docs/about/mission.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/mission.mdx",
+          "sourceFileName": "mission.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/mission"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/mission",
+        "slugAsParams": "about/mission"
+      },
+      "documentHash": "1726117000242",
+      "hasWarnings": false,
+      "documentTypeName": "Doc"
+    },
+    "docs/about/parent-engagement.mdx": {
+      "document": {
+        "title": "Parent engagement",
+        "description": "Platforms and tools for parent engagement",
+        "published": true,
+        "body": {
+          "raw": "\n<Callout>\n\nThis site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\n\n</Callout>\n\n## Communications\n\n* Email Newsletter Editor (with Principal and Parent Coordinator)\n* Konstella/GDrive/IT Administrator\n* Web Content\n* Digital Design (social media)\n* Events Calendar\n* Photography\n\n## Email Newsletter Guidelines\n\n### Deadlines\n\n* Everything should be held for the Monday school newsletter unless it is an emergency or the deadline is within 1 day.",
+          "code": "var Component=(()=>{var m=Object.create;var l=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),x=(i,e)=>{for(var t in e)l(i,t,{get:e[t],enumerable:!0})},r=(i,e,t,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of p(e))!f.call(i,a)&&a!==t&&l(i,a,{get:()=>e[a],enumerable:!(o=u(e,a))||o.enumerable});return i};var b=(i,e,t)=>(t=i!=null?m(g(i)):{},r(e||!i||!i.__esModule?l(t,\"default\",{value:i,enumerable:!0}):t,i)),k=i=>r(l({},\"__esModule\",{value:!0}),i);var c=w((E,s)=>{s.exports=_jsx_runtime});var N={};x(N,{default:()=>h,frontmatter:()=>y});var n=b(c()),y={title:\"Parent engagement\",description:\"Platforms and tools for parent engagement\"};function d(i){let e={a:\"a\",h2:\"h2\",h3:\"h3\",li:\"li\",p:\"p\",span:\"span\",ul:\"ul\",...i.components},{Callout:t}=e;return t||C(\"Callout\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsx)(e.p,{children:\"This site is a work in progress. If you see dummy text on a page or broken links, it means we're still working on it!\"})}),`\n`,(0,n.jsxs)(e.h2,{id:\"communications\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#communications\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Communications\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Email Newsletter Editor (with Principal and Parent Coordinator)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Konstella/GDrive/IT Administrator\"}),`\n`,(0,n.jsx)(e.li,{children:\"Web Content\"}),`\n`,(0,n.jsx)(e.li,{children:\"Digital Design (social media)\"}),`\n`,(0,n.jsx)(e.li,{children:\"Events Calendar\"}),`\n`,(0,n.jsx)(e.li,{children:\"Photography\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"email-newsletter-guidelines\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#email-newsletter-guidelines\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Email Newsletter Guidelines\"]}),`\n`,(0,n.jsxs)(e.h3,{id:\"deadlines\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#deadlines\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Deadlines\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Everything should be held for the Monday school newsletter unless it is an emergency or the deadline is within 1 day.\"}),`\n`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}function C(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(N);})();\n;return Component;"
+        },
+        "_id": "docs/about/parent-engagement.mdx",
+        "_raw": {
+          "sourceFilePath": "docs/about/parent-engagement.mdx",
+          "sourceFileName": "parent-engagement.mdx",
+          "sourceFileDir": "docs/about",
+          "contentType": "mdx",
+          "flattenedPath": "docs/about/parent-engagement"
+        },
+        "type": "Doc",
+        "slug": "/docs/about/parent-engagement",
+        "slugAsParams": "about/parent-engagement"
+      },
+      "documentHash": "1726117000242",
       "hasWarnings": false,
       "documentTypeName": "Doc"
     },

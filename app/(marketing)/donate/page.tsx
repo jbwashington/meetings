@@ -1,9 +1,9 @@
-import DonateForm from "@/components/forms/donate-form"
+import DonateSection from "@/components/donate"
 
 export default function DonatePage() {
   return (
-    <div className="container mx-auto p-4">
-        <DonateForm />
-    </div>
-  )
+      <div className="container max-w-screen-lg">
+          <DonateSection />
+      </div>
+  );
 }

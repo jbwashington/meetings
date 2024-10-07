@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { track } from "@vercel/analytics/react";
+// import { track } from "@vercel/analytics/react";
 import { Icons } from "../ui/icons";
 import { RadioGroup } from "@radix-ui/react-radio-group";
 import { Switch } from "../ui/switch";
@@ -141,11 +141,7 @@ export default function DonateForm() {
                                                     <span className="mr-2">
                                                         Custom amount:
                                                     </span>
-                                                    <Input
-                                                        placeholder="Enter custom amount"
-                                                        {...field}
-                                                        className="w-24"
-                                                    />
+                                                    <Input {...field} />
                                                 </Label>
                                             </div>
                                         </RadioGroup>

@@ -6,6 +6,7 @@ import { MdxCard } from "./mdx-card";
 import { Button } from "./ui/button";
 import { CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Callout } from "./callout";
+import { DirectoryCard } from "./mdx-directory-card";
 
 interface MdxProps {
     code: string;
@@ -20,6 +21,7 @@ const components = {
         <Image {...props} alt={props.alt} />
     ),
     Card: MdxCard,
+    DirectoryCard: DirectoryCard,
     Button,
     CardDescription,
     CardHeader,

@@ -47,6 +47,7 @@ import {
     Sun,
     Languages,
     Instagram,
+    Mail,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -1181,4 +1182,5 @@ export const Icons = {
     hourglass: Hourglass,
     languages: Languages,
     instagram: Instagram,
+    mail: Mail,
 };

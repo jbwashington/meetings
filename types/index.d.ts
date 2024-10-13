@@ -1,5 +1,9 @@
 import { User } from "@prisma/client";
 import { type Icon, Icons } from "lucide-react";
+import * as z from "zod";
+import { donateFormSchema } from "@/lib/validations/donate-form";
+
+export type DonateFormSchema = z.infer<typeof donateFormSchema>;
 
 export type NavItem = {
   title: string
@@ -63,3 +67,14 @@ export type UserSubscriptionPlan = SubscriptionPlan &
     stripeCurrentPeriodEnd: number
     isPro: boolean
   }
+
+export type DonationTier = {
+  name: string;
+  donationAmount: number; // this cannot be called amount, it will collide with one of the props from the react node type!
+};
+
+export type DonationConfig = {
+  title: string;
+  description: string;
+  tiers: DonationTier[];
+};

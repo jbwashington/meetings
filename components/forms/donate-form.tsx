@@ -7,63 +7,54 @@ import { toast } from "sonner";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-// import { track } from "@vercel/analytics/react";
+import { track } from "@vercel/analytics/react";
 import { Icons } from "../ui/icons";
 import { RadioGroup } from "@radix-ui/react-radio-group";
 import { Switch } from "../ui/switch";
 import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { RadioGroupItem } from "../ui/radio-group";
 import { Textarea } from "../ui/textarea";
-
-const formSchema = z.object({
-    name: z.string().min(2),
-    email: z.string().email(),
-    amount: z.string().min(1),
-    customAmount: z.number().min(10, { message: "Minimum custom amount is $10" }).optional(),
-    recurring: z.boolean().default(false),
-});
+import { donateFormSchema } from "@/lib/validations/donate-form";
+import { DonateFormSchema, DonationTier } from "@/types";
+import { SubmitButton } from "../layout/donate/submit-button";
+import donationConfig from "@/config/donate";
 
 export default function DonateForm() {
-    type DonationFormSchema = z.infer<typeof formSchema>;
-
-    const form = useForm<DonationFormSchema>({
-        resolver: zodResolver(formSchema),
+    const form = useForm<DonateFormSchema>({
+        resolver: zodResolver(donateFormSchema),
         defaultValues: {
             name: "",
             email: "",
-            amount: "25",
+            donationAmount: donationConfig.tiers[2].donationAmount,
             recurring: false,
         },
+        mode: "onChange",
     });
 
-    const watchDonationAmount = form.watch("amount");
+    const watchDonationAmount = form.watch("donationAmount");
     const watchRecurring = form.watch("recurring");
+    
+  const handleTierSelect = (selectedTier: DonationTier) => {
+    form.setValue("donationAmount", selectedTier.donationAmount);
+  };
 
-    async function handleSubmit(form: DonationFormSchema) {
+
+    async function handleSubmit(form: DonateFormSchema) {
         try {
-            const { name, email, amount, customAmount, recurring } = form;
-
-            let donationAmount = parseInt(amount);
-            if (amount === "custom" && customAmount) {
-                donationAmount = customAmount;
-            }
+            const { name, email, donationAmount, recurring } = form;
 
             // TODO: add recurring to payment intent server action
-            const clientSecret = await createPaymentIntent(
-                donationAmount,
-                email,
-                name
-            );
+            const clientSecret = await createPaymentIntent(donationAmount, email, name);
 
             console.log(clientSecret);
         } catch (error: any) {
@@ -102,7 +93,7 @@ export default function DonateForm() {
                         />
                         <FormField
                             control={form.control}
-                            name="amount"
+                            name="donationAmount"
                             render={({ field }) => (
                                 <FormItem className="flex items-center justify-between">
                                     <FormControl>
@@ -154,11 +145,7 @@ export default function DonateForm() {
                 </Form>
             </CardContent>
             <CardFooter>
-                <Button className="w-full" type="submit">
-                    {form.getValues("recurring")
-                        ? "Start Monthly Donation"
-                        : "Donate Now"}
-                </Button>
+                <SubmitButton form={form} />
             </CardFooter>
         </>
     );

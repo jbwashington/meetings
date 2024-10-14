@@ -68,7 +68,7 @@ export default function CheckoutForm() {
         id="submit"
         className="w-full"
       >
-        {isLoading && <Icons.loadingCircle />} Donate
+        {isLoading && <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />} Donate
       </Button>
     </form>
   );

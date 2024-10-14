@@ -27,13 +27,13 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
-import { Appearance } from "@stripe/stripe-js";
+import { Appearance, loadStripe } from "@stripe/stripe-js";
 import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { track } from "@vercel/analytics/react";
-import stripePromise from "@/lib/actions/get-stripe-promise";
 import { Icons } from "@/components/ui/icons";
+import { env } from "@/env.mjs";
 
 const checkoutConfig = {
     title: "Secure Donation",
@@ -58,6 +58,8 @@ export default function DonateDialog() {
             router.push("/");
         }
     };
+
+    const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 
     const clientSecret = searchParams.get("client_secret");
 
@@ -197,7 +199,7 @@ export default function DonateDialog() {
                 <DrawerFooter className="pt-2">
                     <DrawerClose asChild>
                         <div className="flex w-full grid-cols-2 pt-2 m-auto space-x-4 text-xs text-muted-foreground">
-                            <Link href="mailto:questions@lettasfight.org">
+                            <Link href="mailto:jbwashington@gmail.com">
                                 {" "}
                                 Questions? Contact Us
                             </Link>

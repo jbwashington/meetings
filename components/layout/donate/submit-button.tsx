@@ -9,7 +9,8 @@ interface SubmitButtonProps {
 }
 
 export const SubmitButton = (form: SubmitButtonProps) => {
-    const watchDonationAmount = form.form.watch("amount");
+
+    const watchDonationAmount = form.form.watch("donationAmount");
     const watchRecurring = form.form.watch("recurring");
     const { isDirty, isValid, isSubmitting } = form.form.formState;
 
@@ -21,7 +22,7 @@ export const SubmitButton = (form: SubmitButtonProps) => {
             className="w-full"
             disabled={!isDirty || !isValid || isSubmitting}
         >
-            {isSubmitting && <Icons.loadingCircle />}
+            {isSubmitting && <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />}
             {watchRecurring
                 ? `Start a recurring donation of $${watchDonationAmount} per month`
                 : `Make a one-time donation of $${

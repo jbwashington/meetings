@@ -27,8 +27,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
-import { Appearance, loadStripe } from "@stripe/stripe-js";
-import { env } from "@/env.mjs";
+import { Appearance } from "@stripe/stripe-js";
 import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
@@ -51,7 +50,6 @@ export default function DonateDialog() {
     const frequency = searchParams.get("frequency");
     const donationAmount = searchParams.get("donation_amount");
     const name = searchParams.get("name");
-
 
     const router = useRouter();
 
@@ -106,9 +104,10 @@ export default function DonateDialog() {
                         <Button
                             onClick={() => track("donate button clicked")}
                             variant="default"
+                            size="sm"
                         >
-
-                           <Icons.heartHandshake className="w-4 h-4 mr-2" /> {donationConfig.title}
+                            <Icons.heartHandshake className="w-4 h-4 mr-2" />{" "}
+                            {donationConfig.title}
                         </Button>
                     </Link>
                 </DialogTrigger>
@@ -148,7 +147,7 @@ export default function DonateDialog() {
                         )}
                         <DialogFooter>
                             <div className="flex w-full grid-cols-2 pt-2 m-auto space-x-4 text-xs text-muted-foreground">
-                                <Link href="mailto:questions@lettasfight.org">
+                                <Link href="/contact">
                                     Questions? Contact Us
                                 </Link>
                                 <Link href="/privacy-statement">

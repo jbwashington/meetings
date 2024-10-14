@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { CardContent, CardFooter } from "@/components/ui/card";
 import { createPaymentIntent } from "@/lib/actions/donate";
 import { toast } from "sonner";
@@ -28,8 +28,16 @@ import { donateFormSchema } from "@/lib/validations/donate-form";
 import { DonateFormSchema, DonationTier } from "@/types";
 import { SubmitButton } from "../layout/donate/submit-button";
 import donationConfig from "@/config/donate";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import DonationTierItem from "../layout/donate/donation-tier-item";
+import { cn } from "@/lib/utils";
 
-export default function DonateForm() {
+export default function DonateForm({ className }: { className?: string }) {
+    const searchParams = useSearchParams();
+    const frequency = searchParams.get("frequency");
+    const isRecurring = frequency === "recurring" ? true : false;
+
     const form = useForm<DonateFormSchema>({
         resolver: zodResolver(donateFormSchema),
         defaultValues: {
@@ -42,111 +50,231 @@ export default function DonateForm() {
     });
 
     const watchDonationAmount = form.watch("donationAmount");
-    const watchRecurring = form.watch("recurring");
-    
-  const handleTierSelect = (selectedTier: DonationTier) => {
-    form.setValue("donationAmount", selectedTier.donationAmount);
-  };
 
+    const handleTierSelect = (selectedTier: DonationTier) => {
+        form.setValue("donationAmount", selectedTier.donationAmount);
+    };
 
-    async function handleSubmit(form: DonateFormSchema) {
+    const handleCheckedChange = (checked: boolean) => {
+        if (!checked) {
+            router.push(`${pathName}?donate=true&frequency=one-time`);
+        } else {
+            router.push(`${pathName}?donate=true&frequency=recurring`);
+        }
+    };
+
+    const router = useRouter();
+    const pathName = usePathname();
+
+    async function onSubmit(form: DonateFormSchema) {
         try {
-            const { name, email, donationAmount, recurring } = form;
+            const { name, email, donationAmount } = form;
+            const isRecurring = frequency === "recurring" ? true : false;
 
-            // TODO: add recurring to payment intent server action
-            const clientSecret = await createPaymentIntent(donationAmount, email, name);
-
-            console.log(clientSecret);
+            const clientSecret = await createPaymentIntent(
+                donationAmount,
+                email,
+                name
+            );
+            router.push(
+                `${pathName}?donate=true&frequency=${
+                    isRecurring ? `recurring` : `one-time`
+                }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${donationAmount}`
+            );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
         }
     }
 
+    const errors = form.formState.errors;
+
     return (
-        <>
-            <CardContent>
-                <Form {...form}>
-                    <form
-                        className="space-y-4"
-                        onSubmit={form.handleSubmit(handleSubmit)}
-                    >
-                        <FormField
-                            control={form.control}
-                            name="recurring"
-                            render={({ field }) => (
-                                <FormItem className="flex items-center justify-between">
-                                    <FormControl>
-                                        <Switch
-                                            {...field}
-                                            value={
-                                                field.value ? "true" : "false"
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormDescription>
-                                        Choose between one-time and monthly
-                                        recurring donation.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>
+        <Form {...form}>
+            <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className={cn("grid items-start gap-4", className)}
+            >
+                <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormControl>
+                                <Input placeholder="Name" {...field} />
+                            </FormControl>
+                            {errors.name && (
+                                <FormMessage>{errors.name.message}</FormMessage>
                             )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="donationAmount"
-                            render={({ field }) => (
-                                <FormItem className="flex items-center justify-between">
-                                    <FormControl>
-                                        <RadioGroup
-                                            {...field}
-                                            className="grid grid-cols-2 gap-4"
-                                            value={field.value.toString()}
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormControl>
+                                <Input placeholder="Email" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="donationAmount"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Sponsor Levels</FormLabel>
+                            <RadioGroup
+                                onValueChange={(value) => {
+                                    const numericValue = parseFloat(value); // Convert string to number
+                                    if (!isNaN(numericValue)) {
+                                        const selectedTier =
+                                            donationConfig.tiers.find(
+                                                (tier) =>
+                                                    tier.donationAmount ===
+                                                    numericValue
+                                            );
+                                        if (selectedTier) {
+                                            handleTierSelect(selectedTier);
+                                            form.setValue(
+                                                "donationAmount",
+                                                numericValue
+                                            ); // Set as number
+                                        }
+                                    }
+                                    field.onChange(numericValue);
+                                }}
+                                className="grid max-w-md grid-cols-2 gap-8 pt-2"
+                            >
+                                {donationConfig.tiers.map(
+                                    (tier: DonationTier, index: number) => (
+                                        <FormItem
+                                            onKeyDown={(event) => {
+                                                if (
+                                                    event.key === "Enter" ||
+                                                    event.key === " "
+                                                ) {
+                                                    form.setValue(
+                                                        "donationAmount",
+                                                        tier.donationAmount
+                                                    );
+                                                }
+                                            }}
+                                            key={index}
+                                            tabIndex={0}
                                         >
-                                            {["10", "25", "50", "100"].map(
-                                                (value) => (
-                                                    <div key={value}>
-                                                        <RadioGroupItem
-                                                            value={value}
-                                                            id={`amount-${value}`}
-                                                            className="peer sr-only"
-                                                        />
-                                                        <Label
-                                                            htmlFor={`amount-${value}`}
-                                                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                                                        >
-                                                            ${value}
-                                                        </Label>
-                                                    </div>
-                                                )
-                                            )}
-                                            <div className="col-span-2">
-                                                <RadioGroupItem
-                                                    value="custom"
-                                                    id="amount-custom"
-                                                    className="peer sr-only"
-                                                />
-                                                <Label
-                                                    htmlFor="amount-custom"
-                                                    className="flex items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                                                >
-                                                    <span className="mr-2">
-                                                        Custom amount:
-                                                    </span>
-                                                    <Input {...field} />
-                                                </Label>
-                                            </div>
-                                        </RadioGroup>
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
+                                            <FormLabel className="[&:has([data-state=checked])>div]:border-accent-foreground">
+                                                <FormControl>
+                                                    <RadioGroupItem
+                                                        onSelect={() =>
+                                                            handleTierSelect(
+                                                                tier
+                                                            )
+                                                        }
+                                                        checked={
+                                                            tier.donationAmount ===
+                                                            form.getValues(
+                                                                "donationAmount"
+                                                            )
+                                                        }
+                                                        value={tier.donationAmount.toString()}
+                                                        className="sr-only"
+                                                        aria-label={`Select ${tier.name} tier`}
+                                                    />
+                                                </FormControl>
+                                                <DonationTierItem tier={tier} />
+                                            </FormLabel>
+                                        </FormItem>
+                                    )
+                                )}
+                            </RadioGroup>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="donationAmount"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormDescription>
+                                or enter a custom amount (minimum $10).
+                            </FormDescription>
+                            <div className="inline-flex w-full">
+                                <div
+                                    className={cn(
+                                        buttonVariants({
+                                            size: "icon",
+                                            variant: "outline",
+                                        }),
+                                        "rounded-r-none"
+                                    )}
+                                >
+                                    <Icons.dollarSign className="w-4 h-4" />
+                                </div>
+                                <FormControl>
+                                    <Input
+                                        className="font-bold rounded-l-none"
+                                        {...field}
+                                        type="number" // Ensure the input type is number
+                                        onChange={(e) =>
+                                            form.setValue(
+                                                "donationAmount",
+                                                parseFloat(e.target.value)
+                                            )
+                                        } // Parse and set as number
+                                    />
+                                </FormControl>
+                            </div>
+                            {errors.donationAmount && (
+                                <FormMessage>
+                                    {errors.donationAmount.message}
+                                </FormMessage>
                             )}
-                        />
-                    </form>
-                </Form>
-            </CardContent>
-            <CardFooter>
-                <SubmitButton form={form} />
-            </CardFooter>
-        </>
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="recurring"
+                    render={({ field }) => (
+                        <FormItem className="items-center hidden gap-x-2">
+                            <FormLabel className="capitalize">
+                                Recurring
+                            </FormLabel>
+                            <FormControl>
+                                <Switch
+                                    onCheckedChange={handleCheckedChange}
+                                    checked={isRecurring}
+                                    name={field.name}
+                                    id={field.name}
+                                />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <Button
+                    type="submit"
+                    variant="default"
+                    onClick={() => track("donate button clicked")}
+                    className="w-full"
+                    disabled={
+                        !form.formState.isDirty ||
+                        !form.formState.isValid ||
+                        form.formState.isSubmitting
+                    }
+                >
+                    {form.formState.isSubmitting && <Icons.loadingCircle />}
+                    {isRecurring
+                        ? `Start a recurring donation of $${watchDonationAmount} per month`
+                        : `Make a one-time donation of $${
+                              watchDonationAmount ? watchDonationAmount : 0
+                          }`}
+                </Button>
+            </form>
+        </Form>
     );
 }

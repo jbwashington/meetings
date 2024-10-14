@@ -1,7 +1,6 @@
 "use client";
 
 import { Button, buttonVariants } from "@/components/ui/button";
-import { CardContent, CardFooter } from "@/components/ui/card";
 import { createPaymentIntent } from "@/lib/actions/donate";
 import { toast } from "sonner";
 import * as z from "zod";
@@ -20,18 +19,16 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form";
-import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { RadioGroupItem } from "../ui/radio-group";
-import { Textarea } from "../ui/textarea";
 import { donateFormSchema } from "@/lib/validations/donate-form";
 import { DonateFormSchema, DonationTier } from "@/types";
-import { SubmitButton } from "../layout/donate/submit-button";
 import donationConfig from "@/config/donate";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import DonationTierItem from "../layout/donate/donation-tier-item";
 import { cn } from "@/lib/utils";
+import { SubmitButton } from "../layout/donate/submit-button";
 
 export default function DonateForm({ className }: { className?: string }) {
     const searchParams = useSearchParams();
@@ -256,24 +253,7 @@ export default function DonateForm({ className }: { className?: string }) {
                         </FormItem>
                     )}
                 />
-                <Button
-                    type="submit"
-                    variant="default"
-                    onClick={() => track("donate button clicked")}
-                    className="w-full"
-                    disabled={
-                        !form.formState.isDirty ||
-                        !form.formState.isValid ||
-                        form.formState.isSubmitting
-                    }
-                >
-                    {form.formState.isSubmitting && <Icons.loadingCircle />}
-                    {isRecurring
-                        ? `Start a recurring donation of $${watchDonationAmount} per month`
-                        : `Make a one-time donation of $${
-                              watchDonationAmount ? watchDonationAmount : 0
-                          }`}
-                </Button>
+                <SubmitButton form={form} />
             </form>
         </Form>
     );

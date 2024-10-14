@@ -48,6 +48,7 @@ import {
     Languages,
     Instagram,
     Mail,
+    HeartHandshake,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -1183,4 +1184,5 @@ export const Icons = {
     languages: Languages,
     instagram: Instagram,
     mail: Mail,
+    heartHandshake: HeartHandshake,
 };

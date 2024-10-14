@@ -6,6 +6,7 @@ import { MainNav } from "@/components/layout/nav";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { siteConfig } from "@/config/site";
 import { HeartHandshake } from "lucide-react";
+import DonateDialog from "@/components/layout/donate/donate-dialog";
 
 interface MarketingLayoutProps {
     children: React.ReactNode;
@@ -20,16 +21,7 @@ export default async function MarketingLayout({
                 <div className="flex h-20 items-center justify-between py-6">
                     <MainNav items={marketingConfig.mainNav} />
                     <nav>
-                        <Link
-                            href={siteConfig.links.donate}
-                            className={buttonVariants({
-                                variant: "default",
-                                size: "sm",
-                                className: "px-4 mr-2",
-                            })}
-                        >
-                          <HeartHandshake className="w-4 h-fit mr-2" />  Donate
-                        </Link>
+                        <DonateDialog />
                     </nav>
                 </div>
             </header>

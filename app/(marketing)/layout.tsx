@@ -1,11 +1,6 @@
-import Link from "next/link";
-
 import { marketingConfig } from "@/config/marketing";
-import { buttonVariants } from "@/components/ui/button";
 import { MainNav } from "@/components/layout/nav";
 import { SiteFooter } from "@/components/layout/site-footer";
-import { siteConfig } from "@/config/site";
-import { HeartHandshake } from "lucide-react";
 import DonateDialog from "@/components/layout/donate/donate-dialog";
 
 interface MarketingLayoutProps {

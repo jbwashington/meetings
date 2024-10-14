@@ -33,6 +33,8 @@ import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { track } from "@vercel/analytics/react";
+import stripePromise from "@/lib/actions/get-stripe-promise";
+import { Icons } from "@/components/ui/icons";
 
 const checkoutConfig = {
     title: "Secure Donation",
@@ -50,7 +52,6 @@ export default function DonateDialog() {
     const donationAmount = searchParams.get("donation_amount");
     const name = searchParams.get("name");
 
-    const stripePromise = loadStripe(env.STRIPE_API_KEY);
 
     const router = useRouter();
 
@@ -106,7 +107,8 @@ export default function DonateDialog() {
                             onClick={() => track("donate button clicked")}
                             variant="default"
                         >
-                            {donationConfig.title}
+
+                           <Icons.heartHandshake className="w-4 h-4 mr-2" /> {donationConfig.title}
                         </Button>
                     </Link>
                 </DialogTrigger>

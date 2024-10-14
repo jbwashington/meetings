@@ -49,6 +49,7 @@ import {
     Instagram,
     Mail,
     HeartHandshake,
+    DollarSign,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -1185,4 +1186,5 @@ export const Icons = {
     instagram: Instagram,
     mail: Mail,
     heartHandshake: HeartHandshake,
+    dollarSign: DollarSign,
 };

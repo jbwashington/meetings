@@ -49,7 +49,6 @@ export default function CheckoutForm() {
       } else {
         // Payment processing is now handled by Stripe
         // The user will be redirected to the return_url after payment completion
-        console.log('return url: ', returnUrl)
         track('donation successful')
       }
     } catch (error: any) {

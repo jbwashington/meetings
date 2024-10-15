@@ -50,6 +50,9 @@ export default function DonateDialog() {
     const frequency = searchParams.get("frequency");
     const donationAmount = searchParams.get("donation_amount");
     const name = searchParams.get("name");
+    const paymentIntent = searchParams.get("payment_intent");
+    const paymentIntentClientSecret = searchParams.get("payment_intent_client_secret");
+    const redirectStatus = searchParams.get("redirect_status");
 
     const router = useRouter();
 
@@ -158,11 +161,11 @@ export default function DonateDialog() {
                             </div>
                         </DialogFooter>
                     </DialogContent>
-                ) : (
+                ) : paymentIntent ? (
                     <DialogContent>
-                        <DonateSuccess />
+                        <DonateSuccess paymentIntent={paymentIntent} />
                     </DialogContent>
-                )}
+                ) : null}
             </Dialog>
         );
     }
@@ -189,9 +192,11 @@ export default function DonateDialog() {
                 </DrawerHeader>
                 {!clientSecret ? (
                     <DonateForm />
-                ) : success ? (
-                    <DonateSuccess />
-                ) : (
+                ) : success && paymentIntent ? 
+                (
+                    <DonateSuccess paymentIntent={paymentIntent} />
+                )
+                 : (
                     <Elements options={options} stripe={stripePromise}>
                         <CheckoutForm />
                     </Elements>

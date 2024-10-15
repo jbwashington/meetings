@@ -52,10 +52,13 @@ export default function DonateForm({ className }: { className?: string }) {
         form.setValue("donationAmount", selectedTier.donationAmount);
     };
 
+
     const handleCheckedChange = (checked: boolean) => {
         if (!checked) {
+            form.setValue("recurring", false);
             router.push(`${pathName}?donate=true&frequency=one-time`);
         } else {
+            form.setValue("recurring", true);
             router.push(`${pathName}?donate=true&frequency=recurring`);
         }
     };
@@ -65,18 +68,12 @@ export default function DonateForm({ className }: { className?: string }) {
 
     async function onSubmit(form: DonateFormSchema) {
         try {
-            const { name, email, donationAmount } = form;
-            const isRecurring = frequency === "recurring" ? true : false;
-
-            const clientSecret = await createPaymentIntent(
-                donationAmount,
-                email,
-                name
-            );
+            const { name, email, donationAmount, recurring } = form;
+            
             router.push(
                 `${pathName}?donate=true&frequency=${
                     isRecurring ? `recurring` : `one-time`
-                }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${donationAmount}`
+                }&name=${name}&email=${email}&donation_amount=${donationAmount}`
             );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
@@ -113,6 +110,24 @@ export default function DonateForm({ className }: { className?: string }) {
                             <FormControl>
                                 <Input placeholder="Email" {...field} />
                             </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="recurring"
+                    render={({ field }) => (
+                        <FormItem className="inline-flex items-center space-x-2 space-y-0">
+                            <FormControl>
+                                <Switch
+                                    onCheckedChange={handleCheckedChange}
+                                    checked={isRecurring}
+                                    name={field.name}
+                                    id={field.name}
+                                />
+                            </FormControl>
+                            <FormDescription>Repeat this donation monthly</FormDescription>
                             <FormMessage />
                         </FormItem>
                     )}

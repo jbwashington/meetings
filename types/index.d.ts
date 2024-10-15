@@ -2,8 +2,10 @@ import { User } from "@prisma/client";
 import { type Icon, Icons } from "lucide-react";
 import * as z from "zod";
 import { donateFormSchema } from "@/lib/validations/donate-form";
+import { addTransactionFeesFormSchema } from "@/lib/validations/donate-form";
 
 export type DonateFormSchema = z.infer<typeof donateFormSchema>;
+export type AddTransactionFeesFormSchema = z.infer<typeof addTransactionFeesFormSchema>;
 
 export type NavItem = {
   title: string

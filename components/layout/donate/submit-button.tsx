@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Icons } from "@/components/ui/icons"
 import { track } from "@vercel/analytics/react";
-import { DonateFormSchema } from "@/types";
+import { DonateFormSchema, AddTransactionFeesFormSchema } from "@/types";
 import { UseFormReturn } from "react-hook-form";
 
 interface SubmitButtonProps {

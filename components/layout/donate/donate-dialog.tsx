@@ -34,7 +34,13 @@ import { useTheme } from "next-themes";
 import { track } from "@vercel/analytics/react";
 import { Icons } from "@/components/ui/icons";
 import { env } from "@/env.mjs";
+import DonateFees from "./donate-fees";
 
+const addFeesConfig = {
+    title: "Would you like to cover the fees?",
+    description:
+    "By covering 2.9% + $0.30 per transaction, you can help us raise more money for our school programs."
+};
 const checkoutConfig = {
     title: "Secure Donation",
     description:
@@ -50,8 +56,11 @@ export default function DonateDialog() {
     const frequency = searchParams.get("frequency");
     const donationAmount = searchParams.get("donation_amount");
     const name = searchParams.get("name");
+    const includeFees = searchParams.has("include_fees");
     const paymentIntent = searchParams.get("payment_intent");
-    const paymentIntentClientSecret = searchParams.get("payment_intent_client_secret");
+    const paymentIntentClientSecret = searchParams.get(
+        "payment_intent_client_secret"
+    );
     const redirectStatus = searchParams.get("redirect_status");
 
     const router = useRouter();
@@ -120,13 +129,13 @@ export default function DonateDialog() {
                     <DialogContent>
                         <DialogHeader>
                             <DialogTitle>
-                                {!clientSecret
-                                    ? donationConfig.title
+                                {!clientSecret && !includeFees
+                                    ? donationConfig.title : !clientSecret && name ? addFeesConfig.title
                                     : checkoutConfig.title}
                             </DialogTitle>
                             <DialogDescription>
-                                {!clientSecret
-                                    ? donationConfig.description
+                                {!clientSecret && !includeFees
+                                    ? donationConfig.description : !clientSecret && name ? addFeesConfig.description
                                     : checkoutConfig.description}
                             </DialogDescription>
                         </DialogHeader>
@@ -143,8 +152,10 @@ export default function DonateDialog() {
                                 }
                             />
                         )}
-                        {!clientSecret ? (
+                        {!clientSecret && !name ? (
                             <DonateForm />
+                        ) : !clientSecret && name ? (
+                            <DonateFees />
                         ) : (
                             <Elements options={options} stripe={stripePromise}>
                                 <CheckoutForm />
@@ -161,9 +172,9 @@ export default function DonateDialog() {
                             </div>
                         </DialogFooter>
                     </DialogContent>
-                ) : paymentIntent ? (
+                ) : paymentIntentClientSecret ? (
                     <DialogContent>
-                        <DonateSuccess paymentIntent={paymentIntent} />
+                        <DonateSuccess paymentIntent={paymentIntentClientSecret} />
                     </DialogContent>
                 ) : null}
             </Dialog>
@@ -180,23 +191,23 @@ export default function DonateDialog() {
             <DrawerContent className="container">
                 <DrawerHeader className="text-left">
                     <DrawerTitle>
-                        {!clientSecret
-                            ? donationConfig.title
+                        {!clientSecret && !includeFees
+                            ? donationConfig.title : !clientSecret && name ? addFeesConfig.title
                             : checkoutConfig.title}
                     </DrawerTitle>
                     <DrawerDescription>
-                        {!clientSecret
-                            ? donationConfig.description
+                        {!clientSecret && !includeFees
+                            ? donationConfig.description : !clientSecret && name ? addFeesConfig.description
                             : checkoutConfig.description}
                     </DrawerDescription>
                 </DrawerHeader>
-                {!clientSecret ? (
-                    <DonateForm />
-                ) : success && paymentIntent ? 
-                (
+                        {!clientSecret && !name ? (
+                            <DonateForm />
+                        ) : !clientSecret && name ? (
+                            <DonateFees />
+                ) : success && paymentIntent ? (
                     <DonateSuccess paymentIntent={paymentIntent} />
-                )
-                 : (
+                ) : (
                     <Elements options={options} stripe={stripePromise}>
                         <CheckoutForm />
                     </Elements>

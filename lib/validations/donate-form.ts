@@ -6,3 +6,7 @@ export const donateFormSchema = z.object({
     donationAmount: z.number().min(10, {message: "Minimum donation amount is $10"}),
     recurring: z.boolean(),
 });
+
+export const addTransactionFeesFormSchema = z.object({
+    addFees: z.boolean(),
+})

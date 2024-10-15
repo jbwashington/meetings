@@ -55,3 +55,9 @@ export const createMediaStream = (
   };
   tick();
 };
+
+export const addStripeTransactionFees = (amount: number) => {
+    // 2.9% + 30¢ per successful charge for domestic cards
+    const fee = amount * 0.029 + 0.3;
+     return amount + fee;
+};

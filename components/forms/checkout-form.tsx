@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Button } from "../ui/button";
 import { Icons } from "../ui/icons";
+import { track } from "@vercel/analytics/react";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -48,6 +49,8 @@ export default function CheckoutForm() {
       } else {
         // Payment processing is now handled by Stripe
         // The user will be redirected to the return_url after payment completion
+        console.log('return url: ', returnUrl)
+        track('donation successful')
       }
     } catch (error: any) {
       toast.error(`An unexpected error occurred: ${error.message}`);

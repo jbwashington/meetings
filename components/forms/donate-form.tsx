@@ -52,7 +52,6 @@ export default function DonateForm({ className }: { className?: string }) {
         form.setValue("donationAmount", selectedTier.donationAmount);
     };
 
-
     const handleCheckedChange = (checked: boolean) => {
         if (!checked) {
             form.setValue("recurring", false);
@@ -69,7 +68,7 @@ export default function DonateForm({ className }: { className?: string }) {
     async function onSubmit(form: DonateFormSchema) {
         try {
             const { name, email, donationAmount, recurring } = form;
-            
+
             router.push(
                 `${pathName}?donate=true&frequency=${
                     isRecurring ? `recurring` : `one-time`
@@ -127,7 +126,9 @@ export default function DonateForm({ className }: { className?: string }) {
                                     id={field.name}
                                 />
                             </FormControl>
-                            <FormDescription>Repeat this donation monthly</FormDescription>
+                            <FormDescription>
+                                Repeat this donation monthly
+                            </FormDescription>
                             <FormMessage />
                         </FormItem>
                     )}

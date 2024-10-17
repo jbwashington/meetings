@@ -36,6 +36,11 @@ import { Icons } from "@/components/ui/icons";
 import { env } from "@/env.mjs";
 import DonateFees from "./donate-fees";
 
+const donateConfig = {
+    title: "Support Our School",
+    description: "Donations big and small allow TNS to continue our incredible mission and create a safe and nurturing environment for our children. The PTA raises money to fund so many of the programs and partnerships that make TNS so very special!",
+}
+
 const addFeesConfig = {
     title: "Would you like to cover the fees?",
     description:
@@ -48,6 +53,7 @@ const checkoutConfig = {
 };
 
 export default function DonateDialog() {
+
     const windowSize = useWindowSize();
     const isDesktop = windowSize.isDesktop;
     const searchParams = useSearchParams();
@@ -70,6 +76,26 @@ export default function DonateDialog() {
             router.push("/");
         }
     };
+
+    console.log("isOpen: ", isOpen);
+    console.log("success: ", success);
+    console.log("frequency: ", frequency);
+    console.log("donationAmount: ", donationAmount);
+    console.log("name: ", name);
+    console.log("includeFees: ", includeFees);
+    console.log("paymentIntent: ", paymentIntent);
+    console.log("paymentIntentClientSecret: ", paymentIntentClientSecret);
+    console.log("redirectStatus: ", redirectStatus);
+
+    // const showDonationForm: boolean = !success && !frequency && !donationAmount && !name && !includeFees && !paymentIntent && !paymentIntentClientSecret;
+    // const showAddFeesDialog: boolean = !success && frequency && donationAmount && name && !includeFees && !paymentIntent && !paymentIntentClientSecret;
+    // const showCheckoutForm: boolean = !success && frequency && donationAmount && name && includeFees && !paymentIntent && !paymentIntentClientSecret;
+    // const showSuccessDialog: boolean = success && frequency && donationAmount && name && includeFees && paymentIntent && paymentIntentClientSecret;
+
+    // console.log('showDonationForm: ', showDonationForm);
+    // console.log('showAddFeesDialog: ', showAddFeesDialog);
+    // console.log('showCheckoutForm: ', showCheckoutForm);
+    // console.log('showSuccessDialog: ', showSuccessDialog);
 
     const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 

@@ -18,7 +18,7 @@ const donationConfig: DonationConfig = {
             donationAmount: 50,
         },
         {
-            name: "Savior",
+            name: "Champion",
             donationAmount: 100,
         },
     ],

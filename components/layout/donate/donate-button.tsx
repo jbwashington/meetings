@@ -7,7 +7,7 @@ import { useDonateDialog } from "@/hooks/use-donate-dialog";
 
 export default function DonateButton() {
 
-    const { open, setOpen } = useDonateDialog();
+    const { setOpen } = useDonateDialog();
 
     const handleOnClick = () => {
         track("navbar donate button clicked");

@@ -1,5 +1,6 @@
 "use server";
 
+import { DonateFormSchema } from "@/types";
 import stripe from "../vendors/stripe";
 import Stripe from "stripe";
 
@@ -8,64 +9,62 @@ const calculateDonationAmount = (amount: number) => {
 };
 
 export const createPaymentIntent = async (
-    amount: number,
-    email: string,
-    name: string
+    form: DonateFormSchema
 ) => {
     const paymentIntent = await stripe.paymentIntents.create({
-        amount: calculateDonationAmount(amount),
+        amount: calculateDonationAmount(form.donationAmount),
         currency: "usd",
-        receipt_email: email,
+        receipt_email: form.email,
         metadata: {
-            customerName: name,
+            customerName: form.name,
         },
     });
     const clientSecret: string = paymentIntent.client_secret;
     return clientSecret;
 };
 
-// export const getTotalSuccessfulPayments = async () => {
-//     let allCharges: Stripe.Charge[] = [];
-//     let lastChargeId = null;
-//     let totalAmount: number = 0;
+export const getTotalSuccessfulPayments = async () => {
+    let allCharges: Stripe.Charge[] = [];
+    let lastChargeId = null;
+    let totalAmount: number = 0;
 
-//     // Keep making requests until all pages have been traversed
-//     while (true) {
-//         const params: Stripe.ChargeListParams = {
-//             limit: 100, // Max limit per request
-//         };
+    // Keep making requests until all pages have been traversed
+    while (true) {
+        const params: Stripe.ChargeListParams = {
+            limit: 100, // Max limit per request
+        };
 
-//         if (lastChargeId) {
-//             params.starting_after = lastChargeId;
-//         }
+        if (lastChargeId) {
+            params.starting_after = lastChargeId;
+        }
 
-//         try {
-//             const charges = await stripe.charges.list(params);
+        try {
+            const charges = await stripe.charges.list(params);
 
-//             // Filter for successful payments
-//             const successfulCharges = charges.data.filter(
-//                 (charge: Stripe.Charge) =>
-//                     charge.paid === true && charge.status === "succeeded"
-//             );
-//             allCharges = allCharges.concat(successfulCharges);
+            // Filter for successful payments
+            const successfulCharges = charges.data.filter(
+                (charge: Stripe.Charge) =>
+                    charge.paid === true && charge.status === "succeeded"
+            );
+            allCharges = allCharges.concat(successfulCharges);
 
-//             if (charges.data.length === params.limit) {
-//                 lastChargeId = charges.data[charges.data.length - 1].id;
-//             } else {
-//                 break; // Exit loop if last page
-//             }
-//         } catch (error) {
-//             console.error("Error retrieving charges:", error);
-//             break; // Exit loop in case of an error
-//         }
-//     }
+            if (charges.data.length === params.limit) {
+                lastChargeId = charges.data[charges.data.length - 1].id;
+            } else {
+                break; // Exit loop if last page
+            }
+        } catch (error) {
+            console.error("Error retrieving charges:", error);
+            break; // Exit loop in case of an error
+        }
+    }
 
-//     allCharges.forEach((charge) => {
-//         totalAmount += charge.amount / 100;
-//     });
+    allCharges.forEach((charge) => {
+        totalAmount += charge.amount / 100;
+    });
 
-//     const goal = 50000;
-//     const progress = Math.round((totalAmount / goal) * 100);
-//     const percentage: number = progress < 100 ? progress : 100;
-//     return percentage;
-// };
+    const goal = 50000;
+    const progress = Math.round((totalAmount / goal) * 100);
+    const percentage: number = progress < 100 ? progress : 100;
+    return percentage;
+};

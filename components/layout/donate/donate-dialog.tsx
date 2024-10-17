@@ -31,10 +31,7 @@ import { Appearance, loadStripe } from "@stripe/stripe-js";
 import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
-import { track } from "@vercel/analytics/react";
-import { Icons } from "@/components/ui/icons";
 import { env } from "@/env.mjs";
-import DonateFees from "./donate-fees";
 import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import DonateButton from "./donate-button";
 
@@ -61,12 +58,13 @@ export default function DonateDialog() {
     const isDesktop = windowSize.isDesktop;
     const searchParams = useSearchParams();
     const { open, setOpen} = useDonateDialog();
-    // const isOpen = searchParams.has("donate");
     const success = searchParams.has("success");
+
     const frequency = searchParams.get("frequency");
     const donationAmount = searchParams.get("donation_amount");
     const name = searchParams.get("name");
     const includeFees = searchParams.has("include_fees");
+
     const paymentIntent = searchParams.get("payment_intent");
     const paymentIntentClientSecret = searchParams.get(
         "payment_intent_client_secret"
@@ -77,7 +75,7 @@ export default function DonateDialog() {
 
     const handleDialogChange = (open: boolean) => {
         if (!open) {
-            router.push("/");
+            setOpen(null)
         }
     };
 
@@ -175,8 +173,6 @@ export default function DonateDialog() {
                         )}
                         {!clientSecret && !name ? (
                             <DonateForm />
-                        ) : !clientSecret && name ? (
-                            <DonateFees />
                         ) : (
                             <Elements options={options} stripe={stripePromise}>
                                 <CheckoutForm />
@@ -224,9 +220,7 @@ export default function DonateDialog() {
                 </DrawerHeader>
                         {!clientSecret && !name ? (
                             <DonateForm />
-                        ) : !clientSecret && name ? (
-                            <DonateFees />
-                ) : success && paymentIntent ? (
+                        ) : success && paymentIntent ? (
                     <DonateSuccess paymentIntent={paymentIntent} />
                 ) : (
                     <Elements options={options} stripe={stripePromise}>

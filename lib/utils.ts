@@ -61,3 +61,16 @@ export const addStripeTransactionFees = (amount: number) => {
     const fee = amount * 0.029 + 0.3;
      return amount + fee;
 };
+
+export const getStripeTransactionFees = (amount: number) => {
+    // 2.9% + 30¢ per successful charge for domestic cards
+    const fee = amount * 0.029 + 0.3;
+    return fee;
+    };
+
+export const longFloatToUSD = (amount: number): string => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(amount);
+};

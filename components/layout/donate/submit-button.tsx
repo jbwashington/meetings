@@ -1,18 +1,21 @@
-import { Button } from "@/components/ui/button"
-import { Icons } from "@/components/ui/icons"
+import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/ui/icons";
 import { track } from "@vercel/analytics/react";
-import { DonateFormSchema, AddTransactionFeesFormSchema } from "@/types";
+import { DonateFormSchema } from "@/types";
 import { UseFormReturn } from "react-hook-form";
+import { longFloatToUSD } from "@/lib/utils";
 
-interface SubmitButtonProps {
+export const SubmitButton = ({
+    form,
+    donationAmount,
+    recurring,
+}: {
     form: UseFormReturn<DonateFormSchema, any, undefined>;
-}
-
-export const SubmitButton = (form: SubmitButtonProps) => {
-
-    const watchDonationAmount = form.form.watch("donationAmount");
-    const watchRecurring = form.form.watch("recurring");
-    const { isDirty, isValid, isSubmitting } = form.form.formState;
+    donationAmount: number;
+    recurring: boolean;
+}) => {
+    const { isDirty, isValid, isSubmitting } = form.formState;
+    const donationAmountCurrency = longFloatToUSD(donationAmount);
 
     return (
         <Button
@@ -22,11 +25,13 @@ export const SubmitButton = (form: SubmitButtonProps) => {
             className="w-full"
             disabled={!isDirty || !isValid || isSubmitting}
         >
-            {isSubmitting && <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />}
-            {watchRecurring
-                ? `Start a recurring donation of $${watchDonationAmount} per month`
+            {isSubmitting && (
+                <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />
+            )}
+            {recurring
+                ? `Start a recurring donation of $${donationAmount} per month`
                 : `Make a one-time donation of $${
-                      watchDonationAmount ? watchDonationAmount : 0
+                      donationAmount ? donationAmount : 0
                   }`}
         </Button>
     );

@@ -27,13 +27,14 @@ import donationConfig from "@/config/donate";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import DonationTierItem from "../layout/donate/donation-tier-item";
-import { cn } from "@/lib/utils";
+import { addStripeTransactionFees, cn, getStripeTransactionFees, longFloatToUSD } from "@/lib/utils";
 import { SubmitButton } from "../layout/donate/submit-button";
+import { useAddFees, useDonationAmount, useEmail, useName, useRecurring } from "@/hooks/use-donate-form";
 
 export default function DonateForm({ className }: { className?: string }) {
     const searchParams = useSearchParams();
     const frequency = searchParams.get("frequency");
-    const isRecurring = frequency === "recurring" ? true : false;
+    
 
     const form = useForm<DonateFormSchema>({
         resolver: zodResolver(donateFormSchema),
@@ -42,9 +43,16 @@ export default function DonateForm({ className }: { className?: string }) {
             email: "",
             donationAmount: donationConfig.tiers[2].donationAmount,
             recurring: false,
+            addFees: false,
         },
         mode: "onChange",
     });
+
+    const {addFees, setAddFees} = useAddFees();
+    const {email, setEmail} = useEmail();
+    const {name, setName} = useName();
+    const {recurring, setRecurring} = useRecurring();
+    const {donationAmount, setDonationAmount} = useDonationAmount();
 
     const watchDonationAmount = form.watch("donationAmount");
 
@@ -52,13 +60,21 @@ export default function DonateForm({ className }: { className?: string }) {
         form.setValue("donationAmount", selectedTier.donationAmount);
     };
 
-    const handleCheckedChange = (checked: boolean) => {
+    const handleRecurringCheckedChange = (checked: boolean) => {
         if (!checked) {
-            form.setValue("recurring", false);
-            router.push(`${pathName}?donate=true&frequency=one-time`);
+            setRecurring(false);
         } else {
-            form.setValue("recurring", true);
-            router.push(`${pathName}?donate=true&frequency=recurring`);
+            setRecurring(true);
+        }
+    };
+
+    const handleFeesCheckedChange = (checked: boolean) => {
+        if (checked) {
+            const donationAmount = addStripeTransactionFees(watchDonationAmount);
+            setDonationAmount(donationAmount);
+            
+        } else {
+            setDonationAmount(watchDonationAmount);
         }
     };
 
@@ -67,13 +83,12 @@ export default function DonateForm({ className }: { className?: string }) {
 
     async function onSubmit(form: DonateFormSchema) {
         try {
-            const { name, email, donationAmount, recurring } = form;
-
-            router.push(
-                `${pathName}?donate=true&frequency=${
-                    isRecurring ? `recurring` : `one-time`
-                }&name=${name}&email=${email}&donation_amount=${donationAmount}`
-            );
+                    const clientSecret = await createPaymentIntent(form);
+                    router.push(
+                        `${pathName}?donate=true&frequency=${
+                            form.recurring ? `recurring` : `one-time`
+                        }&client_secret=${clientSecret}&name=${form.name}&email=${form.email}&donation_amount=${form.donationAmount}`
+                    );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
         }
@@ -120,14 +135,33 @@ export default function DonateForm({ className }: { className?: string }) {
                         <FormItem className="inline-flex items-center space-x-2 space-y-0">
                             <FormControl>
                                 <Switch
-                                    onCheckedChange={handleCheckedChange}
-                                    checked={isRecurring}
+                                    onCheckedChange={handleRecurringCheckedChange}
+                                    checked={recurring as boolean}
                                     name={field.name}
                                     id={field.name}
                                 />
                             </FormControl>
                             <FormDescription>
                                 Repeat this donation monthly
+                            </FormDescription>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="addFees"
+                    render={({ field }) => (
+                        <FormItem className="inline-flex items-center space-x-2 space-y-0">
+                            <FormControl>
+                                <Switch
+                                    onCheckedChange={handleFeesCheckedChange}
+                                    name={field.name}
+                                    id={field.name}
+                                />
+                            </FormControl>
+                            <FormDescription>
+                            Cover the transaction fees of {longFloatToUSD(getStripeTransactionFees(watchDonationAmount))} for this donation.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
@@ -151,10 +185,7 @@ export default function DonateForm({ className }: { className?: string }) {
                                             );
                                         if (selectedTier) {
                                             handleTierSelect(selectedTier);
-                                            form.setValue(
-                                                "donationAmount",
-                                                numericValue
-                                            ); // Set as number
+                                            setDonationAmount(numericValue);
                                         }
                                     }
                                     field.onChange(numericValue);
@@ -249,27 +280,7 @@ export default function DonateForm({ className }: { className?: string }) {
                         </FormItem>
                     )}
                 />
-                <FormField
-                    control={form.control}
-                    name="recurring"
-                    render={({ field }) => (
-                        <FormItem className="items-center hidden gap-x-2">
-                            <FormLabel className="capitalize">
-                                Recurring
-                            </FormLabel>
-                            <FormControl>
-                                <Switch
-                                    onCheckedChange={handleCheckedChange}
-                                    checked={isRecurring}
-                                    name={field.name}
-                                    id={field.name}
-                                />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
-                <SubmitButton form={form} />
+                <SubmitButton donationAmount={donationAmount ?? watchDonationAmount} form={form} recurring={recurring as boolean} />
             </form>
         </Form>
     );

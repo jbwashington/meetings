@@ -35,6 +35,8 @@ import { track } from "@vercel/analytics/react";
 import { Icons } from "@/components/ui/icons";
 import { env } from "@/env.mjs";
 import DonateFees from "./donate-fees";
+import { useDonateDialog } from "@/hooks/use-donate-dialog";
+import DonateButton from "./donate-button";
 
 const donateConfig = {
     title: "Support Our School",
@@ -54,10 +56,12 @@ const checkoutConfig = {
 
 export default function DonateDialog() {
 
+
     const windowSize = useWindowSize();
     const isDesktop = windowSize.isDesktop;
     const searchParams = useSearchParams();
-    const isOpen = searchParams.has("donate");
+    const { open, setOpen} = useDonateDialog();
+    // const isOpen = searchParams.has("donate");
     const success = searchParams.has("success");
     const frequency = searchParams.get("frequency");
     const donationAmount = searchParams.get("donation_amount");
@@ -77,7 +81,7 @@ export default function DonateDialog() {
         }
     };
 
-    console.log("isOpen: ", isOpen);
+    // console.log("isOpen: ", isOpen);
     console.log("success: ", success);
     console.log("frequency: ", frequency);
     console.log("donationAmount: ", donationAmount);
@@ -138,18 +142,9 @@ export default function DonateDialog() {
 
     if (isDesktop) {
         return (
-            <Dialog open={isOpen} onOpenChange={handleDialogChange}>
+            <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                    <Link href="/?donate=true&frequency=one-time">
-                        <Button
-                            onClick={() => track("donate button clicked")}
-                            variant="default"
-                            size="sm"
-                        >
-                            <Icons.heartHandshake className="w-4 h-4 mr-2" />{" "}
-                            {donationConfig.title}
-                        </Button>
-                    </Link>
+                <DonateButton />
                 </DialogTrigger>
                 {!success ? (
                     <DialogContent>
@@ -208,7 +203,7 @@ export default function DonateDialog() {
     }
 
     return (
-        <Drawer open={isOpen} onOpenChange={handleDialogChange}>
+        <Drawer open={open} onOpenChange={setOpen}>
             <DrawerTrigger asChild>
                 <Link href="/?donate=true">
                     <Button variant="default">{donationConfig.title}</Button>

@@ -27,13 +27,14 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
-import { Appearance, loadStripe } from "@stripe/stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { env } from "@/env.mjs";
 import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import DonateButton from "./donate-button";
+import { lightAppearance, darkAppearance } from "@/config/checkout-form";
 
 const donateConfig = {
     title: "Support Our School",
@@ -103,31 +104,6 @@ export default function DonateDialog() {
 
     const clientSecret = searchParams.get("client_secret");
 
-    const lightAppearance: Appearance = {
-        theme: "stripe",
-        variables: {
-            colorPrimary: "rgb(226, 232, 240)",
-            colorBackground: "rgb(255, 255, 255)",
-            colorText: "rgb(2, 8, 23)",
-            fontFamily: "Inter, Roboto, Helvetica Neue, sans-serif",
-            fontSizeBase: "14px",
-            spacingUnit: "2px",
-            borderRadius: "2px",
-        },
-    };
-
-    const darkAppearance: Appearance = {
-        theme: "night",
-        variables: {
-            colorPrimary: "rgb(30, 41, 59)",
-            colorBackground: "rgb(2, 8, 23)",
-            colorText: "rgb(248, 250, 252)",
-            fontFamily: "Inter, Roboto, Helvetica Neue, sans-serif",
-            fontSizeBase: "14px",
-            spacingUnit: "2px",
-            borderRadius: "2px",
-        },
-    };
 
     const { resolvedTheme } = useTheme();
     const isDarkMode = resolvedTheme === "dark";

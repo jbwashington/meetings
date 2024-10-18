@@ -7,19 +7,19 @@ const donationConfig: DonationConfig = {
     tiers: [
         {
             name: "Basic",
-            donationAmount: 10,
+            donation_amount: 10,
         },
         {
             name: "Supporter",
-            donationAmount: 25,
+            donation_amount: 25,
         },
         {
             name: "Advocate",
-            donationAmount: 50,
+            donation_amount: 50,
         },
         {
             name: "Champion",
-            donationAmount: 100,
+            donation_amount: 100,
         },
     ],
 };

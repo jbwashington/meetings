@@ -32,7 +32,7 @@ import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { env } from "@/env.mjs";
-import { useDonateDialog } from "@/hooks/use-donate-dialog";
+import { useClientSecret, useDonateDialog } from "@/hooks/use-donate-dialog";
 import DonateButton from "./donate-button";
 import { lightAppearance, darkAppearance } from "@/config/checkout-form";
 
@@ -57,7 +57,7 @@ export default function DonateDialog() {
 
     const windowSize = useWindowSize();
     const isDesktop = windowSize.isDesktop;
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
     const { open, setOpen} = useDonateDialog();
     const success = searchParams.has("success");
 
@@ -71,8 +71,6 @@ export default function DonateDialog() {
         "payment_intent_client_secret"
     );
     const redirectStatus = searchParams.get("redirect_status");
-
-    const router = useRouter();
 
     const handleDialogChange = (open: boolean) => {
         if (!open) {
@@ -90,19 +88,9 @@ export default function DonateDialog() {
     console.log("paymentIntentClientSecret: ", paymentIntentClientSecret);
     console.log("redirectStatus: ", redirectStatus);
 
-    // const showDonationForm: boolean = !success && !frequency && !donationAmount && !name && !includeFees && !paymentIntent && !paymentIntentClientSecret;
-    // const showAddFeesDialog: boolean = !success && frequency && donationAmount && name && !includeFees && !paymentIntent && !paymentIntentClientSecret;
-    // const showCheckoutForm: boolean = !success && frequency && donationAmount && name && includeFees && !paymentIntent && !paymentIntentClientSecret;
-    // const showSuccessDialog: boolean = success && frequency && donationAmount && name && includeFees && paymentIntent && paymentIntentClientSecret;
-
-    // console.log('showDonationForm: ', showDonationForm);
-    // console.log('showAddFeesDialog: ', showAddFeesDialog);
-    // console.log('showCheckoutForm: ', showCheckoutForm);
-    // console.log('showSuccessDialog: ', showSuccessDialog);
-
     const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 
-    const clientSecret = searchParams.get("client_secret");
+    const {clientSecret, setClientSecret} = useClientSecret();
 
 
     const { resolvedTheme } = useTheme();
@@ -116,7 +104,7 @@ export default function DonateDialog() {
 
     if (isDesktop) {
         return (
-            <Dialog open={open} onOpenChange={setOpen}>
+            <Dialog open={open} onOpenChange={handleDialogChange}>
                 <DialogTrigger asChild>
                 <DonateButton />
                 </DialogTrigger>

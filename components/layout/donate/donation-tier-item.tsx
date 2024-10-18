@@ -13,7 +13,7 @@ export default function DonationTierItem({ tier }: { tier: DonationTier }) {
         <Card className="w-full">
             <CardContent className="p-4">
                 <p className="text-xl font-extrabold">{tier.name}</p>
-                {formatCurrency(tier.donationAmount)}
+                {formatCurrency(tier.donation_amount)}
             </CardContent>
         </Card>
     );

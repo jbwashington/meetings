@@ -41,9 +41,9 @@ export default function DonateForm({ className }: { className?: string }) {
         defaultValues: {
             name: "",
             email: "",
-            donationAmount: donationConfig.tiers[2].donationAmount,
+            donation_amount: donationConfig.tiers[2].donation_amount,
             recurring: false,
-            addFees: false,
+            add_fees: false,
         },
         mode: "onChange",
     });
@@ -54,10 +54,10 @@ export default function DonateForm({ className }: { className?: string }) {
     const {recurring, setRecurring} = useRecurring();
     const {donationAmount, setDonationAmount} = useDonationAmount();
 
-    const watchDonationAmount = form.watch("donationAmount");
+    const watchDonationAmount = form.watch("donation_amount");
 
     const handleTierSelect = (selectedTier: DonationTier) => {
-        form.setValue("donationAmount", selectedTier.donationAmount);
+        form.setValue("donation_amount", selectedTier.donation_amount);
     };
 
     const handleRecurringCheckedChange = (checked: boolean) => {
@@ -87,7 +87,7 @@ export default function DonateForm({ className }: { className?: string }) {
                     router.push(
                         `${pathName}?donate=true&frequency=${
                             form.recurring ? `recurring` : `one-time`
-                        }&client_secret=${clientSecret}&name=${form.name}&email=${form.email}&donation_amount=${form.donationAmount}`
+                        }&client_secret=${clientSecret}&name=${form.name}&email=${form.email}&donation_amount=${form.donation_amount}`
                     );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
@@ -150,7 +150,7 @@ export default function DonateForm({ className }: { className?: string }) {
                 />
                 <FormField
                     control={form.control}
-                    name="addFees"
+                    name="add_fees"
                     render={({ field }) => (
                         <FormItem className="inline-flex items-center space-x-2 space-y-0">
                             <FormControl>
@@ -169,7 +169,7 @@ export default function DonateForm({ className }: { className?: string }) {
                 />
                 <FormField
                     control={form.control}
-                    name="donationAmount"
+                    name="donation_amount"
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel>Sponsor Levels</FormLabel>
@@ -180,7 +180,7 @@ export default function DonateForm({ className }: { className?: string }) {
                                         const selectedTier =
                                             donationConfig.tiers.find(
                                                 (tier) =>
-                                                    tier.donationAmount ===
+                                                    tier.donation_amount ===
                                                     numericValue
                                             );
                                         if (selectedTier) {
@@ -201,8 +201,8 @@ export default function DonateForm({ className }: { className?: string }) {
                                                     event.key === " "
                                                 ) {
                                                     form.setValue(
-                                                        "donationAmount",
-                                                        tier.donationAmount
+                                                        "donation_amount",
+                                                        tier.donation_amount
                                                     );
                                                 }
                                             }}
@@ -218,12 +218,12 @@ export default function DonateForm({ className }: { className?: string }) {
                                                             )
                                                         }
                                                         checked={
-                                                            tier.donationAmount ===
+                                                            tier.donation_amount ===
                                                             form.getValues(
-                                                                "donationAmount"
+                                                                "donation_amount"
                                                             )
                                                         }
-                                                        value={tier.donationAmount.toString()}
+                                                        value={tier.donation_amount.toString()}
                                                         className="sr-only"
                                                         aria-label={`Select ${tier.name} tier`}
                                                     />
@@ -240,7 +240,7 @@ export default function DonateForm({ className }: { className?: string }) {
                 />
                 <FormField
                     control={form.control}
-                    name="donationAmount"
+                    name="donation_amount"
                     render={({ field }) => (
                         <FormItem>
                             <FormDescription>
@@ -265,16 +265,16 @@ export default function DonateForm({ className }: { className?: string }) {
                                         type="number" // Ensure the input type is number
                                         onChange={(e) =>
                                             form.setValue(
-                                                "donationAmount",
+                                                "donation_amount",
                                                 parseFloat(e.target.value)
                                             )
                                         } // Parse and set as number
                                     />
                                 </FormControl>
                             </div>
-                            {errors.donationAmount && (
+                            {errors.donation_amount && (
                                 <FormMessage>
-                                    {errors.donationAmount.message}
+                                    {errors.donation_amount.message}
                                 </FormMessage>
                             )}
                         </FormItem>

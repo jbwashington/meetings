@@ -72,7 +72,7 @@ export type UserSubscriptionPlan = SubscriptionPlan &
 
 export type DonationTier = {
   name: string;
-  donationAmount: number; // this cannot be called amount, it will collide with one of the props from the react node type!
+  donation_amount: number; // this cannot be called amount, it will collide with one of the props from the react node type!
 };
 
 export type DonationConfig = {

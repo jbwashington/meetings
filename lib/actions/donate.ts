@@ -12,7 +12,7 @@ export const createPaymentIntent = async (
     form: DonateFormSchema
 ) => {
     const paymentIntent = await stripe.paymentIntents.create({
-        amount: calculateDonationAmount(form.donationAmount),
+        amount: calculateDonationAmount(form.donation_amount),
         currency: "usd",
         receipt_email: form.email,
         metadata: {

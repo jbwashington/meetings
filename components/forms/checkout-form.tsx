@@ -12,13 +12,13 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { Button } from "../ui/button";
 import { Icons } from "../ui/icons";
 import { track } from "@vercel/analytics/react";
+import { useClientSecret } from "@/hooks/use-donate-dialog";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
-  const searchParams = useSearchParams();
   const [isLoading, setIsLoading] = useState(false);
-  const clientSecret = searchParams.get("client_secret");
+  const {clientSecret, setClientSecret } = useClientSecret();
   const pathName = usePathname();
 
   if (!clientSecret) {

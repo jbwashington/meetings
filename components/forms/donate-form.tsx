@@ -72,12 +72,10 @@ export default function DonateForm({ className }: { className?: string }) {
     };
 
     const handleFeesCheckedChange = (checked: boolean) => {
-        if (checked) {
-            const total = addStripeTransactionFees(donationAmount);
-            setDonationAmount(total);
-            
+        if (!checked) {
+            setIncludeFees(null);
         } else {
-            setDonationAmount(null);
+            setIncludeFees(true);
         }
     };
 
@@ -93,6 +91,12 @@ export default function DonateForm({ className }: { className?: string }) {
             setEmail(form.email);
             setIncludeFees(form.include_fees);
             setRecurring(form.recurring);
+
+            if (includeFees) {
+                const fees = getStripeTransactionFees(form.donation_amount);
+                setDonationAmount(form.donation_amount + fees);
+            }
+
             setDonationAmount(form.donation_amount);
 
             const serialize = stripeCheckoutSerializer();

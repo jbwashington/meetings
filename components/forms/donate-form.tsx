@@ -31,18 +31,6 @@ import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import { stripeCheckoutSerializer } from "@/lib/serializers";
 
 export default function DonateForm({ className }: { className?: string }) {
-    const form = useForm<DonateFormSchema>({
-        resolver: zodResolver(donateFormSchema),
-        defaultValues: {
-            name: "",
-            email: "",
-            donation_amount: donationConfig.tiers[2].donation_amount,
-            recurring: false,
-            include_fees: false,
-        },
-        mode: "onChange",
-    });
-
     const {
         name,
         setName,
@@ -57,6 +45,18 @@ export default function DonateForm({ className }: { className?: string }) {
         clientSecret,
         setClientSecret,
     } = useDonateDialog();
+
+    const form = useForm<DonateFormSchema>({
+        resolver: zodResolver(donateFormSchema),
+        defaultValues: {
+            name: name,
+            email: email,
+            donation_amount: donationAmount,
+            recurring: recurring,
+            include_fees: includeFees,
+        },
+        mode: "onChange",
+    });
 
     const handleTierSelect = (selectedTier: DonationTier) => {
         setDonationAmount(selectedTier.donation_amount);

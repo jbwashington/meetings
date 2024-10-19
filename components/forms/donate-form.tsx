@@ -87,13 +87,20 @@ export default function DonateForm({ className }: { className?: string }) {
     async function onSubmit(form: DonateFormSchema) {
         try {
             const clientSecret = await createPaymentIntent(form);
+
             setClientSecret(clientSecret);
+            setName(form.name);
+            setEmail(form.email);
+            setIncludeFees(form.include_fees);
+            setRecurring(form.recurring);
+            setDonationAmount(form.donation_amount);
+
             const serialize = stripeCheckoutSerializer();
             const url = serialize(pathName, {
                 open: true,
                 recurring: recurring,
-                name: name,
-                email: email,
+                name: form.name,
+                email: form.email,
                 donationAmount: donationAmount,
                 includeFees: includeFees,
                 clientSecret: clientSecret,
@@ -118,7 +125,7 @@ export default function DonateForm({ className }: { className?: string }) {
                     render={({ field }) => (
                         <FormItem>
                             <FormControl>
-                                <Input placeholder="Name" {...field} />
+                                <Input  placeholder="Name" {...field} />
                             </FormControl>
                             {errors.name && (
                                 <FormMessage>{errors.name.message}</FormMessage>

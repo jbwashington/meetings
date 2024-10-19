@@ -70,16 +70,6 @@ export default function DonateDialog() {
         }
     };
 
-    console.log("isOpen: ", open);
-    console.log("success: ", success);
-    console.log("recurring: ", recurring);
-    console.log("donation_amount: ", donationAmount);
-    console.log("name: ", name);
-    console.log("includeFees: ", includeFees);
-    console.log("paymentIntent: ", paymentIntent);
-    console.log("paymentIntentClientSecret: ", paymentIntentClientSecret);
-    console.log("redirectStatus: ", redirectStatus);
-
     const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 
     const { resolvedTheme } = useTheme();

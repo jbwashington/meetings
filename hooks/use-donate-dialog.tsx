@@ -1,83 +1,71 @@
-'use client'
+"use client";
 
-import { parseAsBoolean, parseAsFloat, parseAsString, useQueryState, useQueryStates } from "nuqs";
+import { donateDialogParser } from "@/lib/parsers/donate-dialog";
+import { useQueryStates } from "nuqs";
 
 export function useDonateDialog() {
-    const [open, setOpen] = useQueryState(
-        "donate",
-        parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true })
-    );
-    return { open, setOpen };
-}
+    const [queryStates, setQueryStates] = useQueryStates(donateDialogParser, {
+        urlKeys: {
+            open: "donate",
+            donationAmount: "donation_amount",
+            includeFees: "include_fees",
+            paymentIntent: "payment_intent",
+            paymentIntentClientSecret: "payment_intent_client_secret",
+            clientSecret: "client_secret",
+            redirectStatus: "redirect_status",
+            sessionId: "session_id",
+        },
+    });
 
-export function useClientSecret() {
-    const [clientSecret, setClientSecret] = useQueryState(
-        "client_secret",
-        parseAsString.withOptions({ clearOnDefault: true })
-    );
-    return { clientSecret, setClientSecret };
-}
+    const {
+        open,
+        recurring,
+        success,
+        donationAmount,
+        name,
+        email,
+        includeFees,
+        paymentIntent,
+        paymentIntentClientSecret,
+        clientSecret,
+        redirectStatus,
+        sessionId,
+    } = queryStates;
 
-export function useSuccess() {
-    const [success, setSuccess] = useQueryState(
-        "success",
-        parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true })
-    );
-    return { success, setSuccess };
-}
-
-export function useRecurring() {
-    const [recurring, setRecurring] = useQueryState(
-        "recurring",
-        parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true })
-    );
-    return { recurring, setRecurring };
-}
-
-export function useDonationAmount() {
-    const [donationAmount, setDonationAmount] = useQueryState(
-        "donation_amount",
-        parseAsFloat.withOptions({ clearOnDefault: true })
-    );
-    return { donationAmount, setDonationAmount };
-}
-
-export function useName() {
-    const [name, setName] = useQueryState(
-        "name",
-        parseAsString.withOptions({ clearOnDefault: true })
-    );
-    return { name, setName };
-}
-
-export function useIncludeFees() {
-    const [includeFees, setIncludeFees] = useQueryState(
-        "include_fees",
-        parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true })
-    );
-    return { includeFees, setIncludeFees };
-}
-
-export function usePaymentIntent() {
-    const [paymentIntent, setPaymentIntent] = useQueryState(
-        "payment_intent",
-        parseAsString.withOptions({ clearOnDefault: true })
-    );
-    return { paymentIntent, setPaymentIntent };
-}
-
-export function usePaymentIntentClientSecret() {
-    const [paymentIntentClientSecret, setPaymentIntentClientSecret] = useQueryState(
-        "payment_intent_client_secret",
-        parseAsString.withOptions({ clearOnDefault: true })
-    );
-    return { paymentIntentClientSecret, setPaymentIntentClientSecret };
-}
-
-export function useRedirectStatus() {
-    const [redirectStatus, setRedirectStatus] = useQueryState(
-        "redirect_status",
-        parseAsString.withOptions({ clearOnDefault: true })
-    );
-    return { redirectStatus, setRedirectStatus };
+    return {
+        open,
+        setOpen: () => setQueryStates({ open: true, donationAmount: 50 }),
+        clear: () => setQueryStates(null),
+        recurring,
+        setRecurring: (value: boolean | null) =>
+            setQueryStates({ recurring: value }),
+        success,
+        setSuccess: (value: boolean | null) =>
+            setQueryStates({ success: value }),
+        donationAmount,
+        setDonationAmount: (value: number | null) =>
+            setQueryStates({ donationAmount: value }),
+        name,
+        setName: (value: string | null) => setQueryStates({ name: value }),
+        email,
+        setEmail: (value: string | null) => setQueryStates({ email: value }),
+        includeFees,
+        setIncludeFees: (value: boolean | null) =>
+            setQueryStates({ includeFees: value }),
+        paymentIntent,
+        setPaymentIntent: (value: string | null) =>
+            setQueryStates({ paymentIntent: value }),
+        paymentIntentClientSecret,
+        setPaymentIntentClientSecret: (value: string | null) =>
+            setQueryStates({ paymentIntentClientSecret: value }),
+        clientSecret,
+        setClientSecret: (value: string | null) =>
+            setQueryStates({ clientSecret: value }),
+        redirectStatus,
+        setRedirectStatus: (value: "open" | "complete" | null) =>
+            setQueryStates({ redirectStatus: value }),
+        sessionId,
+        setSessionId: (value: string | null) =>
+            setQueryStates({ sessionId: value }),
+    };
 }

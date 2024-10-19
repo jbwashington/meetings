@@ -24,7 +24,6 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
 import { loadStripe } from "@stripe/stripe-js";
@@ -32,56 +31,49 @@ import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { env } from "@/env.mjs";
-import { useClientSecret, useDonateDialog } from "@/hooks/use-donate-dialog";
+import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import DonateButton from "./donate-button";
-import { lightAppearance, darkAppearance } from "@/config/checkout-form";
-
-const donateConfig = {
-    title: "Support Our School",
-    description: "Donations big and small allow TNS to continue our incredible mission and create a safe and nurturing environment for our children. The PTA raises money to fund so many of the programs and partnerships that make TNS so very special!",
-}
-
-const addFeesConfig = {
-    title: "Would you like to cover the fees?",
-    description:
-    "By covering 2.9% + $0.30 per transaction, you can help us raise more money for our school programs."
-};
-const checkoutConfig = {
-    title: "Secure Donation",
-    description:
-        "Donations big and small allow TNS to continue our incredible mission and create a safe and nurturing environment for our children. The PTA raises money to fund so many of the programs and partnerships that make TNS so very special!",
-};
+import { lightAppearance, darkAppearance, checkoutFormConfig } from "@/config/checkout-form";
+import { successUrlSerializer } from "@/lib/serializers";
 
 export default function DonateDialog() {
-
-
     const windowSize = useWindowSize();
     const isDesktop = windowSize.isDesktop;
-    // const searchParams = useSearchParams();
-    const { open, setOpen} = useDonateDialog();
-    const success = searchParams.has("success");
 
-    const frequency = searchParams.get("frequency");
-    const donationAmount = searchParams.get("donation_amount");
-    const name = searchParams.get("name");
-    const includeFees = searchParams.has("include_fees");
-
-    const paymentIntent = searchParams.get("payment_intent");
-    const paymentIntentClientSecret = searchParams.get(
-        "payment_intent_client_secret"
-    );
-    const redirectStatus = searchParams.get("redirect_status");
+    const {
+        open,
+        clear,
+        setOpen,
+        recurring,
+        setRecurring,
+        success,
+        setSuccess,
+        donationAmount,
+        setDonationAmount,
+        name,
+        setName,
+        includeFees,
+        setIncludeFees,
+        paymentIntent,
+        setPaymentIntent,
+        paymentIntentClientSecret,
+        setPaymentIntentClientSecret,
+        clientSecret,
+        setClientSecret,
+        redirectStatus,
+        setRedirectStatus,
+    } = useDonateDialog();
 
     const handleDialogChange = (open: boolean) => {
         if (!open) {
-            setOpen(null)
+            clear();
         }
     };
 
-    // console.log("isOpen: ", isOpen);
+    console.log("isOpen: ", open);
     console.log("success: ", success);
-    console.log("frequency: ", frequency);
-    console.log("donationAmount: ", donationAmount);
+    console.log("recurring: ", recurring);
+    console.log("donation_amount: ", donationAmount);
     console.log("name: ", name);
     console.log("includeFees: ", includeFees);
     console.log("paymentIntent: ", paymentIntent);
@@ -90,15 +82,13 @@ export default function DonateDialog() {
 
     const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 
-    const {clientSecret, setClientSecret} = useClientSecret();
-
-
     const { resolvedTheme } = useTheme();
     const isDarkMode = resolvedTheme === "dark";
+    const returnURL = successUrlSerializer();
 
     const options = {
         clientSecret: clientSecret as string,
-        returnURL: `/?donate=true&success=true`,
+        returnURL: returnURL,
         appearance: isDarkMode ? darkAppearance : lightAppearance,
     };
 
@@ -106,33 +96,27 @@ export default function DonateDialog() {
         return (
             <Dialog open={open} onOpenChange={handleDialogChange}>
                 <DialogTrigger asChild>
-                <DonateButton />
+                    <DonateButton />
                 </DialogTrigger>
                 {!success ? (
                     <DialogContent>
                         <DialogHeader>
                             <DialogTitle>
-                                {!clientSecret && !includeFees
-                                    ? donationConfig.title : !clientSecret && name ? addFeesConfig.title
-                                    : checkoutConfig.title}
+                                {clientSecret
+                                    ? checkoutFormConfig.title
+                                    : donationConfig.title}
                             </DialogTitle>
                             <DialogDescription>
-                                {!clientSecret && !includeFees
-                                    ? donationConfig.description : !clientSecret && name ? addFeesConfig.description
-                                    : checkoutConfig.description}
+                                {clientSecret
+                                    ? checkoutFormConfig.description
+                                    : donationConfig.description}
                             </DialogDescription>
                         </DialogHeader>
                         {clientSecret && (
                             <DonateSummary
                                 name={name ? name : ""}
-                                donationAmount={
-                                    donationAmount
-                                        ? parseInt(donationAmount)
-                                        : 0
-                                }
-                                recurring={
-                                    frequency === "recurring" ? true : false
-                                }
+                                donationAmount={donationAmount}
+                                recurring={recurring}
                             />
                         )}
                         {!clientSecret && !name ? (
@@ -155,7 +139,9 @@ export default function DonateDialog() {
                     </DialogContent>
                 ) : paymentIntentClientSecret ? (
                     <DialogContent>
-                        <DonateSuccess paymentIntent={paymentIntentClientSecret} />
+                        <DonateSuccess
+                            paymentIntent={paymentIntentClientSecret}
+                        />
                     </DialogContent>
                 ) : null}
             </Dialog>
@@ -165,26 +151,24 @@ export default function DonateDialog() {
     return (
         <Drawer open={open} onOpenChange={setOpen}>
             <DrawerTrigger asChild>
-                <Link href="/?donate=true">
-                    <Button variant="default">{donationConfig.title}</Button>
-                </Link>
+                <DonateButton />
             </DrawerTrigger>
             <DrawerContent className="container">
                 <DrawerHeader className="text-left">
                     <DrawerTitle>
-                        {!clientSecret && !includeFees
-                            ? donationConfig.title : !clientSecret && name ? addFeesConfig.title
-                            : checkoutConfig.title}
+                        {clientSecret
+                            ? checkoutFormConfig.title
+                            : donationConfig.title}
                     </DrawerTitle>
                     <DrawerDescription>
-                        {!clientSecret && !includeFees
-                            ? donationConfig.description : !clientSecret && name ? addFeesConfig.description
-                            : checkoutConfig.description}
+                        {clientSecret
+                            ? checkoutFormConfig.description
+                            : donationConfig.description}
                     </DrawerDescription>
                 </DrawerHeader>
-                        {!clientSecret && !name ? (
-                            <DonateForm />
-                        ) : success && paymentIntent ? (
+                {!clientSecret && !name ? (
+                    <DonateForm />
+                ) : success && paymentIntent ? (
                     <DonateSuccess paymentIntent={paymentIntent} />
                 ) : (
                     <Elements options={options} stripe={stripePromise}>

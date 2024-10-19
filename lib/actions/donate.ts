@@ -8,9 +8,7 @@ const calculateDonationAmount = (amount: number) => {
     return amount * 100;
 };
 
-export const createPaymentIntent = async (
-    form: DonateFormSchema
-) => {
+export const createPaymentIntent = async (form: DonateFormSchema) => {
     const paymentIntent = await stripe.paymentIntents.create({
         amount: calculateDonationAmount(form.donation_amount),
         currency: "usd",

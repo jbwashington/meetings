@@ -3,10 +3,8 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { createPaymentIntent } from "@/lib/actions/donate";
 import { toast } from "sonner";
-import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { track } from "@vercel/analytics/react";
 import { Icons } from "../ui/icons";
 import { RadioGroup } from "@radix-ui/react-radio-group";
 import { Switch } from "../ui/switch";
@@ -29,12 +27,10 @@ import { useRouter } from "next/navigation";
 import DonationTierItem from "../layout/donate/donation-tier-item";
 import { addStripeTransactionFees, cn, getStripeTransactionFees, longFloatToUSD } from "@/lib/utils";
 import { SubmitButton } from "../layout/donate/submit-button";
-import { useAddFees, useDonationAmount, useEmail, useName, useRecurring } from "@/hooks/use-donate-form";
+import { useDonateDialog } from "@/hooks/use-donate-dialog";
+import { stripeCheckoutSerializer } from "@/lib/serializers";
 
 export default function DonateForm({ className }: { className?: string }) {
-    const searchParams = useSearchParams();
-    const frequency = searchParams.get("frequency");
-    
 
     const form = useForm<DonateFormSchema>({
         resolver: zodResolver(donateFormSchema),
@@ -43,26 +39,33 @@ export default function DonateForm({ className }: { className?: string }) {
             email: "",
             donation_amount: donationConfig.tiers[2].donation_amount,
             recurring: false,
-            add_fees: false,
+            include_fees: false,
         },
         mode: "onChange",
     });
 
-    const {addFees, setAddFees} = useAddFees();
-    const {email, setEmail} = useEmail();
-    const {name, setName} = useName();
-    const {recurring, setRecurring} = useRecurring();
-    const {donationAmount, setDonationAmount} = useDonationAmount();
-
-    const watchDonationAmount = form.watch("donation_amount");
+    const {
+        name,
+        setName,
+        email, 
+        setEmail,
+        includeFees,
+        setIncludeFees,
+        recurring,
+        setRecurring,
+        donationAmount,
+        setDonationAmount,
+        clientSecret,
+        setClientSecret,
+    } = useDonateDialog();
 
     const handleTierSelect = (selectedTier: DonationTier) => {
-        form.setValue("donation_amount", selectedTier.donation_amount);
+        setDonationAmount(selectedTier.donation_amount);
     };
 
     const handleRecurringCheckedChange = (checked: boolean) => {
         if (!checked) {
-            setRecurring(false);
+            setRecurring(null);
         } else {
             setRecurring(true);
         }
@@ -70,11 +73,11 @@ export default function DonateForm({ className }: { className?: string }) {
 
     const handleFeesCheckedChange = (checked: boolean) => {
         if (checked) {
-            const donationAmount = addStripeTransactionFees(watchDonationAmount);
-            setDonationAmount(donationAmount);
+            const total = addStripeTransactionFees(donationAmount);
+            setDonationAmount(total);
             
         } else {
-            setDonationAmount(watchDonationAmount);
+            setDonationAmount(null);
         }
     };
 
@@ -83,12 +86,19 @@ export default function DonateForm({ className }: { className?: string }) {
 
     async function onSubmit(form: DonateFormSchema) {
         try {
-                    const clientSecret = await createPaymentIntent(form);
-                    router.push(
-                        `${pathName}?donate=true&frequency=${
-                            form.recurring ? `recurring` : `one-time`
-                        }&client_secret=${clientSecret}&name=${form.name}&email=${form.email}&donation_amount=${form.donation_amount}`
-                    );
+            const clientSecret = await createPaymentIntent(form);
+            setClientSecret(clientSecret);
+            const serialize = stripeCheckoutSerializer();
+            const url = serialize(pathName, {
+                open: true,
+                recurring: recurring,
+                name: name,
+                email: email,
+                donationAmount: donationAmount,
+                includeFees: includeFees,
+                clientSecret: clientSecret,
+            });
+            router.push(url);
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
         }
@@ -150,7 +160,7 @@ export default function DonateForm({ className }: { className?: string }) {
                 />
                 <FormField
                     control={form.control}
-                    name="add_fees"
+                    name="include_fees"
                     render={({ field }) => (
                         <FormItem className="inline-flex items-center space-x-2 space-y-0">
                             <FormControl>
@@ -161,7 +171,7 @@ export default function DonateForm({ className }: { className?: string }) {
                                 />
                             </FormControl>
                             <FormDescription>
-                            Cover the transaction fees of {longFloatToUSD(getStripeTransactionFees(watchDonationAmount))} for this donation.
+                            Cover the transaction fees of {longFloatToUSD(getStripeTransactionFees(donationAmount))} for this donation.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
@@ -280,7 +290,7 @@ export default function DonateForm({ className }: { className?: string }) {
                         </FormItem>
                     )}
                 />
-                <SubmitButton donationAmount={donationAmount ?? watchDonationAmount} form={form} recurring={recurring as boolean} />
+                <SubmitButton donationAmount={donationAmount} form={form} recurring={recurring as boolean} />
             </form>
         </Form>
     );

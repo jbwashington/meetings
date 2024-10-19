@@ -80,3 +80,8 @@ export type DonationConfig = {
   description: string;
   tiers: DonationTier[];
 };
+
+export interface CheckoutFormConfig {
+    title: string;
+    description: string;
+}

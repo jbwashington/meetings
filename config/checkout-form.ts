@@ -1,4 +1,11 @@
+import { CheckoutFormConfig } from "@/types";
 import { Appearance } from "@stripe/stripe-js";
+
+export const checkoutFormConfig: CheckoutFormConfig = {
+    title: "Secure Donation",
+    description:
+        "Donations big and small allow TNS to continue our incredible mission and create a safe and nurturing environment for our children. The PTA raises money to fund so many of the programs and partnerships that make TNS so very special!",
+};
 
 export const lightAppearance: Appearance = {
     theme: "stripe",

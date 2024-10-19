@@ -1,18 +1,19 @@
-import Link from "next/link";
+'use client'
+
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
-import { track } from "@vercel/analytics/react";
 import donationConfig from "@/config/donate";
 import { useDonateDialog } from "@/hooks/use-donate-dialog";
+
 
 export default function DonateButton() {
 
     const { setOpen } = useDonateDialog();
 
     const handleOnClick = () => {
-        track("navbar donate button clicked");
-        setOpen(true);
-    };
+        setOpen();
+    }
+
 
     return (
         <Button

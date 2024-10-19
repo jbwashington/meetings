@@ -8,17 +8,17 @@ import {
 } from "@stripe/react-stripe-js";
 import { StripePaymentElementOptions } from "@stripe/stripe-js";
 import { toast } from "sonner";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { Icons } from "../ui/icons";
 import { track } from "@vercel/analytics/react";
-import { useClientSecret } from "@/hooks/use-donate-dialog";
+import { useDonateDialog } from "@/hooks/use-donate-dialog";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
   const [isLoading, setIsLoading] = useState(false);
-  const {clientSecret, setClientSecret } = useClientSecret();
+  const {clientSecret, setClientSecret } = useDonateDialog();
   const pathName = usePathname();
 
   if (!clientSecret) {

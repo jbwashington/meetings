@@ -29,9 +29,9 @@ export const SubmitButton = ({
                 <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />
             )}
             {recurring
-                ? `Start a recurring donation of $${donationAmount} per month`
-                : `Make a one-time donation of $${
-                      donationAmount ? donationAmount : 0
+                ? `Start a recurring donation of ${donationAmountCurrency} per month`
+                : `Make a one-time donation of ${
+                      donationAmountCurrency ? donationAmountCurrency : 0
                   }`}
         </Button>
     );

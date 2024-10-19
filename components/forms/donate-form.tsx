@@ -31,7 +31,6 @@ import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import { stripeCheckoutSerializer } from "@/lib/serializers";
 
 export default function DonateForm({ className }: { className?: string }) {
-
     const form = useForm<DonateFormSchema>({
         resolver: zodResolver(donateFormSchema),
         defaultValues: {
@@ -47,7 +46,7 @@ export default function DonateForm({ className }: { className?: string }) {
     const {
         name,
         setName,
-        email, 
+        email,
         setEmail,
         includeFees,
         setIncludeFees,
@@ -84,15 +83,15 @@ export default function DonateForm({ className }: { className?: string }) {
 
     async function onSubmit(form: DonateFormSchema) {
         try {
-            const clientSecret = await createPaymentIntent(form);
+            const secret = await createPaymentIntent(form);
 
-            setClientSecret(clientSecret);
+            setClientSecret(secret);
             setName(form.name);
             setEmail(form.email);
             setIncludeFees(form.include_fees);
             setRecurring(form.recurring);
 
-            if (includeFees) {
+            if (form.include_fees) {
                 const fees = getStripeTransactionFees(form.donation_amount);
                 setDonationAmount(form.donation_amount + fees);
             }
@@ -129,7 +128,7 @@ export default function DonateForm({ className }: { className?: string }) {
                     render={({ field }) => (
                         <FormItem>
                             <FormControl>
-                                <Input  placeholder="Name" {...field} />
+                                <Input placeholder="Name" {...field} />
                             </FormControl>
                             {errors.name && (
                                 <FormMessage>{errors.name.message}</FormMessage>
@@ -156,7 +155,9 @@ export default function DonateForm({ className }: { className?: string }) {
                         <FormItem className="inline-flex items-center space-x-2 space-y-0">
                             <FormControl>
                                 <Switch
-                                    onCheckedChange={handleRecurringCheckedChange}
+                                    onCheckedChange={
+                                        handleRecurringCheckedChange
+                                    }
                                     checked={recurring as boolean}
                                     name={field.name}
                                     id={field.name}
@@ -182,7 +183,11 @@ export default function DonateForm({ className }: { className?: string }) {
                                 />
                             </FormControl>
                             <FormDescription>
-                            Cover the transaction fees of {longFloatToUSD(getStripeTransactionFees(donationAmount))} for this donation.
+                                Cover the transaction fees of{" "}
+                                {longFloatToUSD(
+                                    getStripeTransactionFees(donationAmount)
+                                )}{" "}
+                                for this donation.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
@@ -284,12 +289,15 @@ export default function DonateForm({ className }: { className?: string }) {
                                         className="font-bold rounded-l-none"
                                         {...field}
                                         type="number" // Ensure the input type is number
-                                        onChange={(e) =>
+                                        onChange={(e) => {
+                                            setDonationAmount(
+                                                parseFloat(e.target.value)
+                                            ); // Update donationAmount state
                                             form.setValue(
                                                 "donation_amount",
                                                 parseFloat(e.target.value)
-                                            )
-                                        } // Parse and set as number
+                                            );
+                                        }} // Parse and set as number
                                     />
                                 </FormControl>
                             </div>
@@ -301,7 +309,11 @@ export default function DonateForm({ className }: { className?: string }) {
                         </FormItem>
                     )}
                 />
-                <SubmitButton donationAmount={donationAmount} form={form} recurring={recurring as boolean} />
+                <SubmitButton
+                    donationAmount={donationAmount}
+                    form={form}
+                    recurring={recurring as boolean}
+                />
             </form>
         </Form>
     );

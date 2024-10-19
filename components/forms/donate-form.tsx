@@ -88,8 +88,6 @@ export default function DonateForm({ className }: { className?: string }) {
             setClientSecret(secret);
             setName(form.name);
             setEmail(form.email);
-            setIncludeFees(form.include_fees);
-            setRecurring(form.recurring);
 
             if (form.include_fees) {
                 const fees = getStripeTransactionFees(form.donation_amount);

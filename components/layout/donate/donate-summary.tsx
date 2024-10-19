@@ -4,10 +4,12 @@ export default function DonateSummary(
     name,
     donationAmount,
     recurring,
+    includeFees,
 }:{
   name: string;
   donationAmount: number;
   recurring: boolean;
+  includeFees: boolean;
 }
 ) {
   return (
@@ -23,6 +25,10 @@ export default function DonateSummary(
       <div className="flex justify-between">
         <p>Donation Frequency:</p>
         <p>{recurring ? "Monthly" : "One-time"}</p>
+      </div>
+      <div className="flex justify-between">
+        <p>Cover the transaction fees:</p>
+        <p>{includeFees ? "Yes" : "No"}</p>
       </div>
       <div className="pt-3 border-b border-foreground" />
     </div>

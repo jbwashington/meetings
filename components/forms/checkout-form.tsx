@@ -13,6 +13,7 @@ import { Button } from "../ui/button";
 import { Icons } from "../ui/icons";
 import { track } from "@vercel/analytics/react";
 import { useDonateDialog } from "@/hooks/use-donate-dialog";
+import { successUrlSerializer } from "@/lib/serializers";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -32,8 +33,9 @@ export default function CheckoutForm() {
       return;
     }
     setIsLoading(true);
+    const successUrl = successUrlSerializer();
     const returnUrl =
-      window.location.origin + `${pathName}?donate=true&success=true`;
+      window.location.origin + `${pathName}${successUrl}`;
 
     try {
       const result = await stripe.confirmPayment({
@@ -70,7 +72,7 @@ export default function CheckoutForm() {
         id="submit"
         className="w-full"
       >
-        {isLoading && <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />} Donate
+        {isLoading && <Icons.loadingCircle className="w-4 h-4 mr-2 animate-spin" />} Complete Payment
       </Button>
     </form>
   );

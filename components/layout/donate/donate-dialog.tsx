@@ -104,9 +104,10 @@ export default function DonateDialog() {
                         </DialogHeader>
                         {clientSecret && (
                             <DonateSummary
-                                name={name ? name : ""}
+                                name={name}
                                 donationAmount={donationAmount}
                                 recurring={recurring}
+                                includeFees={includeFees}
                             />
                         )}
                         {!clientSecret && !name ? (

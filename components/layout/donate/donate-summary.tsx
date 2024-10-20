@@ -1,3 +1,4 @@
+import { convertCentsToDollars } from "@/lib/utils";
 
 export default function DonateSummary(
 {
@@ -20,7 +21,7 @@ export default function DonateSummary(
       </div>
       <div className="flex justify-between">
         <p>Donation Amount:</p>
-        <p>${donationAmount}</p>
+        <p>{convertCentsToDollars(donationAmount)}</p>
       </div>
       <div className="flex justify-between">
         <p>Donation Frequency:</p>

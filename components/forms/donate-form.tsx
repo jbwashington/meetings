@@ -1,7 +1,12 @@
 "use client";
 
-import { Button, buttonVariants } from "@/components/ui/button";
-import { createPaymentIntent } from "@/lib/actions/donate";
+import { buttonVariants } from "@/components/ui/button";
+import {
+    createPaymentIntent,
+    getStripePrice,
+    getStripeCustomer,
+    getStripeSubscription,
+} from "@/lib/actions/donate";
 import { toast } from "sonner";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -22,29 +27,16 @@ import { RadioGroupItem } from "../ui/radio-group";
 import { donateFormSchema } from "@/lib/validations/donate-form";
 import { DonateFormSchema, DonationTier } from "@/types";
 import donationConfig from "@/config/donate";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from "next/navigation";
 import DonationTierItem from "../layout/donate/donation-tier-item";
-import { addStripeTransactionFees, cn, getStripeTransactionFees, longFloatToUSD } from "@/lib/utils";
+import { cn, getStripeTransactionFees, longFloatToUSD } from "@/lib/utils";
 import { SubmitButton } from "../layout/donate/submit-button";
-import { useDonateDialog } from "@/hooks/use-donate-dialog";
-import { stripeCheckoutSerializer } from "@/lib/serializers";
+import { useDonateDialogStates } from "@/hooks/use-donate-dialog";
 
-export default function DonateForm({ className }: { className?: string }) {
-    const {
-        name,
-        setName,
-        email,
-        setEmail,
-        includeFees,
-        setIncludeFees,
-        recurring,
-        setRecurring,
-        donationAmount,
-        setDonationAmount,
-        clientSecret,
-        setClientSecret,
-    } = useDonateDialog();
+export default function DonateForm() {
+    const [
+        { name, email, includeFees, recurring, donationAmount },
+        setDonateDialogStates,
+    ] = useDonateDialogStates();
 
     const form = useForm<DonateFormSchema>({
         resolver: zodResolver(donateFormSchema),
@@ -59,54 +51,91 @@ export default function DonateForm({ className }: { className?: string }) {
     });
 
     const handleTierSelect = (selectedTier: DonationTier) => {
-        setDonationAmount(selectedTier.donation_amount);
+        setDonateDialogStates({ donationAmount: selectedTier.donation_amount });
     };
 
     const handleRecurringCheckedChange = (checked: boolean) => {
         if (!checked) {
-            setRecurring(null);
+            setDonateDialogStates({ recurring: null });
         } else {
-            setRecurring(true);
+            setDonateDialogStates({ recurring: true });
         }
     };
 
     const handleFeesCheckedChange = (checked: boolean) => {
         if (!checked) {
-            setIncludeFees(null);
+            setDonateDialogStates({ includeFees: null });
         } else {
-            setIncludeFees(true);
+            setDonateDialogStates({ includeFees: true });
         }
     };
 
-    const router = useRouter();
-    const pathName = usePathname();
-
     async function onSubmit(form: DonateFormSchema) {
         try {
-            const secret = await createPaymentIntent(form);
+            // create a new customer if one doesn't exist
+            const customerId = await getStripeCustomer({ email });
 
-            setClientSecret(secret);
-            setName(form.name);
-            setEmail(form.email);
+            const price = await getStripePrice(
+                donationAmount,
+                recurring,
+                includeFees
+            );
 
-            if (form.include_fees) {
-                const fees = getStripeTransactionFees(form.donation_amount);
-                setDonationAmount(form.donation_amount + fees);
+            const priceData = price as { priceId: string; unitAmount: number };
+
+            const { unitAmount, priceId } = priceData;
+
+            // if the donation is recurring, we need to create a subscription
+
+            if (recurring) {
+                // create a new subscription
+                const subscription = await getStripeSubscription({
+                    customerId,
+                    priceId: priceId as string,
+                });
+
+                if (subscription) {
+                    const { clientSecret } = subscription;
+
+                    setDonateDialogStates(
+                        {
+                            open: true,
+                            recurring,
+                            name: form.name,
+                            email: form.email,
+                            donationAmount: unitAmount,
+                            includeFees,
+                            clientSecret,
+                        },
+                        {
+                            history: "push",
+                        }
+                    );
+                }
             }
 
-            setDonationAmount(form.donation_amount);
-
-            const serialize = stripeCheckoutSerializer();
-            const url = serialize(pathName, {
-                open: true,
-                recurring: recurring,
-                name: form.name,
+            const clientSecret = await createPaymentIntent({
+                amount: unitAmount,
                 email: form.email,
-                donationAmount: donationAmount,
-                includeFees: includeFees,
-                clientSecret: clientSecret,
+                name: form.name,
+                recurring,
+                includeFees,
             });
-            router.push(url);
+
+            setDonateDialogStates(
+                {
+                    open: true,
+                    recurring,
+                    name: form.name,
+                    email: form.email,
+                    donationAmount: unitAmount,
+                    includeFees,
+                    clientSecret,
+                },
+                {
+                    history: "push",
+                }
+            );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
         }
@@ -118,7 +147,7 @@ export default function DonateForm({ className }: { className?: string }) {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className={cn("grid items-start gap-4", className)}
+                className={cn("grid items-start gap-4")}
             >
                 <FormField
                     control={form.control}
@@ -209,7 +238,9 @@ export default function DonateForm({ className }: { className?: string }) {
                                             );
                                         if (selectedTier) {
                                             handleTierSelect(selectedTier);
-                                            setDonationAmount(numericValue);
+                                            setDonateDialogStates({
+                                                donationAmount: numericValue,
+                                            });
                                         }
                                     }
                                     field.onChange(numericValue);
@@ -288,9 +319,11 @@ export default function DonateForm({ className }: { className?: string }) {
                                         {...field}
                                         type="number" // Ensure the input type is number
                                         onChange={(e) => {
-                                            setDonationAmount(
-                                                parseFloat(e.target.value)
-                                            ); // Update donationAmount state
+                                            setDonateDialogStates({
+                                                donationAmount: parseFloat(
+                                                    e.target.value
+                                                ),
+                                            }); // Update donationAmount state
                                             form.setValue(
                                                 "donation_amount",
                                                 parseFloat(e.target.value)

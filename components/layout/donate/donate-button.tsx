@@ -3,15 +3,15 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
 import donationConfig from "@/config/donate";
-import { useDonateDialog } from "@/hooks/use-donate-dialog";
+import { useDonateDialogStates } from "@/hooks/use-donate-dialog";
 
 
 export default function DonateButton() {
 
-    const { setOpen } = useDonateDialog();
+    const [{}, setDonateDialogStates] = useDonateDialogStates();
 
     const handleOnClick = () => {
-        setOpen();
+        setDonateDialogStates({open: true, donationAmount: donationConfig.tiers[2].donation_amount })
     }
 
 

@@ -3,6 +3,7 @@ import { type Icon, Icons } from "lucide-react";
 import * as z from "zod";
 import { donateFormSchema } from "@/lib/validations/donate-form";
 import { addTransactionFeesFormSchema } from "@/lib/validations/donate-form";
+import Stripe from "stripe";
 
 export type DonateFormSchema = z.infer<typeof donateFormSchema>;
 export type AddTransactionFeesFormSchema = z.infer<typeof addTransactionFeesFormSchema>;
@@ -71,8 +72,12 @@ export type UserSubscriptionPlan = SubscriptionPlan &
   }
 
 export type DonationTier = {
-  name: string;
-  donation_amount: number; // this cannot be called amount, it will collide with one of the props from the react node type!
+    name: string;
+    donation_amount: number; // this cannot be called amount, it will collide with one of the props from the react node type!
+    price: {
+        subscription: Stripe.Price[id];
+        oneTime: Stripe.Price[id];
+    };
 };
 
 export type DonationConfig = {

@@ -16,7 +16,7 @@ export const donateDialogParser = {
         .withDefault(false)
         .withOptions({ clearOnDefault: true }),
     donationAmount: parseAsFloat
-        .withDefault(0)
+        .withDefault(0.00)
         .withOptions({ clearOnDefault: true }),
     name: parseAsString.withDefault("").withOptions({ clearOnDefault: true }),
     email: parseAsString.withDefault("").withOptions({ clearOnDefault: true }),

@@ -10,7 +10,6 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import DonateForm from "@/components/forms/donate-form";
-import { Button } from "@/components/ui/button";
 import donationConfig from "@/config/donate";
 import useWindowSize from "@/hooks/use-window-size";
 import {
@@ -26,47 +25,44 @@ import {
 import Link from "next/link";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
-import { loadStripe } from "@stripe/stripe-js";
+import { loadStripe, StripeElementsOptions, } from "@stripe/stripe-js";
 import DonateSuccess from "./donate-success";
 import DonateSummary from "./donate-summary";
 import { useTheme } from "next-themes";
 import { env } from "@/env.mjs";
-import { useDonateDialog } from "@/hooks/use-donate-dialog";
 import DonateButton from "./donate-button";
 import { lightAppearance, darkAppearance, checkoutFormConfig } from "@/config/checkout-form";
 import { successUrlSerializer } from "@/lib/serializers";
+import { useQueryStates } from "nuqs";
+import { donateDialogParser } from "@/lib/parsers/donate-dialog";
+import { donateDialogKeyMap } from "@/lib/keymaps/donate-dialog";
 
 export default function DonateDialog() {
     const windowSize = useWindowSize();
     const isDesktop = windowSize.isDesktop;
 
-    const {
-        open,
-        clear,
-        setOpen,
-        recurring,
-        setRecurring,
-        success,
-        setSuccess,
-        donationAmount,
-        setDonationAmount,
-        name,
-        setName,
-        includeFees,
-        setIncludeFees,
-        paymentIntent,
-        setPaymentIntent,
-        paymentIntentClientSecret,
-        setPaymentIntentClientSecret,
-        clientSecret,
-        setClientSecret,
-        redirectStatus,
-        setRedirectStatus,
-    } = useDonateDialog();
+    const [
+        {
+            open,
+            recurring,
+            success,
+            donationAmount,
+            name,
+            email,
+            includeFees,
+            paymentIntent,
+            paymentIntentClientSecret,
+            clientSecret,
+            redirectStatus,
+            sessionId,
+        },
+        setDonateDialogStates,
+    ] = useQueryStates(donateDialogParser, donateDialogKeyMap);
+
 
     const handleDialogChange = (open: boolean) => {
         if (!open) {
-            clear();
+            setDonateDialogStates(null);
         }
     };
 
@@ -76,11 +72,22 @@ export default function DonateDialog() {
     const isDarkMode = resolvedTheme === "dark";
     const returnURL = successUrlSerializer();
 
+    const mode: StripeElementsOptions['mode'] = recurring ? "subscription" : "payment";
+
     const options = {
-        clientSecret: clientSecret as string,
-        returnURL: returnURL,
+        // clientSecret: clientSecret,
         appearance: isDarkMode ? darkAppearance : lightAppearance,
+        mode: mode,
+        amount: donationAmount,
+        currency: 'usd',
     };
+
+
+
+        // amount: donationAmount,
+        // currency: 'usd',
+        // mode: recurring ? "subscription" : "payment",
+        // returnUrl: returnURL,
 
     if (isDesktop) {
         return (
@@ -140,7 +147,7 @@ export default function DonateDialog() {
     }
 
     return (
-        <Drawer open={open} onOpenChange={setOpen}>
+        <Drawer open={open} onOpenChange={handleDialogChange}>
             <DrawerTrigger asChild>
                 <DonateButton />
             </DrawerTrigger>

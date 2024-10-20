@@ -13,6 +13,7 @@ export const env = createEnv({
         AUTH_RESEND_KEY: z.string().min(1),
         RESEND_FROM: z.string().min(1),
         STRIPE_API_SECRET: z.string().min(1),
+        STRIPE_TNS_DONATION_PRODUCT_ID: z.string().min(1),
         IS_DEBUG: z.string().min(1),
     },
     client: {
@@ -32,6 +33,8 @@ export const env = createEnv({
         AUTH_RESEND_KEY: process.env.AUTH_RESEND_KEY,
         RESEND_FROM: process.env.RESEND_FROM,
         STRIPE_API_SECRET: process.env.STRIPE_API_SECRET,
+        STRIPE_TNS_DONATION_PRODUCT_ID:
+            process.env.STRIPE_TNS_DONATION_PRODUCT_ID,
         IS_DEBUG: process.env.IS_DEBUG,
     },
 });

@@ -51,7 +51,8 @@ export default function DonateForm() {
     });
 
     const handleTierSelect = (selectedTier: DonationTier) => {
-        setDonateDialogStates({ donationAmount: selectedTier.donation_amount });
+        const priceId = recurring ? selectedTier.price.subscription : selectedTier.price.oneTime;
+        setDonateDialogStates({ donationAmount: selectedTier.donation_amount, priceId: priceId });
     };
 
     const handleRecurringCheckedChange = (checked: boolean) => {
@@ -94,26 +95,23 @@ export default function DonateForm() {
                     priceId: priceId as string,
                 });
 
-                if (subscription) {
-                    const { clientSecret } = subscription;
-
-                    setDonateDialogStates(
-                        {
-                            open: true,
-                            recurring,
-                            name: form.name,
-                            email: form.email,
-                            donationAmount: unitAmount,
-                            includeFees,
-                            clientSecret,
-                        },
-                        {
-                            history: "push",
-                        }
-                    );
-                }
-            }
-
+                setDonateDialogStates(
+                    {
+                        open: true,
+                        recurring,
+                        name: form.name,
+                        email: form.email,
+                        donationAmount: unitAmount,
+                        includeFees,
+                        clientSecret: subscription?.clientSecret,
+                        priceId: priceId,
+                        customerId: customerId,
+                    },
+                    {
+                        history: "push",
+                    }
+                );
+            } else {
             const clientSecret = await createPaymentIntent({
                 amount: unitAmount,
                 email: form.email,
@@ -136,6 +134,8 @@ export default function DonateForm() {
                     history: "push",
                 }
             );
+            }
+
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);
         }

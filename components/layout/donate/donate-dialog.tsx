@@ -75,19 +75,11 @@ export default function DonateDialog() {
     const mode: StripeElementsOptions['mode'] = recurring ? "subscription" : "payment";
 
     const options = {
-        // clientSecret: clientSecret,
         appearance: isDarkMode ? darkAppearance : lightAppearance,
         mode: mode,
         amount: donationAmount,
         currency: 'usd',
     };
-
-
-
-        // amount: donationAmount,
-        // currency: 'usd',
-        // mode: recurring ? "subscription" : "payment",
-        // returnUrl: returnURL,
 
     if (isDesktop) {
         return (

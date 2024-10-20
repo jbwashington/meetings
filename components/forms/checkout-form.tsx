@@ -14,21 +14,23 @@ import { Icons } from "../ui/icons";
 import { track } from "@vercel/analytics/react";
 import { useDonateDialogStates } from "@/hooks/use-donate-dialog";
 import { successUrlSerializer } from "@/lib/serializers";
+import { getStripeSubscription } from "@/lib/actions/donate";
+import { env } from "@/env.mjs";
+import { absoluteUrl } from "@/lib/utils";
 
 export default function CheckoutForm() {
     const stripe = useStripe();
     const elements = useElements();
     const [isLoading, setIsLoading] = useState(false);
-    const [{ clientSecret }, setDonateDialogStates] = useDonateDialogStates();
+    const [
+        { clientSecret, customerId, priceId, recurring },
+        setDonateDialogStates,
+    ] = useDonateDialogStates();
     const pathName = usePathname();
 
     if (!clientSecret) {
         return null;
     }
-
-    const handleBackButton = () => {
-        setDonateDialogStates({ clientSecret: null });
-    };
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
@@ -38,19 +40,38 @@ export default function CheckoutForm() {
         }
         setIsLoading(true);
         const successUrl = successUrlSerializer();
-        const returnUrl = window.location.origin + `${pathName}${successUrl}`;
+        const returnUrl = absoluteUrl(successUrl)
 
         try {
-            const result = await stripe.confirmPayment({
+            // Trigger form validation and wallet collection
+            const { error: submitError } = await elements.submit();
+
+            if (submitError) {
+                toast.error(submitError.message);
+            }
+
+            if (recurring) {
+                const subscription = await getStripeSubscription({
+                    customerId,
+                    priceId,
+                });
+                console.log(subscription);
+                setDonateDialogStates({
+                    clientSecret: subscription?.clientSecret,
+                });
+            }
+
+            const { error } = await stripe.confirmPayment({
                 elements,
                 confirmParams: {
                     return_url: returnUrl,
                 },
+                clientSecret: clientSecret,
             });
 
-            if (result.error) {
+            if (error) {
                 // Handle errors in payment submission
-                toast.error(result.error.message);
+                toast.error(error.message);
             } else {
                 // Payment processing is now handled by Stripe
                 // The user will be redirected to the return_url after payment completion
@@ -75,16 +96,6 @@ export default function CheckoutForm() {
             />
             <Button
                 disabled={isLoading || !stripe || !elements}
-                variant="secondary"
-                size="sm"
-                className="w-1/2 capitalize"
-                onClick={handleBackButton}
-            >
-                Go back
-            </Button>
-            <Button
-                disabled={isLoading || !stripe || !elements}
-                id="submit"
                 type="submit"
                 variant="default"
                 size="sm"

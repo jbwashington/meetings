@@ -83,23 +83,40 @@ export const getStripeSubscription = async ({
     priceId: Stripe.Price["id"];
 }) => {
     try {
-        const subscription: Stripe.Subscription =
-            await stripe.subscriptions.create({
-                customer: customerId,
-                items: [
-                    {
-                        price: priceId,
-                    },
-                ],
-                payment_behavior: "default_incomplete",
-                // payment_settings: { save_default_payment_method: "on_subscription" },
-                expand: ["latest_invoice.payment_intent"],
-            });
-        const latestInvoice = subscription.latest_invoice as Stripe.Invoice;
-        const paymentIntent =
-            latestInvoice.payment_intent as Stripe.PaymentIntent;
+        const existingSubscriptions = await stripe.subscriptions.list({
+            customer: customerId,
+            price: priceId,
+        });
+
+        if (existingSubscriptions.data.length > 0) {
+            const subscription = existingSubscriptions.data[0];
+            const latestInvoice = subscription.latest_invoice as Stripe.Invoice;
+            const paymentIntent =
+                latestInvoice.payment_intent as Stripe.PaymentIntent;
             const clientSecret = paymentIntent?.client_secret as string;
-        return { subscriptionId: subscription.id as string, clientSecret };
+            return { subscriptionId: subscription.id as string, clientSecret };
+        } else {
+            const subscription: Stripe.Subscription =
+                await stripe.subscriptions.create({
+                    customer: customerId,
+                    items: [
+                        {
+                            price: priceId,
+                        },
+                    ],
+                    payment_behavior: "default_incomplete",
+                    payment_settings: {
+                        save_default_payment_method: "on_subscription",
+                    },
+                    expand: ["latest_invoice.payment_intent"],
+                });
+            console.log('subscription: ', subscription)
+            const latestInvoice = subscription.latest_invoice as Stripe.Invoice;
+            const paymentIntent =
+                latestInvoice.payment_intent as Stripe.PaymentIntent;
+            const clientSecret = paymentIntent?.client_secret as string;
+            return { subscriptionId: subscription.id as string, clientSecret };
+        }
     } catch (error: any) {
         console.error("Error creating Stripe subscription:", error);
         return null;

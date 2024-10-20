@@ -9,5 +9,7 @@ export const donateDialogKeyMap = {
         clientSecret: "client_secret",
         redirectStatus: "redirect_status",
         sessionId: "session_id",
+        priceId: "price_id",
+        customerId: "customer_id",
     },
 };

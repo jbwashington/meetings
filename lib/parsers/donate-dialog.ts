@@ -38,4 +38,10 @@ export const donateDialogParser = {
     sessionId: parseAsString
         .withDefault("")
         .withOptions({ clearOnDefault: true }),
+    customerId: parseAsString
+        .withDefault("")
+        .withOptions({ clearOnDefault: true }),
+    priceId: parseAsString
+        .withDefault("")
+        .withOptions({ clearOnDefault: true }),
 };

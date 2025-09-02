@@ -1,0 +1,158 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="testBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065F46;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="testCardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#F0FDF4;stop-opacity:0.95" />
+    </linearGradient>
+    <radialGradient id="highlightGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FEF3C7;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#testBgGradient)"/>
+  
+  <!-- Abstract education pattern -->
+  <circle cx="700" cy="100" r="40" fill="#14B8A6" opacity="0.2"/>
+  <circle cx="750" cy="320" r="30" fill="#14B8A6" opacity="0.3"/>
+  <circle cx="50" cy="320" r="35" fill="#0D9488" opacity="0.2"/>
+  
+  <!-- Main content card -->
+  <rect x="50" y="50" width="700" height="300" rx="16" fill="url(#testCardGradient)"/>
+  
+  <!-- Header section -->
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#065F46">
+    Standardized Testing &amp; Opt-Out Rights
+  </text>
+  <text x="80" y="115" font-family="Arial, sans-serif" font-size="16" fill="#047857">
+    Understanding Your Options • The Neighborhood School PTA
+  </text>
+  
+  <!-- Left side - Test bubble sheet visualization -->
+  <rect x="80" y="140" width="200" height="160" rx="8" fill="#F7FEE7" stroke="#84CC16" stroke-width="2"/>
+  <text x="180" y="160" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#365314">
+    Traditional Testing
+  </text>
+  
+  <!-- Bubble sheet pattern -->
+  <g transform="translate(100, 175)">
+    <!-- Row 1 -->
+    <circle cx="20" cy="10" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="40" cy="10" r="6" fill="#374151" stroke="#71717A" stroke-width="1"/>
+    <circle cx="60" cy="10" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="80" cy="10" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <text x="100" y="15" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">A B C D</text>
+    
+    <!-- Row 2 -->
+    <circle cx="20" cy="25" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="40" cy="25" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="60" cy="25" r="6" fill="#374151" stroke="#71717A" stroke-width="1"/>
+    <circle cx="80" cy="25" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    
+    <!-- Row 3 -->
+    <circle cx="20" cy="40" r="6" fill="#374151" stroke="#71717A" stroke-width="1"/>
+    <circle cx="40" cy="40" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="60" cy="40" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    <circle cx="80" cy="40" r="6" fill="#D4D4D8" stroke="#71717A" stroke-width="1"/>
+    
+    <!-- Stress indicator -->
+    <text x="10" y="65" font-family="Arial, sans-serif" font-size="12" fill="#DC2626">
+      📊 High Stress
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="12" fill="#DC2626">
+      ⏱️ Time Pressure
+    </text>
+    <text x="10" y="95" font-family="Arial, sans-serif" font-size="12" fill="#DC2626">
+      📏 Limited Scope
+    </text>
+  </g>
+  
+  <!-- Arrow pointing right -->
+  <path d="M300 220 L340 220" stroke="#059669" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <text x="320" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669" font-weight="bold">
+    CHOOSE
+  </text>
+  
+  <!-- Right side - Alternative assessment -->
+  <rect x="360" y="140" width="200" height="160" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="460" y="160" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#064E3B">
+    Alternative Assessment
+  </text>
+  
+  <!-- Alternative activities -->
+  <g transform="translate(380, 175)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+      📚 Portfolio Projects
+    </text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+      🎨 Creative Expression
+    </text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+      🔬 Hands-on Learning
+    </text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+      👥 Collaborative Work
+    </text>
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+      🌱 Personal Growth
+    </text>
+    
+    <!-- Benefits -->
+    <rect x="0" y="85" width="160" height="45" rx="4" fill="#D1FAE5"/>
+    <text x="80" y="100" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#064E3B">
+      BENEFITS
+    </text>
+    <text x="80" y="115" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#065F46">
+      ✓ Reduced anxiety ✓ Holistic learning
+    </text>
+    <text x="80" y="125" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#065F46">
+      ✓ Individual pace ✓ Meaningful engagement
+    </text>
+  </g>
+  
+  <!-- Opt-out information banner -->
+  <rect x="580" y="140" width="140" height="160" rx="8" fill="url(#highlightGradient)" stroke="#F59E0B" stroke-width="2"/>
+  <text x="650" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400E">
+    Your Rights
+  </text>
+  
+  <text x="650" y="185" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350F">
+    Parents Can:
+  </text>
+  <text x="590" y="200" font-family="Arial, sans-serif" font-size="9" fill="#78350F">
+    • Opt out of state tests
+  </text>
+  <text x="590" y="212" font-family="Arial, sans-serif" font-size="9" fill="#78350F">
+    • Request alternatives
+  </text>
+  <text x="590" y="224" font-family="Arial, sans-serif" font-size="9" fill="#78350F">
+    • Review test materials
+  </text>
+  <text x="590" y="236" font-family="Arial, sans-serif" font-size="9" fill="#78350F">
+    • Access support resources
+  </text>
+  
+  <rect x="590" y="250" width="120" height="30" rx="15" fill="#16A34B"/>
+  <text x="650" y="268" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    Learn More →
+  </text>
+  
+  <!-- Progressive education values -->
+  <text x="80" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065F46">
+    Progressive Education Principles: Child-centered • Holistic • Individual Growth
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="greenArrow" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#059669" />
+    </marker>
+  </defs>
+</svg>

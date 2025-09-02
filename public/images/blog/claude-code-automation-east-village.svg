@@ -1,0 +1,106 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- East Village skyline silhouette -->
+  <polygon points="0,320 50,300 100,280 150,290 200,270 250,285 300,265 350,275 400,255 450,270 500,250 550,265 600,245 650,260 700,240 750,250 800,240 800,400 0,400" fill="#1F2937" opacity="0.3"/>
+  
+  <!-- Main content card -->
+  <rect x="50" y="50" width="700" height="280" rx="16" fill="url(#cardGradient)"/>
+  
+  <!-- Header section -->
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">
+    Claude Code Automation for PTAs
+  </text>
+  <text x="80" y="115" font-family="Arial, sans-serif" font-size="16" fill="#6B7280">
+    East Village Manhattan • The Neighborhood School
+  </text>
+  
+  <!-- Automation workflow icons -->
+  <!-- Research icon -->
+  <circle cx="150" cy="170" r="25" fill="#10B981" opacity="0.9"/>
+  <text x="150" y="175" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white">🔍</text>
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">Grant Research</text>
+  
+  <!-- Arrow -->
+  <path d="M180 170 L200 170" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Event Planning icon -->
+  <circle cx="250" cy="170" r="25" fill="#8B5CF6" opacity="0.9"/>
+  <text x="250" y="175" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white">📅</text>
+  <text x="250" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">Event Planning</text>
+  
+  <!-- Arrow -->
+  <path d="M280 170 L300 170" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Vendor Outreach icon -->
+  <circle cx="350" cy="170" r="25" fill="#F59E0B" opacity="0.9"/>
+  <text x="350" y="175" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white">🏪</text>
+  <text x="350" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">Vendor Outreach</text>
+  
+  <!-- Arrow -->
+  <path d="M380 170 L400 170" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Budget Tracking icon -->
+  <circle cx="450" cy="170" r="25" fill="#EF4444" opacity="0.9"/>
+  <text x="450" y="175" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white">💰</text>
+  <text x="450" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">Budget Tracking</text>
+  
+  <!-- Arrow -->
+  <path d="M480 170 L500 170" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Communications icon -->
+  <circle cx="550" cy="170" r="25" fill="#06B6D4" opacity="0.9"/>
+  <text x="550" y="175" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white">📢</text>
+  <text x="550" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">Communications</text>
+  
+  <!-- Results box -->
+  <rect x="580" y="130" width="140" height="80" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="650" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">
+    50% Time Savings
+  </text>
+  <text x="650" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#3730A3">
+    60-80 hrs → 25-35 hrs
+  </text>
+  <text x="650" y="195" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#3730A3">
+    per month
+  </text>
+  
+  <!-- Key stats -->
+  <text x="80" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+    Key Benefits:
+  </text>
+  <text x="80" y="270" font-family="Arial, sans-serif" font-size="12" fill="#4B5563">
+    • Automated grant research and application support
+  </text>
+  <text x="80" y="285" font-family="Arial, sans-serif" font-size="12" fill="#4B5563">
+    • Local East Village business partnership automation
+  </text>
+  <text x="80" y="300" font-family="Arial, sans-serif" font-size="12" fill="#4B5563">
+    • Event planning with vendor coordination and budget tracking
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280" />
+    </marker>
+  </defs>
+  
+  <!-- Claude Code logo/brand -->
+  <circle cx="720" cy="80" r="20" fill="#5B21B6"/>
+  <text x="720" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">CC</text>
+</svg>

@@ -9,7 +9,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import DonateForm from "@/components/forms/donate-form";
+import DonateFormWrapper from "@/components/forms/donate-form-wrapper";
 import { Button } from "@/components/ui/button";
 import donationConfig from "@/config/donate";
 import useWindowSize from "@/hooks/use-window-size";
@@ -179,7 +179,7 @@ export default function DonateDialog() {
                             />
                         )}
                         {!clientSecret && !name ? (
-                            <DonateForm />
+                            <DonateFormWrapper />
                         ) : !clientSecret && name ? (
                             <DonateFees />
                         ) : (
@@ -228,7 +228,7 @@ export default function DonateDialog() {
                     </DrawerDescription>
                 </DrawerHeader>
                         {!clientSecret && !name ? (
-                            <DonateForm />
+                            <DonateFormWrapper />
                         ) : !clientSecret && name ? (
                             <DonateFees />
                 ) : success && paymentIntent ? (

@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation"
-import { allAuthors, allPosts } from "contentlayer/generated"
+import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
+import rehypePrettyCode from 'rehype-pretty-code'
 
-import { Mdx } from "@/components/mdx-components"
+import { getPageFromSlug, getAllPosts } from "@/lib/mdx"
+import { components } from "@/components/mdx-components"
 
 import "@/styles/mdx.css"
 import { Metadata } from "next"
@@ -19,15 +22,9 @@ interface PostPageProps {
   }
 }
 
-// TODO: fix any type
 async function getPostFromParams(params: any) {
-  const slug = params?.slug?.join("/")
-  const post = allPosts.find((post) => post.slugAsParams === slug)
-
-  if (!post) {
-    null
-  }
-
+  const slug = params?.slug?.join("/") || ""
+  const post = await getPageFromSlug("blog", slug)
   return post
 }
 
@@ -50,7 +47,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    authors: post.authors.map((author) => ({
+    authors: post.meta.authors?.map((author: string) => ({
       name: author,
     })),
     openGraph: {
@@ -79,8 +76,9 @@ export async function generateMetadata({
 export async function generateStaticParams(): Promise<
   PostPageProps["params"][]
 > {
-  return allPosts.map((post) => ({
-    slug: post.slugAsParams.split("/"),
+  const posts = await getAllPosts()
+  return posts.map((post) => ({
+    slug: post.slug.split("/"),
   }))
 }
 
@@ -91,9 +89,7 @@ export default async function PostPage({ params }: PostPageProps) {
     notFound()
   }
 
-  const authors = post.authors.map((author) =>
-    allAuthors.find(({ slug }) => slug === `/authors/${author}`)
-  )
+  const authors = post.meta.authors || []
 
   return (
     <article className="container relative max-w-3xl py-6 lg:py-10">
@@ -108,12 +104,12 @@ export default async function PostPage({ params }: PostPageProps) {
         See all posts
       </Link>
       <div>
-        {post.date && (
+        {post.meta.date && (
           <time
-            dateTime={post.date}
+            dateTime={post.meta.date}
             className="block text-sm text-muted-foreground"
           >
-            Published on {formatDate(post.date)}
+            Published on {formatDate(post.meta.date)}
           </time>
         )}
         <h1 className="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
@@ -121,35 +117,19 @@ export default async function PostPage({ params }: PostPageProps) {
         </h1>
         {authors?.length ? (
           <div className="mt-4 flex space-x-4">
-            {authors.map((author) =>
-              author ? (
-                <Link
-                  key={author._id}
-                  href={`https://twitter.com/${author.twitter}`}
-                  className="flex items-center space-x-2 text-sm"
-                >
-                  <Image
-                    src={author.avatar}
-                    alt={author.title}
-                    width={42}
-                    height={42}
-                    className="rounded-full bg-white"
-                  />
-                  <div className="flex-1 text-left leading-tight">
-                    <p className="font-medium">{author.title}</p>
-                    <p className="text-[12px] text-muted-foreground">
-                      @{author.twitter}
-                    </p>
-                  </div>
-                </Link>
-              ) : null
-            )}
+            {authors.map((author: string) => (
+              <div key={author} className="flex items-center space-x-2 text-sm">
+                <div className="flex-1 text-left leading-tight">
+                  <p className="font-medium">{author}</p>
+                </div>
+              </div>
+            ))}
           </div>
         ) : null}
       </div>
-      {post.image && (
+      {post.meta.image && (
         <Image
-          src={post.image}
+          src={post.meta.image}
           alt={post.title}
           width={720}
           height={405}
@@ -157,7 +137,16 @@ export default async function PostPage({ params }: PostPageProps) {
           priority
         />
       )}
-      <Mdx code={post.body.code} />
+      <MDXRemote 
+        source={post.content}
+        components={components}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [remarkGfm],
+            rehypePlugins: [[rehypePrettyCode, { theme: 'github-dark' }]],
+          },
+        }}
+      />
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
         <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>

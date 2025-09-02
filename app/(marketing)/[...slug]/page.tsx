@@ -1,14 +1,16 @@
 import { notFound } from "next/navigation"
-import { allPages } from "contentlayer/generated"
-
-import { Mdx } from "@/components/mdx-components"
-
-import "@/styles/mdx.css"
 import { Metadata } from "next"
+import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
+import rehypePrettyCode from 'rehype-pretty-code'
 
+import { getAllPages, getPageFromSlug } from "@/lib/mdx"
 import { env } from "@/env.mjs"
 import { siteConfig } from "@/config/site"
 import { absoluteUrl } from "@/lib/utils"
+import { components } from "@/components/mdx-components"
+
+import "@/styles/mdx.css"
 
 interface PageProps {
   params: {
@@ -16,15 +18,9 @@ interface PageProps {
   }
 }
 
-// TODO: fix any type
 async function getPageFromParams(params: any) {
-  const slug = params?.slug?.join("/")
-  const page = allPages.find((page) => page.slugAsParams === slug)
-
-  if (!page) {
-    null
-  }
-
+  const slug = params?.slug?.join("/") || ""
+  const page = await getPageFromSlug("pages", slug)
   return page
 }
 
@@ -71,7 +67,9 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams(): Promise<PageProps["params"][]> {
-  return allPages.map((page) => ({
+  const pages = await getAllPages("pages")
+  
+  return pages.map((page) => ({
     slug: page.slugAsParams.split("/"),
   }))
 }
@@ -94,7 +92,16 @@ export default async function PagePage({ params }: PageProps) {
         )}
       </div>
       <hr className="my-4" />
-      <Mdx code={page.body.code} />
+      <MDXRemote 
+        source={page.content}
+        components={components}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [remarkGfm],
+            rehypePlugins: [[rehypePrettyCode, { theme: 'github-dark' }]],
+          },
+        }}
+      />
     </article>
   )
 }

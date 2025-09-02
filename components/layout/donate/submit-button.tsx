@@ -5,7 +5,7 @@ import { DonateFormSchema, AddTransactionFeesFormSchema } from "@/types";
 import { UseFormReturn } from "react-hook-form";
 
 interface SubmitButtonProps {
-    form: UseFormReturn<DonateFormSchema, any, undefined>;
+    form: UseFormReturn<DonateFormSchema>;
 }
 
 export const SubmitButton = (form: SubmitButtonProps) => {

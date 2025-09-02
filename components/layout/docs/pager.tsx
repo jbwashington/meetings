@@ -1,5 +1,7 @@
 import Link from "next/link"
-import { Doc } from "contentlayer/generated"
+// import { Doc } from "contentlayer/generated"
+// TODO: Replace with MDX type
+type Doc = any
 
 import { docsConfig } from "@/config/docs"
 import { cn } from "@/lib/utils"

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { useMDXComponent } from "next-contentlayer2/hooks";
 import { cn } from "@/lib/utils";
 import { MdxCard } from "./mdx-card";
 import { Button } from "./ui/button";
@@ -8,15 +7,12 @@ import { CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Callout } from "./callout";
 import { DirectoryCard } from "./mdx-directory-card";
 
-interface MdxProps {
-    code: string;
-}
-
 interface MdxElementProps {
     className?: string;
     props?: React.HTMLAttributes<HTMLElement>;
 }
-const components = {
+
+export const components = {
     Image: (props: React.ComponentProps<typeof Image>) => (
         <Image {...props} alt={props.alt} />
     ),
@@ -83,10 +79,7 @@ const components = {
     ),
     a: ({ className, ...props }: MdxElementProps) => (
         <a
-            className={cn(
-                "font-medium underline underline-offset-4",
-                className
-            )}
+            className={cn("font-medium underline underline-offset-4", className)}
             {...props}
         />
     ),
@@ -114,31 +107,53 @@ const components = {
             {...props}
         />
     ),
-    img: ({
-        className,
-        alt,
-        ...props
-    }: React.ImgHTMLAttributes<HTMLImageElement>) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-            className={cn("rounded-md border", className)}
-            alt={alt}
-            {...props}
-        />
-    ),
+    img: ({ 
+        className, 
+        alt, 
+        src,
+        width,
+        height,
+        ...props 
+    }: React.ImgHTMLAttributes<HTMLImageElement>) => {
+        // For MDX images, we may not have width/height, so we use fill with a container
+        if (!src) return null;
+        
+        // Check if width and height are provided
+        const hasSize = width && height;
+        
+        if (hasSize) {
+            return (
+                <Image
+                    className={cn("rounded-md border", className)}
+                    alt={alt || ""}
+                    src={src}
+                    width={typeof width === 'number' ? width : parseInt(width as string, 10)}
+                    height={typeof height === 'number' ? height : parseInt(height as string, 10)}
+                />
+            );
+        }
+        
+        // If no size provided, use a container with aspect ratio
+        return (
+            <div className="relative my-4 overflow-hidden rounded-md border">
+                <Image
+                    className={cn("object-contain", className)}
+                    alt={alt || ""}
+                    src={src}
+                    width={800}
+                    height={600}
+                    style={{ width: '100%', height: 'auto' }}
+                />
+            </div>
+        );
+    },
     hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
-    table: ({
-        className,
-        ...props
-    }: React.HTMLAttributes<HTMLTableElement>) => (
+    table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
         <div className="my-6 w-full overflow-y-auto">
             <table className={cn("w-full", className)} {...props} />
         </div>
     ),
-    tr: ({
-        className,
-        ...props
-    }: React.HTMLAttributes<HTMLTableRowElement>) => (
+    tr: ({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
         <tr
             className={cn("m-0 border-t p-0 even:bg-muted", className)}
             {...props}
@@ -180,14 +195,28 @@ const components = {
             {...props}
         />
     ),
+    kbd: ({ className, ...props }: MdxElementProps) => (
+        <kbd
+            className={cn(
+                "pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100",
+                className
+            )}
+            {...props}
+        />
+    ),
 };
 
-export function Mdx({ code }: MdxProps) {
-    const Component = useMDXComponent(code);
+// Legacy component for backward compatibility
+interface MdxProps {
+    code: string;
+}
 
+export function Mdx({ code }: MdxProps) {
+    // This is now a placeholder as we're using MDXRemote directly
+    // If you need to use this component, you'll need to render MDX differently
     return (
         <div className="mdx">
-            <Component components={components} />
+            <p>MDX content should be rendered using MDXRemote</p>
         </div>
     );
 }

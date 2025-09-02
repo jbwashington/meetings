@@ -14,7 +14,9 @@ import {
     CommandSeparator,
 } from "@/components/ui/command";
 import { useRouter } from "next/navigation";
-import { allDocs } from "@/.contentlayer/generated/index.mjs";
+// import { allDocs } from "@/.contentlayer/generated/index.mjs";
+// TODO: Replace with MDX-based search
+const allDocs: any[] = [];
 import { useState } from "react";
 import { CircleIcon } from "lucide-react";
 import { CommandLoading } from "cmdk";

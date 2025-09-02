@@ -1,20 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
-import { allPosts } from "contentlayer/generated"
-import { compareDesc } from "date-fns"
+import { getAllPosts } from "@/lib/mdx"
 
 import { formatDate } from "@/lib/utils"
 
 export const metadata = {
-  title: "Store",
+  title: "Blog",
 }
 
 export default async function BlogPage() {
-  const posts = allPosts
-    .filter((post) => post.published)
-    .sort((a, b) => {
-      return compareDesc(new Date(a.date), new Date(b.date))
-    })
+  const posts = await getAllPosts()
 
   return (
     <div className="container max-w-4xl py-6 lg:py-10">
@@ -33,7 +28,7 @@ export default async function BlogPage() {
         <div className="grid gap-10 sm:grid-cols-2">
           {posts.map((post, index) => (
             <article
-              key={post._id}
+              key={post.slug}
               className="group relative flex flex-col space-y-2"
             >
               {post.image && (
@@ -55,7 +50,7 @@ export default async function BlogPage() {
                   {formatDate(post.date)}
                 </p>
               )}
-              <Link href={post.slug} className="absolute inset-0">
+              <Link href={`/blog/${post.slug}`} className="absolute inset-0">
                 <span className="sr-only">View Article</span>
               </Link>
             </article>

@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/card";
 import { PTABudgetChart } from "./charts/pta-budget";
 import Link from "next/link";
-import DonateForm from "./forms/donate-form";
+import DonateFormWrapper from "./forms/donate-form-wrapper";
 
 export default function DonateSection() {
     return (
@@ -71,7 +71,7 @@ export default function DonateSection() {
                             that make TNS so very special!
                         </CardDescription>
                     </CardHeader>
-                    <DonateForm />
+                    <DonateFormWrapper />
                 </Card>
             </div>
         </div>

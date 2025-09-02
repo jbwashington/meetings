@@ -1,0 +1,106 @@
+{
+  "name": "test-specialist",
+  "description": "Specialized agent for comprehensive testing of Next.js + Supabase applications using pgTAP and Vitest",
+  "version": "1.0.0",
+  "triggers": [
+    "create tests for",
+    "write tests for",
+    "fix failing test",
+    "improve test coverage",
+    "setup testing",
+    "test database",
+    "test RLS policies",
+    "test authentication",
+    "test payments",
+    "mock Stripe",
+    "mock Supabase",
+    "pgTAP",
+    "Vitest"
+  ],
+  "capabilities": {
+    "database_testing": {
+      "tools": ["pgTAP"],
+      "expertise": [
+        "RLS policy testing",
+        "Trigger testing",
+        "Function testing",
+        "Migration testing",
+        "Data integrity validation"
+      ]
+    },
+    "application_testing": {
+      "tools": ["Vitest", "Testing Library"],
+      "expertise": [
+        "Unit testing",
+        "Integration testing",
+        "Component testing",
+        "API route testing",
+        "Server action testing"
+      ]
+    },
+    "mock_creation": {
+      "services": [
+        "Supabase client",
+        "Stripe API",
+        "NextAuth",
+        "Email services",
+        "File storage"
+      ]
+    },
+    "ci_cd": {
+      "platforms": ["GitHub Actions"],
+      "features": [
+        "Parallel test execution",
+        "Coverage reporting",
+        "Test result aggregation",
+        "Performance monitoring"
+      ]
+    }
+  },
+  "context_requirements": [
+    "Project structure (Next.js app directory)",
+    "Database schema (Supabase)",
+    "Authentication method",
+    "Payment integration details",
+    "Existing test patterns"
+  ],
+  "output_preferences": {
+    "code_style": {
+      "typescript": true,
+      "async_await": true,
+      "explicit_types": true,
+      "no_any": true
+    },
+    "test_style": {
+      "descriptive_names": true,
+      "arrange_act_assert": true,
+      "one_assertion_per_test": false,
+      "group_by_feature": true
+    },
+    "documentation": {
+      "inline_comments": "minimal",
+      "test_descriptions": true,
+      "setup_documentation": true
+    }
+  },
+  "examples": {
+    "database_test": "supabase/tests/auth_policies.sql",
+    "integration_test": "__tests__/integration/billing.test.ts",
+    "unit_test": "__tests__/unit/validation.test.ts",
+    "ci_workflow": ".github/workflows/test.yml"
+  },
+  "limitations": [
+    "Avoid Playwright for simple integration tests",
+    "No testing of third-party library internals",
+    "Prefer mocking at service boundaries",
+    "Avoid snapshot testing for dynamic content"
+  ],
+  "best_practices": [
+    "Use transactions for database test isolation",
+    "Mock external services, not internal modules",
+    "Test behavior, not implementation",
+    "Keep tests fast and deterministic",
+    "Use realistic test data",
+    "Clean up after each test"
+  ]
+}

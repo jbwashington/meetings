@@ -16,7 +16,7 @@ Today marks a significant milestone for The Neighborhood School PTA: we've succe
 
 ## The Challenge
 
-Our PTA website was running on outdated technology (Contentlayer) that was no longer maintained and causing build failures. Simultaneously, we identified that TNS PTA was missing out on significant funding opportunities—particularly Manhattan-specific grants and corporate sponsorships that could provide $35-60K annually in additional revenue.
+Our PTA website was running on outdated technology (Contentlayer) that was no longer maintained and causing build failures. Simultaneously, we identified that TNS PTA was missing out on significant funding opportunities - particularly Manhattan-specific grants and corporate sponsorships that could provide $35-60K annually in additional revenue.
 
 ## What We Accomplished
 
@@ -82,12 +82,12 @@ Our new system leverages modern web technologies:
 ```typescript
 // Example: New MDX content loading system
 export async function getPageFromSlug(dir: string, slug: string): Promise<Page | null> {
-  const fileName = `${slug}.mdx`
-  const filePath = path.join(process.cwd(), 'content', dir, fileName)
+  const fileName = slug + '.mdx';
+  const filePath = path.join(process.cwd(), 'content', dir, fileName);
   
   try {
-    const fileContent = await fs.readFile(filePath, 'utf8')
-    const { data: frontMatter, content } = matter(fileContent)
+    const fileContent = await fs.readFile(filePath, 'utf8');
+    const { data: frontMatter, content } = matter(fileContent);
     
     return {
       slug,
@@ -95,9 +95,9 @@ export async function getPageFromSlug(dir: string, slug: string): Promise<Page |
       title: frontMatter.title || '',
       description: frontMatter.description || '',
       meta: frontMatter,
-    }
+    };
   } catch (error) {
-    return null
+    return null;
   }
 }
 ```
@@ -157,7 +157,7 @@ We've implemented several automation tools to reduce volunteer workload:
 
 ## Community Impact
 
-This infrastructure upgrade isn't just about technology—it's about ensuring TNS PTA can sustainably fund the programs that make our school special:
+This infrastructure upgrade isn't just about technology - it's about ensuring TNS PTA can sustainably fund the programs that make our school special:
 
 - **Teaching Assistants:** Maintaining 1:15 student-teacher ratios
 - **Arts Programming:** Music, visual arts, and creative expression

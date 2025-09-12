@@ -8,7 +8,6 @@ import withMDX from "@next/mdx";
 /** @type {import('next').NextConfig} */
 const config = {
     reactStrictMode: true,
-    swcMinify: true,
     images: {
         remotePatterns: [
             {
@@ -26,8 +25,9 @@ const config = {
     },
     experimental: {
         mdxRs: true,
-        serverComponentsExternalPackages: ["@prisma/client"],
     },
+    typedRoutes: true, // Re-enabled for proper route typing
+    serverExternalPackages: ["@prisma/client"],
     pageExtensions: ["ts", "tsx", "mdx"],
 };
 

@@ -26,6 +26,7 @@ import { AddTransactionFeesFormSchema } from "@/types";
 import donationConfig from "@/config/donate";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { Route } from "next";
 import { addStripeTransactionFees, cn } from "@/lib/utils";
 import { SubmitButton } from "./submit-button";
 
@@ -52,9 +53,9 @@ export default function DonateFees({ className }: { className?: string }) {
 
     const handleCheckedChange = (checked: boolean) => {
         if (!checked) {
-            router.push(`${pathName}?include_fees=true`);
+            router.push(`${pathName}?include_fees=true` as Route);
         } else {
-            router.push(`${pathName}?include_fees=false`);
+            router.push(`${pathName}?include_fees=false` as Route);
         }
     };
 
@@ -77,7 +78,7 @@ export default function DonateFees({ className }: { className?: string }) {
                     router.push(
                         `${pathName}?donate=true&frequency=${
                             isRecurring ? `recurring` : `one-time`
-                        }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${newDonationAmount}&include_fees=true`
+                        }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${newDonationAmount}&include_fees=true` as Route
                     );
                 } else {
                     const clientSecret = await createPaymentIntent(
@@ -88,7 +89,7 @@ export default function DonateFees({ className }: { className?: string }) {
                     router.push(
                         `${pathName}?donate=true&frequency=${
                             isRecurring ? `recurring` : `one-time`
-                        }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${donationAmount}&include_fees=false`
+                        }&client_secret=${clientSecret}&name=${name}&email=${email}&donation_amount=${donationAmount}&include_fees=false` as Route
                     );
                 }
             }

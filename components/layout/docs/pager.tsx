@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Route } from "next"
 // import { Doc } from "contentlayer/generated"
 // TODO: Replace with MDX type
 type Doc = any

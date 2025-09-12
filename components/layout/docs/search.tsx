@@ -14,6 +14,7 @@ import {
     CommandSeparator,
 } from "@/components/ui/command";
 import { useRouter } from "next/navigation";
+import { Route } from "next";
 // import { allDocs } from "@/.contentlayer/generated/index.mjs";
 // TODO: Replace with MDX-based search
 const allDocs: any[] = [];
@@ -107,7 +108,7 @@ export function DocsSearch({ ...props }: DialogProps) {
                                 value={doc.title}
                                 onSelect={() => {
                                     runCommand(() =>
-                                        router.push(doc.slug as string)
+                                        router.push(doc.slug as Route)
                                     );
                                 }}
                             >

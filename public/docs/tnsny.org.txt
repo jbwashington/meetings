@@ -1,0 +1,46 @@
+;;
+;; Domain:     tnsny.org.
+;; Exported:   2025-05-16 17:03:25
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+tnsny.org	3600	IN	SOA	chase.ns.cloudflare.com. dns.cloudflare.com. 2049908160 10000 2400 604800 3600
+
+;; NS Records
+tnsny.org.	86400	IN	NS	chase.ns.cloudflare.com.
+tnsny.org.	86400	IN	NS	meilani.ns.cloudflare.com.
+
+;; A Records
+tnsny.org.	1	IN	A	35.245.225.158 ; educational networks tns website cf_tags=cf-proxied:false
+
+;; CNAME Records
+admin.tnsny.org.	1	IN	CNAME	a1.educationalnetworks.net. ; admin panel for educational networks tnsny.org website cf_tags=cf-proxied:false
+www.tnsny.org.	1	IN	CNAME	w12.educationalnetworks.net. ; www redirect for tnsny.org cf_tags=cf-proxied:false
+
+;; MX Records
+tnsny.org.	1	IN	MX	0 smtp.google.com.
+
+;; TXT Records
+_dmarc.tnsny.org.	1	IN	TXT	"v=DMARC1; p=reject; adkim=r; aspf=r; rua=mailto:1bfb9a85dffe4e368c4dcdbedeed3033@dmarc-reports.cloudflare.net,mailto:dmarc_rua@onsecureserver.net;"
+google._domainkey.tnsny.org.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh30ucpKlxcd2JA99o6DczBEbiiMsz6FCY7ITbPA6CvfcMKwOKVkRLaCnsU2SRhAtqSsAW5CDODAAhMGEjkTZhDBxM8oG51IjMKj8uCv55JpxsVt05vGdJzthpm0wIkn/4nb2it8eCuD14ysgamyz7UyMWh5azQcXAOpZsND6yCA1tos1mJz2DdZIbqe/ikpif" "xCjPxkytCHpGU4yVOSOpnDeASJKxr805pIBiVy6N0psxLzk0/NmzUrcVk9UKWk/ioTRZdd1FN4N6zjh/Xr0DCmJaSlGiTWo0pztc95ruUXqn9fA4+JlmFJGVWcfYePaIkN7haWYSb4z4QwawP/1yQIDAQAB" ; google DKIM authentication for tns email
+tnsny.org.	1	IN	TXT	"v=spf1 include:_spf.google.com +all"

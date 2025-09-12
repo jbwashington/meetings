@@ -6,9 +6,9 @@ import { db } from "@/lib/db"
 import { formPatchSchema } from "@/lib/validations/form"
 
 const routeContextSchema = z.object({
-  params: z.object({
+  params: z.promise(z.object({
     formId: z.string(),
-  }),
+  })),
 })
 
 export async function DELETE(
@@ -18,16 +18,17 @@ export async function DELETE(
   try {
     // Validate the route params.
     const { params } = routeContextSchema.parse(context)
+    const resolvedParams = await params
 
     // Check if the user has access to this post.
-    if (!(await verifyCurrentUserHasAccessToForm(params.formId))) {
+    if (!(await verifyCurrentUserHasAccessToForm(resolvedParams.formId))) {
       return new Response(null, { status: 403 })
     }
 
     // Delete the form.
     await db.form.delete({
       where: {
-        id: params.formId as string,
+        id: resolvedParams.formId as string,
       },
     })
 
@@ -48,11 +49,12 @@ export async function PATCH(
   try {
       // Validate route params.
       const { params } = routeContextSchema.parse(context);
+      const resolvedParams = await params;
 
       const session = await auth();
 
       // Check if the user has access to this form.
-      if (!(await verifyCurrentUserHasAccessToForm(params.formId))) {
+      if (!(await verifyCurrentUserHasAccessToForm(resolvedParams.formId))) {
           return new Response(null, { status: 403 });
       }
 
@@ -66,7 +68,7 @@ export async function PATCH(
           where: {
               userId_formId: {
                   userId: session?.user?.id as string,
-                  formId: params.formId,
+                  formId: resolvedParams.formId,
               },
           },
           data: {

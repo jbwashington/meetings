@@ -126,7 +126,7 @@ export const components = {
                 <Image
                     className={cn("rounded-md border", className)}
                     alt={alt || ""}
-                    src={src}
+                    src={src as string}
                     width={typeof width === 'number' ? width : parseInt(width as string, 10)}
                     height={typeof height === 'number' ? height : parseInt(height as string, 10)}
                 />
@@ -139,7 +139,7 @@ export const components = {
                 <Image
                     className={cn("object-contain", className)}
                     alt={alt || ""}
-                    src={src}
+                    src={src as string}
                     width={800}
                     height={600}
                     style={{ width: '100%', height: 'auto' }}

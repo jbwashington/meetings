@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { useRouter } from "next/navigation"
+import { Route } from "next"
 
 import { cn } from "@/lib/utils"
 import { ButtonProps, buttonVariants } from "@/components/ui/button"
@@ -54,7 +55,7 @@ export function FormCreateButton({
     // This forces a cache invalidation.
     router.refresh()
 
-    router.push(`/editor/${form.id}`)
+    router.push(`/editor/${form.id}` as Route)
   }
 
   return (

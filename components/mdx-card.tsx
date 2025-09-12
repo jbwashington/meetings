@@ -1,9 +1,10 @@
 import Link from "next/link"
+import { Route } from "next"
 
 import { cn } from "@/lib/utils"
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  href?: string
+  href?: Route
   disabled?: boolean
 }
 
@@ -29,7 +30,7 @@ export function MdxCard({
         </div>
       </div>
       {href && (
-        <Link href={disabled ? "#" : href} className="absolute inset-0">
+        <Link href={disabled ? "#" as Route : href!} className="absolute inset-0">
           <span className="sr-only">View</span>
         </Link>
       )}

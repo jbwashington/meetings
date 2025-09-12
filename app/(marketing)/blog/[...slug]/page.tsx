@@ -10,6 +10,7 @@ import "@/styles/mdx.css"
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import { Route } from "next"
 
 import { env } from "@/env.mjs"
 import { absoluteUrl, cn, formatDate } from "@/lib/utils"
@@ -17,9 +18,9 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/ui/icons"
 
 interface PostPageProps {
-  params: {
+  params: Promise<{
     slug: string[]
-  }
+  }>
 }
 
 async function getPostFromParams(params: any) {
@@ -31,7 +32,8 @@ async function getPostFromParams(params: any) {
 export async function generateMetadata({
   params,
 }: PostPageProps): Promise<Metadata> {
-  const post = await getPostFromParams(params)
+  const resolvedParams = await params
+  const post = await getPostFromParams(resolvedParams)
 
   if (!post) {
     return {}
@@ -73,9 +75,7 @@ export async function generateMetadata({
   }
 }
 
-export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
-> {
+export async function generateStaticParams() {
   const posts = await getAllPosts()
   return posts.map((post) => ({
     slug: post.slug.split("/"),
@@ -83,7 +83,8 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPostFromParams(params)
+  const resolvedParams = await params
+  const post = await getPostFromParams(resolvedParams)
 
   if (!post) {
     notFound()

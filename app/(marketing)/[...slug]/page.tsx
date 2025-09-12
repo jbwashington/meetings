@@ -13,9 +13,9 @@ import { components } from "@/components/mdx-components"
 import "@/styles/mdx.css"
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string[]
-  }
+  }>
 }
 
 async function getPageFromParams(params: any) {
@@ -27,7 +27,8 @@ async function getPageFromParams(params: any) {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const page = await getPageFromParams(params)
+  const resolvedParams = await params
+  const page = await getPageFromParams(resolvedParams)
 
   if (!page) {
     return {}
@@ -66,7 +67,7 @@ export async function generateMetadata({
   }
 }
 
-export async function generateStaticParams(): Promise<PageProps["params"][]> {
+export async function generateStaticParams() {
   const pages = await getAllPages("pages")
   
   return pages.map((page) => ({
@@ -75,7 +76,8 @@ export async function generateStaticParams(): Promise<PageProps["params"][]> {
 }
 
 export default async function PagePage({ params }: PageProps) {
-  const page = await getPageFromParams(params)
+  const resolvedParams = await params
+  const page = await getPageFromParams(resolvedParams)
 
   if (!page) {
     notFound()

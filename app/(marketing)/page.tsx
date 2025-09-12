@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Route } from "next";
 
 import { siteConfig } from "@/config/site";
 
@@ -36,7 +37,7 @@ export default async function IndexPage() {
             <section className="pt-6 md:pb-12 md:pt-10 lg:py-32">
                 <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
                     <Link
-                        href={siteConfig.links.instagram}
+                        href={siteConfig.links.instagram as Route}
                         className={badgeVariants({ variant: "default" })}
                         target="_blank"
                     >
@@ -78,7 +79,7 @@ export default async function IndexPage() {
                         Want to help fund the 2024-2025 school year?
                     </p>
                     <Link
-                        href={siteConfig.links.donate}
+                        href={siteConfig.links.donate as Route}
                         target="_blank"
                         className={buttonVariants({
                             variant: "default",

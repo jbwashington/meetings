@@ -24,6 +24,7 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer";
 import Link from "next/link";
+import { Route } from "next";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "@/components/forms/checkout-form";
@@ -73,7 +74,7 @@ export default function DonateDialog() {
 
     const handleDialogChange = (open: boolean) => {
         if (!open) {
-            router.push("/");
+            router.push("/" as Route);
         }
     };
 

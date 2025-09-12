@@ -1,6 +1,7 @@
 import { MainNav } from "./nav";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
+import { Route } from "next";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { marketingConfig } from "@/config/marketing";

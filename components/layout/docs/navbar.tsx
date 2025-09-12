@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Route } from "next";
 import type { User } from "next-auth";
 
 import { cn } from "@/lib/utils";

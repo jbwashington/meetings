@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
+import { Route } from "next";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -18,7 +19,7 @@ export function LocaleChange({ url }: { url: string }) {
 
   function onClick(locale: string) {
     // console.log(url);
-    router.push(`/${locale}/` + url);
+    router.push((`/${locale}/` + url) as Route);
   }
 
   return (

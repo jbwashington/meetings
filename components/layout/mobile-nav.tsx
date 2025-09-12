@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import { Route } from "next";
 
 import { cn } from "@/lib/utils";
 import {Icons} from "@/components/ui/icons";
@@ -31,7 +32,7 @@ export function MobileNav({ items, children, menuItemClick }: MobileNavProps) {
           {items.map((item, index) => (
             <Link
               key={index}
-              href={item.disabled ? "#" : item.href || ""}
+              href={(item.disabled ? "#" : item.href || "") as Route}
               className={cn(
                 "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
                 item.disabled && "cursor-not-allowed opacity-60",

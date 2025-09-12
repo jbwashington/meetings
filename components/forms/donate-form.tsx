@@ -26,6 +26,7 @@ import { DonateFormSchema, DonationTier } from "@/types";
 import donationConfig from "@/config/donate";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { Route } from "next";
 import DonationTierItem from "../layout/donate/donation-tier-item";
 import { cn } from "@/lib/utils";
 import { SubmitButton } from "../layout/donate/submit-button";
@@ -55,10 +56,10 @@ export default function DonateForm({ className }: { className?: string }) {
     const handleCheckedChange = (checked: boolean) => {
         if (!checked) {
             form.setValue("recurring", false);
-            router.push(`${pathName}?donate=true&frequency=one-time`);
+            router.push(`${pathName}?donate=true&frequency=one-time` as Route);
         } else {
             form.setValue("recurring", true);
-            router.push(`${pathName}?donate=true&frequency=recurring`);
+            router.push(`${pathName}?donate=true&frequency=recurring` as Route);
         }
     };
 
@@ -72,7 +73,7 @@ export default function DonateForm({ className }: { className?: string }) {
             router.push(
                 `${pathName}?donate=true&frequency=${
                     isRecurring ? `recurring` : `one-time`
-                }&name=${name}&email=${email}&donation_amount=${donationAmount}`
+                }&name=${name}&email=${email}&donation_amount=${donationAmount}` as Route
             );
         } catch (error: any) {
             toast.error(`An unexpected error occurred: ${error.message}`);

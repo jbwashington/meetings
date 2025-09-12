@@ -1,0 +1,2583 @@
+[
+  {
+    "timestamp": "2025-09-12T12:52:38.423755",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.2005051499999992,
+        "total_duration_ms": 3175495,
+        "total_api_duration_ms": 701512,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:52:41.063878",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.2005051499999992,
+        "total_duration_ms": 3178176,
+        "total_api_duration_ms": 701512,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:52:44.447228",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.2005051499999992,
+        "total_duration_ms": 3181480,
+        "total_api_duration_ms": 701512,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:52:53.903511",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.200717949999999,
+        "total_duration_ms": 3191005,
+        "total_api_duration_ms": 702553,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:52:56.683596",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.288753699999999,
+        "total_duration_ms": 3193740,
+        "total_api_duration_ms": 708895,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:01.950794",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.299778849999999,
+        "total_duration_ms": 3199055,
+        "total_api_duration_ms": 713959,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:05.197052",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.299778849999999,
+        "total_duration_ms": 3202275,
+        "total_api_duration_ms": 713959,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udcac Ready\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:05.768938",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.308906349999999,
+        "total_duration_ms": 3202856,
+        "total_api_duration_ms": 717564,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:09.768455",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.308906349999999,
+        "total_duration_ms": 3206851,
+        "total_api_duration_ms": 717564,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:10.575389",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.3197574999999993,
+        "total_duration_ms": 3207663,
+        "total_api_duration_ms": 721928,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:14.654803",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.331742549999999,
+        "total_duration_ms": 3211723,
+        "total_api_duration_ms": 729071,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:14.990344",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.331742549999999,
+        "total_duration_ms": 3211994,
+        "total_api_duration_ms": 729071,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:15.649475",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.331742549999999,
+        "total_duration_ms": 3212682,
+        "total_api_duration_ms": 729071,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:24.741909",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.332233749999999,
+        "total_duration_ms": 3221801,
+        "total_api_duration_ms": 730039,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:25.528951",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.342073749999999,
+        "total_duration_ms": 3222625,
+        "total_api_duration_ms": 739732,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:30.648236",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.351646299999999,
+        "total_duration_ms": 3227607,
+        "total_api_duration_ms": 743011,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:36.173178",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.351646299999999,
+        "total_duration_ms": 3233267,
+        "total_api_duration_ms": 743011,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:36.548822",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.362956599999999,
+        "total_duration_ms": 3233652,
+        "total_api_duration_ms": 746552,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:42.934061",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.375076749999999,
+        "total_duration_ms": 3239927,
+        "total_api_duration_ms": 751118,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:48.033992",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.375076749999999,
+        "total_duration_ms": 3245140,
+        "total_api_duration_ms": 751118,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:48.593783",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.385869099999999,
+        "total_duration_ms": 3245691,
+        "total_api_duration_ms": 756355,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:52.281382",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.398310099999999,
+        "total_duration_ms": 3249289,
+        "total_api_duration_ms": 759685,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:57.435156",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.398310099999999,
+        "total_duration_ms": 3254533,
+        "total_api_duration_ms": 759685,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:53:58.529087",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.411086349999999,
+        "total_duration_ms": 3255546,
+        "total_api_duration_ms": 764390,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:01.951868",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.420784449999999,
+        "total_duration_ms": 3259041,
+        "total_api_duration_ms": 767288,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:05.557774",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.444057099999999,
+        "total_duration_ms": 3262576,
+        "total_api_duration_ms": 769966,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:10.130519",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.444057099999999,
+        "total_duration_ms": 3267218,
+        "total_api_duration_ms": 769966,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:13.201466",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.4604454999999987,
+        "total_duration_ms": 3270291,
+        "total_api_duration_ms": 777473,
+        "total_lines_added": 210,
+        "total_lines_removed": 43
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:19.677912",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.4747302999999987,
+        "total_duration_ms": 3276759,
+        "total_api_duration_ms": 782574,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:23.316491",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.4747302999999987,
+        "total_duration_ms": 3280409,
+        "total_api_duration_ms": 782574,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:24.032032",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.4873614999999987,
+        "total_duration_ms": 3281138,
+        "total_api_duration_ms": 786712,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:58.787920",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.4873614999999987,
+        "total_duration_ms": 3315879,
+        "total_api_duration_ms": 786712,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:54:59.273469",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5014193499999986,
+        "total_duration_ms": 3316387,
+        "total_api_duration_ms": 790733,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:04.129961",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5014193499999986,
+        "total_duration_ms": 3321235,
+        "total_api_duration_ms": 790733,
+        "total_lines_added": 211,
+        "total_lines_removed": 44
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b137\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:06.064198",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5175888999999985,
+        "total_duration_ms": 3323169,
+        "total_api_duration_ms": 796761,
+        "total_lines_added": 213,
+        "total_lines_removed": 45
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:10.626306",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5318600499999984,
+        "total_duration_ms": 3327694,
+        "total_api_duration_ms": 800715,
+        "total_lines_added": 214,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:14.269852",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5318600499999984,
+        "total_duration_ms": 3331386,
+        "total_api_duration_ms": 800715,
+        "total_lines_added": 214,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:14.858048",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5455562499999984,
+        "total_duration_ms": 3331966,
+        "total_api_duration_ms": 804783,
+        "total_lines_added": 214,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:37.378726",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5597217999999984,
+        "total_duration_ms": 3354473,
+        "total_api_duration_ms": 807995,
+        "total_lines_added": 214,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:37.953128",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5597217999999984,
+        "total_duration_ms": 3355035,
+        "total_api_duration_ms": 807995,
+        "total_lines_added": 214,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b138\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:43.235195",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5767145499999984,
+        "total_duration_ms": 3360342,
+        "total_api_duration_ms": 812743,
+        "total_lines_added": 215,
+        "total_lines_removed": 46
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:51.801185",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.5922954999999983,
+        "total_duration_ms": 3368902,
+        "total_api_duration_ms": 820454,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:54.947517",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.606189099999998,
+        "total_duration_ms": 3372059,
+        "total_api_duration_ms": 823553,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:55.302005",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.606189099999998,
+        "total_duration_ms": 3372275,
+        "total_api_duration_ms": 823553,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:55:55.457257",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.606189099999998,
+        "total_duration_ms": 3372447,
+        "total_api_duration_ms": 823553,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:56:42.579554",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.607314699999998,
+        "total_duration_ms": 3419583,
+        "total_api_duration_ms": 824781,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:56:42.841988",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.624151299999998,
+        "total_duration_ms": 3419920,
+        "total_api_duration_ms": 829414,
+        "total_lines_added": 216,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:56:51.547429",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.644821149999998,
+        "total_duration_ms": 3428644,
+        "total_api_duration_ms": 836570,
+        "total_lines_added": 217,
+        "total_lines_removed": 47
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:56:59.166782",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.661094949999998,
+        "total_duration_ms": 3436245,
+        "total_api_duration_ms": 843081,
+        "total_lines_added": 218,
+        "total_lines_removed": 48
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:02.580402",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.661094949999998,
+        "total_duration_ms": 3439620,
+        "total_api_duration_ms": 843081,
+        "total_lines_added": 218,
+        "total_lines_removed": 48
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:05.583819",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.679179099999998,
+        "total_duration_ms": 3442648,
+        "total_api_duration_ms": 848669,
+        "total_lines_added": 219,
+        "total_lines_removed": 48
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:09.345752",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.695647899999998,
+        "total_duration_ms": 3446416,
+        "total_api_duration_ms": 852182,
+        "total_lines_added": 220,
+        "total_lines_removed": 49
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:15.278680",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.695647899999998,
+        "total_duration_ms": 3452295,
+        "total_api_duration_ms": 852182,
+        "total_lines_added": 220,
+        "total_lines_removed": 49
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:15.690916",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7115142999999984,
+        "total_duration_ms": 3452741,
+        "total_api_duration_ms": 857583,
+        "total_lines_added": 220,
+        "total_lines_removed": 49
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:22.613577",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7321146999999986,
+        "total_duration_ms": 3459593,
+        "total_api_duration_ms": 862604,
+        "total_lines_added": 221,
+        "total_lines_removed": 49
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:28.866806",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7494083499999986,
+        "total_duration_ms": 3465947,
+        "total_api_duration_ms": 868077,
+        "total_lines_added": 222,
+        "total_lines_removed": 50
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:35.099020",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7684719999999987,
+        "total_duration_ms": 3472165,
+        "total_api_duration_ms": 873604,
+        "total_lines_added": 223,
+        "total_lines_removed": 51
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:40.084295",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7684719999999987,
+        "total_duration_ms": 3477120,
+        "total_api_duration_ms": 873604,
+        "total_lines_added": 223,
+        "total_lines_removed": 51
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T12:57:54.321627",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 2.7946882499999988,
+        "total_duration_ms": 3491348,
+        "total_api_duration_ms": 892531,
+        "total_lines_added": 223,
+        "total_lines_removed": 51
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b139\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:10.511626",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.553932899999998,
+        "total_duration_ms": 3807500,
+        "total_api_duration_ms": 1120503,
+        "total_lines_added": 241,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:13.184277",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.731255399999998,
+        "total_duration_ms": 3810154,
+        "total_api_duration_ms": 1128131,
+        "total_lines_added": 241,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:18.937435",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.731255399999998,
+        "total_duration_ms": 3815925,
+        "total_api_duration_ms": 1128131,
+        "total_lines_added": 241,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:19.683005",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.748382999999998,
+        "total_duration_ms": 3816612,
+        "total_api_duration_ms": 1132581,
+        "total_lines_added": 241,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:27.554211",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.7710086999999977,
+        "total_duration_ms": 3824507,
+        "total_api_duration_ms": 1138476,
+        "total_lines_added": 242,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:34.392404",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.7889224499999976,
+        "total_duration_ms": 3831284,
+        "total_api_duration_ms": 1143141,
+        "total_lines_added": 243,
+        "total_lines_removed": 53
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:40.575171",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.7889224499999976,
+        "total_duration_ms": 3837585,
+        "total_api_duration_ms": 1143141,
+        "total_lines_added": 243,
+        "total_lines_removed": 53
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:41.293296",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.806158499999998,
+        "total_duration_ms": 3838278,
+        "total_api_duration_ms": 1148009,
+        "total_lines_added": 243,
+        "total_lines_removed": 53
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:03:47.238627",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.825818399999998,
+        "total_duration_ms": 3843957,
+        "total_api_duration_ms": 1151740,
+        "total_lines_added": 244,
+        "total_lines_removed": 53
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:04:00.356684",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.844801199999998,
+        "total_duration_ms": 3857303,
+        "total_api_duration_ms": 1161940,
+        "total_lines_added": 244,
+        "total_lines_removed": 53
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:04:08.785624",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.844801199999998,
+        "total_duration_ms": 3865773,
+        "total_api_duration_ms": 1161940,
+        "total_lines_added": 245,
+        "total_lines_removed": 54
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:04:16.430455",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 3.8660792999999978,
+        "total_duration_ms": 3873453,
+        "total_api_duration_ms": 1174602,
+        "total_lines_added": 245,
+        "total_lines_removed": 54
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b154\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:05:21.414131",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.014242249999998,
+        "total_duration_ms": 3938394,
+        "total_api_duration_ms": 1222090,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:05:25.230718",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.036105949999998,
+        "total_duration_ms": 3942238,
+        "total_api_duration_ms": 1228289,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:05:29.497519",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.036105949999998,
+        "total_duration_ms": 3946523,
+        "total_api_duration_ms": 1228289,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:05:31.298638",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.0543910999999975,
+        "total_duration_ms": 3948095,
+        "total_api_duration_ms": 1233865,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:06:53.082767",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.055516699999997,
+        "total_duration_ms": 4029996,
+        "total_api_duration_ms": 1237008,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:06:59.830242",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.080332549999998,
+        "total_duration_ms": 4036830,
+        "total_api_duration_ms": 1249461,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:08:32.832568",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 4129748,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:01.362979",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 6618315,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:02.192155",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 6619169,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:02.474136",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 6619470,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:08.908715",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 6625689,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:09.867263",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107636999999998,
+        "total_duration_ms": 6626748,
+        "total_api_duration_ms": 1266506,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:15.437140",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.107819399999998,
+        "total_duration_ms": 6632394,
+        "total_api_duration_ms": 1267543,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:16.039592",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.311361899999998,
+        "total_duration_ms": 6632866,
+        "total_api_duration_ms": 1272804,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:24.861401",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.333281199999998,
+        "total_duration_ms": 6641795,
+        "total_api_duration_ms": 1280370,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:34.113401",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.356550699999999,
+        "total_duration_ms": 6651083,
+        "total_api_duration_ms": 1289448,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:42.400375",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.3569578999999985,
+        "total_duration_ms": 6659410,
+        "total_api_duration_ms": 1293399,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  },
+  {
+    "timestamp": "2025-09-12T13:50:43.154304",
+    "input_data": {
+      "session_id": "4f5097dc-4306-4425-938d-2d20169521bf",
+      "transcript_path": "/Users/jbwashington/.claude/projects/-Users-jbwashington-Developer-projects-neighborhoodnews/4f5097dc-4306-4425-938d-2d20169521bf.jsonl",
+      "cwd": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews",
+        "project_dir": "/Users/jbwashington/Developer/projects/neighborhoodnews"
+      },
+      "version": "1.0.112",
+      "output_style": {
+        "name": "tts-completion"
+      },
+      "cost": {
+        "total_cost_usd": 4.375601399999998,
+        "total_duration_ms": 6660144,
+        "total_api_duration_ms": 1297874,
+        "total_lines_added": 257,
+        "total_lines_removed": 63
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 neighborhoodnews\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b155\u001b[0m | \u001b[90mv1.0.112\u001b[0m \u001b[35m[tts-completion]\u001b[0m \u001b[93m\u2022 \ud83d\udd27 Fixing issues\u001b[0m"
+  }
+]

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Route } from "next";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";

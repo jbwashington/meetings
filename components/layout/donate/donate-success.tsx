@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Route } from "next";
 import { buttonVariants } from "@/components/ui/button";
 import { CardDescription, CardTitle } from "@/components/ui/card";
 import { useState, useEffect } from "react";

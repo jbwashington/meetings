@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "../ui/icons";
 import { ModeToggle } from "../ui/mode-toggle";
 import Link from "next/link";
+import { Route } from "next";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     return (

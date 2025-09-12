@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { Route } from "next"
 import { usePathname } from "next/navigation"
 
 import { SidebarNavItem } from "@/types"
@@ -44,7 +45,7 @@ export function DocsSidebarNavItems({
                 !item.disabled && item.href ? (
                     <Link
                         key={index}
-                        href={item.href}
+                        href={item.href as Route}
                         className={cn(
                             "flex w-full items-center rounded-md p-2 hover:underline",
                             {

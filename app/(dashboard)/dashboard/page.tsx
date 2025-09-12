@@ -17,7 +17,7 @@ export default async function DashboardPage() {
   const user = await getCurrentUser()
 
   if (!user) {
-    redirect(authConfig?.pages?.signIn || "/login")
+    redirect((authConfig?.pages?.signIn || "/login") as any)
   }
 
   const forms = await db.form.findMany({

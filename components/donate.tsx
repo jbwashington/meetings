@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/card";
 import { PTABudgetChart } from "./charts/pta-budget";
 import Link from "next/link";
+import { Route } from "next";
 import DonateFormWrapper from "./forms/donate-form-wrapper";
 
 export default function DonateSection() {

@@ -41,3 +41,17 @@ next-env.d.ts
 
 # Claude Code logs
 logs/
+
+# Large media files - PTA meetings and documents
+*.mp4
+*.mov
+*.avi
+*.m4a
+*.wav
+*.mp3
+public/meetings/*/recordings/
+public/meetings/*/*.mp4
+public/meetings/*/*.m4a
+public/meetings/*/*.mov
+public/docs/*.pdf
+*.pdf

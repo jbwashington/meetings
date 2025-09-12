@@ -38,3 +38,6 @@ next-env.d.ts
 
 # Turborepo
 .turbo
+
+# Claude Code logs
+logs/

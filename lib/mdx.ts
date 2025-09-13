@@ -115,6 +115,102 @@ export async function getAllPosts(): Promise<Post[]> {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
+// Get all MDX files from nested directories (for docs)
+export function getAllMDXFilesRecursive(dir: string, basePath = ''): Array<{ file: string; slug: string }> {
+  const dirPath = path.join(process.cwd(), 'content', dir, basePath)
+  
+  if (!fs.existsSync(dirPath)) {
+    return []
+  }
+  
+  const items = fs.readdirSync(dirPath, { withFileTypes: true })
+  const result: Array<{ file: string; slug: string }> = []
+  
+  for (const item of items) {
+    if (item.isDirectory()) {
+      const nestedBasePath = basePath ? `${basePath}/${item.name}` : item.name
+      const nestedFiles = getAllMDXFilesRecursive(dir, nestedBasePath)
+      result.push(...nestedFiles)
+    } else if (item.name.endsWith('.mdx') || item.name.endsWith('.md')) {
+      const slug = basePath ? `${basePath}/${item.name.replace(/\.(mdx|md)$/, '')}` : item.name.replace(/\.(mdx|md)$/, '')
+      result.push({ file: item.name, slug })
+    }
+  }
+  
+  return result
+}
+
+// Get doc from slug (handles nested structure)
+export async function getDocFromSlug(slug: string): Promise<Page | null> {
+  const docsDir = path.join(process.cwd(), 'content', 'docs')
+  
+  // Handle root docs page
+  if (slug === '') {
+    const indexPath = path.join(docsDir, 'index.mdx')
+    if (fs.existsSync(indexPath)) {
+      const fileContent = fs.readFileSync(indexPath, 'utf-8')
+      const { data, content } = matter(fileContent)
+      
+      return {
+        meta: {
+          ...data,
+          slug: '',
+          slugAsParams: '',
+        } as PageMeta,
+        content,
+        slug: '',
+        slugAsParams: '',
+        title: data.title || 'Documentation',
+        description: data.description,
+      }
+    }
+    return null
+  }
+  
+  // Try to find the file in nested structure
+  const possiblePaths = [
+    path.join(docsDir, `${slug}.mdx`),
+    path.join(docsDir, `${slug}.md`),
+    path.join(docsDir, slug, 'index.mdx'),
+    path.join(docsDir, slug, 'index.md'),
+  ]
+  
+  for (const filePath of possiblePaths) {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, 'utf-8')
+      const { data, content } = matter(fileContent)
+      
+      return {
+        meta: {
+          ...data,
+          slug,
+          slugAsParams: slug,
+        } as PageMeta,
+        content,
+        slug,
+        slugAsParams: slug,
+        title: data.title || slug,
+        description: data.description,
+      }
+    }
+  }
+  
+  return null
+}
+
+// Get all docs
+export async function getAllDocs(): Promise<Page[]> {
+  const files = getAllMDXFilesRecursive('docs')
+  
+  const docs = await Promise.all(
+    files.map(async ({ slug }) => {
+      return getDocFromSlug(slug)
+    })
+  )
+  
+  return docs.filter((doc): doc is Page => doc !== null)
+}
+
 // Process MDX content
 export async function processContent(content: string) {
   const processedContent = await remark()

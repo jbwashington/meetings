@@ -15,40 +15,22 @@ export default function DonateSection() {
             <div className="space-y-6">
                 <div>
                     <h1 className="text-6xl font-extrabold mb-4 capitalize">
-                        Your donations empower us to protect our children.
+                        Your donations empower innovative progressive education.
                     </h1>
                     <p className="text-lg text-muted-foreground mb-4">
-                        Thanks to community efforts, we&apos;ve successfully
-                        lobbied to{" "}
-                        <b>reduce the number of lockdown drills in schools</b>,
-                        a change that was{" "}
-                        <Link
-                            href="https://www.whitehouse.gov/briefing-room/presidential-actions/2024/09/26/executive-order-on-combating-emerging-firearms-threats-and-improving-school-based-active-shooter-drills/#:~:text=Sec.%204.%C2%A0%20Understanding%20and,to%2C%20active%2Dshooter%20drills."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline hover:text-foreground"
-                        >
-                            recently signed into law by the White House
-                        </Link>
-                        . Together, we can keep pushing for sensible policies
-                        that{" "}
-                        <b>
-                            prioritize the safety and emotional health of our
-                            students
-                        </b>
-                        .
+                        As one of the East Village&apos;s leading progressive public schools, we believe every child deserves{" "}
+                        <b>personalized, culturally responsive education</b> that nurtures their whole development.
+                        Your support helps us maintain{" "}
+                        <b>small class sizes, innovative teaching approaches</b>, and the enriched learning environment
+                        that sets our students up for lifelong success.
                     </p>
                     <p className="text-lg text-muted-foreground mb-4">
-                        Your support also helps us offer services that fulfill
-                        our school mission of providing social-emotional
-                        wellness, advancing our{" "}
-                        <b>anti-bias/anti-racist curriculum</b>, and sustaining
-                        a student-to-teacher ratio that ensures{" "}
-                        <b>
-                            every child receives the attention and care they
-                            deserve
-                        </b>
-                        .
+                        Our progressive educational approach centers on{" "}
+                        <b>social-emotional learning, anti-bias education</b>, and
+                        creating an inclusive community where every student thrives.
+                        With your support, we provide{" "}
+                        <b>enrichment programs, teaching assistants, and innovative resources</b>{" "}
+                        that make The Neighborhood School a model for progressive public education in the East Village.
                     </p>
                     <h2 className="text-2xl font-semibold mb-2 capitalize">
                         PTA funds go towards:
@@ -65,11 +47,11 @@ export default function DonateSection() {
                             organization.
                         </CardTitle>
                         <CardDescription>
-                            Donations big and small allow TNS to continue our
-                            incredible mission and create a safe and nurturing
-                            environment for our children. The PTA raises money
-                            to fund so many of the programs and partnerships
-                            that make TNS so very special!
+                            Every donation directly supports teachers and students through
+                            innovative programs, enrichment activities, and educational resources.
+                            Your contribution helps maintain our progressive educational excellence
+                            and ensures every child at TNS receives the personalized attention
+                            that makes our East Village community so extraordinary.
                         </CardDescription>
                     </CardHeader>
                     <DonateFormWrapper />

@@ -15,20 +15,38 @@ import {
 } from "@/components/ui/command";
 import { useRouter } from "next/navigation";
 import { Route } from "next";
-// import { allDocs } from "@/.contentlayer/generated/index.mjs";
-// TODO: Replace with MDX-based search
-const allDocs: any[] = [];
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CircleIcon } from "lucide-react";
 import { CommandLoading } from "cmdk";
+import { Page } from "@/lib/mdx";
 
 export function DocsSearch({ ...props }: DialogProps) {
     const [searchValue, setSearchValue] = useState("");
-    const [loading , setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [allDocs, setAllDocs] = useState<Page[]>([]);
+
+    // Load docs on component mount
+    useEffect(() => {
+        async function loadDocs() {
+            setLoading(true);
+            try {
+                const response = await fetch('/api/docs');
+                const docs = await response.json();
+                setAllDocs(docs);
+            } catch (error) {
+                console.error('Failed to load docs:', error);
+                setAllDocs([]);
+            } finally {
+                setLoading(false);
+            }
+        }
+        loadDocs();
+    }, []);
 
     const filteredDocs = allDocs
         .filter((doc) => {
-            const searchContent = doc.title + doc.description + doc.body;
+            if (!searchValue) return false;
+            const searchContent = `${doc.title} ${doc.description || ''} ${doc.content || ''}`;
             return searchContent
                 .toLowerCase()
                 .includes(searchValue.toLowerCase());
@@ -108,14 +126,19 @@ export function DocsSearch({ ...props }: DialogProps) {
                                 value={doc.title}
                                 onSelect={() => {
                                     runCommand(() =>
-                                        router.push(doc.slug as Route)
+                                        router.push(`/docs/${doc.slug}` as Route)
                                     );
                                 }}
                             >
                                 <div className="mr-2 flex h-4 w-4 items-center justify-center">
                                     <CircleIcon className="h-3 w-3" />
                                 </div>
-                                {doc.title}
+                                <div className="flex flex-col">
+                                    <span>{doc.title}</span>
+                                    {doc.description && (
+                                        <span className="text-xs text-muted-foreground">{doc.description}</span>
+                                    )}
+                                </div>
                             </CommandItem>
                         ))
                     )}

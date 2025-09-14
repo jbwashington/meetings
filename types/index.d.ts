@@ -12,6 +12,7 @@ export type NavItem = {
   href: string
   disabled?: boolean
   external?: boolean
+  isNew?: boolean
 }
 
 export type MainNavItem = NavItem | SidebarNavItem

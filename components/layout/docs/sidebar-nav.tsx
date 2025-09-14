@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 
 import { SidebarNavItem } from "@/types"
 import { cn } from "@/lib/utils"
+import { Badge } from "@/components/ui/badge"
 
 export interface DocsSidebarNavProps {
   items: SidebarNavItem[]
@@ -47,7 +48,7 @@ export function DocsSidebarNavItems({
                         key={index}
                         href={item.href as Route}
                         className={cn(
-                            "flex w-full items-center rounded-md p-2 hover:underline",
+                            "flex w-full items-center justify-between rounded-md p-2 hover:underline",
                             {
                                 "bg-muted": pathname === item.href,
                             }
@@ -55,14 +56,24 @@ export function DocsSidebarNavItems({
                         target={item.external ? "_blank" : ""}
                         rel={item.external ? "noreferrer" : ""}
                     >
-                        {item.title}
+                        <span>{item.title}</span>
+                        {item.isNew && (
+                            <Badge variant="secondary" className="ml-2 text-xs bg-green-100 text-green-800 hover:bg-green-200">
+                                New
+                            </Badge>
+                        )}
                     </Link>
                 ) : (
                     <span
                         key={index}
-                        className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60"
+                        className="flex w-full cursor-not-allowed items-center justify-between rounded-md p-2 opacity-60"
                     >
-                        {item.title}
+                        <span>{item.title}</span>
+                        {item.isNew && (
+                            <Badge variant="secondary" className="ml-2 text-xs bg-green-100 text-green-800 opacity-60">
+                                New
+                            </Badge>
+                        )}
                     </span>
                 )
             )}

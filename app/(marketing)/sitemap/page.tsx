@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { Route } from "next";
 import { getAllDocs, getAllPosts, getAllPages } from "@/lib/mdx";
 
 export const metadata: Metadata = {
@@ -178,7 +179,7 @@ export default async function SitemapPage() {
               {section.items.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href as Route}
                   className="group block space-y-2 rounded-lg border p-4 hover:border-foreground transition-colors"
                 >
                   <div className="font-medium group-hover:underline">
@@ -202,7 +203,7 @@ export default async function SitemapPage() {
       <div className="mt-12 p-4 bg-muted rounded-lg">
         <h3 className="font-medium mb-2">Need help finding something?</h3>
         <p className="text-sm text-muted-foreground">
-          If you can't find what you're looking for, please <Link href="/contact" className="underline">contact us</Link> and we'll be happy to help.
+          If you can&apos;t find what you&apos;re looking for, please <Link href="/contact" className="underline">contact us</Link> and we&apos;ll be happy to help.
         </p>
       </div>
     </div>

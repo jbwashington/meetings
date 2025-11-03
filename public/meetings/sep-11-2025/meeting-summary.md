@@ -41,7 +41,7 @@
 
 ### Immediate (By Friday's Meeting)
 - [ ] **Lee**: Present finance committee role and treasurer position to parents
-- [ ] **Malia**: Print meeting materials (What's Up calendar, donation flyers with Zephy QR codes)
+- [ ] **Malia**: Print meeting materials (What's Up calendar, donation flyers with Zeffy QR codes)
 - [ ] **Brooke**: Send committee sign-up sheets to Malia for printing
 - [ ] **All exec board**: Send headshots and 3-sentence bios to Malia for PTA bulletin board
 
@@ -50,7 +50,7 @@
 - [ ] **James**: Help with Original Works packet collation and recruit new volunteers
 - [ ] **Kristen**: Email teachers directly about class parent document and introduce herself
 - [ ] **Elena**: Follow up with Liz about teacher-exec board meetup timing
-- [ ] **James**: Set up Zephy Q&A page and custom landing pages for specific donations
+- [ ] **James**: Set up Zeffyy Q&A page and custom landing pages for specific donations
 
 ### Medium-term (By end of month)
 - [ ] **Four-person meeting**: Elena, Brooke, James, Malia to divide fundraising priorities

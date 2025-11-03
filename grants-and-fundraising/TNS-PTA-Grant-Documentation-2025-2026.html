@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNS PTA Grant Documentation 2025-2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 4px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1em;
+        }
+
+        .last-updated {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        nav {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 2px solid #e2e8f0;
+        }
+
+        nav h2 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #e0e7ff;
+        }
+
+        a.external-link {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px dotted #2563eb;
+        }
+
+        a.external-link:hover {
+            color: #1e40af;
+            border-bottom: 1px solid #1e40af;
+        }
+
+        a.external-link::after {
+            content: " ↗";
+            font-size: 0.85em;
+            vertical-align: super;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            color: #1e3a8a;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+
+        h4 {
+            color: #334155;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .priority-high {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .priority-medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .priority-low {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            background: #e0e7ff;
+            color: #3730a3;
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid;
+        }
+
+        .alert-critical {
+            background: #fee2e2;
+            border-color: #dc2626;
+            color: #7f1d1d;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border-color: #f59e0b;
+            color: #78350f;
+        }
+
+        .alert-info {
+            background: #dbeafe;
+            border-color: #3b82f6;
+            color: #1e3a8a;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #1e40af;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:hover {
+            background: #f8fafc;
+        }
+
+        .checklist {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .checklist li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f8fafc;
+            border-left: 3px solid #3b82f6;
+            border-radius: 4px;
+        }
+
+        .checklist li::before {
+            content: "☐ ";
+            color: #3b82f6;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .grant-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .grant-card h4 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .grant-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .grant-detail-item {
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 4px;
+        }
+
+        .grant-detail-label {
+            font-weight: 600;
+            color: #64748b;
+            font-size: 0.9em;
+            margin-bottom: 4px;
+        }
+
+        .grant-detail-value {
+            color: #1e293b;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            margin: 20px 0;
+            border-left: 3px solid #3b82f6;
+        }
+
+        .timeline-item::before {
+            content: "●";
+            position: absolute;
+            left: -8px;
+            top: 0;
+            color: #3b82f6;
+            font-size: 1.5em;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TNS PTA Grant Documentation</h1>
+            <p class="subtitle">Comprehensive Grant & Fundraising Guide for The Neighborhood School PTA</p>
+            <div class="last-updated">
+                <strong>Last Updated:</strong> October 9, 2025<br>
+                <strong>Prepared by:</strong> James Washington, Co-VP<br>
+                <strong>Academic Year:</strong> 2025-2026
+            </div>
+        </header>
+
+        <nav>
+            <h2>Quick Navigation</h2>
+            <ul>
+                <li><a href="#priority-grants">Priority Grants (2025-2026)</a></li>
+                <li><a href="#treasury-docs">Treasury Document Checklist</a></li>
+                <li><a href="#insurance">Insurance Requirements</a></li>
+                <li><a href="#nyc-doe">NYC DOE Grants</a></li>
+                <li><a href="#nyc-council">NYC Council Funding</a></li>
+                <li><a href="#foundations">Foundation Grants</a></li>
+                <li><a href="#corporate">Corporate Grants</a></li>
+                <li><a href="#manhattan">Manhattan-Specific Opportunities</a></li>
+                <li><a href="#calendar">Application Calendar</a></li>
+                <li><a href="#lessons-learned">Lessons Learned</a></li>
+            </ul>
+        </nav>
+
+        <!-- PRIORITY GRANTS SECTION -->
+        <section id="priority-grants" class="section">
+            <h2>🎯 Priority Grants for 2025-2026</h2>
+
+            <div class="alert alert-warning">
+                <strong>Note:</strong> DOE Sustainability Grant window for October 15, 2025 has been missed. All documentation is prepared for next year's cycle (October 15, 2026).
+            </div>
+
+            <div class="grant-card">
+                <h4>1. DOE Sustainability Grant <span class="priority-badge priority-high">PRIORITY</span> <span class="difficulty">Difficulty: 3/10</span></h4>
+                <div class="grant-details">
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Amount</div>
+                        <div class="grant-detail-value">$5,000</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Next Deadline</div>
+                        <div class="grant-detail-value">October 15, 2026</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Status</div>
+                        <div class="grant-detail-value">Prepared for Next Year</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Lead</div>
+                        <div class="grant-detail-value">Steph</div>
+                    </div>
+                </div>
+                <p><strong>Purpose:</strong> Garden or Ashokan outdoor learning programs</p>
+                <p><strong>Website:</strong> <a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">NYC DOE Grants Portal</a></p>
+                <p><strong>Contact:</strong> BCO Budget Director → Senior Grants Officer</p>
+                <p><strong>Requirements:</strong> Principal approval, program plan, budget</p>
+                <p><strong>Notes:</strong> Rated as "lower hanging fruit" - excellent first grant to tackle. Can be used for Garden maintenance or Ashokan trip support.</p>
+            </div>
+
+            <div class="grant-card">
+                <h4>2. Catskill Watershed Grant <span class="priority-badge priority-high">NEW OPPORTUNITY</span> <span class="difficulty">Difficulty: 4/10</span></h4>
+                <div class="grant-details">
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Amount</div>
+                        <div class="grant-detail-value">$10,000</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Next Deadline</div>
+                        <div class="grant-detail-value">TBD - Released in Fall 2025</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Status</div>
+                        <div class="grant-detail-value">Monitor for announcement</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Lead</div>
+                        <div class="grant-detail-value">Steph</div>
+                    </div>
+                </div>
+                <p><strong>Purpose:</strong> Ashokan outdoor education program support</p>
+                <p><strong>Website:</strong> <a href="https://www.nycwatershed.org" class="external-link" target="_blank">NYC Watershed</a></p>
+                <p><strong>Requirements:</strong> Program aligned with watershed education, environmental learning</p>
+                <p><strong>Notes:</strong> Perfect fit for Ashokan trip - higher dollar amount than DOE Sustainability. Monitor for fall announcement.</p>
+            </div>
+
+            <div class="grant-card">
+                <h4>3. NYC Council Discretionary (FY26) <span class="priority-badge priority-high">CRITICAL</span> <span class="difficulty">Difficulty: 4/10</span></h4>
+                <div class="grant-details">
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Amount</div>
+                        <div class="grant-detail-value">$5,000-$50,000</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Application Opens</div>
+                        <div class="grant-detail-value">January 6, 2026</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">HARD DEADLINE</div>
+                        <div class="grant-detail-value">February 19, 2026, 5:00 PM</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Council Member</div>
+                        <div class="grant-detail-value">Harvey Epstein (District 74)</div>
+                    </div>
+                </div>
+                <p><strong>Purpose:</strong> General operating support for nonprofits</p>
+                <p><strong>Website:</strong> <a href="https://council.nyc.gov" class="external-link" target="_blank">NYC Council</a> | <a href="https://council.nyc.gov/district-74/" class="external-link" target="_blank">CM Harvey Epstein (D74)</a></p>
+                <div class="alert alert-critical">
+                    <strong>⚠️ CRITICAL:</strong> MUST APPLY BY DEADLINE OR INELIGIBLE. No extensions granted.
+                </div>
+                <h5>Required Documents:</h5>
+                <ul class="checklist">
+                    <li>501(c)(3) status documentation</li>
+                    <li>NYS Attorney General Charities registration</li>
+                    <li>Valid EIN</li>
+                    <li>Council application form</li>
+                </ul>
+            </div>
+
+            <div class="grant-card">
+                <h4>4. Manhattan Community Award Program (MCAP) <span class="priority-badge priority-high">HIGH</span> <span class="difficulty">Difficulty: 3/10</span></h4>
+                <div class="grant-details">
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Amount</div>
+                        <div class="grant-detail-value">$5,000-$10,000</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Deadline</div>
+                        <div class="grant-detail-value">August 29, 2026</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Type</div>
+                        <div class="grant-detail-value">Reimbursement-based</div>
+                    </div>
+                </div>
+                <p><strong>Purpose:</strong> School programs, anti-gun initiatives through arts</p>
+                <p><strong>Website:</strong> <a href="https://www.manhattanbp.nyc.gov" class="external-link" target="_blank">Manhattan Borough President</a></p>
+                <p><strong>Contact:</strong> Nelson Andino (nandino@manhattanbp.nyc.gov)</p>
+                <p><strong>Notes:</strong> Perfect for PTA programs, straightforward application</p>
+            </div>
+
+            <div class="grant-card">
+                <h4>5. Quick Win Opportunities <span class="priority-badge priority-low">LOW EFFORT</span></h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grant</th>
+                            <th>Amount</th>
+                            <th>Difficulty</th>
+                            <th>Action Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.traderjoes.com/home/giving" class="external-link" target="_blank">Trader Joe's Neighborhood Shares</a></td>
+                            <td>Gift cards/donations</td>
+                            <td>2/10</td>
+                            <td>Visit local store captain</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://corporate.target.com/corporate-responsibility/philanthropy" class="external-link" target="_blank">Target School Grants</a></td>
+                            <td>$500-$1,000</td>
+                            <td>3/10</td>
+                            <td>Apply when cycles open</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.starbucks.com/responsibility/community" class="external-link" target="_blank">Starbucks Community Grants</a></td>
+                            <td>In-kind donations</td>
+                            <td>3/10</td>
+                            <td>Contact local stores</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.dgliteracy.org" class="external-link" target="_blank">Dollar General Literacy</a></td>
+                            <td>Up to $4,000</td>
+                            <td>4/10</td>
+                            <td>Check application windows</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TREASURY DOCUMENTS SECTION -->
+        <section id="treasury-docs" class="section">
+            <h2>📋 Treasury Document Checklist</h2>
+            <p><em>For coordination between James (Co-VP) and Treasurer</em></p>
+
+            <div class="alert alert-critical">
+                <strong>🚨 CRITICAL REMINDER:</strong> Document preparation is the biggest bottleneck. Missing insurance paperwork cost us $2,000 in Ashokan grant funding.
+            </div>
+
+            <h3>🔴 High Priority - Core Documents</h3>
+
+            <h4>Banking Documents</h4>
+            <ul class="checklist">
+                <li><strong>Current Bank Statement</strong> (Most recent month)
+                    <ul>
+                        <li>Format: PDF</li>
+                        <li>Must show: Account name, balance, PTA name</li>
+                        <li>Save as: <code>/financial/bank-statement-[MONTH-YEAR].pdf</code></li>
+                    </ul>
+                </li>
+                <li><strong>Bank Verification Letter</strong>
+                    <ul>
+                        <li>Request from bank on letterhead</li>
+                        <li>Should state: Account holder name, account standing, years open</li>
+                        <li>Save as: <code>/financial/bank-verification-2025.pdf</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>Tax Documents</h4>
+            <ul class="checklist">
+                <li><strong>Form 990 or 990-EZ</strong> (Most recent - 2024)
+                    <ul>
+                        <li>Full form with all schedules</li>
+                        <li>Save as: <code>/financial/form-990-2024.pdf</code></li>
+                    </ul>
+                </li>
+                <li><strong>EIN Confirmation Letter</strong>
+                    <ul>
+                        <li>IRS letter showing our EIN</li>
+                        <li>Save as: <code>/core-documents/ein-letter.pdf</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>Budget Documents</h4>
+            <ul class="checklist">
+                <li><strong>2025-2026 Approved Budget</strong>
+                    <ul>
+                        <li>Board-approved version with date</li>
+                        <li>Save as: <code>/financial/budget-2025-2026-approved.pdf</code></li>
+                    </ul>
+                </li>
+                <li><strong>Current YTD Financial Report</strong>
+                    <ul>
+                        <li>Income and expenses through current month</li>
+                        <li>Save as: <code>/financial/ytd-financial-report-[MONTH-YEAR].pdf</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>📊 Grant Budget Template</h3>
+            <div class="alert alert-info">
+                <strong>Create Excel template with these categories:</strong>
+                <pre style="margin-top: 10px; background: white; padding: 15px; border-radius: 4px; overflow-x: auto;">
+INCOME
+├── PTA Contribution
+├── Grant Request
+├── Other Funding Sources
+└── In-Kind Donations
+TOTAL INCOME
+
+EXPENSES
+Personnel (if applicable)
+├── Program Coordinator (% of time)
+└── Teaching Artists/Instructors
+
+Program Costs
+├── Materials and Supplies
+├── Equipment
+├── Professional Development
+├── Field Trip Costs
+└── Transportation
+
+Administrative (usually 10-15%)
+├── Insurance
+├── Accounting/Bookkeeping
+├── Communications
+└── Office Supplies
+
+TOTAL EXPENSES
+NET (should equal $0)</pre>
+                <p style="margin-top: 10px;"><strong>Save as:</strong> <code>/templates/grant-budget-template.xlsx</code></p>
+            </div>
+        </section>
+
+        <!-- INSURANCE SECTION -->
+        <section id="insurance" class="section">
+            <h2>🔍 Insurance Documentation (CRITICAL)</h2>
+
+            <div class="alert alert-critical">
+                <strong>⚠️ LESSON LEARNED:</strong> Missing bus/transportation insurance paperwork cost us $2,000 in Ashokan grant funding. This is now our highest priority documentation item.
+            </div>
+
+            <h3>Required Insurance Certificates</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Insurance Type</th>
+                        <th>Priority</th>
+                        <th>Typical Coverage</th>
+                        <th>File Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #fee2e2;">
+                        <td><strong>Bus/Transportation Insurance</strong></td>
+                        <td><span class="priority-badge priority-high">CRITICAL</span></td>
+                        <td>Must cover field trips</td>
+                        <td><code>/insurance/bus-transportation-2025.pdf</code></td>
+                    </tr>
+                    <tr>
+                        <td>General Liability Certificate</td>
+                        <td><span class="priority-badge priority-high">HIGH</span></td>
+                        <td>$1M+ coverage typical</td>
+                        <td><code>/insurance/general-liability-2025.pdf</code></td>
+                    </tr>
+                    <tr>
+                        <td>Directors & Officers (D&O)</td>
+                        <td><span class="priority-badge priority-medium">MEDIUM</span></td>
+                        <td>Protects board members</td>
+                        <td><code>/insurance/do-insurance-2025.pdf</code></td>
+                    </tr>
+                    <tr>
+                        <td>Accident/Event Insurance</td>
+                        <td><span class="priority-badge priority-medium">MEDIUM</span></td>
+                        <td>For PTA events</td>
+                        <td><code>/insurance/accident-event-2025.pdf</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Insurance Summary Sheet</h3>
+            <p>Create a master document containing:</p>
+            <ul class="checklist">
+                <li>Carrier names for all policies</li>
+                <li>Policy numbers</li>
+                <li>Coverage amounts and limits</li>
+                <li>Deductibles</li>
+                <li>Expiration dates (set calendar reminders!)</li>
+                <li>Broker contact information</li>
+                <li>Premium amounts</li>
+            </ul>
+
+            <h3>Action Items for Treasurer</h3>
+            <div class="alert alert-warning">
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Call insurance broker immediately</strong> - Request ALL certificates, especially bus/transportation</li>
+                    <li><strong>Get quote for bus insurance</strong> if not currently covered</li>
+                    <li><strong>Set annual renewal reminders</strong> for all policies</li>
+                    <li><strong>Create physical and digital backups</strong> of all certificates</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- NYC DOE GRANTS -->
+        <section id="nyc-doe" class="section">
+            <h2>NYC DOE Grants</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grant Name</th>
+                        <th>Amount</th>
+                        <th>Deadline</th>
+                        <th>Difficulty</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #fef3c7;">
+                        <td><strong><a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">DOE Sustainability Grant</a></strong></td>
+                        <td>$5,000</td>
+                        <td>Oct 15, 2026</td>
+                        <td>3/10</td>
+                        <td>Garden or Ashokan outdoor learning</td>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong><a href="https://www.nycwatershed.org" class="external-link" target="_blank">Catskill Watershed Grant</a></strong></td>
+                        <td>$10,000</td>
+                        <td>TBD - Fall 2025</td>
+                        <td>4/10</td>
+                        <td>Ashokan outdoor education program</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">Title I School Improvement Grant (SIG)</a></td>
+                        <td>Varies</td>
+                        <td>March 12, 2026</td>
+                        <td>7/10</td>
+                        <td>School improvement initiatives</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">McKinney-Vento Subgrant</a></td>
+                        <td>Varies</td>
+                        <td>May 2, 2026</td>
+                        <td>6/10</td>
+                        <td>Support for students experiencing homelessness</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">National School Lunch Program Equipment</a></td>
+                        <td>Varies</td>
+                        <td>May 2, 2026</td>
+                        <td>5/10</td>
+                        <td>Kitchen equipment for school food programs</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">Advanced Course Access (ACA) Program</a></td>
+                        <td>Varies</td>
+                        <td>April 17, 2026</td>
+                        <td>8/10</td>
+                        <td>Advanced coursework access (may not apply to elementary)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Key Contacts</h3>
+            <ul class="checklist">
+                <li>BCO Budget Director: [Contact info needed]</li>
+                <li>Senior Grants Officer: [Contact info needed]</li>
+                <li>Grants Website: <a href="https://schools.nyc.gov/about-us/funding/grants">schools.nyc.gov/about-us/funding/grants</a></li>
+            </ul>
+        </section>
+
+        <!-- NYC COUNCIL FUNDING -->
+        <section id="nyc-council" class="section">
+            <h2>NYC Council Discretionary Funding</h2>
+
+            <div class="grant-card">
+                <h4>FY27 Expense Discretionary Funding <span class="priority-badge priority-high">KEY DEADLINE</span></h4>
+                <div class="alert alert-critical">
+                    <strong>HARD DEADLINE:</strong> February 19, 2026 at 5:00 PM - NO EXCEPTIONS<br>
+                    <strong>Application Opens:</strong> January 6, 2026
+                </div>
+                <div class="grant-details">
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Amount Range</div>
+                        <div class="grant-detail-value">$5,000-$50,000 (typically)</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Difficulty</div>
+                        <div class="grant-detail-value">4/10</div>
+                    </div>
+                    <div class="grant-detail-item">
+                        <div class="grant-detail-label">Council Member</div>
+                        <div class="grant-detail-value">Harvey Epstein (District 74)</div>
+                    </div>
+                </div>
+                <p><strong>Purpose:</strong> General operating support for nonprofits</p>
+                <h5>Required Documents:</h5>
+                <ul class="checklist">
+                    <li>501(c)(3) status</li>
+                    <li>NYS Attorney General Charities registration</li>
+                    <li>Valid EIN</li>
+                    <li>Council application form (available Jan 6)</li>
+                    <li>Audited financials (if budget >$250K) OR Treasurer-certified statements</li>
+                    <li>Board-approved budget</li>
+                </ul>
+            </div>
+
+            <h3>Other NYC Council Opportunities</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Amount</th>
+                        <th>Deadline</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FY27 Capital Funding</td>
+                        <td>Varies</td>
+                        <td>Feb 20, 2026 (combined BP/Council)<br>Mar 20, 2026 (Council only)</td>
+                        <td>Capital improvements, equipment</td>
+                    </tr>
+                    <tr>
+                        <td>Discretionary Grant Pilot</td>
+                        <td>Up to $25,000</td>
+                        <td>Applications Oct 2026, Funding Jan 2027</td>
+                        <td>Simplified grants for smaller amounts</td>
+                    </tr>
+                    <tr>
+                        <td>Member Youth Discretionary Funds</td>
+                        <td>Varies</td>
+                        <td>TBD</td>
+                        <td>Youth programming (via DYCD)</td>
+                    </tr>
+                    <tr>
+                        <td>Anti-Poverty Initiative</td>
+                        <td>Based on district poverty levels</td>
+                        <td>TBD</td>
+                        <td>Programs addressing poverty</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FOUNDATION GRANTS -->
+        <section id="foundations" class="section">
+            <h2>Foundation Grants</h2>
+
+            <h3>Major NYC Education Foundations</h3>
+
+            <div class="grant-card">
+                <h4>Fund for NYC Public Schools</h4>
+                <p><strong>Amount:</strong> Varies | <strong>Deadline:</strong> Rolling | <strong>Difficulty:</strong> 6/10</p>
+                <p><strong>Purpose:</strong> Aligned with NYCPS strategic priorities</p>
+                <p><strong>Website:</strong> <a href="https://fundforpublicschools.org" class="external-link" target="_blank">fundforpublicschools.org</a></p>
+                <p><strong>Notes:</strong> Partners directly with NYCPS - research partnership opportunities</p>
+            </div>
+
+            <div class="grant-card">
+                <h4>Altman Foundation</h4>
+                <p><strong>Amount:</strong> Varies (system-level focus) | <strong>Difficulty:</strong> 8/10</p>
+                <p><strong>Purpose:</strong> Education equity initiatives</p>
+                <p><strong>Website:</strong> <a href="https://www.altmanfoundation.org" class="external-link" target="_blank">altmanfoundation.org</a></p>
+                <div class="alert alert-warning">
+                    <strong>Important:</strong> System/network-wide impact preferred. Does NOT typically fund individual schools.
+                </div>
+                <p><strong>Focus Areas:</strong></p>
+                <ul>
+                    <li>Early childhood education</li>
+                    <li>Afterschool programs</li>
+                    <li>Expanded learning time</li>
+                </ul>
+            </div>
+
+            <h3>Donor-Advised Fund Platforms</h3>
+            <p>Register with these platforms to access donor-advised fund grants:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Difficulty</th>
+                        <th>Action Required</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.fidelitycharitable.org/nonprofits.html" class="external-link" target="_blank">Fidelity Charitable</a></td>
+                        <td>4/10</td>
+                        <td>Register as approved nonprofit</td>
+                        <td>Great for building major donor relationships</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.vanguardcharitable.org" class="external-link" target="_blank">Vanguard Charitable</a></td>
+                        <td>4/10</td>
+                        <td>Register as approved charity</td>
+                        <td>Large donor-advised fund platform</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.arcofjustice.org" class="external-link" target="_blank">Arc of Justice</a></td>
+                        <td>5/10</td>
+                        <td>Register as recipient</td>
+                        <td>Progressive donor base aligned with TNS values</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.cafamerica.org" class="external-link" target="_blank">Charities Aid Foundation of America</a></td>
+                        <td>4/10</td>
+                        <td>Register as recipient</td>
+                        <td>International and domestic giving</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.blackbaudgiving.com" class="external-link" target="_blank">The Blackbaud Giving Fund</a></td>
+                        <td>4/10</td>
+                        <td>Register as recipient</td>
+                        <td>Technology-enabled giving</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Other Notable Foundations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Amount</th>
+                        <th>Difficulty</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.robinhood.org" class="external-link" target="_blank">Robin Hood Foundation</a></td>
+                        <td>Varies</td>
+                        <td>7/10</td>
+                        <td>Poverty alleviation, education equity</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.pclbfoundation.org" class="external-link" target="_blank">Peter & Carmen Lucia Buck Foundation</a></td>
+                        <td>$10,000-$100,000+</td>
+                        <td>7/10</td>
+                        <td>Education, youth development (Subway founders)</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.heckscherfoundation.org" class="external-link" target="_blank">Heckscher Foundation for Children</a></td>
+                        <td>$5,000-$50,000</td>
+                        <td>6/10</td>
+                        <td>NYC children and youth, underserved priority</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.petriefoundation.org" class="external-link" target="_blank">Carroll and Milton Petrie Foundation</a></td>
+                        <td>Varies</td>
+                        <td>6/10</td>
+                        <td>NYC education programs</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.nycommunitytrust.org" class="external-link" target="_blank">New York Community Trust</a></td>
+                        <td>Varies</td>
+                        <td>7/10</td>
+                        <td>Community programs, education</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="grant-card" style="background: #fef3c7; border-color: #f59e0b;">
+                <h4>🌟 Yield Giving (MacKenzie Scott) - TRANSFORMATIVE</h4>
+                <p><strong>Amount:</strong> Unrestricted major gifts ($100,000+)</p>
+                <p><strong>Difficulty:</strong> 9/10</p>
+                <p><strong>Status:</strong> No application - data-driven selection based</p>
+                <p><strong>Website:</strong> <a href="https://yieldgiving.com" class="external-link" target="_blank">yieldgiving.com</a></p>
+                <p><strong>Notes:</strong> Focus on equity and education. While we cannot apply, maintaining strong documentation and demonstrated impact increases visibility for potential selection.</p>
+            </div>
+        </section>
+
+        <!-- CORPORATE GRANTS -->
+        <section id="corporate" class="section">
+            <h2>Corporate Grants & Partnerships</h2>
+
+            <h3>Technology & STEM Focus</h3>
+
+            <div class="grant-card">
+                <h4>Amazon Future Engineer <span class="priority-badge priority-medium">STRONG MATCH</span></h4>
+                <p><strong>Amount:</strong> Program support (not cash grants) | <strong>Difficulty:</strong> 4/10</p>
+                <p><strong>Purpose:</strong> Computer science education K-12</p>
+                <p><strong>Website:</strong> <a href="https://www.amazonfutureengineer.com" class="external-link" target="_blank">amazonfutureengineer.com</a></p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Professional development for teachers</li>
+                    <li>Curriculum resources</li>
+                    <li>Student scholarships</li>
+                </ul>
+                <p><strong>Notes:</strong> 459+ NYC schools already participating. Partner: BootUp PD</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Program</th>
+                        <th>Amount/Support</th>
+                        <th>Difficulty</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google</td>
+                        <td><a href="https://edu.google.com/intl/ALL_us/programs/" class="external-link" target="_blank">Google for Education</a></td>
+                        <td>Varies</td>
+                        <td>5/10</td>
+                        <td>CS First, Applied Digital Skills, Chromebook grants</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft</td>
+                        <td><a href="https://www.microsoft.com/en-us/teals" class="external-link" target="_blank">TEALS</a></td>
+                        <td>Volunteer support</td>
+                        <td>5/10</td>
+                        <td>CS education - pairs teachers with industry volunteers</td>
+                    </tr>
+                    <tr>
+                        <td>Verizon</td>
+                        <td><a href="https://www.verizon.com/about/responsibility/verizon-innovative-learning" class="external-link" target="_blank">Innovative Learning</a></td>
+                        <td>Technology + training</td>
+                        <td>6/10</td>
+                        <td>STEM education, digital equity</td>
+                    </tr>
+                    <tr>
+                        <td>Con Edison</td>
+                        <td><a href="https://www.coned.com/en/our-energy-future/our-energy-projects/stem-grants" class="external-link" target="_blank">STEM Grants</a></td>
+                        <td>Up to $5,000</td>
+                        <td>4/10</td>
+                        <td>STEM programs in NYC</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Retail & Community Grants</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Amount</th>
+                        <th>Difficulty</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>Trader Joe's Neighborhood Shares</strong></td>
+                        <td>Gift cards/donations</td>
+                        <td>2/10</td>
+                        <td>Visit local store captain</td>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>Target School Grants</strong></td>
+                        <td>$500-$1,000</td>
+                        <td>3/10</td>
+                        <td>Apply when cycles open + register for Target Circle</td>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>Starbucks Community Grants</strong></td>
+                        <td>In-kind, small grants</td>
+                        <td>3/10</td>
+                        <td>Contact local stores for event support</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.dgliteracy.org" class="external-link" target="_blank">Dollar General Literacy Foundation</a></td>
+                        <td>Up to $4,000</td>
+                        <td>4/10</td>
+                        <td>Check application windows</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.americanexpress.com/en-us/company/philanthropy/" class="external-link" target="_blank">American Express Foundation</a></td>
+                        <td>$5,000-$25,000</td>
+                        <td>6/10</td>
+                        <td>Leadership, financial literacy programs</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.pfizer.com/purpose/independent-grants" class="external-link" target="_blank">Pfizer Foundation</a></td>
+                        <td>Varies</td>
+                        <td>7/10</td>
+                        <td>STEM education, health programs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- MANHATTAN-SPECIFIC -->
+        <section id="manhattan" class="section">
+            <h2>Manhattan-Specific Opportunities</h2>
+
+            <h3>Manhattan Borough President Grants</h3>
+
+            <div class="grant-card">
+                <h4>Manhattan Community Award Program (MCAP) <span class="priority-badge priority-high">PRIORITY</span></h4>
+                <p><strong>Amount:</strong> $5,000-$10,000 | <strong>Deadline:</strong> August 29, 2026 | <strong>Difficulty:</strong> 3/10</p>
+                <p><strong>Purpose:</strong> School programs, anti-gun initiatives through arts</p>
+                <p><strong>Type:</strong> Reimbursement-based</p>
+                <p><strong>Website:</strong> <a href="https://www.manhattanbp.nyc.gov" class="external-link" target="_blank">manhattanbp.nyc.gov</a></p>
+                <p><strong>Contact:</strong> Nelson Andino (nandino@manhattanbp.nyc.gov)</p>
+                <p><strong>Notes:</strong> Perfect for PTA programs</p>
+            </div>
+
+            <div class="grant-card">
+                <h4>Borough President Capital Funding</h4>
+                <p><strong>Amount:</strong> Varies (can be substantial) | <strong>Deadline:</strong> February 20, 2026 | <strong>Difficulty:</strong> 5/10</p>
+                <p><strong>Purpose:</strong> Capital improvements, equipment</p>
+                <p><strong>Website:</strong> <a href="https://www.manhattanbp.nyc.gov" class="external-link" target="_blank">manhattanbp.nyc.gov</a></p>
+                <div class="alert alert-info">
+                    <strong>Pro Tip:</strong> Different pot from Council funding - you can "double-dip" with Council capital grants
+                </div>
+            </div>
+
+            <h3>Upper West Side Cultural Institutions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Amount/Support</th>
+                        <th>Difficulty</th>
+                        <th>Geographic Advantage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.lincolncenter.org/education" class="external-link" target="_blank">Lincoln Center Education</a></td>
+                        <td>Program support + free performances</td>
+                        <td>4/10</td>
+                        <td>Proximity = priority. NEW $335M renovation includes school access</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amnh.org/learn-teach/schools" class="external-link" target="_blank">American Museum of Natural History</a></td>
+                        <td>$2,500-$10,000 + free programs</td>
+                        <td>4/10</td>
+                        <td>Schools within 1 mile get priority - TNS is in zone!</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://cmom.org/schools/" class="external-link" target="_blank">Children's Museum of Manhattan</a></td>
+                        <td>Program support + PD</td>
+                        <td>3/10</td>
+                        <td>Neighbor advantage, especially K-2 programs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>UWS Business Improvement Districts</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BID</th>
+                        <th>Support Type</th>
+                        <th>Difficulty</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Columbus Avenue BID</td>
+                        <td>Small grants for community programs</td>
+                        <td>3/10</td>
+                        <td>Through CB7 Business Committee</td>
+                    </tr>
+                    <tr>
+                        <td>Lincoln Square BID</td>
+                        <td>School programs, beautification</td>
+                        <td>3/10</td>
+                        <td>Monica Blum, President</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>Note: BID grants are often overlooked funding sources. TNS is in both catchment areas.</em></p>
+
+            <h3>Local Healthcare Institutions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Amount</th>
+                        <th>Difficulty</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.mountsinai.org/locations/mount-sinai-west/about/community" class="external-link" target="_blank">Mount Sinai West Community Benefits</a></td>
+                        <td>$5,000-$25,000</td>
+                        <td>5/10</td>
+                        <td>Health education, wellness programs</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.nyp.org/amazingthings" class="external-link" target="_blank">NewYork-Presbyterian Amazing Things</a></td>
+                        <td>$10,000-$50,000</td>
+                        <td>6/10</td>
+                        <td>Health and wellness initiatives</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Higher Education Partners</h3>
+            <div class="grant-card">
+                <h4>Bank Street College of Education <span class="priority-badge priority-medium">PERFECT ALIGNMENT</span></h4>
+                <p><strong>Amount:</strong> Partnership grants vary | <strong>Difficulty:</strong> 5/10</p>
+                <p><strong>Purpose:</strong> Progressive education programs</p>
+                <p><strong>Website:</strong> <a href="https://www.bankstreet.edu/about-bank-street/partnerships/" class="external-link" target="_blank">bankstreet.edu/partnerships</a></p>
+                <p><strong>Contact:</strong> partnership@bankstreet.edu</p>
+                <div class="alert alert-success">
+                    <strong>Why This Matters:</strong> Perfect philosophical alignment with TNS progressive education values. Strong potential for collaborative programs.
+                </div>
+            </div>
+        </section>
+
+        <!-- APPLICATION CALENDAR -->
+        <section id="calendar" class="section">
+            <h2>📅 Application Calendar 2025-2026</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">October 9, 2025 (TODAY)</div>
+                    <ul>
+                        <li>Review all grant documentation (IN PROGRESS)</li>
+                        <li>Gather all treasury documents</li>
+                        <li>Secure all insurance certificates</li>
+                        <li><strong>MISSED: DOE Sustainability Grant deadline was October 15, 2025</strong></li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">October-November 2025</div>
+                    <ul>
+                        <li><strong>Monitor for Catskill Watershed Grant announcement (Fall release)</strong></li>
+                        <li>Prepare Ashokan program documentation</li>
+                        <li>Monitor Discretionary Grant Pilot announcements</li>
+                        <li>Finalize all insurance documentation</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">November-December 2025</div>
+                    <ul>
+                        <li>Finalize documentation for January deadlines</li>
+                        <li>Draft organizational descriptions and program plans</li>
+                        <li>Review Q4 grant opportunities</li>
+                        <li>Executive board grant strategy meeting</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">January 6, 2026</div>
+                    <ul>
+                        <li><strong>NYC Council Discretionary application opens</strong></li>
+                        <li>Begin Council discretionary application immediately</li>
+                        <li>Research all spring grant opportunities</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">February 2026</div>
+                    <ul>
+                        <li><strong>Feb 19, 5PM: NYC Council Expense Discretionary DEADLINE ⚠️</strong></li>
+                        <li><strong>Feb 20: Combined BP/Council Capital funding deadline</strong></li>
+                        <li>Title I SIG Planning posted (Feb 12)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">March 2026</div>
+                    <ul>
+                        <li><strong>Mar 12: Title I SIG Supplemental Support</strong></li>
+                        <li><strong>Mar 20: Council Capital funding deadline</strong></li>
+                        <li>Q3 grant status review (Mar 31)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">April 2026</div>
+                    <ul>
+                        <li><strong>Apr 17: ACA Program deadline</strong></li>
+                        <li>Spring grant cycle applications</li>
+                        <li>Review Q4 opportunities</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2026</div>
+                    <ul>
+                        <li><strong>May 2: McKinney-Vento Subgrant deadline</strong></li>
+                        <li><strong>May 2: School Lunch Equipment Grant deadline</strong></li>
+                        <li>End-of-year grant planning</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2026</div>
+                    <ul>
+                        <li><strong>Aug 29: Manhattan Community Award Program deadline</strong></li>
+                        <li>Plan for fall grant season</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">September-October 2026</div>
+                    <ul>
+                        <li>Begin FY28 planning</li>
+                        <li>Fall grant cycle begins</li>
+                        <li>Monitor for Catskill Watershed Grant (Fall release)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">October 15, 2026</div>
+                    <ul>
+                        <li><strong>DOE Sustainability Grant deadline 🎯</strong></li>
+                        <li>Submit application (Steph leading)</li>
+                        <li>Ensure all documentation ready by October 1</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Late October 2026</div>
+                    <ul>
+                        <li>Discretionary Grant Pilot applications</li>
+                        <li>Review grant portfolio performance</li>
+                        <li>Plan for 2027</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- LESSONS LEARNED -->
+        <section id="lessons-learned" class="section">
+            <h2>📝 Lessons Learned & Best Practices</h2>
+
+            <h3>Critical Lessons from August 2025 Meeting</h3>
+
+            <div class="alert alert-critical">
+                <h4 style="margin-top: 0;">Insurance Paperwork Failure - Lost $2,000</h4>
+                <p><strong>What Happened:</strong> Ashokan grant funding reduced from $10,000 to $8,000 due to missing bus insurance paperwork.</p>
+                <p><strong>Lesson Learned:</strong> Document preparation is the biggest bottleneck. Insurance certificates, especially bus/transportation coverage, must be secured and maintained at all times.</p>
+                <p><strong>Prevention:</strong> Maintain "Grant Ready" folder with all insurance certificates updated annually.</p>
+            </div>
+
+            <h3>Key Insights</h3>
+            <ul>
+                <li><strong>Start with "lower hanging fruit"</strong> - Focus on difficulty ratings 1-5 first</li>
+                <li><strong>Principal buy-in is essential</strong> for school-based grants</li>
+                <li><strong>Earlier budget meetings help with planning</strong> - October and April general meetings recommended</li>
+                <li><strong>Apply to multiple grants simultaneously</strong> when possible</li>
+                <li><strong>Build relationships with funders</strong> - don't just submit and disappear</li>
+            </ul>
+
+            <h3>Best Practices</h3>
+
+            <h4>Documentation Management</h4>
+            <ul class="checklist">
+                <li>Create "Grant Ready" folder with all standard docs</li>
+                <li>Update monthly - don't wait for deadline</li>
+                <li>Keep original + copies - some grants want originals</li>
+                <li>Version control - date all documents</li>
+                <li>Set calendar reminders for insurance renewals</li>
+            </ul>
+
+            <h4>Budget Best Practices</h4>
+            <ul class="checklist">
+                <li>Round to nearest $25 or $50 - looks professional</li>
+                <li>Include 10% contingency in project budgets</li>
+                <li>Match narratives to numbers - they must align</li>
+                <li>Show other funding sources - demonstrates sustainability</li>
+            </ul>
+
+            <h4>Application Strategy</h4>
+            <ul class="checklist">
+                <li>Track everything meticulously</li>
+                <li>Keep standard documents ready year-round</li>
+                <li>Read guidelines twice before starting</li>
+                <li>Have someone else review before submission</li>
+                <li>Submit at least 24 hours before deadline (technical issues happen!)</li>
+            </ul>
+
+            <h3>Red Flags to Avoid</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Red Flag</th>
+                        <th>Why It Matters</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Missing hard deadlines</td>
+                        <td>No extensions granted - instant disqualification</td>
+                        <td>Set multiple calendar reminders, submit early</td>
+                    </tr>
+                    <tr>
+                        <td>Incomplete insurance docs</td>
+                        <td>Cost us $2,000 on Ashokan grant</td>
+                        <td>Maintain current certificates at all times</td>
+                    </tr>
+                    <tr>
+                        <td>Lack of principal support</td>
+                        <td>School-based grants require administrator buy-in</td>
+                        <td>Meet with principal early in process</td>
+                    </tr>
+                    <tr>
+                        <td>Budget deficits</td>
+                        <td>Shows poor financial planning</td>
+                        <td>Always show balanced budget</td>
+                    </tr>
+                    <tr>
+                        <td>No financial reserves</td>
+                        <td>Raises sustainability concerns</td>
+                        <td>Show 3-month operating reserve</td>
+                    </tr>
+                    <tr>
+                        <td>Single funding source</td>
+                        <td>Risk if that source disappears</td>
+                        <td>Demonstrate revenue diversity</td>
+                    </tr>
+                    <tr>
+                        <td>Excessive admin costs</td>
+                        <td>Funders want money going to programs</td>
+                        <td>Keep administrative costs under 15%</td>
+                    </tr>
+                    <tr>
+                        <td>Unrealistic timelines</td>
+                        <td>Suggests poor planning</td>
+                        <td>Build in buffer time for all activities</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Financial Narrative Best Practices</h3>
+
+            <div class="alert alert-info">
+                <h4 style="margin-top: 0;">Organization Financial Health Statement Template</h4>
+                <p style="font-style: italic;">"TNS PTA maintains strong financial health with:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Annual budget of $100,000+</li>
+                    <li>Diverse revenue streams (events 40%, direct giving 35%, grants 25%)</li>
+                    <li>3-month operating reserve</li>
+                    <li>Clean audit/review (if applicable)</li>
+                    <li>100% board giving participation"</li>
+                </ul>
+            </div>
+
+            <div class="alert alert-info">
+                <h4 style="margin-top: 0;">Cost-Effectiveness Statement Template</h4>
+                <p style="font-style: italic;">"Administrative costs remain under 10% of budget, with 90%+ of funds directly supporting programs and students."</p>
+            </div>
+
+            <div class="alert alert-info">
+                <h4 style="margin-top: 0;">Financial Controls Description Template</h4>
+                <p style="font-style: italic;">"TNS PTA maintains strong financial controls including:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Dual signatures on checks over $500</li>
+                    <li>Monthly treasurer reports to board</li>
+                    <li>Annual budget approval by membership</li>
+                    <li>Regular financial reviews</li>
+                    <li>Segregation of duties"</li>
+                </ul>
+            </div>
+
+            <h3>Progressive Education Alignment</h3>
+            <p>All grant applications should emphasize TNS's progressive education values:</p>
+            <ul>
+                <li><strong>Student-centered learning approaches</strong> - Focus on individual needs and interests</li>
+                <li><strong>Equity and inclusion priorities</strong> - Serving diverse learners</li>
+                <li><strong>Environmental sustainability</strong> - Garden programs, outdoor learning</li>
+                <li><strong>Social justice integration</strong> - Critical thinking about community issues</li>
+                <li><strong>Community-based learning</strong> - Connections beyond classroom</li>
+                <li><strong>Arts and creativity emphasis</strong> - Integration across curriculum</li>
+            </ul>
+
+            <h3>Communication Best Practices</h3>
+
+            <h4>With Principal (Dyanthe)</h4>
+            <ul class="checklist">
+                <li>Notify about ALL school-related grants before applying</li>
+                <li>Request support letters with 2-3 weeks lead time</li>
+                <li>Provide bullet points for letter - make it easy</li>
+                <li>Schedule dedicated meetings for major grants (>$10K)</li>
+                <li>Share outcomes and thank for support</li>
+            </ul>
+
+            <h4>With Treasurer</h4>
+            <ul class="checklist">
+                <li>Weekly check-ins during active applications</li>
+                <li>Shared Google Drive folder for documents</li>
+                <li>CC on all grant-related emails</li>
+                <li>Joint signature on applications over $10K</li>
+                <li>Monthly financial tracking updates</li>
+            </ul>
+
+            <h4>With Executive Board</h4>
+            <ul class="checklist">
+                <li>Monthly grant activity updates</li>
+                <li>Seek approval for grants >$10K before applying</li>
+                <li>Present grant revenue in budget planning</li>
+                <li>Celebrate wins with community</li>
+                <li>Share lessons learned from declines</li>
+            </ul>
+
+            <h3>Success Metrics to Track</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Target</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Grant Revenue</td>
+                        <td>$50,000+ annually</td>
+                        <td>Overall fundraising goal</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Applications</td>
+                        <td>10-15 per year</td>
+                        <td>Activity level</td>
+                    </tr>
+                    <tr>
+                        <td>Success Rate</td>
+                        <td>40-60%</td>
+                        <td>Quality of applications</td>
+                    </tr>
+                    <tr>
+                        <td>Average Award</td>
+                        <td>$5,000+</td>
+                        <td>ROI on effort</td>
+                    </tr>
+                    <tr>
+                        <td>Application Completion Time</td>
+                        <td>2-4 weeks</td>
+                        <td>Process efficiency</td>
+                    </tr>
+                    <tr>
+                        <td>Deadline Compliance</td>
+                        <td>100%</td>
+                        <td>Organizational discipline</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- GRANT DIFFICULTY REFERENCE -->
+        <section class="section">
+            <h2>Grant Difficulty Reference Guide</h2>
+
+            <h3>Easy (1-3/10) - Start Here!</h3>
+            <ul>
+                <li>Discretionary Grant Pilot (2/10)</li>
+                <li>Trader Joe's Neighborhood Shares (2/10)</li>
+                <li>DOE Sustainability Grant (3/10) ⭐ - Steph leading</li>
+                <li>Manhattan Community Award Program (3/10) ⭐</li>
+                <li>Children's Museum of Manhattan (3/10)</li>
+                <li>Columbus Avenue BID (3/10)</li>
+                <li>Lincoln Square BID (3/10)</li>
+                <li>Starbucks Community Grants (3/10)</li>
+                <li>Target School Grants (3/10)</li>
+            </ul>
+
+            <h3>Moderate (4-5/10)</h3>
+            <ul>
+                <li>Catskill Watershed Grant (4/10) ⭐ NEW - Steph leading, $10K for Ashokan</li>
+                <li>Council Expense Discretionary (4/10) ⭐</li>
+                <li>Amazon Future Engineer (4/10)</li>
+                <li>Con Edison STEM (4/10)</li>
+                <li>Lincoln Center Education (4/10)</li>
+                <li>AMNH (4/10)</li>
+                <li>Dollar General Literacy (4/10)</li>
+                <li>Fidelity Charitable (4/10)</li>
+                <li>Google for Education (5/10)</li>
+                <li>Microsoft TEALS (5/10)</li>
+                <li>School Lunch Equipment (5/10)</li>
+                <li>Mount Sinai West (5/10)</li>
+                <li>Bank Street College (5/10)</li>
+            </ul>
+
+            <h3>Challenging (6-7/10) - Require More Effort</h3>
+            <ul>
+                <li>Council Capital Funding (6/10)</li>
+                <li>Fund for NYC Public Schools (6/10)</li>
+                <li>McKinney-Vento (6/10)</li>
+                <li>NYS STEM Program (6/10)</li>
+                <li>Smart Start Grant (6/10)</li>
+                <li>Verizon Innovative Learning (6/10)</li>
+                <li>Carroll Petrie Foundation (6/10)</li>
+                <li>NewYork-Presbyterian (6/10)</li>
+                <li>American Express Foundation (6/10)</li>
+                <li>Robin Hood Foundation (7/10)</li>
+                <li>Learning Technology Grant (7/10)</li>
+                <li>NYC Community Trust (7/10)</li>
+                <li>Title I SIG (7/10)</li>
+                <li>Pfizer Foundation (7/10)</li>
+                <li>Peter & Carmen Lucia Buck (7/10)</li>
+            </ul>
+
+            <h3>Very Difficult (8-10/10) - Strategic Opportunities</h3>
+            <ul>
+                <li>ACA Program (8/10)</li>
+                <li>Altman Foundation (8/10)</li>
+                <li>Yield Giving / MacKenzie Scott (9/10) - No application process</li>
+            </ul>
+
+            <div class="alert alert-success">
+                <strong>Recommended Strategy:</strong> Focus 70% of effort on difficulty 1-5, 20% on difficulty 6-7, and 10% on difficulty 8-10. This maximizes success rate while pursuing stretch opportunities.
+            </div>
+        </section>
+
+        <!-- IMMEDIATE ACTION PLAN -->
+        <section class="section">
+            <h2>🚀 Immediate Action Plan (October 2025)</h2>
+
+            <h3>This Week</h3>
+            <ol>
+                <li><strong>Treasurer Meeting</strong>
+                    <ul>
+                        <li>Review this entire document together</li>
+                        <li>Identify documentation gaps</li>
+                        <li>Set up shared Google Drive folder</li>
+                        <li>Create signature protocol for applications</li>
+                    </ul>
+                </li>
+                <li><strong>Insurance Broker Call</strong>
+                    <ul>
+                        <li>Request ALL current certificates</li>
+                        <li>Verify bus/transportation coverage</li>
+                        <li>Get quotes if any coverage missing</li>
+                        <li>Set calendar reminders for renewal dates</li>
+                    </ul>
+                </li>
+                <li><strong>Document Collection</strong>
+                    <ul>
+                        <li>Download August 2025 bank statement</li>
+                        <li>Locate most recent Form 990</li>
+                        <li>Find EIN confirmation letter</li>
+                        <li>Get board-approved 2025-2026 budget</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>This Month (October 2025)</h3>
+            <ol>
+                <li><strong>Monitor Catskill Watershed Grant</strong> - Check NYC Watershed website for Fall 2025 announcement ($10,000 for Ashokan)</li>
+                <li><strong>Coordinate with Steph</strong> - Review Ashokan program details for grant applications</li>
+                <li><strong>Create Grant Budget Template</strong> - Excel file with standard categories</li>
+                <li><strong>Set Up Physical & Digital Filing System</strong> - Organized by grant and document type</li>
+                <li><strong>Executive Board Presentation</strong> - Share grant strategy for 2025-2026</li>
+                <li><strong>Principal Meeting</strong> - Discuss DOE Sustainability Grant for Oct 15, 2026</li>
+                <li><strong>Research Council Member Harvey Epstein</strong> - Check funding priorities for Feb 2026 application</li>
+            </ol>
+
+            <h3>November-December 2025</h3>
+            <ol>
+                <li><strong>Draft Standard Application Components</strong>
+                    <ul>
+                        <li>Organizational description (200 words, 500 words, 1000 words)</li>
+                        <li>Mission statement and values</li>
+                        <li>Student demographic data</li>
+                        <li>Financial health narrative</li>
+                    </ul>
+                </li>
+                <li><strong>Prepare for January 6 Council Opening</strong>
+                    <ul>
+                        <li>Complete all documentation requirements</li>
+                        <li>Draft program descriptions</li>
+                        <li>Prepare budget justifications</li>
+                    </ul>
+                </li>
+                <li><strong>Quick Win Applications</strong>
+                    <ul>
+                        <li>Visit Trader Joe's store captain</li>
+                        <li>Contact Starbucks for event support</li>
+                        <li>Register for Target Circle program</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>January-February 2026</h3>
+            <ol>
+                <li><strong>NYC Council Discretionary Application</strong> - PRIORITY #1
+                    <ul>
+                        <li>Submit well before Feb 19 deadline</li>
+                        <li>Request $25,000-$50,000 range</li>
+                        <li>Focus on general operating support</li>
+                    </ul>
+                </li>
+                <li><strong>BP Capital Funding</strong> - Feb 20 deadline</li>
+                <li><strong>Council Capital Funding</strong> - Mar 20 deadline (if applicable)</li>
+            </ol>
+        </section>
+
+        <!-- CONTACT INFORMATION -->
+        <section class="section">
+            <h2>📞 Key Contacts & Resources</h2>
+
+            <h3>TNS PTA Leadership</h3>
+            <ul>
+                <li><strong>Grant Documentation Lead:</strong> James Washington, Co-VP (Website Committee)</li>
+                <li><strong>Garden/Ashokan Grants Lead:</strong> Steph (DOE Sustainability, Catskill Watershed)</li>
+                <li><strong>Principal:</strong> Dyanthe (school approval required for all school-based grants)</li>
+                <li><strong>Treasurer:</strong> [Name] (financial documentation)</li>
+                <li><strong>President:</strong> [Name] (final approval for applications >$10K)</li>
+                <li><strong>Secretary:</strong> [Name] (board meeting documentation)</li>
+            </ul>
+
+            <h3>External Contacts</h3>
+            <ul>
+                <li><strong>NYC Council Member:</strong> Harvey Epstein, District 74</li>
+                <li><strong>Manhattan BP MCAP:</strong> Nelson Andino (nandino@manhattanbp.nyc.gov)</li>
+                <li><strong>Insurance Broker:</strong> [Contact info needed]</li>
+            </ul>
+
+            <h3>Online Resources</h3>
+            <ul>
+                <li><strong>NYC DOE Grants:</strong> <a href="https://schools.nyc.gov/about-us/funding/grants" class="external-link" target="_blank">schools.nyc.gov/about-us/funding/grants</a></li>
+                <li><strong>NYC Council:</strong> <a href="https://council.nyc.gov" class="external-link" target="_blank">council.nyc.gov</a></li>
+                <li><strong>Fund for Public Schools:</strong> <a href="https://fundforpublicschools.org" class="external-link" target="_blank">fundforpublicschools.org</a></li>
+                <li><strong>NYSED Grants:</strong> <a href="https://nysed.gov/funding-opportunities" class="external-link" target="_blank">nysed.gov/funding-opportunities</a></li>
+                <li><strong>Federal Grants:</strong> <a href="https://grants.gov" class="external-link" target="_blank">grants.gov</a></li>
+                <li><strong>Harvey Epstein (D74):</strong> <a href="https://council.nyc.gov/district-74/" class="external-link" target="_blank">council.nyc.gov/district-74</a></li>
+            </ul>
+        </section>
+
+        <footer style="margin-top: 60px; padding-top: 20px; border-top: 2px solid #e2e8f0; color: #64748b; font-size: 0.9em;">
+            <p><strong>Document Location:</strong> <code>/Users/jbwashington/Developer/projects/neighborhoodnews/grants-and-fundraising/TNS-PTA-Grant-Documentation-2025-2026.html</code></p>
+            <p><strong>Last Updated:</strong> October 9, 2025</p>
+            <p><strong>Prepared by:</strong> James Washington, Co-VP, The Neighborhood School PTA</p>
+            <p style="margin-top: 20px;"><em>This document should be reviewed and updated quarterly. Next review: January 2026</em></p>
+        </footer>
+    </div>
+</body>
+</html>

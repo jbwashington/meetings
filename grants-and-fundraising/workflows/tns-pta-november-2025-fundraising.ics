@@ -1,0 +1,338 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TNS PTA//November 2025 Fundraising//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TNS PTA November 2025 Fundraising
+X-WR-TIMEZONE:America/New_York
+X-WR-CALDESC:Complete fundraising task calendar for TNS PTA November 2025. Potential impact: $20K-43K. All tasks include step-by-step instructions\, contact info\, and resources.
+
+BEGIN:VEVENT
+UID:fidelity-registration-nov11@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251111T100000
+DTEND:20251111T130000
+SUMMARY:🔴 PRIORITY 1: Register with Fidelity Charitable
+LOCATION:Online - fidelitycharitable.org
+DESCRIPTION:HIGHEST PRIORITY - Potential Impact: $10\,000-50\,000/year\n\nTime Required: 1 hour\nDifficulty: Easy (4/10)\n\n📋 STEP-BY-STEP INSTRUCTIONS:\n\n1. Visit https://www.fidelitycharitable.org/nonprofits.html\n2. Click "Register your nonprofit"\n\n3. GATHER THESE DOCUMENTS FIRST:\n   - 501(c)(3) determination letter (from Treasurer)\n   - EIN documentation letter\n   - Bank routing and account number\n   - James Washington contact info\n\n4. Complete online registration form (30 min)\n5. Upload verification documents (15 min)\n\n6. CREATE COMPELLING PROFILE:\n   - "TNS serves 350+ diverse K-5 students"\n   - "40% qualify for free/reduced lunch"\n   - "Progressive education with equity focus"\n   - Upload school photos\n   - Add current program needs\n\n7. Turn on email notifications\n\n📞 CONTACT INFO:\nEmail: fcnonprofits@fmr.com\nPhone: 1-800-952-4438\n\n✅ SUCCESS CRITERIA:\n- Account created and verified\n- Profile complete with photos\n- Bank account linked\n- Notifications enabled\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/2
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Start Fidelity Charitable registration in 1 hour
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:trader-joes-visit-nov12@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251112T140000
+DTEND:20251112T160000
+SUMMARY:🔴 PRIORITY 2: Visit Trader Joe's for Donation
+LOCATION:Trader Joe's Upper West Side (check Google Maps for nearest)
+DESCRIPTION:HIGH PRIORITY - Potential Impact: $300-800 immediate\n\nTime Required: 1 hour\nDifficulty: Very Easy (2/10)\n\n📋 PREPARATION (Do before visit):\n\n1. PRINT THESE:\n   - 501(c)(3) determination letter\n   - One-page TNS PTA flyer with:\n     * "The Neighborhood School PTA"\n     * "We serve 350+ K-5 students in Manhattan"\n     * "40% qualify for free/reduced lunch"\n     * Request: "Gift cards for December teacher appreciation"\n     * Contact: James Washington\, Co-VP\n     * Email and phone\n     * Tax ID (EIN)\n\n2. Bring business cards if available\n\n📋 DURING VISIT:\n\n1. Go Tuesday-Thursday\, 10am-2pm (non-peak hours)\n2. Ask for "Store Captain"\n3. Say: "We'd love gift cards for teacher appreciation in December"\n4. Leave flyer even if Captain isn't there\n5. Get Captain's name and email\n\n🏪 LOCATIONS TO TRY:\n- Upper West Side location (primary)\n- Chelsea location (backup)\n\n📋 FOLLOW-UP:\n- Send thank you email within 24 hours (even if they said no)\n- Add contact to database\n\n✅ WHAT TO ASK FOR:\n- Gift cards for teacher appreciation\n- Donations for winter holiday fair\n- Support for family engagement nights\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/6
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT2H
+DESCRIPTION:Prepare materials for Trader Joe's visit (print flyer & 501c3)
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:vanguard-registration-nov13@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251113T100000
+DTEND:20251113T120000
+SUMMARY:Register with Vanguard Charitable
+LOCATION:Online - vanguardcharitable.org
+DESCRIPTION:HIGH PRIORITY - Potential Impact: $5\,000-30\,000/year\n\nTime Required: 1 hour\nDifficulty: Easy (4/10)\n\n📋 STEP-BY-STEP INSTRUCTIONS:\n\n1. Visit https://www.vanguardcharitable.org\n2. Find "For Nonprofits" section\n3. Register with same documents as Fidelity:\n   - 501(c)(3) letter\n   - EIN letter\n   - Banking information\n\n4. Complete nonprofit account application (30 min)\n\n5. CREATE PROFILE:\n   - Mission statement\n   - Program details\n   - Impact metrics (350+ students\, 40% FRL)\n   - Upload photos\n   - Optimize for finance professionals\n\n📞 CONTACT INFO:\nPhone: 1-888-383-4483\n\n✅ SUCCESS CRITERIA:\n- Account verified\n- Profile optimized\n- Banking linked\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/3
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Start Vanguard Charitable registration
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:starbucks-visits-nov14@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251114T140000
+DTEND:20251114T170000
+SUMMARY:Visit 3 Starbucks Locations for Donations
+LOCATION:3 nearest Starbucks locations to TNS
+DESCRIPTION:MEDIUM PRIORITY - Potential Impact: $200-600 total\n\nTime Required: 2 hours (3 stores)\nDifficulty: Very Easy (3/10)\n\n📋 PREPARATION:\n\n1. Print 501(c)(3) letter\n2. Print TNS PTA one-page flyer (same as Trader Joe's)\n3. Identify 3 closest Starbucks locations\n\n📋 AT EACH STORE (30-40 min per store):\n\n1. Ask for store manager\n2. Request: "Coffee donations for PTA parent meeting nights in December"\n3. Alternative: "Gift cards for volunteer appreciation"\n4. Leave flyer + 501(c)(3) letter\n5. Get manager's name and email\n\n📋 FOLLOW-UP:\n- Email each manager within 2 days\n- Track responses in spreadsheet\n- Send thank you notes for donations\n\n💰 POTENTIAL PER STORE: $50-200\n\n✅ WHAT TO ASK FOR:\n- Coffee for parent meetings (December)\n- Gift cards for volunteers\n- Support for family events\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/7
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+DESCRIPTION:Prepare materials for Starbucks visits
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:network-for-good-nov15@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251115T100000
+DTEND:20251115T110000
+SUMMARY:Register with Network for Good
+LOCATION:Online - networkforgood.org
+DESCRIPTION:MEDIUM PRIORITY - Potential Impact: $2\,000-15\,000/year\n\nTime Required: 15-30 minutes\nDifficulty: Very Easy (3/10)\n\n📋 STEP-BY-STEP INSTRUCTIONS:\n\n1. Visit https://www.networkforgood.org\n2. Create free nonprofit profile (15 min)\n3. Set up donation processing\n\n4. ADD PROFILE INFO:\n   - Organization description\n   - Mission and programs\n   - Contact details\n   - Banking for deposits\n\n5. Get "Donate Now" button code\n6. Add button to TNS website\n\n📞 CONTACT INFO:\nEmail: partners@networkforgood.org\nPhone: 1-866-650-4636\n\n✅ SUCCESS CRITERIA:\n- Account created\n- Donation processing active\n- Button added to website\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/4
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT30M
+DESCRIPTION:Register with Network for Good (quick 30 min task)
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:schwab-registration-nov16@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251116T100000
+DTEND:20251116T110000
+SUMMARY:Register with Schwab Charitable
+LOCATION:Online - schwabcharitable.org
+DESCRIPTION:MEDIUM PRIORITY - Potential Impact: $5\,000-25\,000/year\n\nTime Required: 30-45 minutes\nDifficulty: Easy (4/10)\n\n📋 STEP-BY-STEP INSTRUCTIONS:\n\n1. Visit https://www.schwabcharitable.org\n2. Register as eligible charity (30 min)\n\n3. SUBMIT DOCUMENTATION:\n   - 501(c)(3) letter\n   - EIN documentation\n\n4. Create organization profile\n5. Add program descriptions and needs\n\n📞 CONTACT INFO:\nPhone: 1-800-746-6216\n\n✅ SUCCESS CRITERIA:\n- Registration complete\n- Documents verified\n- Profile active\n\nNOTE: This completes the "Big 4" DAF platforms!\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/5
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Register with Schwab Charitable
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:amazon-wishlist-nov16@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251116T140000
+DTEND:20251116T170000
+SUMMARY:Create Amazon Wishlist for Holiday Giving
+LOCATION:Online - amazon.com/wishlist
+DESCRIPTION:HIGH PRIORITY - Potential Impact: $500-2\,000\n\nTime Required: 2 hours\nDifficulty: Easy (3/10)\n\n📋 STEP-BY-STEP INSTRUCTIONS:\n\nPHASE 1: CREATE WISHLIST (1 hour)\n\n1. Go to amazon.com/wishlist\n2. Create charity/school wishlist\n\n3. ADD ITEMS (25-40 items):\n   - Classroom supplies (markers\, paper\, folders)\n   - Books for classroom libraries\n   - Art supplies (paint\, brushes\, construction paper)\n   - STEM materials (building sets\, science kits)\n   - Items from teacher wish lists\n\n4. PRICE RANGE: $10-50 per item (gift-able amounts)\n5. ORGANIZE: By category (Art\, Books\, STEM\, Supplies)\n\nPHASE 2: PROMOTE (Nov 17)\n\n1. Add link to PTA website homepage\n2. Send Konstella message to all families\n3. Email blast to all parents\n4. Include in next PTA newsletter\n5. Post to social media\n6. Add to weekly school announcements\n\n📧 MESSAGING TEMPLATE:\n"🎁 Holiday Giving Made Easy!\n\nSupport TNS students this holiday season by shopping our Amazon Wishlist.\nEvery item goes directly to our classrooms and benefits all 350+ students.\n\nPerfect for:\n- Teachers you want to thank\n- Classroom you want to support\n- General school donation\n\nAll items $10-50 and shipped directly to school.\n\nShop now: [LINK]\nDeadline: December 20 for holiday delivery"\n\n✅ SUCCESS CRITERIA:\n- 25-40 items listed\n- Promoted before Thanksgiving\n- Track purchases by Dec 20\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Create Amazon Wishlist for holiday giving
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:wishlist-promotion-nov17@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251117T100000
+DTEND:20251117T120000
+SUMMARY:Promote Amazon Wishlist to All Families
+LOCATION:Email\, Konstella\, Website\, Social Media
+DESCRIPTION:Complete promotion of Amazon Wishlist created yesterday\n\nTime Required: 1 hour\n\n📋 PROMOTION CHECKLIST:\n\n1. ✅ Add prominent link to PTA website homepage\n2. ✅ Send Konstella message to all families\n3. ✅ Email blast to all parents\n4. ✅ Include in next PTA newsletter\n5. ✅ Post to social media (if TNS has accounts)\n6. ✅ Add to weekly school announcements\n7. ✅ Request teachers share with families\n\n⏰ TIMING: Get this out BEFORE Thanksgiving week!\n\n📧 Use messaging template from Nov 16 event\n\n✅ GOAL: Maximum visibility before holiday shopping begins\n\n📁 Related to GitHub Issue: https://github.com/jbwashington/meetings/issues/8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT30M
+DESCRIPTION:Promote Amazon Wishlist to all families
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:treasurer-docs-meeting-nov18@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251118T183000
+DTEND:20251118T200000
+SUMMARY:🔴 CRITICAL: Meet with Treasurer for Financial Docs
+LOCATION:TBD - School or Coffee Shop
+DESCRIPTION:CRITICAL - Required for NYC Council FY27 ($15\,000-25\,000)\n\nTime Required: 30 min meeting + collection time\n\n📋 BEFORE MEETING:\n\n1. Email or text Treasurer TODAY to schedule\n2. Say: "Collecting documents for major grant application (NYC Council\, $15K-25K)"\n3. Suggest: School or coffee shop meeting\n\n📋 DOCUMENTS TO COLLECT (GET DIGITAL COPIES!):\n\n✅ CRITICAL DOCUMENTS:\n- 501(c)(3) determination letter\n- EIN documentation letter\n\n✅ FINANCIAL DOCUMENTS:\n- Most recent financial audit (if exists)\n- Current budget (2024-2025 school year)\n- Bank statement (October 2025 or most recent)\n- Form 990 or 990-EZ (2024 tax filing)\n- Bank balance verification letter\n- List of major donors (if any grants need it)\n\n📁 SAVE TO:\n/grants-and-fundraising/documents/financial/\n\n📝 NAMING CONVENTION:\n- 501c3-determination-letter.pdf\n- ein-letter.pdf\n- budget-2024-2025.pdf\n- form-990-2024.pdf\n- bank-statement-2025-10.pdf\n\n💾 BACKUP:\n- Save to cloud storage (Google Drive/Dropbox)\n- Share access with one other board member\n\n⚠️ IF TREASURER IS SLOW:\n- Send friendly reminder every 3 days\n- Offer to pick up and scan yourself\n- Explain urgency: "Application opens Jan 6"\n\n✅ SUCCESS CRITERIA:\n- All documents collected\n- Digital copies saved and organized\n- Backed up to cloud\n- Accessible from any device\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/9
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-P1D
+DESCRIPTION:REMINDER: Schedule Treasurer meeting for tomorrow if not done
+ACTION:DISPLAY
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+DESCRIPTION:Prepare for Treasurer meeting - bring list of needed docs
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:secretary-docs-request-nov20@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251120T100000
+DTEND:20251120T110000
+SUMMARY:🔴 CRITICAL: Request Governance Docs from Secretary
+LOCATION:Email/Text/Call Secretary
+DESCRIPTION:CRITICAL - Required for NYC Council FY27 ($15\,000-25\,000)\n\nTime Required: 30 minutes + collection time\n\n📋 STEP-BY-STEP:\n\n1. Email or text Secretary\n2. Say: "Need governance documents for $15K-25K NYC Council grant application"\n3. Request digital copies (PDFs preferred)\n\n📋 DOCUMENTS TO REQUEST:\n\n✅ CRITICAL:\n- Current board of directors list (2024-2025)\n  * Names\, titles (President\, VP\, Treasurer\, etc.)\n  * Email addresses\n  * Terms (start/end dates)\n\n✅ GOVERNANCE:\n- Updated bylaws (most recent version)\n- Meeting minutes (last 6 months)\n  * Executive board meetings\n  * General membership meetings\n  * Should show quorum and votes\n- Conflict of interest policy (if exists)\n\n📁 SAVE TO:\n/grants-and-fundraising/documents/governance/\n\n📝 NAMING CONVENTION:\n- board-list-2024-2025.pdf\n- bylaws-current.pdf\n- meeting-minutes-2025-05-to-11.pdf\n- conflict-of-interest-policy.pdf\n\n⚠️ IF DOCUMENTS DON'T EXIST:\n- No board list? Create one\, have President approve\n- Old bylaws? Use what you have\, note "revision in progress"\n- No minutes? Summarize recent meetings\n- No COI policy? Download template online\, adapt for TNS\n\n💾 BACKUP:\n- Save to cloud storage\n- Share with Treasurer and one other board member\n\n✅ SUCCESS CRITERIA:\n- All available documents collected\n- Digital copies organized\n- Backed up to cloud\n- Note what's missing (if anything)\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/10
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Contact Secretary for governance documents
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:insurance-certificates-nov22@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251122T100000
+DTEND:20251122T130000
+SUMMARY:⚠️ CRITICAL: Get Insurance Certificates (BUS INSURANCE!)
+LOCATION:Phone call to insurance broker
+DESCRIPTION:CRITICAL - Missing bus insurance cost TNS $2\,000 on Ashokan!\n\nTime Required: 1-2 hours\nDifficulty: Medium (requires broker cooperation)\n\n⚠️ REMEMBER: You lost $2\,000 because bus insurance was missing!\n\n📋 STEP-BY-STEP:\n\n1. Get broker contact from Treasurer (if you don't have it)\n2. CALL broker directly (email is too slow)\n3. Say: "Need current certificates for grant applications"\n\n📋 CERTIFICATES TO REQUEST:\n\n✅ CRITICAL:\n- General liability insurance\n  * Coverage amount\n  * Policy dates\n  * Certificate showing TNS PTA as insured\n\n- Directors & Officers (D&O) insurance\n  * Protects board members\n  * Required by many funders\n\n- ⚠️ BUS/TRANSPORTATION INSURANCE ⚠️\n  * Field trip coverage\n  * Student transportation\n  * THIS COST YOU $2K ON ASHOKAN!\n\n✅ IF APPLICABLE:\n- Workers compensation (if PTA has paid staff)\n- Event liability (if separate policy)\n\n📋 IF NO BUS INSURANCE:\n1. Get quote for adding coverage\n2. Calculate annual cost\n3. Present to executive board in December\n4. Recommend purchasing before next grant cycle\n5. Include in 2025-2026 budget planning\n\n📁 SAVE TO:\n/grants-and-fundraising/documents/insurance/\n\n📝 NAMING CONVENTION:\n- general-liability-cert-2025.pdf\n- directors-officers-insurance-2025.pdf\n- bus-transportation-insurance-2025.pdf\n- workers-comp-2025.pdf\n\n📅 NOTE RENEWAL DATES:\n- Add all policy renewal dates to calendar\n- Set reminders 30 days before expiration\n- Never let coverage lapse mid-year\n\n💾 BACKUP:\n- Save to cloud storage\n- Print one physical copy for PTA records\n- Share digital access with Treasurer\n\n🚨 RED FLAG ALERT:\nIf broker says "no bus insurance" or "not covered":\n1. Get this in writing\n2. Present to board IMMEDIATELY\n3. Request emergency budget allocation\n4. Purchase before any 2026 grant applications\n\n✅ SUCCESS CRITERIA:\n- All certificates obtained\n- Digital copies organized\n- Renewal dates on calendar\n- Bus insurance status CONFIRMED (yes or no)\n- If no bus insurance: quote obtained\, board notified\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/11
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Call insurance broker for all certificates (especially BUS!)
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:document-organization-nov23@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251123T100000
+DTEND:20251123T120000
+SUMMARY:Organize Complete Grants Document Repository
+LOCATION:Computer - File Organization
+DESCRIPTION:MEDIUM PRIORITY - One-time setup\, years of benefit\n\nTime Required: 1 hour\nDifficulty: Easy (organizational task)\n\n📋 CREATE FOLDER STRUCTURE:\n\n/grants-and-fundraising/documents/\n  /core-legal/\n    - 501c3-determination-letter.pdf\n    - ein-letter.pdf\n    - nys-charities-registration.pdf\n  \n  /financial/\n    - budget-2024-2025.pdf\n    - audit-2024.pdf (if exists)\n    - form-990-2024.pdf\n    - bank-statement-YYYY-MM.pdf\n    \n  /governance/\n    - board-list-2024-2025.pdf\n    - bylaws-current.pdf\n    - meeting-minutes-YYYY-MM.pdf\n    - conflict-of-interest-policy.pdf\n    \n  /insurance/\n    - general-liability-cert-2025.pdf\n    - directors-officers-insurance-2025.pdf\n    - bus-transportation-insurance-2025.pdf\n    - policy-renewal-schedule.md\n    \n  /program-descriptions/\n    - tns-mission-statement.pdf\n    - program-overview-2025.pdf\n    - student-demographics.pdf\n    \n  /templates/\n    - budget-template.xlsx\n    - support-letter-template.docx\n    - organization-description-100-words.docx\n    - organization-description-250-words.docx\n    - organization-description-500-words.docx\n\n📝 FILE NAMING CONVENTION:\n- Use lowercase\n- Use hyphens (not spaces or underscores)\n- Include dates: YYYY-MM or YYYY\n- Be consistent\n- Example: bank-statement-2025-10.pdf\n\n📋 CREATE DOCUMENT INVENTORY:\nCreate document-inventory.md with:\n- List of all documents\n- Last updated date for each\n- Expiration/renewal dates\n- Missing documents flagged\n- Document owners\n\n💾 BACKUP STRATEGY:\n- Primary: Local /grants-and-fundraising/documents/\n- Backup 1: Cloud storage (Google Drive/Dropbox)\n- Backup 2: Treasurer's computer\n- Share access: Treasurer\, Secretary\, President\n\n📋 CREATE QUICK REFERENCE:\nCreate DOCUMENT-QUICK-REFERENCE.md with:\n- Insurance broker contact\n- Treasurer contact\n- Secretary contact\n- Document expiration dates\n- Renewal reminders\n\n✅ SUCCESS CRITERIA:\n- All folders created\n- All documents filed properly\n- Document inventory complete\n- Cloud backup configured\n- Quick reference guide created\n- System is maintainable\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/12
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT30M
+DESCRIPTION:Organize all grant documents into proper structure
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:choose-program-nov27@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251127T100000
+DTEND:20251127T150000
+SUMMARY:🔴 CRITICAL: Choose NYC Council FY27 Program Focus
+LOCATION:Research and Decision-Making
+DESCRIPTION:CRITICAL - Application opens Jan 6\, 2026 ($15K-25K)\n\nTime Required: 2 hours (research + decision)\nDifficulty: Medium (strategic decision)\n\n📋 STEP 1: RESEARCH (Morning)\n\nA. Research Harvey Epstein's Priorities:\n   - Visit his website\n   - Review recent press releases\n   - Check voting record/issues\n   - Note key priorities (likely: equity\, immigrants\, education)\n\nB. Review TNS Needs:\n   - Talk to Principal Dyanthe about gaps\n   - Review teacher requests/wish lists\n   - Consider parent feedback\n   - Think about equity issues\n\n📋 STEP 2: CHOOSE ONE PROGRAM (Afternoon)\n\n🔵 OPTION A: Technology Equity Initiative ($20\,000)\n\nComponents:\n- 30 Chromebooks for students without home devices ($8\,000)\n- Digital literacy workshops for parents - ESL friendly ($5\,000)\n- After-school coding club\, fall & spring ($4\,000)\n- Tech support helpdesk for families ($3\,000)\n\n✅ Strengths:\n- Directly addresses equity gap\n- Serves 40% FRL population\n- Measurable outcomes\n- Post-pandemic relevance\n\n❌ Challenges:\n- Technology evolves quickly\n- Ongoing maintenance\n- Need tech-savvy volunteers\n\n---\n\n🎨 OPTION B: Arts & Culture Program ($18\,000)\n\nComponents:\n- Artist-in-residence for visual arts ($8\,000)\n- Art supplies for all 15 classrooms ($3\,000)\n- Museum field trips for all grades ($4\,000)\n- Student art showcase + community exhibition ($3\,000)\n\n✅ Strengths:\n- Progressive ed alignment\n- Community engagement\n- All students benefit\n- Visible impact\n\n❌ Challenges:\n- Hard to measure academic outcomes\n- One-time benefits\n- May seem "nice to have"\n\n---\n\n👨‍👩‍👧‍👦 OPTION C: Family Engagement & ESL Support ($22\,000)\n\nComponents:\n- ESL classes for parents\, 2x per week ($10\,000)\n- Translation services for meetings/docs ($4\,000)\n- 4 cultural celebration events per year ($4\,000)\n- Parent education workshops on NYC schools ($4\,000)\n\n✅ Strengths:\n- STRONGEST alignment with Harvey's priorities\n- Serves immigrant families directly\n- Builds community\n- Parent engagement = student success\n\n❌ Challenges:\n- Need language facilitators\n- Scheduling challenges\n- Harder to measure student impact\n\n---\n\n📊 DECISION MATRIX:\n\nCriteria          | Tech | Arts | Family/ESL\n-----------------|------|------|------------\nHarvey alignment | Med  | Low  | HIGH\nTNS mission fit  | High | HIGH | High\nMeasurable       | HIGH | Med  | Med\nServes most      | Med  | HIGH | Med\nSustainability   | Med  | Low  | HIGH\nEasy to do       | Med  | HIGH | Med\n\n💡 RECOMMENDATION:\nFamily Engagement & ESL Support appears strongest:\n1. Best alignment with Harvey's priorities\n2. Serves diverse community (40% FRL)\n3. Sustainable beyond grant\n4. Progressive ed values\n\nBUT YOU MAKE THE FINAL CALL!\n\n📋 NEXT STEPS:\nOnce you choose:\n- Brief President and Treasurer\n- Get buy-in from committee chairs\n- Move to drafting narrative (Nov 28)\n\n✅ SUCCESS CRITERIA:\n- Research completed\n- One program chosen\n- Decision documented\n- Key stakeholders informed\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/13
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-P1D
+DESCRIPTION:Tomorrow: Research Harvey's priorities & choose NYC Council program
+ACTION:DISPLAY
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Start researching program options for NYC Council grant
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:draft-narrative-nov28@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251128T090000
+DTEND:20251128T150000
+SUMMARY:🔴 CRITICAL: Draft NYC Council FY27 Program Narrative
+LOCATION:Writing - Computer
+DESCRIPTION:CRITICAL - Application opens Jan 6\, 2026 ($15K-25K)\n\nDepends on: Nov 27 program choice\nTime Required: 3 hours\nDifficulty: Medium (writing task)\n\n📋 MORNING: OUTLINE (30 min)\n\nCreate outline with these sections:\n\n1. PROBLEM STATEMENT (1 paragraph)\n   - What challenge does TNS face?\n   - Who is affected and how?\n   - Why does this matter now?\n\n2. PROPOSED SOLUTION (2 paragraphs)\n   - What exactly will you do?\n   - What specific activities?\n   - Who will implement?\n\n3. TARGET POPULATION (1 paragraph)\n   - How many students/families?\n   - Demographics (40% FRL\, diversity)\n   - Why this population?\n\n4. TIMELINE (bullet points)\n   - When will program start?\n   - Key milestones\n   - When will it end? (or ongoing?)\n\n5. EXPECTED OUTCOMES (1 paragraph)\n   - What will change?\n   - How will you measure success?\n   - Specific\, measurable goals\n\n6. SUSTAINABILITY (1 paragraph)\n   - How will this continue after grant?\n   - PTA budget commitment?\n   - Community partnerships?\n\n📋 LATE MORNING: FIRST DRAFT (2 hours)\n\n- Write complete draft (2-3 pages)\n- Use clear\, simple language\n- Include specific numbers (350 students\, 40% FRL)\n- Tell stories (not just data)\n- Emphasize equity and access\n- Align with Harvey's priorities\n\n📋 AFTERNOON: EDIT & POLISH (30 min)\n\n- Read out loud (catch awkward phrasing)\n- Check for typos\n- Verify all numbers are accurate\n- Make sure it's compelling\n- Get feedback from one other person\n\n✅ WRITING TIPS - DO:\n- Be specific ("30 Chromebooks" not "technology")\n- Use active voice ("We will provide")\n- Include student stories if possible\n- Show implementation plan\n- Emphasize community and equity\n- Connect to progressive ed mission\n\n❌ WRITING TIPS - DON'T:\n- Use jargon or buzzwords\n- Make it too long (2-3 pages max)\n- Forget to proofread\n- Oversell or exaggerate\n- Ignore budget alignment\n\n📝 EXAMPLE OPENING (Family/ESL):\n\n"The Neighborhood School serves 350+ diverse K-5 students in Manhattan\, with 40% qualifying for free or reduced lunch. While our student body thrives academically\, many immigrant families face language barriers that prevent full engagement in their children's education.\n\nParents who cannot read school communications in English miss important deadlines and opportunities. Families unable to navigate the NYC school system struggle to advocate for their children. This gap in parent engagement directly impacts student success.\n\nThe TNS PTA requests $22\,000 to launch a Family Engagement & ESL Support Program that will serve 50+ immigrant families..."\n\n📁 SAVE AS:\n- nyc-council-fy27-narrative-draft-v1.docx\n- Save to: /grants-and-fundraising/applications/nyc-council-fy27/\n- Keep version control (v1\, v2\, v3\, final)\n- Share with Treasurer for budget alignment\n\n✅ SUCCESS CRITERIA:\n- 2-3 pages\, well-organized\n- All required sections\n- Aligned with chosen program\n- Compelling and specific\n- Proofread and polished\n- Matches budget\n- Ready for President review\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/14
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Start drafting NYC Council program narrative
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:create-budget-nov29@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251129T100000
+DTEND:20251129T150000
+SUMMARY:🔴 CRITICAL: Create NYC Council FY27 Budget Worksheet
+LOCATION:Spreadsheet Work - Computer
+DESCRIPTION:CRITICAL - Budget must match narrative exactly!\n\nDepends on: Nov 28 narrative\nTime Required: 2 hours\nDifficulty: Medium (detail-oriented)\n\n⚠️ BUDGET MUST MATCH NARRATIVE EXACTLY!\n\n📋 CREATE BUDGET TEMPLATE:\n\nSpreadsheet with these columns:\n- Category (Personnel\, Supplies\, Equipment\, etc.)\n- Item Description (specific)\n- Quantity\n- Unit Cost\n- Total Cost\n- Justification (brief explanation)\n\n📋 BUDGET CATEGORIES:\n\n1. PERSONNEL/STAFFING\n   - Teaching artists\n   - ESL instructors\n   - Workshop facilitators\n   - Coordinator/administrator\n   - Technical support\n   Include: hourly rate\, hours\, qualifications\n\n2. SUPPLIES & MATERIALS\n   - Consumable items\n   - Classroom materials\n   - Books\, art supplies\n   - Technology accessories\n   - Event supplies\n\n3. EQUIPMENT\n   - One-time purchases\n   - Chromebooks\, tablets\n   - Software licenses\n   - Furniture\n\n4. PROGRAMMING COSTS\n   - Field trip fees\n   - Transportation (if allowed)\n   - Workshop materials\n   - Event space rental\n\n5. ADMINISTRATIVE COSTS\n   - Translation services\n   - Printing/copying\n   - Communications\n   - Evaluation/assessment\n   - CONTINGENCY (10%) - always include!\n\n📋 EXAMPLE BUDGET (Family/ESL - $22\,000):\n\nCategory | Item | Qty | Unit Cost | Total | Justification\n---------|------|-----|-----------|-------|---------------\nPersonnel | ESL Instructor | 60 hrs | $75/hr | $4\,500 | Certified\, 2x/week\, 30 weeks\nPersonnel | Childcare | 60 hrs | $25/hr | $1\,500 | Enable parent attendance\nPersonnel | Workshops | 16 hrs | $100/hr | $1\,600 | 4 workshops on NYC schools\nPersonnel | Event Coordinators | 4 events | $500 | $2\,000 | Plan cultural events\nSupplies | ESL Materials | 25 sets | $40 | $1\,000 | Workbooks\, flashcards\nServices | Translation | 40 hrs | $50/hr | $2\,000 | Spanish translation\nServices | Space Rental | 4 events | $300 | $1\,200 | Community room\nSupplies | Event Supplies | 4 events | $400 | $1\,600 | Food\, decorations\nSupplies | Workshop Materials | 4 | $250 | $1\,000 | Handouts\, resources\nSupplies | Marketing | 1 | $500 | $500 | Flyers\, outreach\nAdmin | Evaluation | 1 | $1\,000 | $1\,000 | Surveys\, reporting\nContingency (10%) | | | | $2\,100 | Unexpected costs\nTOTAL | | | | $20\,000 |\n\n📋 BUDGET RULES:\n\n✅ DO:\n- Round to nearest $50 or $100\n- Research realistic costs (Google rates)\n- Include 10% contingency\n- Make total match narrative exactly\n- Get Treasurer to review\n- Show your math clearly\n- Include justification for every line\n\n❌ DON'T:\n- Pad numbers unrealistically\n- Forget to add correctly\n- Include unallowable costs\n- Make costs suspiciously high/low\n- Forget contingency line\n- Use vague descriptions\n\n📋 HAVE TREASURER REVIEW:\n- Share budget draft\n- Ask: "Do these costs seem reasonable?"\n- Ask: "Can PTA manage this program?"\n- Get Treasurer to verify math\n- Make adjustments\n\n📋 CROSS-CHECK WITH NARRATIVE:\n- Every program component has budget line\n- Budget totals match narrative request\n- Timeline matches budget timeline\n- Nothing in budget not in narrative\n\n📁 SAVE AS:\n- nyc-council-fy27-budget-v1.xlsx\n- Save to: /grants-and-fundraising/applications/nyc-council-fy27/\n- Keep version control\n- Export final as PDF also\n\n✅ SUCCESS CRITERIA:\n- Budget complete and detailed\n- Math is 100% correct\n- Costs are reasonable\n- Includes 10% contingency\n- Matches narrative exactly\n- Treasurer approved\n- Ready for Jan 6 submission\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/15
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Create detailed budget worksheet for NYC Council grant
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:call-harvey-nov30@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251130T140000
+DTEND:20251130T150000
+SUMMARY:🔴 CRITICAL: Call Harvey Epstein's Office
+LOCATION:Phone Call - 212-979-9696
+DESCRIPTION:CRITICAL - Build relationship for $15K-25K grant\n\nDepends on: Nov 27-29 work (program\, narrative\, budget)\nTime Required: 30 min call + 15 min prep\nDifficulty: Easy (relationship building)\n\n📞 CONTACT INFO:\nPhone: 212-979-9696\nEmail: district74@council.nyc.gov\nOffice: 250 Broadway\, Suite 1826\, New York\, NY 10007\n\n📋 BEFORE YOU CALL:\n\n✅ Have ready:\n- Program choice (from Nov 27)\n- Draft narrative (from Nov 28)\n- Draft budget (from Nov 29)\n- TNS basic info (350 students\, 40% FRL)\n- Your ask amount ($15K-25K)\n- Why it aligns with his priorities\n- 2-3 questions to ask\n- Pen and paper for notes\n\n📋 OPENING SCRIPT:\n\n"Hi\, this is James Washington\, Co-Vice President of The Neighborhood School PTA here in District 74. Harvey knows our school - we've worked together on [mention any previous interaction].\n\nI'm calling about the FY27 discretionary funding cycle. Could I speak with Harvey or his grants coordinator about our application?"\n\n📋 IF CONNECTED TO GRANTS PERSON:\n\n"Thank you for taking my call. We're preparing our FY27 application and wanted to ensure our proposal aligns with Harvey's priorities.\n\nWe're requesting $[AMOUNT] for a [PROGRAM NAME] that will serve our 350+ students\, 40% of whom qualify for free or reduced lunch.\n\n[Brief 30-second description of your program]\n\nI have three quick questions..."\n\n📋 QUESTIONS TO ASK:\n\n1. PRIORITIES: "What are Harvey's key funding priorities for FY27?"\n\n2. PROCESS: "The portal opens January 6\, correct? Any tips for a strong application?"\n\n3. AMOUNT: "For a PTA serving 350 students\, what's a typical award range?"\n\n4. TIMELINE: "When can we expect award decisions after the February 19 deadline?"\n\n5. MEETING: "Would Harvey or you have time for a brief in-person meeting in December to discuss our proposal?"\n\n📋 TAKE GOOD NOTES:\n- Write down priorities mentioned\n- Note any application tips\n- Get name and direct contact of grants coordinator\n- Note any cautions or concerns\n- Ask about preferred program descriptions\n\n📋 FOLLOW-UP (Same day):\n\n1. Type up notes while fresh\n2. Share notes with Treasurer and President\n3. Adjust program if needed based on feedback\n4. Update narrative if suggested\n\n📧 SEND THANK YOU EMAIL (within 2 hours):\n\nTo: district74@council.nyc.gov\n\n"Subject: Thank you - TNS PTA FY27 Discretionary Funding\n\nDear [Name]\,\n\nThank you for taking time to discuss TNS PTA's FY27 application today. Your insights on [mention something specific] were very helpful.\n\nWe're excited to submit our application for [PROGRAM] when the portal opens January 6. This program will directly serve [NUMBER] families in District 74 and aligns with Harvey's priorities around [THEIR PRIORITIES].\n\nPlease let me know if you need any additional information before we submit. We're grateful for Harvey's continued support of TNS.\n\nBest regards\,\nJames Washington\nCo-Vice President\, TNS PTA\n[Your email]\n[Your phone]"\n\n❓ WHAT IF...\n\nThey don't answer / Goes to voicemail:\n"Hi\, this is James Washington from The Neighborhood School PTA in District 74. I'm preparing our FY27 discretionary funding application and would love 15 minutes to discuss Harvey's priorities. My number is [PHONE]. I'll also follow up by email. Thank you!"\n\nThen send email same day.\n\nThey say "Just submit the application":\nThat's okay! Ask:\n- "Any tips for a strong application?"\n- "Common mistakes to avoid?"\n- "What amount is reasonable for a 350-student school?"\n\nThey mention budget constraints:\nDon't panic. Say:\n- "We understand. What amount would be more realistic?"\n- "Could we scale down to fit available funding?"\n- "What's most important to include?"\n\n✅ SUCCESS CRITERIA:\n- Call made (or voicemail + email sent)\n- Connected with Harvey or grants coordinator\n- Got answers to priority questions\n- Notes documented\n- Thank you email sent\n- Insights incorporated into application\n- Relationship established\n\n📋 POST-CALL ACTIONS:\nBased on what you learn:\n- Adjust program if needed\n- Revise narrative if needed\n- Adjust budget if needed\n- Set reminder to follow up in December\n- Mark calendar for Jan 6 portal opening\n\n💡 REMEMBER: Harvey Epstein is an ALLY. He WANTS to support TNS. This is about partnership\, not begging. Be confident and prepared!\n\n📁 GitHub Issue: https://github.com/jbwashington/meetings/issues/16
+STATUS:CONFIRMED
+PRIORITY:1
+BEGIN:VALARM
+TRIGGER:-P1D
+DESCRIPTION:TOMORROW: Call Harvey Epstein's office - prepare materials today
+ACTION:DISPLAY
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+DESCRIPTION:Call Harvey Epstein's office NOW - 212-979-9696
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:week1-review-nov17@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251117T160000
+DTEND:20251117T163000
+SUMMARY:Week 1 Review - Check Progress
+LOCATION:Quick review session
+DESCRIPTION:Review Week 1 accomplishments\n\n📋 WEEK 1 CHECKLIST:\n\n✅ DAF Registrations:\n- Fidelity Charitable complete?\n- Vanguard Charitable complete?\n- Network for Good complete?\n- Schwab Charitable complete?\n\n✅ Local Visits:\n- Trader Joe's visit done?\n- 3 Starbucks visits done?\n- Donations received or pending?\n\n✅ Holiday Giving:\n- Amazon Wishlist created?\n- Promoted to all families?\n\n📊 WEEK 1 POTENTIAL:\n$11\,000-53\,400\n\n📋 PREPARE FOR WEEK 2:\n- Contact Treasurer about meeting\n- Contact Secretary about documents\n- Get insurance broker contact info\n\n✅ If behind: Choose top 2 priorities to finish this week\n\n📁 Update GitHub Issue #17 with progress
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:PT0S
+DESCRIPTION:Time to review Week 1 progress!
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:week2-review-nov24@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251124T160000
+DTEND:20251124T163000
+SUMMARY:Week 2 Review - Check Progress
+LOCATION:Quick review session
+DESCRIPTION:Review Week 2 accomplishments\n\n📋 WEEK 2 CHECKLIST:\n\n✅ Documents Collected:\n- All financial docs from Treasurer?\n- All governance docs from Secretary?\n- All insurance certificates?\n- ⚠️ Bus insurance status confirmed?\n\n✅ Organization:\n- All documents saved to proper folders?\n- Cloud backup configured?\n- Document inventory created?\n\n📊 WEEK 2 PURPOSE:\nPrepare for $15K-25K NYC Council opportunity\n\n📋 PREPARE FOR WEEK 3:\n- Review Harvey Epstein's recent work\n- Think about program options\n- Identify key stakeholders to consult\n\n✅ If behind: Get documents THIS WEEK - critical for NYC Council!\n\n📁 Update GitHub Issue #17 with progress
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:PT0S
+DESCRIPTION:Time to review Week 2 progress!
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:november-final-review-nov30@tnspta.org
+DTSTAMP:20251111T120000Z
+DTSTART:20251130T170000
+DTEND:20251130T180000
+SUMMARY:🎉 November Final Review - Celebrate Progress!
+LOCATION:End of month review
+DESCRIPTION:Review all November accomplishments!\n\n📋 NOVEMBER COMPLETE CHECKLIST:\n\n✅ WEEK 1 - QUICK WINS:\n- 4 DAF platforms registered\n- Local business visits complete\n- Amazon Wishlist live\n\n✅ WEEK 2 - DOCUMENTS:\n- Financial docs collected\n- Governance docs collected\n- Insurance certificates obtained\n- Everything organized\n\n✅ WEEK 3 - NYC COUNCIL:\n- Program chosen\n- Narrative drafted\n- Budget created\n- Harvey Epstein contacted\n\n📊 NOVEMBER IMPACT:\n\nImmediate: $1\,000-3\,400\nMedium-term: $4\,000-15\,000\nSpring 2026: $15\,000-25\,000\n\nTOTAL POTENTIAL: $20\,000-43\,400\n\n🎯 READINESS FOR JANUARY 6:\n- NYC Council application 90% ready\n- All documents organized\n- Relationships established\n- Systems in place\n\n📋 DECEMBER PREVIEW:\n1. Launch holiday giving campaign (Dec 1)\n2. Meet with Harvey's staff\n3. Finalize NYC Council application\n4. End-of-year giving push\n\n✅ SHARE WITH BOARD:\n- Create brief summary of accomplishments\n- Present at next executive meeting\n- Thank everyone who helped\n- Preview December priorities\n\n🎉 CELEBRATE:\nYou've laid the foundation for significant funding in 2026!\n\n📁 Close out GitHub Issue #17\n📁 Archive November plan\n📁 Create December action plan\n\n💡 REMEMBER: This November work will pay dividends for years!
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:PT0S
+DESCRIPTION:Time to review all November accomplishments!
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR
